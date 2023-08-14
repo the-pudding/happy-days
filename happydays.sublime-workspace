@@ -1,0 +1,723 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"add",
+				"addictiveScore"
+			],
+			[
+				"hab",
+				"habitualScore"
+			],
+			[
+				"proces",
+				"processScore"
+			],
+			[
+				"addic",
+				"addictiveScore"
+			],
+			[
+				"addi",
+				"addictiveScore"
+			],
+			[
+				"habit",
+				"habitualScore"
+			],
+			[
+				"trna",
+				"translateY()"
+			],
+			[
+				"cu",
+				"currentStage"
+			],
+			[
+				"trans",
+				"translateX()"
+			],
+			[
+				"curre",
+				"currentStageNumber"
+			],
+			[
+				"in",
+				"initial"
+			],
+			[
+				"text-t",
+				"text-decoration"
+			],
+			[
+				"a",
+				"absolute"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/components/happydays/HappyDays.svelte",
+			"settings":
+			{
+				"buffer_size": 2555,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/components/happydays/HappyDays.sprites.svelte",
+			"redo_stack":
+			[
+				[
+					14,
+					1,
+					"insert",
+					{
+						"characters": "4"
+					},
+					"AQAAAIQIAAAAAAAAhAgAAAAAAAABAAAANA",
+					"AQAAAAAAAAABAAAAhQgAAAAAAACFCAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					13,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIQIAAAAAAAAhQgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAhAgAAAAAAACECAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					10,
+					1,
+					"insert",
+					{
+						"characters": "male-standing"
+					},
+					"DgAAAGUIAAAAAAAAZQgAAAAAAAABAAAAZ2QIAAAAAAAAZAgAAAAAAAABAAAAbmMIAAAAAAAAYwgAAAAAAAABAAAAaWIIAAAAAAAAYggAAAAAAAABAAAAZGEIAAAAAAAAYQgAAAAAAAABAAAAbmAIAAAAAAAAYAgAAAAAAAABAAAAYV8IAAAAAAAAXwgAAAAAAAABAAAAdF4IAAAAAAAAXggAAAAAAAABAAAAc10IAAAAAAAAXQgAAAAAAAABAAAALVwIAAAAAAAAXAgAAAAAAAABAAAAZVsIAAAAAAAAWwgAAAAAAAABAAAAbFoIAAAAAAAAWggAAAAAAAABAAAAYVoIAAAAAAAAZwgAAAAAAAAAAAAAWQgAAAAAAABZCAAAAAAAAAEAAABt",
+					"AQAAAAAAAAABAAAAZggAAAAAAABmCAAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 4286,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					2,
+					"left_delete",
+					null,
+					"AgAAAH0JAAAAAAAAfQkAAAAAAAAzAAAACX0KCS5mZi1hbG9uZSAuc3ByaXRlIHsgCgkJLyogYmFja2dyb3VuZDogYmxhY2s7ICovfAkAAAAAAAB8CQAAAAAAAAEAAAAK",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAsAkAAAAAAAB9CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"paste",
+					null,
+					"AQAAAHwJAAAAAAAAfgkAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAfAkAAAAAAAB8CQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					14,
+					2,
+					"left_delete",
+					null,
+					"AgAAAH8AAAAAAAAAfwAAAAAAAABqAQAACS8vIGNvbnN0IG5hbWVzID0gWwoJLy8gJ2F3YWtlJywgJ2Rvd24xJywgJ2Rvd24yJywgJ2R0b2dpMScsICdkdG9naTInLCAnZHdsZWZ0MScsICdkd2xlZnQyJywKCS8vICdkd3JpZ2h0MScsICdkd3JpZ2h0MicsICdqYXJlMicsICdrYWtpMScsICdrYWtpMicsICdsZWZ0MScsICdsZWZ0MicsCgkvLyAnbHRvZ2kxJywgJ2x0b2dpMicsICdtYXRpMicsICdtYXRpMycsICdyaWdodDEnLCAncmlnaHQyJywgJ3J0b2dpMScsICdydG9naTInLAoJLy8gJ3NsZWVwMScsICdzbGVlcDInLCAndXAxJywgJ3VwMicsICd1cGxlZnQxJywgJ3VwbGVmdDInLAoJLy8gJ3VwcmlnaHQxJywgJ3VwcmlnaHQyJywgJ3V0b2dpMScsICd1dG9naTInCiAgLy8gXTt+AAAAAAAAAH4AAAAAAAAAAQAAAAo",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA6QEAAAAAAAB/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAH4AAAAAAAAAfwAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAfgAAAAAAAAB+AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"left_delete",
+					null,
+					"AQAAAJIAAAAAAAAAkgAAAAAAAAABAAAACg",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAkwAAAAAAAACTAAAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					19,
+					1,
+					"reindent",
+					{
+						"single_line": false
+					},
+					"DgAAAIMAAAAAAAAAhAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAAMAAAAgIAmVAAAAAAAAAJYAAAAAAAAAAAAAAJMAAAAAAAAAkwAAAAAAAAACAAAACSC9AAAAAAAAAL8AAAAAAAAAAAAAALoAAAAAAAAAugAAAAAAAAADAAAACQkgDwEAAAAAAAARAQAAAAAAAAAAAAAMAQAAAAAAAAwBAAAAAAAAAwAAAAkgCRIBAAAAAAAAEwEAAAAAAAAAAAAAEAEAAAAAAAAQAQAAAAAAAAIAAAAJIBUBAAAAAAAAFgEAAAAAAAAAAAAAEwEAAAAAAAATAQAAAAAAAAIAAAAJIDgBAAAAAAAAOQEAAAAAAAAAAAAANgEAAAAAAAA2AQAAAAAAAAIAAAAJIA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAACvEAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					23,
+					1,
+					"reindent",
+					null,
+					"AQAAAH8AAAAAAAAAgAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAfwAAAAAAAAB/AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					24,
+					1,
+					"insert",
+					{
+						"characters": "//"
+					},
+					"AwAAAIAAAAAAAAAAgQAAAAAAAAAAAAAAOAEAAAAAAAA4AQAAAAAAAAEAAAAJgQAAAAAAAACCAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					25,
+					1,
+					"insert",
+					{
+						"characters": " Names"
+					},
+					"BgAAAIIAAAAAAAAAgwAAAAAAAAAAAAAAgwAAAAAAAACEAAAAAAAAAAAAAACEAAAAAAAAAIUAAAAAAAAAAAAAAIUAAAAAAAAAhgAAAAAAAAAAAAAAhgAAAAAAAACHAAAAAAAAAAAAAACHAAAAAAAAAIgAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAggAAAAAAAACCAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					1,
+					"insert",
+					{
+						"characters": " of"
+					},
+					"AwAAAIgAAAAAAAAAiQAAAAAAAAAAAAAAiQAAAAAAAACKAAAAAAAAAAAAAACKAAAAAAAAAIsAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAiAAAAAAAAACIAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": " the"
+					},
+					"BAAAAIsAAAAAAAAAjAAAAAAAAAAAAAAAjAAAAAAAAACNAAAAAAAAAAAAAACNAAAAAAAAAI4AAAAAAAAAAAAAAI4AAAAAAAAAjwAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAiwAAAAAAAACLAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					28,
+					1,
+					"insert",
+					{
+						"characters": " "
+					},
+					"AQAAAI8AAAAAAAAAkAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAjwAAAAAAAACPAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"insert",
+					{
+						"characters": "Array"
+					},
+					"BgAAAIMAAAAAAAAAhAAAAAAAAAAAAAAAhAAAAAAAAACEAAAAAAAAAA0AAABOYW1lcyBvZiB0aGUghAAAAAAAAACFAAAAAAAAAAAAAACFAAAAAAAAAIYAAAAAAAAAAAAAAIYAAAAAAAAAhwAAAAAAAAAAAAAAhwAAAAAAAACIAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAkAAAAAAAAACDAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": " of"
+					},
+					"AwAAAIgAAAAAAAAAiQAAAAAAAAAAAAAAiQAAAAAAAACKAAAAAAAAAAAAAACKAAAAAAAAAIsAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAiAAAAAAAAACIAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					32,
+					1,
+					"insert",
+					{
+						"characters": " s"
+					},
+					"AgAAAIsAAAAAAAAAjAAAAAAAAAAAAAAAjAAAAAAAAACNAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAiwAAAAAAAACLAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"insert",
+					{
+						"characters": "prites"
+					},
+					"BgAAAI0AAAAAAAAAjgAAAAAAAAAAAAAAjgAAAAAAAACPAAAAAAAAAAAAAACPAAAAAAAAAJAAAAAAAAAAAAAAAJAAAAAAAAAAkQAAAAAAAAAAAAAAkQAAAAAAAACSAAAAAAAAAAAAAACSAAAAAAAAAJMAAAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAjQAAAAAAAACNAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAALECAAAAAAAAsgIAAAAAAAAAAAAAsgIAAAAAAACzAgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAsQIAAAAAAACxAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					38,
+					1,
+					"insert",
+					{
+						"characters": "\n\n"
+					},
+					"AgAAACACAAAAAAAAIQIAAAAAAAAAAAAAIQIAAAAAAAAiAgAAAAAAAAAAAAA",
+					"BAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAIAIAAAAAAAAgAgAAAAAAAAAAAAAAAAAA"
+				],
+				[
+					5,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIQIAAAAAAAAhAgAAAAAAAABAAAAOA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIUIAAAAAAAAhQgAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "4"
+					},
+					"AQAAAIQIAAAAAAAAhQgAAAAAAAAAAAAA",
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIQIAAAAAAAAhAgAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					3,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIQIAAAAAAAAhAgAAAAAAAABAAAANA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACFCAAAAAAAAIUIAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "8"
+					},
+					"AQAAAIQIAAAAAAAAhQgAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACECAAAAAAAAIQIAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"term",
+				"Terminal: Open in project folder"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"UI: Customize Color Scheme"
+			],
+			[
+				"theme",
+				"UI: Customize Theme"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"UI: Select Color Scheme"
+			],
+			[
+				"termin",
+				"Terminal: Open in project folder"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 138.0,
+		"history":
+		[
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/alvinchang/apps/happy-days-draft",
+		"/Users/alvinchang/apps/happy-days-draft/src",
+		"/Users/alvinchang/apps/happy-days-draft/src/components",
+		"/Users/alvinchang/apps/happy-days-draft/src/components/happydays"
+	],
+	"file_history":
+	[
+		"/Users/alvinchang/apps/happy-days-draft/src/components/happydays/lookup.json",
+		"/Users/alvinchang/apps/happy-days-draft/src/components/happydays/HappyDays.svelte",
+		"/Users/alvinchang/apps/happy-days-draft/src/components/happydays/HappyDays.sprites.svelte",
+		"/Users/alvinchang/data/time-use/final_data/people.json",
+		"/Users/alvinchang/data/time-use/final_data/caseids.json",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/mass-shooting-tracker/atoms/default/server/render.js",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/mass-shooting-tracker/atoms/default/server/templates/main.html",
+		"/Users/alvinchang/Library/Caches/Transmit/B255D907-4A6A-4AD0-AFF2-B53455771EEA/vps20765.dreamhostps.com/home/alv9n/alv9n.com/data/index.html",
+		"/Users/alvinchang/Downloads/carta-backup-codes.txt",
+		"/Users/alvinchang/Library/Caches/Transmit/D0DB1A76-CE01-41F8-877A-7F78F1A60CBB/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/index.php",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-92412-open.html",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-68043-open.html",
+		"/Users/alvinchang/apps/happiest-project/data/test-corpus.txt",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-67696-open.html",
+		"/Users/alvinchang/apps/happiest-project/data/books1/epubtxt/3.epub.txt",
+		"/Users/alvinchang/apps/happiest-project/notes-happiest.md",
+		"/Users/alvinchang/apps/happiest-project/bookcorpus/out_txts/118359__unenchanted.txt",
+		"/Users/alvinchang/apps/happiest-project/bookcorpus/out_txts/42211__death-by-chocolate.txt",
+		"/Users/alvinchang/apps/happiest-project/bookcorpus/url_list.jsonl",
+		"/Users/alvinchang/Library/CloudStorage/GoogleDrive-alvinschang@gmail.com/My Drive/Current/Vox data video series/Florida/Map/Florida Funding by school  - PRE-12 Summary.csv",
+		"/Users/alvinchang/Library/Caches/Transmit/7766397F-B69F-494F-8850-4A9EE1300F03/vps20765.dreamhostps.com/home/alv9n/alv9n.com/teaching/le-data-exploration/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/18133549-EE6E-41AF-98A0-D9710F18ADBA/vps20765.dreamhostps.com/home/alv9n/alv9n.com/data/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/01D1A743-71B3-434B-ACF4-77BEFCC38257/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/index.php",
+		"/Users/alvinchang/Library/Caches/Transmit/02155A8F-AEE1-41C0-AACE-2CEDB05DC4A9/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/index.php",
+		"/Users/alvinchang/Library/Caches/Transmit/50ECB869-DC32-40ED-AC0D-7EDD44424F88/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/traffic.txt",
+		"/Users/alvinchang/Library/Caches/Transmit/D474508A-3ECB-4620-8F32-838A7856DB96/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/index.php",
+		"/Users/alvinchang/Library/Caches/Transmit/C21521E1-C93B-4944-99A4-B57D90C55415/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/traffic.txt",
+		"/Users/alvinchang/Library/Caches/Transmit/429020DC-6D02-4662-8167-B1B91778E433/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/traffic.txt",
+		"/Users/alvinchang/Library/Caches/Transmit/71DAC8C4-5A8E-4B43-A8A4-084175CEAF96/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/traffic.txt",
+		"/Users/alvinchang/Library/Caches/Transmit/3CB288AF-1208-47F3-B07F-58E33D7F6C03/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/index.php",
+		"/Users/alvinchang/Library/Caches/Transmit/BF25EB5B-63E7-4868-B68C-A80B94C52449/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/97FC2A56-FB06-455F-8A03-345B93F30BE4/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/index.php",
+		"/Users/alvinchang/Library/Caches/Transmit/0ECEBCD8-546D-42F3-8AFD-81BDC4C2A6F2/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/index.php",
+		"/Users/alvinchang/Library/Caches/Transmit/2BB9294E-8005-427E-8761-894506AE3C37/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/blog/content/2023-06-pinboard.md",
+		"/Users/alvinchang/Library/Caches/Transmit/9A82E163-348A-45E1-855C-839A3EA98968/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/index.html",
+		"/Users/alvinchang/data/state-policies/Readme.txt",
+		"/Users/alvinchang/data/state-policies/Graphs and Descriptive Analysis.R",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-70458-open.html",
+		"/Users/alvinchang/Library/Caches/Transmit/0AC7B1FA-A915-49BF-8F4C-FE6E52A67E6F/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/B8CF41D6-0E97-49D6-9FDB-9B7B8999105E/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/index.html",
+		"/Users/alvinchang/apps/kimchi2/kimchi/src/styles/app.css",
+		"/Users/alvinchang/apps/interactive-monorepo/template/atoms/default/client/js/main.js",
+		"/Users/alvinchang/Library/CloudStorage/GoogleDrive-alvinschang@gmail.com/My Drive/Tools/Interactive template/index.html",
+		"/Users/alvinchang/Library/CloudStorage/GoogleDrive-alvinschang@gmail.com/My Drive/Tools/Interactive template/script.js",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/heat-learning/atoms/default/client/js/app.js",
+		"/Users/alvinchang/Downloads/productDownload_2023-04-26T073326/ACSDT5Y2019.B25119-Table-Notes.txt",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/senate-broken/atoms/default/server/render.js",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/biodiversity-history/atoms/default/client/js/app.js",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/us-housing/assets/us-state.json",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/food-monopoly/atoms/default/server/render.js",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/food-monopoly/atoms/default/server/templates/main.html",
+		"/Users/alvinchang/apps/interactive-monorepo/projects/food-monopoly/atoms/default/client/js/app.js",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/mobile/scene2/books.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/mobile/scene2/poster2.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/mobile/scene2/poster1.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/desktop/scene2/books.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/desktop/scene2/poster1.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/desktop/scene2/poster2.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/mobile/scene5/recipe.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/desktop/scene8/menu1.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/desktop/scene8/menu2.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/desktop/scene8/tv.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/desktop/scene8/kimchi-fridge.svg",
+		"/Users/alvinchang/apps/kimchi/static/assets/kimchi/desktop/scene5/recipe.svg",
+		"/Users/alvinchang/Desktop/index.html",
+		"/Users/alvinchang/apps/kimchi/src/routes/+layout.svelte",
+		"/Users/alvinchang/Desktop/Markdown gen.md",
+		"/Users/alvinchang/data/time-use/atussum-0321/Sum0321_info.txt",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-93766-open.html",
+		"/Users/alvinchang/Downloads/fjs10st/readme.txt",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-91578-open.html",
+		"/Users/alvinchang/data/time-use/atusact-0321/Activity0321_info.txt",
+		"/Users/alvinchang/data/time-use/atusact-2021/Activity2021_info.txt",
+		"/Users/alvinchang/data/time-use/atussum-2021/Sum2021_info.txt",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-74655-open.html",
+		"/Users/alvinchang/data/guardian-housing/usa_00001.xml",
+		"/Users/alvinchang/Documents/Processing/theme.txt",
+		"/Users/alvinchang/apps/dream-jobs-sketch/dreamjobs/theme.txt",
+		"/Users/alvinchang/Downloads/acs2021_5yr_B19019_31000US20300/metadata.json",
+		"/Users/alvinchang/Downloads/acs2021_5yr_B99162_86000US10013/metadata.json",
+		"/Users/alvinchang/apps/alvinschang.com/src/js/prev/app.js",
+		"/Users/alvinchang/apps/alvinschang.com/src/js/app.js",
+		"/Users/alvinchang/apps/dream-jobs-sketch/dreamjobs/data-2000.tsv",
+		"/Users/alvinchang/apps/dream-jobs-sketch/dreamjobs/data-2018.tsv",
+		"/Users/alvinchang/apps/dream-jobs-sketch/dreamjobs/data.tsv",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-74342-open.html",
+		"/Users/alvinchang/Library/CloudStorage/GoogleDrive-alvinschang@gmail.com/My Drive/Current/Guardian-food-climate/charts/ai2html-output_02-food-emission-chain/index.html",
+		"/Users/alvinchang/Library/CloudStorage/GoogleDrive-alvinschang@gmail.com/My Drive/Current/Guardian-food-climate/charts/ai2html-output_01-plant-diet/index.html",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-44483-open.html",
+		"/Users/alvinchang/Library/Caches/Transmit/7D682F72-2AAB-4717-9F88-00943E5CA4DA/vps20765.dreamhostps.com/home/alv9n/alv9n.com/teaching/healthdata/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/94C9A690-D8E0-4578-82A6-07A6466DFFD4/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/index.html",
+		"/Users/alvinchang/data/pisa-survey/.gitignore",
+		"/Users/alvinchang/data/pisa-survey/isco_lookup_18v2.py",
+		"/Users/alvinchang/data/pisa-survey/isco_lookup.py",
+		"/Users/alvinchang/data/pisa-survey/isco_lookup_18.py",
+		"/Users/alvinchang/data/pisa-survey/isco_lookup_2018.py",
+		"/Users/alvinchang/data/pisa-survey/isco_lookup2.py",
+		"/Users/alvinchang/Library/Caches/Transmit/D8079DCC-AECE-47BF-8B4B-E10CC103682C/vps20765.dreamhostps.com/home/alv9n/alv9n.com/blog/content/2023-03-03.md",
+		"/Users/alvinchang/Library/Caches/Transmit/0C993D88-603F-4101-8425-81E83D5EA01A/vps20765.dreamhostps.com/home/alv9n/alv9n.com/blog/style.css",
+		"/Users/alvinchang/Library/Caches/Transmit/D24460BA-0E88-43CB-88D5-AE67BC5B67D3/vps20765.dreamhostps.com/home/alv9n/alv9n.com/blog/index.php",
+		"/Users/alvinchang/Library/Caches/Transmit/5AB11320-8766-48F3-A01C-F3980E53E8AE/vps20765.dreamhostps.com/home/alv9n/alv9n.com/index.html",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-93194-open.html",
+		"/Users/alvinchang/Downloads/RORE_QJE_replication/readme/babelbst.tex",
+		"/Users/alvinchang/Downloads/RORE_QJE_replication/readme/preamble.tex",
+		"/Users/alvinchang/Library/Caches/Transmit/8F55165E-14D7-48B8-88B9-E8E003BE7D70/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/54C8736A-9093-42C8-A692-6BD9F62049EF/vps20765.dreamhostps.com/home/alv9n/alv9n.com/teaching/illustrator/index.html",
+		"/Users/alvinchang/Downloads/hdl_10622_IAEKLA.ris",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-19369-open.html",
+		"/Users/alvinchang/Desktop/map/index.html",
+		"/Users/alvinchang/Desktop/map/map.js",
+		"/Users/alvinchang/Desktop/map.html",
+		"/Users/alvinchang/Library/Caches/Transmit/7D9DDA8E-A55F-4266-87F9-D4AB6ADF281F/vps20765.dreamhostps.com/home/alv9n/alv9n.com/apps/guardian-phone-quiz-draft/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/88C759EF-5EBA-4916-8528-0C1256A5BCA4/vps20765.dreamhostps.com/home/alv9n/alv9n.com/apps/.htaccess",
+		"/Users/alvinchang/Library/Caches/Transmit/EE3021AC-89DD-447A-8ACE-435E7B2F0C43/vps20765.dreamhostps.com/home/alv9n/alv9n.com/.htaccess",
+		"/Users/alvinchang/Library/Caches/Transmit/D587CFC0-F2B1-4547-82A8-A2C887FA7F28/vps20765.dreamhostps.com/home/alv9n/alv9n.com/apps/guardian-phone-quiz-draft/.htaccess",
+		"/Users/alvinchang/Library/Caches/Transmit/F3DF13F5-CB65-428F-9AAC-957F82124FCF/vps20765.dreamhostps.com/home/alv9n/alv9n.com/teaching/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/2A35ABFC-6632-4835-95AF-1D9D2B1ADF58/vps20765.dreamhostps.com/home/alv9n/alv9n.com/index.html",
+		"/Users/alvinchang/apps/kimchi-draft/src/components/kimchi/kimchi.scene1.svelte",
+		"/Users/alvinchang/Library/Caches/Transmit/205565F7-CDB3-4F78-84AA-009195AFFCEA/vps20765.dreamhostps.com/home/alv9n/bad-file-permissions-list-1659579294.txt",
+		"/Users/alvinchang/Library/Caches/Transmit/B0F1F5C6-78A6-4351-B27A-636676C8C4A0/vps20765.dreamhostps.com/home/alv9n/logins-1659579294.txt",
+		"/Users/alvinchang/Library/Caches/Transmit/C6F99072-3A5F-427E-8EB9-C5949C405A87/vps20765.dreamhostps.com/home/alv9n/logins-1646951534.txt",
+		"/Users/alvinchang/Library/Caches/Transmit/F99317AA-2B28-4A6A-90F1-61199D4219E6/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/sitemap.xml",
+		"/Users/alvinchang/Library/Caches/Transmit/E2DEFE9A-A1B6-4EBF-9E9C-E46BB5D35343/vps20765.dreamhostps.com/home/alv9n/backdoor-list-1646951534.txt",
+		"/Users/alvinchang/Desktop/index.thml",
+		"/Users/alvinchang/Library/Caches/Transmit/1D737068-578A-4265-9791-65ADC50A6B22/vps20765.dreamhostps.com/home/alv9n/alv9n.com/teaching/index.html",
+		"/Users/alvinchang/Library/Jupyter/runtime/jpserver-3392-open.html",
+		"/Users/alvinchang/Library/Caches/Transmit/DBBE252F-BFE5-4F7E-97CE-DC842117F8E4/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/index.html",
+		"/Users/alvinchang/Library/Caches/Transmit/9ADB21AE-182F-403B-BFD2-9D45FC68AF03/vps20765.dreamhostps.com/home/alv9n/alvinschang.com/index.html"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/components/happydays/HappyDays.svelte",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2555,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								844,
+								844
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Svelte/Svelte.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/components/happydays/HappyDays.sprites.svelte",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4286,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2532,
+								2532
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Svelte/Svelte.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1235.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 49.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "happydays.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 450.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 574.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 269.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
