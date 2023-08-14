@@ -36,6 +36,7 @@
 			// Adding the timing for when each box is shown
 			final[options[i]].map(element => element["start"] = 400);
 			final[options[i]].map(element => element["details"] = -1);
+			final[options[i]].map(element => element["current_activity_code"] = "10101");
 			if (options[i] == "3") {
 				final[options[i]][4]["start"] = 239;
 				final[options[i]][3]["start"] = 300;
@@ -66,7 +67,6 @@
 		for (let i = 0; i < options.length; i++) {
 			currentPeople[options[i]].map(element => element["details"] = -1);
 		}
-		console.log(currentPeople);
 	}
 	
 	function toggleDetails(group, key) {
@@ -124,7 +124,7 @@
 			for (let j = 0; j < currentPeople[opt].length; j++) { // each person
 				let peopleScore = 0;
 				for (let k = 0; k < currentPeople[opt][j]["activity"].length; k++) { // each activity
-					if (currentPeople[opt][j]["activity"][k][0] <= time && currentPeople[opt][j]["activity"][k][1] > time) { // if time is between start/end
+					if ((currentPeople[opt][j]["activity"][k][0] <= time && currentPeople[opt][j]["activity"][k][1] > time) || (currentPeople[opt][j]["activity"][k][0] <= (time - 1440) && currentPeople[opt][j]["activity"][k][1] > (time - 1440) ) ) { // if time is between start/end
 						currentPeople[opt][j]["activity"][k][6] = 1;
 						peopleScore += lookup.PEOPLESCORE[currentPeople[opt][j]["activity"][k][5]];
 						currentPeople[opt][j]["current_activity"] = lookup.ACTIVITY[currentPeople[opt][j]["activity"][k][2]].task;
@@ -192,11 +192,10 @@
 									<div class="ladderItem" style="bottom:{ladder*10}%;"></div>
 								{/each}
 							</div>
-							<div class="ff ff-alone shown1"></div>
-							<Sprites person="alone" act={person.current_activity} shown="1"/>
 							{#each person.activity as act}
 								<!-- <div class="ff ff-{convertWHO(act, true)} shown{act[act.length-1]}"> -->
-									<Sprites person={convertWHO(act, true)} act={person.current_activity} shown={act[act.length-1]}/>
+									<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]}/>
+									<Sprites person="{convertWHO(act, true)}" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]}/>
 									<!-- {convertWHO(act, true)} -->
 								<!-- </div> -->
 							{/each}

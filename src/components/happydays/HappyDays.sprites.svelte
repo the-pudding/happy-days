@@ -1,18 +1,39 @@
 <script>
 	import { onMount } from 'svelte';
+	import lookup from "$components/happydays/lookup.json";
+
 	export let person;
+	export let sex;
+	export let act;
 	export let shown;
+
+	let animClass;
+	
+	if (person == "alone") {
+		animClass = lookup.ACTIVITY[act].animClass;
+		sex = sex == 1 ? "male" : "female";
+	} else if (person != "alone") {
+		sex = Math.random() > 0.5 ? "male" : "female";
+		animClass = lookup.ACTIVITY[act]["otherClass"];
+	}
+
+	if (person.indexOf("child") != -1) {
+		sex = "child";
+		animClass = lookup.ACTIVITY[act]["childclass"];
+	} 
+
+	
 	// export let 
 	let pos = { x: 0, y: 0 };
 
 	// Array of sprites
-	let names = [];	 
+	let names = [];
 	function buildList(who, what, when) {
 		for (let i = 1; i < when + 1; i++) {
 			names.push(who + "-" + what + "-" + i);
 		}
 	}
-	buildList("male","sleeping",11);
+	buildList(sex,animClass,11);
 
 
 	let current = 0;
@@ -20,8 +41,10 @@
 
 	onMount(() => {
 		const interval = setInterval(() => {
-			current = (current + 1) % names.length;
-		}, 200);
+			if (Math.random() > 0.2) {
+				current = (current + 1) % names.length;	
+			}
+		}, 100);
 
 		return () => clearInterval(interval);
 	});
@@ -42,7 +65,7 @@
 		width: 20%;
 		margin-left: -5%;
 		height: 40%;
-		transition: all 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+		transition: all 600ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		font-size: 10px;
 		color: white;
@@ -59,9 +82,13 @@
 	
 	.ff-alone {left: calc(4.5% + 39%); bottom: 0%;}
 	
-	.ff-friend {left: calc(4.5% + 52%)}
+	.ff-friend { left: calc(4.5% + 52%)}
 	.ff-adult_nonfamily {left: calc(4.5% + 65%); }
 	.ff-workrelated {left: calc(4.5% + 78%);}
+/*	.ff-alone, .ff-friend, .ff-adult_nonfamily, .ff-workrelated {
+		
+	}*/
+
 	.sprite {
 		position: absolute;
 		width: 100%;
@@ -69,7 +96,7 @@
 		bottom: 0px;
 		left: 0px;
 		background-repeat: no-repeat;
-		zoom: 2;
+		zoom: 3;
 		image-rendering: optimizeSpeed;             /* No smoothing  */
 		image-rendering: -moz-crisp-edges;          /* Firefox                        */
 		image-rendering: -o-crisp-edges;            /* Opera                          */
@@ -79,7 +106,7 @@
 		-ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
 	}
 	
-	[anim] { background-image: url(assets/happydays/sprite-master.png); background-size: 440px 80px }
+	[anim] { background-image: url(assets/happydays/sprite-master.png); background-size: 440px 1880px }
 
 	[anim="child-eating-1.png"] { width: 40px; height: 40px; background-position:0px 0px }
 	[anim="child-eating-2.png"] { width: 40px; height: 40px; background-position:-40px 0px }
