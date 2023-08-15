@@ -1,7 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
-	export let copy;
-	
+	export let copy, image, imageLoc;
+
 	function convertToHTML(text) {
 		let finalText = [];
 		let textArray = text.split("\n");
@@ -17,10 +17,25 @@
 </script>
 
 <div class="textContainer">
+	{#if imageLoc == "top"}
+	<div class="imageContainer">
+		<img src="assets/happydays/{image}"/>
+	</div>
+	{/if}
 	{@html convertToHTML(copy)}
+	{#if imageLoc == "bottom"}
+	<div class="imageContainer">
+		<img src="assets/happydays/{image}"/>
+	</div>
+	{/if}
 </div>
 
 <style>
+.imageContainer {
+	width: 100%;
+	min-height: 300px;
+	background: gray;
+}
 .textContainer {
 	max-width: 500px;
 	margin: 0 auto;
@@ -35,6 +50,8 @@
 	left: 50%;
 	-ms-transform: translateY(-50%) translateX(-50%);
 	transform: translateY(-50%) translateX(-50%);
+	background: black;
+	padding: 20px;
 }
 .textContainer p {
 	color: white;

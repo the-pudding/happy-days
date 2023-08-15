@@ -11,6 +11,9 @@
 </header>
 
 <style>
+	header {
+		background: #28212F;
+	}
 	.wordmark {
 		max-width: 10em;
 		margin: 0 auto;
@@ -20,7 +23,8 @@
 	.wordmark a {
 		border: none;
 		display: block;
-		color: var(--color-fg);
+/*		color: var(--color-fg);*/
+		color: white;
 	}
 
 	.wordmark a:hover {
