@@ -120,7 +120,7 @@
 		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 	}
 	
-	[anim] { background-image: url(assets/happydays/sprite-master.png); background-size: 440px 1880px }
+	[anim] { background-image: url(/assets/happydays/sprite-master.png); background-size: 440px 1880px }
 
 	[anim="child-eating-1.png"] { width: 40px; height: 40px; background-position:0px 0px }
 	[anim="child-eating-2.png"] { width: 40px; height: 40px; background-position:-40px 0px }

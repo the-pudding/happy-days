@@ -19,13 +19,13 @@
 <div class="textContainer">
 	{#if imageLoc == "top"}
 	<div class="imageContainer">
-		<img src="assets/happydays/{image}"/>
+		<!-- <img src="assets/happydays/{image}"/> -->
 	</div>
 	{/if}
 	{@html convertToHTML(copy)}
 	{#if imageLoc == "bottom"}
 	<div class="imageContainer">
-		<img src="assets/happydays/{image}"/>
+		<!-- <img src="assets/happydays/{image}"/> -->
 	</div>
 	{/if}
 </div>
