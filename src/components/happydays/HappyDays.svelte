@@ -4,6 +4,7 @@
 	import Grid from "$components/happydays/HappyDays.grid.svelte";
 	import Text from "$components/happydays/HappyDays.text.svelte";
 	import people from "$components/happydays/people-all-nogroup.json";
+	import { fade } from 'svelte/transition';
 	
 	let value;
 	let beginTime = 240;
@@ -33,20 +34,20 @@
 			final[options[i]] = final[options[i]].sort((a,b) => (a.WECANTRIL > b.WECANTRIL) ? 1 : ((b.WECANTRIL > a.WECANTRIL) ? -1 : 0))
 			// Adding the timing for when each box is shown
 			final[options[i]].map(function(element)  {
-				element["start"] = 295;
+				element["start"] = 330;
 				element["details"] = -1;
-				element["current_activity_code"] = "10101"
+				element["current_activity_code"] = "10101";
+				element["current_company"] = []; 
 			});
 			if (options[i] == "3") {
 				final[options[i]][4]["start"] = 239;
 				for (let p = 0; p < final[options[i]].length; p++) {
 					if (p != 4) {
-						final[options[i]][p]["start"] = 275 + Math.round(Math.random()*15);
+						final[options[i]][p]["start"] = 305 + Math.round(Math.random()*15);
 					}
 				} 
 			}
 		}
-		console.log(final)
 		return final;
 	}
 	
@@ -81,9 +82,13 @@
 <div class="outsideContainer">
 	<section id="scrolly">
 		<div class="visualContainer">
+			<div class="legend" style="opacity: {value + beginTime > 480 ? 1 : 0};" transition:fade>
+				<span class="legendLabel">◂ More isolated</span>
+				<span class="legendLabel">More social ▸</span>
+			</div>
 			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline}/>
 		</div>
-		<div class="timeline">
+		<div class="timeline" style="opacity: {value + beginTime > 260 ? 1 : 0};" transition:fade>
 			<Scrolly bind:value increments={1} top={100}>
 				{#each timeRange as time, i}
 				{@const active = value === i}
@@ -103,7 +108,9 @@
 <style>
 	.outsideContainer {
 		background: #28212F;
+		font-family: "National 2 Web";
 	}
+	
 	#scrolly {
 		font-family: "National 2 Web";
 	}
@@ -112,7 +119,19 @@
 		top: 0em;
 		width: 100%;
 	}
-
+	.legend {
+		position: absolute;
+		left: 2%;
+		top: 40px;
+		width: 200px;
+		height: 20px;
+		background: rgb(54,55,76);
+		background: linear-gradient(90deg, rgba(54,55,76,1) 0%, rgba(137,124,149,1) 60%, rgba(255,222,245,1) 100%);
+		z-index: 100;
+		border: 2px solid #000;
+	}
+	.legendLabel {color: #b7a2bb; font-size: 13px; text-align: left; position: absolute; left: 0px; bottom: calc(100% + 4px);}
+	.legendLabel:nth-child(2) { text-align: right; left: auto; right: 0px; }
 	.spacer {
 		height: 75vh;
 	}
@@ -121,6 +140,8 @@
 		position: relative;
 		z-index: 100;
 		margin-top: -80vh;
+		transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 	}
 	.step {
 		height: 4vh;
@@ -145,7 +166,7 @@
 		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.9) 61%,rgba(0,0,0,0.7) 77%,rgba(0,0,0,0) 100%);*/
 		background: black;
 		padding: 20vh 2em;
-		margin: 0 auto;
+		margin: 10vh auto;
 		position: relative;
 	}
 	.step p {

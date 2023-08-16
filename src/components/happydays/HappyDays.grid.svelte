@@ -40,21 +40,24 @@
 		maxPeople = breakpoint * 4;
 	}
 
-
+	let first = true;
 	function checkTiming() {
 		time = time > 239 ? time : 241; 
-		// if (!customClicked) {
-		timeline.forEach(function(line) {
-			if (time - 2 > line.time) {
-				selectedViewIndex = line.view;
-			}
-		})
-		// }
+		if (!customClicked && time < 600) {
+			timeline.forEach(function(line) {
+				if (time - 2 > line.time) {
+					selectedViewIndex = line.view;
+				}
+			})
+		} else if (first) {
+			selectedViewIndex = 0;
+			first = false;
+		}
 
 		if (isNaN(time)) { time = 240; }
 		if (time > 1440) { time = time - 1440; }
-		customClicked = time >= 780 ? true : false;
-		happyBar = time >= 343 || time < beginTime ? 1 : 0;
+		customClicked = time >= 600 ? true : false;
+		happyBar = time >= 365 || time < beginTime ? 1 : 0;
 	}
 	
 
@@ -67,16 +70,17 @@
 			// each person
 			for (let j = 0; j < currentPeople[opt].length; j++) { // each person
 				let peopleScore = 0;
-
+				currentPeople[opt][j]["current_company"] = [];
 				for (let k = 0; k < currentPeople[opt][j]["activity"].length; k++) { // each activity
 					let start = currentPeople[opt][j]["activity"][k][0];
 					let end = currentPeople[opt][j]["activity"][k][1];
-
+					let theCompany = currentPeople[opt][j]["activity"][k][5];
 					// if time is between start/end
 					if ((start <= time && end > time) || (start <= (time - 1440) && end > (time - 1440) ) ) {
 						currentPeople[opt][j]["activity"][k][6] = 1;
-						currentPeople[opt][j]["current_activity"] = lookup.ACTIVITY[currentPeople[opt][j]["activity"][k][2]].task;
-						peopleScore += lookup.PEOPLESCORE[currentPeople[opt][j]["activity"][k][5]];
+						currentPeople[opt][j]["current_activity"] = lookup.ACTIVITY[currentPeople[opt][j]["activity"][k][2]].cleanTask;
+						currentPeople[opt][j]["current_company"].push(theCompany);
+						peopleScore += lookup.PEOPLESCORE[theCompany];
 					} else { // if not
 						currentPeople[opt][j]["activity"][k][6] = 0;
 					}
@@ -101,8 +105,10 @@
 	<div class="displayContainter">
 		<div class="groupContainer {viewTranslate[selectedViewIndex]}">
 			{#each Object.entries(currentPeople) as [key, happy_group]}
-			<div class="group" on:click={() => changeView(key)}>
-
+			<div class="group">
+				{#if selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && customClicked}
+					<button out:fade in:fade={{ delay: 1200 }} class="wideViewButton" on:click={() => changeView(key)}>Zoom in</button>
+				{/if}
 				{#each happy_group as person, personKey}
 					{#if personKey < maxPeople}
 						<Person 
@@ -129,9 +135,22 @@
 	.wideViewButton {
 		margin-left: 10px;
 		position: absolute;
-		left: 10px;
-		bottom: 10%;
+		left: calc(2% + 210px);
+		top: 22px;
 		z-index: 100;
+		background: white;
+	}
+	.group .wideViewButton {
+		margin-left: 0px;
+		padding: 18px;
+		border-radius: 8px;
+		left: 50%;
+		top: -90px;
+		transform: translateX(-50%);
+		font-size: 45px;
+	}
+	.wideViewButton:hover {
+		text-decoration: underline;
 	}
 	.interactive {
 		/* max-width: 1200px; */
@@ -157,6 +176,8 @@
 	}
 	.displayContainter {
 		width: 100%;
+		padding-top: 50px;
+		box-sizing: border-box;
 		/* max-width: 1500px; */
 		/* overflow: hidden;*/
 		overflow: hidden;
@@ -201,7 +222,7 @@
 	}
 	@media only screen  and (max-width: 1200px) {
 		.groupContainer.zoomIn {
-			transform: perspective(0) translate3d(-52.5%, 7%, 0.2px);
+			transform: perspective(0) translate3d(-52.1%, 7%, 0.2px);
 		}
 	}
 	@media only screen  and (max-width: 800px) {

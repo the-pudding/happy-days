@@ -228,6 +228,7 @@ const TUDIARYDAY_x = {
 const ACTIVITY = {
   "10101": {
     task: "Sleeping",
+    cleanTask: "Sleeping",
     group: "Personal Care Activities",
     "class": "sleep",
     animClass: "sleeping",
@@ -236,6 +237,7 @@ const ACTIVITY = {
   },
   "10102": {
     task: "Sleeplessness",
+    cleanTask: "Sleepless",
     group: "Personal Care Activities",
     "class": "sleep",
     animClass: "sleeping",
@@ -244,6 +246,7 @@ const ACTIVITY = {
   },
   "10199": {
     task: "Sleeping, n.e.c.*",
+    cleanTask: "Sleeping",
     group: "Personal Care Activities",
     "class": "sleep",
     animClass: "sleeping",
@@ -252,6 +255,7 @@ const ACTIVITY = {
   },
   "10201": {
     task: "Washing, dressing and grooming oneself",
+    cleanTask: "Washing, dressing and grooming",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "selfcare",
@@ -260,6 +264,7 @@ const ACTIVITY = {
   },
   "10299": {
     task: "Grooming, n.e.c.*",
+    cleanTask: "Grooming",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "selfcare",
@@ -268,6 +273,7 @@ const ACTIVITY = {
   },
   "10301": {
     task: "Health-related self care",
+    cleanTask: "Health-related self care",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "selfcare",
@@ -276,6 +282,7 @@ const ACTIVITY = {
   },
   "10399": {
     task: "Self care, n.e.c.*",
+    cleanTask: "Self-care",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "selfcare",
@@ -284,6 +291,7 @@ const ACTIVITY = {
   },
   "10401": {
     task: "Personal/Private activities",
+    cleanTask: "Personal or private activities",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "sitting",
@@ -292,6 +300,7 @@ const ACTIVITY = {
   },
   "10499": {
     task: "Personal activities, n.e.c.*",
+    cleanTask: "Personal activities",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "sitting",
@@ -300,6 +309,7 @@ const ACTIVITY = {
   },
   "10501": {
     task: "Personal emergencies",
+    cleanTask: "Personal emergencies",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "walking",
@@ -308,6 +318,7 @@ const ACTIVITY = {
   },
   "10599": {
     task: "Personal care emergencies, n.e.c.*",
+    cleanTask: "Personal emergencies",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "walking",
@@ -316,6 +327,7 @@ const ACTIVITY = {
   },
   "19999": {
     task: "Personal care, n.e.c.*",
+    cleanTask: "Personal care",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "selfcare",
@@ -324,6 +336,7 @@ const ACTIVITY = {
   },
   "20101": {
     task: "Interior cleaning",
+    cleanTask: "Interior cleaning",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -332,6 +345,7 @@ const ACTIVITY = {
   },
   "20102": {
     task: "Laundry",
+    cleanTask: "Laundry",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -340,6 +354,7 @@ const ACTIVITY = {
   },
   "20103": {
     task: "Sewing, repairing, & maintaining textiles",
+    cleanTask: "Sewing, repairing, & maintaining textiles",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -348,6 +363,7 @@ const ACTIVITY = {
   },
   "20104": {
     task: "Storing interior hh items, inc. food",
+    cleanTask: "Storing household items",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -356,6 +372,7 @@ const ACTIVITY = {
   },
   "20199": {
     task: "Housework, n.e.c.*",
+    cleanTask: "Housework",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -364,6 +381,7 @@ const ACTIVITY = {
   },
   "20201": {
     task: "Food and drink preparation",
+    cleanTask: "Food and drink preparation",
     group: "Household Activities",
     "class": "household",
     animClass: "foodprep",
@@ -372,6 +390,7 @@ const ACTIVITY = {
   },
   "20202": {
     task: "Food presentation",
+    cleanTask: "Food presentation",
     group: "Household Activities",
     "class": "household",
     animClass: "foodprep",
@@ -380,6 +399,7 @@ const ACTIVITY = {
   },
   "20203": {
     task: "Kitchen and food clean-up",
+    cleanTask: "Kitchen and food clean-up",
     group: "Household Activities",
     "class": "household",
     animClass: "foodprep",
@@ -388,6 +408,7 @@ const ACTIVITY = {
   },
   "20299": {
     task: "Food & drink prep, presentation, & clean-up, n.e.c.*",
+    cleanTask: "Food prep and cleanup",
     group: "Household Activities",
     "class": "household",
     animClass: "foodprep",
@@ -396,6 +417,7 @@ const ACTIVITY = {
   },
   "20301": {
     task: "Interior arrangement, decoration, & repairs",
+    cleanTask: "Caring for interior",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -404,6 +426,7 @@ const ACTIVITY = {
   },
   "20302": {
     task: "Building and repairing furniture",
+    cleanTask: "Building and repairing furniture",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -412,6 +435,7 @@ const ACTIVITY = {
   },
   "20303": {
     task: "Heating and cooling",
+    cleanTask: "Heating and cooling work",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -420,6 +444,7 @@ const ACTIVITY = {
   },
   "20399": {
     task: "Interior maintenance, repair, & decoration, n.e.c.*",
+    cleanTask: "Interior maintenance",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -428,6 +453,7 @@ const ACTIVITY = {
   },
   "20401": {
     task: "Exterior cleaning",
+    cleanTask: "Exterior cleaning",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -436,6 +462,7 @@ const ACTIVITY = {
   },
   "20402": {
     task: "Exterior repair, improvements, & decoration",
+    cleanTask: "Exterior repair, improvements, & decoration",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -444,6 +471,7 @@ const ACTIVITY = {
   },
   "20499": {
     task: "Exterior maintenance, repair & decoration, n.e.c.*",
+    cleanTask: "Exterior repair, improvements, & decoration",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -452,6 +480,7 @@ const ACTIVITY = {
   },
   "20501": {
     task: "Lawn, garden, and houseplant care",
+    cleanTask: "Lawn, garden, and houseplant care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -460,6 +489,7 @@ const ACTIVITY = {
   },
   "20502": {
     task: "Ponds, pools, and hot tubs",
+    cleanTask: "Ponds, pools, and hot tubs care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -468,6 +498,7 @@ const ACTIVITY = {
   },
   "20599": {
     task: "Lawn and garden, n.e.c.*",
+    cleanTask: "Lawn and garden care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -476,6 +507,7 @@ const ACTIVITY = {
   },
   "20681": {
     task: "Care for animals and pets (not veterinary care)",
+    cleanTask: "Care for animals and pets",
     group: "Household Activities",
     "class": "household",
     animClass: "pets",
@@ -484,6 +516,7 @@ const ACTIVITY = {
   },
   "20699": {
     task: "Pet and animal care, n.e.c.*",
+    cleanTask: "Care for animals and pets",
     group: "Household Activities",
     "class": "household",
     animClass: "pets",
@@ -492,6 +525,7 @@ const ACTIVITY = {
   },
   "20701": {
     task: "Vehicle repair and maintenance (by self)",
+    cleanTask: "Vehicle repair or maintenance",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -500,6 +534,7 @@ const ACTIVITY = {
   },
   "20799": {
     task: "Vehicles, n.e.c.*",
+    cleanTask: "Vehicle work",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -508,6 +543,7 @@ const ACTIVITY = {
   },
   "20801": {
     task: "Appliance, tool, and toy set-up, repair, & maintenance (by self)",
+    cleanTask: "Appliances and tools maintenance",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -516,6 +552,7 @@ const ACTIVITY = {
   },
   "20899": {
     task: "Appliances and tools, n.e.c.*",
+    cleanTask: "Appliances and tools work",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -524,6 +561,7 @@ const ACTIVITY = {
   },
   "20901": {
     task: "Financial management",
+    cleanTask: "Financial management",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -532,6 +570,7 @@ const ACTIVITY = {
   },
   "20902": {
     task: "Household & personal organization and planning",
+    cleanTask: "Household & personal organization and planning",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -540,6 +579,7 @@ const ACTIVITY = {
   },
   "20903": {
     task: "HH & personal mail & messages (except e-mail)",
+    cleanTask: "Dealing with mail and messages",
     group: "Household Activities",
     "class": "household",
     animClass: "workingdesk",
@@ -548,6 +588,7 @@ const ACTIVITY = {
   },
   "20904": {
     task: "HH & personal e-mail and messages",
+    cleanTask: "Dealing with email and messages",
     group: "Household Activities",
     "class": "household",
     animClass: "workingdesk",
@@ -556,6 +597,7 @@ const ACTIVITY = {
   },
   "20905": {
     task: "Home security",
+    cleanTask: "Home security work",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -564,6 +606,7 @@ const ACTIVITY = {
   },
   "20999": {
     task: "Household management, n.e.c.*",
+    cleanTask: "Household management",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -572,6 +615,7 @@ const ACTIVITY = {
   },
   "29999": {
     task: "Household activities, n.e.c.*",
+    cleanTask: "Household activities",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -580,6 +624,7 @@ const ACTIVITY = {
   },
   "30101": {
     task: "Physical care for hh children",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -588,6 +633,7 @@ const ACTIVITY = {
   },
   "30102": {
     task: "Reading to/with hh children",
+    cleanTask: "Reading",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -596,6 +642,7 @@ const ACTIVITY = {
   },
   "30103": {
     task: "Playing with hh children, not sports",
+    cleanTask: "Playing",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -604,6 +651,7 @@ const ACTIVITY = {
   },
   "30104": {
     task: "Arts and crafts with hh children",
+    cleanTask: "Arts and crafts",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -612,6 +660,7 @@ const ACTIVITY = {
   },
   "30105": {
     task: "Playing sports with hh children",
+    cleanTask: "Playing sports",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -620,6 +669,7 @@ const ACTIVITY = {
   },
   "30108": {
     task: "Organization & planning for hh children",
+    cleanTask: "Planning for children",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -628,6 +678,7 @@ const ACTIVITY = {
   },
   "30109": {
     task: "Looking after hh children (as a primary activity)",
+    cleanTask: "Looking after children",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -636,6 +687,7 @@ const ACTIVITY = {
   },
   "30110": {
     task: "Attending hh children's events",
+    cleanTask: "Attending event",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -644,6 +696,7 @@ const ACTIVITY = {
   },
   "30111": {
     task: "Waiting for/with hh children",
+    cleanTask: "Waiting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "standing",
@@ -652,6 +705,7 @@ const ACTIVITY = {
   },
   "30112": {
     task: "Picking up/dropping off hh children",
+    cleanTask: "Picking up/dropping off children",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -660,6 +714,7 @@ const ACTIVITY = {
   },
   "30186": {
     task: "Talking with/listening to hh children",
+    cleanTask: "Talking",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "social",
@@ -668,6 +723,7 @@ const ACTIVITY = {
   },
   "30199": {
     task: "Caring for & helping hh children, n.e.c.*",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -676,6 +732,7 @@ const ACTIVITY = {
   },
   "30201": {
     task: "Homework (hh children)",
+    cleanTask: "Helping with homework",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -684,6 +741,7 @@ const ACTIVITY = {
   },
   "30202": {
     task: "Meetings and school conferences (hh children)",
+    cleanTask: "School meeting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "social",
@@ -692,6 +750,7 @@ const ACTIVITY = {
   },
   "30203": {
     task: "Home schooling of hh children",
+    cleanTask: "Home schooling",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -700,6 +759,7 @@ const ACTIVITY = {
   },
   "30204": {
     task: "Waiting associated with hh children's education",
+    cleanTask: "Waiting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "standing",
@@ -708,6 +768,7 @@ const ACTIVITY = {
   },
   "30299": {
     task: "Activities related to hh child's education, n.e.c.*",
+    cleanTask: "Education-realted activity",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -716,6 +777,7 @@ const ACTIVITY = {
   },
   "30301": {
     task: "Providing medical care to hh children",
+    cleanTask: "Providing medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -724,6 +786,7 @@ const ACTIVITY = {
   },
   "30302": {
     task: "Obtaining medical care for hh children",
+    cleanTask: "Obtaining medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -732,6 +795,7 @@ const ACTIVITY = {
   },
   "30303": {
     task: "Waiting associated with hh children's health",
+    cleanTask: "Waiting for child medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -740,6 +804,7 @@ const ACTIVITY = {
   },
   "30399": {
     task: "Activities related to hh child's health, n.e.c.*",
+    cleanTask: "Child health-related activity",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -748,6 +813,7 @@ const ACTIVITY = {
   },
   "30401": {
     task: "Physical care for hh adults",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -756,6 +822,7 @@ const ACTIVITY = {
   },
   "30402": {
     task: "Looking after hh adult (as a primary activity)",
+    cleanTask: "Looking after adult",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -764,6 +831,7 @@ const ACTIVITY = {
   },
   "30403": {
     task: "Providing medical care to hh adult",
+    cleanTask: "Providing medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -772,6 +840,7 @@ const ACTIVITY = {
   },
   "30404": {
     task: "Obtaining medical and care services for hh adult",
+    cleanTask: "Obtaining medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -780,6 +849,7 @@ const ACTIVITY = {
   },
   "30405": {
     task: "Waiting associated with caring for household adults",
+    cleanTask: "Waiting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -788,6 +858,7 @@ const ACTIVITY = {
   },
   "30499": {
     task: "Caring for household adults, n.e.c.*",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -796,6 +867,7 @@ const ACTIVITY = {
   },
   "30501": {
     task: "Helping hh adults",
+    cleanTask: "Providing help",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -804,6 +876,7 @@ const ACTIVITY = {
   },
   "30502": {
     task: "Organization & planning for hh adults",
+    cleanTask: "Planning for other adults",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -812,6 +885,7 @@ const ACTIVITY = {
   },
   "30503": {
     task: "Picking up/dropping off hh adult",
+    cleanTask: "Picking up/dropping off person",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -820,6 +894,7 @@ const ACTIVITY = {
   },
   "30504": {
     task: "Waiting associated with helping hh adults",
+    cleanTask: "Waiting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -828,6 +903,7 @@ const ACTIVITY = {
   },
   "30599": {
     task: "Helping household adults, n.e.c.*",
+    cleanTask: "Providing help",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -836,6 +912,7 @@ const ACTIVITY = {
   },
   "39999": {
     task: "Caring for & helping hh members, n.e.c.*",
+    cleanTask: "Providing care or help",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -844,6 +921,7 @@ const ACTIVITY = {
   },
   "40101": {
     task: "Physical care for nonhh children",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -852,6 +930,7 @@ const ACTIVITY = {
   },
   "40102": {
     task: "Reading to/with nonhh children",
+    cleanTask: "Reading",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -860,6 +939,7 @@ const ACTIVITY = {
   },
   "40103": {
     task: "Playing with nonhh children, not sports",
+    cleanTask: "Playing",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -868,6 +948,7 @@ const ACTIVITY = {
   },
   "40104": {
     task: "Arts and crafts with nonhh children",
+    cleanTask: "Arts and crafts",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -876,6 +957,7 @@ const ACTIVITY = {
   },
   "40105": {
     task: "Playing sports with nonhh children",
+    cleanTask: "Playing sports",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -884,6 +966,7 @@ const ACTIVITY = {
   },
   "40108": {
     task: "Organization & planning for nonhh children",
+    cleanTask: "Planning for children",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -892,6 +975,7 @@ const ACTIVITY = {
   },
   "40109": {
     task: "Looking after nonhh children (as primary activity)",
+    cleanTask: "Looking after children",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -900,6 +984,7 @@ const ACTIVITY = {
   },
   "40110": {
     task: "Attending nonhh children's events",
+    cleanTask: "Attending event",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -908,6 +993,7 @@ const ACTIVITY = {
   },
   "40111": {
     task: "Waiting for/with nonhh children",
+    cleanTask: "Waiting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -916,6 +1002,7 @@ const ACTIVITY = {
   },
   "40112": {
     task: "Dropping off/picking up nonhh children",
+    cleanTask: "Picking up/dropping off children",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -924,6 +1011,7 @@ const ACTIVITY = {
   },
   "40186": {
     task: "Talking with/listening to nonhh children",
+    cleanTask: "Talking",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -932,6 +1020,7 @@ const ACTIVITY = {
   },
   "40199": {
     task: "Caring for and helping nonhh children, n.e.c.*",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -940,6 +1029,7 @@ const ACTIVITY = {
   },
   "40201": {
     task: "Homework (nonhh children)",
+    cleanTask: "Helping with homework",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -948,6 +1038,7 @@ const ACTIVITY = {
   },
   "40202": {
     task: "Meetings and school conferences (nonhh children)",
+    cleanTask: "School meeting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -956,6 +1047,7 @@ const ACTIVITY = {
   },
   "40203": {
     task: "Home schooling of nonhh children",
+    cleanTask: "Home schooling",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -964,6 +1056,7 @@ const ACTIVITY = {
   },
   "40204": {
     task: "Waiting associated with nonhh children's education",
+    cleanTask: "Waiting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -972,6 +1065,7 @@ const ACTIVITY = {
   },
   "40299": {
     task: "Activities related to nonhh child's educ., n.e.c.*",
+    cleanTask: "Education-realted activity",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -980,6 +1074,7 @@ const ACTIVITY = {
   },
   "40301": {
     task: "Providing medical care to nonhh children",
+    cleanTask: "Providing medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -988,6 +1083,7 @@ const ACTIVITY = {
   },
   "40302": {
     task: "Obtaining medical care for nonhh children",
+    cleanTask: "Obtaining medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -996,6 +1092,7 @@ const ACTIVITY = {
   },
   "40303": {
     task: "Waiting associated with nonhh children's health",
+    cleanTask: "Waiting for child medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -1004,6 +1101,7 @@ const ACTIVITY = {
   },
   "40399": {
     task: "Activities related to nonhh child's health, n.e.c.*",
+    cleanTask: "Child health-related activity",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -1012,6 +1110,7 @@ const ACTIVITY = {
   },
   "40401": {
     task: "Physical care for nonhh adults",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1020,6 +1119,7 @@ const ACTIVITY = {
   },
   "40402": {
     task: "Looking after nonhh adult (as a primary activity)",
+    cleanTask: "Looking after adult",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1028,6 +1128,7 @@ const ACTIVITY = {
   },
   "40403": {
     task: "Providing medical care to nonhh adult",
+    cleanTask: "Providing medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1036,6 +1137,7 @@ const ACTIVITY = {
   },
   "40404": {
     task: "Obtaining medical and care services for nonhh adult",
+    cleanTask: "Obtaining medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1044,6 +1146,7 @@ const ACTIVITY = {
   },
   "40405": {
     task: "Waiting associated with caring for nonhh adults",
+    cleanTask: "Waiting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1052,6 +1155,7 @@ const ACTIVITY = {
   },
   "40499": {
     task: "Caring for nonhh adults, n.e.c.*",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1060,6 +1164,7 @@ const ACTIVITY = {
   },
   "40501": {
     task: "Housework, cooking, & shopping assistance for nonhh adults",
+    cleanTask: "Providing help",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1068,6 +1173,7 @@ const ACTIVITY = {
   },
   "40502": {
     task: "House & lawn maintenance & repair assistance for nonhh adults",
+    cleanTask: "Helping someone with house/lawn",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1076,6 +1182,7 @@ const ACTIVITY = {
   },
   "40503": {
     task: "Animal & pet care assistance for nonhh adults",
+    cleanTask: "Helping someone with animals/pets",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1084,6 +1191,7 @@ const ACTIVITY = {
   },
   "40504": {
     task: "Vehicle & appliance maintenance/repair assistance for nonhh adults",
+    cleanTask: "Helping someone with vehicles/appliances",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1092,6 +1200,7 @@ const ACTIVITY = {
   },
   "40505": {
     task: "Financial management assistance for nonhh adults",
+    cleanTask: "Helping someone with financial management",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1100,6 +1209,7 @@ const ACTIVITY = {
   },
   "40506": {
     task: "Household management & paperwork assistance for nonhh adults",
+    cleanTask: "Helping someone with household management/paperwork",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1108,6 +1218,7 @@ const ACTIVITY = {
   },
   "40507": {
     task: "Picking up/dropping off nonhh adult",
+    cleanTask: "Picking up/dropping off someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1116,6 +1227,7 @@ const ACTIVITY = {
   },
   "40508": {
     task: "Waiting associated with helping nonhh adults",
+    cleanTask: "Waiting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1124,6 +1236,7 @@ const ACTIVITY = {
   },
   "40599": {
     task: "Helping nonhh adults, n.e.c.*",
+    cleanTask: "Helping someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1132,6 +1245,7 @@ const ACTIVITY = {
   },
   "49999": {
     task: "Caring for & helping nonhh members, n.e.c.*",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1140,6 +1254,7 @@ const ACTIVITY = {
   },
   "50101": {
     task: "Work, main job",
+    cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1148,6 +1263,7 @@ const ACTIVITY = {
   },
   "50102": {
     task: "Work, other job(s)",
+    cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1156,6 +1272,7 @@ const ACTIVITY = {
   },
   "50103": {
     task: "Security procedures related to work",
+    cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1164,6 +1281,7 @@ const ACTIVITY = {
   },
   "50189": {
     task: "Working, n.e.c.*",
+    cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1172,6 +1290,7 @@ const ACTIVITY = {
   },
   "50201": {
     task: "Socializing, relaxing, and leisure as part of job",
+    cleanTask: "Socializing, relaxing, and leisure as part of job",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "social",
@@ -1180,6 +1299,7 @@ const ACTIVITY = {
   },
   "50202": {
     task: "Eating and drinking as part of job",
+    cleanTask: "Eating and drinking as part of job",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "eating",
@@ -1188,6 +1308,7 @@ const ACTIVITY = {
   },
   "50203": {
     task: "Sports and exercise as part of job",
+    cleanTask: "Sports and exercise as part of job",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "sports",
@@ -1196,6 +1317,7 @@ const ACTIVITY = {
   },
   "50204": {
     task: "Security procedures as part of job",
+    cleanTask: "Security procedures as part of job",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1204,6 +1326,7 @@ const ACTIVITY = {
   },
   "50289": {
     task: "Work-related activities, n.e.c.*",
+    cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1212,6 +1335,7 @@ const ACTIVITY = {
   },
   "50301": {
     task: "Income-generating hobbies, crafts, and food",
+    cleanTask: "Income-generating hobbies, crafts, and food",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workinglabor",
@@ -1220,6 +1344,7 @@ const ACTIVITY = {
   },
   "50302": {
     task: "Income-generating performances",
+    cleanTask: "Income-generating performances",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1228,6 +1353,7 @@ const ACTIVITY = {
   },
   "50303": {
     task: "Income-generating services",
+    cleanTask: "Income-generating services",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1236,6 +1362,7 @@ const ACTIVITY = {
   },
   "50304": {
     task: "Income-generating rental property activities",
+    cleanTask: "Income-generating rental property activities",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1244,6 +1371,7 @@ const ACTIVITY = {
   },
   "50389": {
     task: "Other income-generating activities, n.e.c.*",
+    cleanTask: "Income-generating activity",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1252,6 +1380,7 @@ const ACTIVITY = {
   },
   "50403": {
     task: "Job interviewing",
+    cleanTask: "Interviewing for job",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "talking",
@@ -1260,6 +1389,7 @@ const ACTIVITY = {
   },
   "50404": {
     task: "Waiting associated with job search or interview",
+    cleanTask: "Waiting",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1268,6 +1398,7 @@ const ACTIVITY = {
   },
   "50405": {
     task: "Security procedures rel. to job search/interviewing",
+    cleanTask: "Interviewing for job",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1276,6 +1407,7 @@ const ACTIVITY = {
   },
   "50481": {
     task: "Job search activities",
+    cleanTask: "Searching for job",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1284,6 +1416,7 @@ const ACTIVITY = {
   },
   "50499": {
     task: "Job search and Interviewing, n.e.c.*",
+    cleanTask: "Searching for job",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1292,6 +1425,7 @@ const ACTIVITY = {
   },
   "59999": {
     task: "Work and work-related activities, n.e.c.*",
+    cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1300,6 +1434,7 @@ const ACTIVITY = {
   },
   "60101": {
     task: "Taking class for degree, certification, or licensure",
+    cleanTask: "Taking a class",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1308,6 +1443,7 @@ const ACTIVITY = {
   },
   "60102": {
     task: "Taking class for personal interest",
+    cleanTask: "Taking a class",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1316,6 +1452,7 @@ const ACTIVITY = {
   },
   "60103": {
     task: "Waiting associated with taking classes",
+    cleanTask: "Waiting",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1324,6 +1461,7 @@ const ACTIVITY = {
   },
   "60104": {
     task: "Security procedures rel. to taking classes",
+    cleanTask: "Taking a class",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1332,6 +1470,7 @@ const ACTIVITY = {
   },
   "60199": {
     task: "Taking class, n.e.c.*",
+    cleanTask: "Taking a class",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1340,6 +1479,7 @@ const ACTIVITY = {
   },
   "60201": {
     task: "Extracurricular club activities",
+    cleanTask: "Extracurricular club activities",
     group: "Education",
     "class": "education",
     animClass: "sports",
@@ -1348,6 +1488,7 @@ const ACTIVITY = {
   },
   "60202": {
     task: "Extracurricular music & performance activities",
+    cleanTask: "Extracurricular music & performance activities",
     group: "Education",
     "class": "education",
     animClass: "talking",
@@ -1356,6 +1497,7 @@ const ACTIVITY = {
   },
   "60203": {
     task: "Extracurricular student government activities",
+    cleanTask: "Extracurricular student government activities",
     group: "Education",
     "class": "education",
     animClass: "talking",
@@ -1364,6 +1506,7 @@ const ACTIVITY = {
   },
   "60289": {
     task: "Education-related extracurricular activities, n.e.c.*",
+    cleanTask: "Extracurricular activities",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1372,6 +1515,7 @@ const ACTIVITY = {
   },
   "60301": {
     task: "Research/homework for class for degree, certification, or licensure",
+    cleanTask: "Doing research/homework",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1380,6 +1524,7 @@ const ACTIVITY = {
   },
   "60302": {
     task: "Research/homework for class for pers. interest",
+    cleanTask: "Doing research/homework",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1388,6 +1533,7 @@ const ACTIVITY = {
   },
   "60303": {
     task: "Waiting associated with research/homework",
+    cleanTask: "Waiting",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1396,6 +1542,7 @@ const ACTIVITY = {
   },
   "60399": {
     task: "Research/homework n.e.c.*",
+    cleanTask: "Doing research/homework",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1404,6 +1551,7 @@ const ACTIVITY = {
   },
   "60401": {
     task: "Administrative activities: class for degree, certification, or licensure",
+    cleanTask: "Education-related activities",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1412,6 +1560,7 @@ const ACTIVITY = {
   },
   "60402": {
     task: "Administrative activities: class for personal interest",
+    cleanTask: "Education-related activities",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1420,6 +1569,7 @@ const ACTIVITY = {
   },
   "60403": {
     task: "Waiting associated w/admin. activities (education)",
+    cleanTask: "Waiting",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1428,6 +1578,7 @@ const ACTIVITY = {
   },
   "60499": {
     task: "Administrative for education, n.e.c.*",
+    cleanTask: "Education-related activities",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1436,6 +1587,7 @@ const ACTIVITY = {
   },
   "69999": {
     task: "Education, n.e.c.*",
+    cleanTask: "Education-related activities",
     group: "Education",
     "class": "education",
     animClass: "workingdesk",
@@ -1444,6 +1596,7 @@ const ACTIVITY = {
   },
   "70101": {
     task: "Grocery shopping",
+    cleanTask: "Grocery shopping",
     group: "Consumer Purchases",
     "class": "consumer",
     animClass: "shopping",
@@ -1452,6 +1605,7 @@ const ACTIVITY = {
   },
   "70102": {
     task: "Purchasing gas",
+    cleanTask: "Purchasing gas",
     group: "Consumer Purchases",
     "class": "consumer",
     animClass: "shopping",
@@ -1460,6 +1614,7 @@ const ACTIVITY = {
   },
   "70103": {
     task: "Purchasing food (not groceries)",
+    cleanTask: "Purchasing food (not groceries)",
     group: "Consumer Purchases",
     "class": "consumer",
     animClass: "shopping",
@@ -1468,6 +1623,7 @@ const ACTIVITY = {
   },
   "70104": {
     task: "Shopping, except groceries, food and gas",
+    cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
     animClass: "shopping",
@@ -1476,6 +1632,7 @@ const ACTIVITY = {
   },
   "70105": {
     task: "Waiting associated with shopping",
+    cleanTask: "Waiting",
     group: "Consumer Purchases",
     "class": "consumer",
     animClass: "shopping",
@@ -1484,6 +1641,7 @@ const ACTIVITY = {
   },
   "70199": {
     task: "Shopping, n.e.c.*",
+    cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
     animClass: "shopping",
@@ -1492,38 +1650,43 @@ const ACTIVITY = {
   },
   "70201": {
     task: "Comparison shopping",
+    cleanTask: "Comparison shopping",
     group: "Consumer Purchases",
     "class": "consumer",
-    animClass: "shopping",
+    animClass: "workingdesk",
     childclass: "sitting",
     otherClass: "standing"
   },
   "70299": {
     task: "Researching purchases, n.e.c.*",
+    cleanTask: "Researching purchases",
     group: "Consumer Purchases",
     "class": "consumer",
-    animClass: "shopping",
+    animClass: "workingdesk",
     childclass: "sitting",
     otherClass: "talking"
   },
   "70301": {
     task: "Security procedures rel. to consumer purchases",
+    cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
-    animClass: "shopping",
+    animClass: "workingdesk",
     childclass: "sports",
     otherClass: "talking"
   },
   "70399": {
     task: "Security procedures rel. to consumer purchases, n.e.c.*",
+    cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
-    animClass: "shopping",
+    animClass: "workingdesk",
     childclass: "standing",
     otherClass: "talking"
   },
   "79999": {
     task: "Consumer purchases, n.e.c.*",
+    cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
     animClass: "shopping",
@@ -1532,6 +1695,7 @@ const ACTIVITY = {
   },
   "80101": {
     task: "Using paid childcare services",
+    cleanTask: "Using paid childcare services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1540,6 +1704,7 @@ const ACTIVITY = {
   },
   "80102": {
     task: "Waiting associated w/purchasing childcare svcs",
+    cleanTask: "Waiting",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1548,6 +1713,7 @@ const ACTIVITY = {
   },
   "80199": {
     task: "Using paid childcare services, n.e.c.*",
+    cleanTask: "Using paid childcare services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1556,6 +1722,7 @@ const ACTIVITY = {
   },
   "80201": {
     task: "Banking",
+    cleanTask: "Banking",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "talking",
@@ -1564,6 +1731,7 @@ const ACTIVITY = {
   },
   "80202": {
     task: "Using other financial services",
+    cleanTask: "Using financial services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "talking",
@@ -1572,6 +1740,7 @@ const ACTIVITY = {
   },
   "80203": {
     task: "Waiting associated w/banking/financial services",
+    cleanTask: "Waiting",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "standing",
@@ -1580,6 +1749,7 @@ const ACTIVITY = {
   },
   "80299": {
     task: "Using financial services and banking, n.e.c.*",
+    cleanTask: "Using financial services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "talking",
@@ -1588,6 +1758,7 @@ const ACTIVITY = {
   },
   "80301": {
     task: "Using legal services",
+    cleanTask: "Using legal services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "talking",
@@ -1596,6 +1767,7 @@ const ACTIVITY = {
   },
   "80302": {
     task: "Waiting associated with legal services",
+    cleanTask: "Waiting",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "standing",
@@ -1604,6 +1776,7 @@ const ACTIVITY = {
   },
   "80399": {
     task: "Using legal services, n.e.c.*",
+    cleanTask: "Using legal services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "talking",
@@ -1612,6 +1785,7 @@ const ACTIVITY = {
   },
   "80401": {
     task: "Using health and care services outside the home",
+    cleanTask: "Using health and care services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "talking",
@@ -1620,6 +1794,7 @@ const ACTIVITY = {
   },
   "80402": {
     task: "Using in-home health and care services",
+    cleanTask: "Using health and care services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "workingdesk",
@@ -1628,6 +1803,7 @@ const ACTIVITY = {
   },
   "80403": {
     task: "Waiting associated with medical services",
+    cleanTask: "Waiting",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1636,6 +1812,7 @@ const ACTIVITY = {
   },
   "80499": {
     task: "Using medical services, n.e.c.*",
+    cleanTask: "Using medical services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "standing",
@@ -1644,6 +1821,7 @@ const ACTIVITY = {
   },
   "80501": {
     task: "Using personal care services",
+    cleanTask: "Using personal care services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "standing",
@@ -1652,6 +1830,7 @@ const ACTIVITY = {
   },
   "80502": {
     task: "Waiting associated w/personal care services",
+    cleanTask: "Waiting",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "standing",
@@ -1660,6 +1839,7 @@ const ACTIVITY = {
   },
   "80599": {
     task: "Using personal care services, n.e.c.*",
+    cleanTask: "Using personal care services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1668,6 +1848,7 @@ const ACTIVITY = {
   },
   "80601": {
     task: "Activities rel. to purchasing/selling real estate",
+    cleanTask: "Purchasing/selling real estate",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1676,6 +1857,7 @@ const ACTIVITY = {
   },
   "80602": {
     task: "Waiting associated w/purchasing/selling real estate",
+    cleanTask: "Waiting",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1684,6 +1866,7 @@ const ACTIVITY = {
   },
   "80699": {
     task: "Using real estate services, n.e.c.*",
+    cleanTask: "Using real estate services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1692,6 +1875,7 @@ const ACTIVITY = {
   },
   "80701": {
     task: "Using veterinary services",
+    cleanTask: "Using veterinary services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "pets",
@@ -1700,6 +1884,7 @@ const ACTIVITY = {
   },
   "80702": {
     task: "Waiting associated with veterinary services",
+    cleanTask: "Watiing",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "pets",
@@ -1708,6 +1893,7 @@ const ACTIVITY = {
   },
   "80799": {
     task: "Using veterinary services, n.e.c.*",
+    cleanTask: "Using veterinary services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "pets",
@@ -1716,6 +1902,7 @@ const ACTIVITY = {
   },
   "80801": {
     task: "Security procedures rel. to professional/personal svcs.",
+    cleanTask: "Using professional or personal services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "workingdesk",
@@ -1724,6 +1911,7 @@ const ACTIVITY = {
   },
   "80899": {
     task: "Security procedures rel. to professional/personal svcs n.e.c.*",
+    cleanTask: "Using professional or personal services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "workingdesk",
@@ -1732,6 +1920,7 @@ const ACTIVITY = {
   },
   "89999": {
     task: "Professional and personal services, n.e.c.*",
+    cleanTask: "Using professional or personal services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "workingdesk",
@@ -1740,6 +1929,7 @@ const ACTIVITY = {
   },
   "90101": {
     task: "Using interior cleaning services",
+    cleanTask: "Using interior cleaning services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1748,6 +1938,7 @@ const ACTIVITY = {
   },
   "90102": {
     task: "Using meal preparation services",
+    cleanTask: "Using meal preparation services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1756,6 +1947,7 @@ const ACTIVITY = {
   },
   "90103": {
     task: "Using clothing repair and cleaning services",
+    cleanTask: "Using clothing repair and cleaning services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1764,6 +1956,7 @@ const ACTIVITY = {
   },
   "90104": {
     task: "Waiting associated with using household services",
+    cleanTask: "Waiting",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1772,6 +1965,7 @@ const ACTIVITY = {
   },
   "90199": {
     task: "Using household services, n.e.c.*",
+    cleanTask: "Using household services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1780,6 +1974,7 @@ const ACTIVITY = {
   },
   "90201": {
     task: "Using home maint/repair/décor/construction svcs",
+    cleanTask: "Using home-related services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1788,6 +1983,7 @@ const ACTIVITY = {
   },
   "90202": {
     task: "Waiting associated w/ home main/repair/décor/constr",
+    cleanTask: "Waiting",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1796,6 +1992,7 @@ const ACTIVITY = {
   },
   "90299": {
     task: "Using home maint/repair/décor/constr services, n.e.c.*",
+    cleanTask: "Using home-related services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1804,6 +2001,7 @@ const ACTIVITY = {
   },
   "90301": {
     task: "Using pet services",
+    cleanTask: "Using pet services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "pets",
@@ -1812,6 +2010,7 @@ const ACTIVITY = {
   },
   "90302": {
     task: "Waiting associated with pet services",
+    cleanTask: "Waiting",
     group: "Household Services",
     "class": "householdservices",
     animClass: "household",
@@ -1820,6 +2019,7 @@ const ACTIVITY = {
   },
   "90399": {
     task: "Using pet services, n.e.c.*",
+    cleanTask: "Using pet services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "pets",
@@ -1828,6 +2028,7 @@ const ACTIVITY = {
   },
   "90401": {
     task: "Using lawn and garden services",
+    cleanTask: "Using lawn and garden services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1836,6 +2037,7 @@ const ACTIVITY = {
   },
   "90402": {
     task: "Waiting associated with using lawn & garden services",
+    cleanTask: "Waiting",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1844,6 +2046,7 @@ const ACTIVITY = {
   },
   "90499": {
     task: "Using lawn and garden services, n.e.c.*",
+    cleanTask: "Using lawn and garden services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1852,6 +2055,7 @@ const ACTIVITY = {
   },
   "90501": {
     task: "Using vehicle maintenance or repair services",
+    cleanTask: "Using vehicle maintenance or repair services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1860,6 +2064,7 @@ const ACTIVITY = {
   },
   "90502": {
     task: "Waiting associated with vehicle main. or repair svcs",
+    cleanTask: "Waiting",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1868,6 +2073,7 @@ const ACTIVITY = {
   },
   "90599": {
     task: "Using vehicle maint. & repair svcs, n.e.c.*",
+    cleanTask: "Using vehicle maintenance or repair services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1876,6 +2082,7 @@ const ACTIVITY = {
   },
   "99999": {
     task: "Using household services, n.e.c.*",
+    cleanTask: "Using household services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1884,6 +2091,7 @@ const ACTIVITY = {
   },
   "100101": {
     task: "Using police and fire services",
+    cleanTask: "Using police and fire services",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "phone",
@@ -1892,6 +2100,7 @@ const ACTIVITY = {
   },
   "100102": {
     task: "Using social services",
+    cleanTask: "Using social services",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "phone",
@@ -1900,6 +2109,7 @@ const ACTIVITY = {
   },
   "100103": {
     task: "Obtaining licenses & paying fines, fees, taxes",
+    cleanTask: "Obtaining licenses & paying fines, fees, taxes",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "phone",
@@ -1908,6 +2118,7 @@ const ACTIVITY = {
   },
   "100199": {
     task: "Using government services, n.e.c.*",
+    cleanTask: "Using government services",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "phone",
@@ -1916,6 +2127,7 @@ const ACTIVITY = {
   },
   "100201": {
     task: "Civic obligations & participation",
+    cleanTask: "Civic obligations & participation",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "talking",
@@ -1924,6 +2136,7 @@ const ACTIVITY = {
   },
   "100299": {
     task: "Civic obligations & participation, n.e.c.*",
+    cleanTask: "Civic obligations & participation",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "talking",
@@ -1932,6 +2145,7 @@ const ACTIVITY = {
   },
   "100381": {
     task: "Waiting associated with using government services",
+    cleanTask: "Waiting",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "standing",
@@ -1940,6 +2154,7 @@ const ACTIVITY = {
   },
   "100383": {
     task: "Waiting associated w/civic obligations & participation",
+    cleanTask: "Waiting",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "standing",
@@ -1948,6 +2163,7 @@ const ACTIVITY = {
   },
   "100399": {
     task: "Waiting assoc. w/govt svcs or civic obligations, n.e.c.*",
+    cleanTask: "Waiting",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "standing",
@@ -1956,6 +2172,7 @@ const ACTIVITY = {
   },
   "100401": {
     task: "Security procedures rel. to govt svcs/civic obligations",
+    cleanTask: "Government or civic activity",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "standing",
@@ -1964,6 +2181,7 @@ const ACTIVITY = {
   },
   "100499": {
     task: "Security procedures rel. to govt svcs/civic obligations, n.e.c.*",
+    cleanTask: "Government or civic activity",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "standing",
@@ -1972,6 +2190,7 @@ const ACTIVITY = {
   },
   "109999": {
     task: "Government services, n.e.c.*",
+    cleanTask: "Government or civic activity",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "standing",
@@ -1980,6 +2199,7 @@ const ACTIVITY = {
   },
   "110101": {
     task: "Eating and drinking",
+    cleanTask: "Eating and drinking",
     group: "Eating and Drinking",
     "class": "eating",
     animClass: "eating",
@@ -1988,6 +2208,7 @@ const ACTIVITY = {
   },
   "110199": {
     task: "Eating and drinking, n.e.c.*",
+    cleanTask: "Eating and drinking",
     group: "Eating and Drinking",
     "class": "eating",
     animClass: "eating",
@@ -1996,6 +2217,7 @@ const ACTIVITY = {
   },
   "110281": {
     task: "Waiting associated w/eating & drinking",
+    cleanTask: "Waiting",
     group: "Eating and Drinking",
     "class": "eating",
     animClass: "eating",
@@ -2004,6 +2226,7 @@ const ACTIVITY = {
   },
   "110289": {
     task: "Waiting associated with eating & drinking, n.e.c.*",
+    cleanTask: "Waiting",
     group: "Eating and Drinking",
     "class": "eating",
     animClass: "eating",
@@ -2012,6 +2235,7 @@ const ACTIVITY = {
   },
   "119999": {
     task: "Eating and drinking, n.e.c.*",
+    cleanTask: "Eating and drinking",
     group: "Eating and Drinking",
     "class": "eating",
     animClass: "eating",
@@ -2020,6 +2244,7 @@ const ACTIVITY = {
   },
   "120101": {
     task: "Socializing and communicating with others",
+    cleanTask: "Socialing and communicating",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2028,6 +2253,7 @@ const ACTIVITY = {
   },
   "120199": {
     task: "Socializing and communicating, n.e.c.*",
+    cleanTask: "Socialing and communicating",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2036,6 +2262,7 @@ const ACTIVITY = {
   },
   "120201": {
     task: "Attending or hosting parties/receptions/ceremonies",
+    cleanTask: "Attending a social gathering",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2044,6 +2271,7 @@ const ACTIVITY = {
   },
   "120202": {
     task: "Attending meetings for personal interest (not volunteering)",
+    cleanTask: "Attending a social gathering",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2052,6 +2280,7 @@ const ACTIVITY = {
   },
   "120299": {
     task: "Attending/hosting social events, n.e.c.*",
+    cleanTask: "Attending a social gathering",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2060,6 +2289,7 @@ const ACTIVITY = {
   },
   "120301": {
     task: "Relaxing, thinking",
+    cleanTask: "Relaxing, thinking",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2068,6 +2298,7 @@ const ACTIVITY = {
   },
   "120302": {
     task: "Tobacco and drug use",
+    cleanTask: "Tobacco and drug use",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2076,6 +2307,7 @@ const ACTIVITY = {
   },
   "120303": {
     task: "Television and movies (not religious)",
+    cleanTask: "Watching TV and movies",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2084,6 +2316,7 @@ const ACTIVITY = {
   },
   "120304": {
     task: "Television (religious)",
+    cleanTask: "Watching religious TV",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2092,6 +2325,7 @@ const ACTIVITY = {
   },
   "120305": {
     task: "Listening to the radio",
+    cleanTask: "Listening to the radio",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2100,6 +2334,7 @@ const ACTIVITY = {
   },
   "120306": {
     task: "Listening to/playing music (not radio)",
+    cleanTask: "Listening to music",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2108,6 +2343,7 @@ const ACTIVITY = {
   },
   "120307": {
     task: "Playing games",
+    cleanTask: "Playing games",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "workingdesk",
@@ -2116,6 +2352,7 @@ const ACTIVITY = {
   },
   "120308": {
     task: "Computer use for leisure (exc. Games)",
+    cleanTask: "Using the computer for leisure",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "workingdesk",
@@ -2124,6 +2361,7 @@ const ACTIVITY = {
   },
   "120309": {
     task: "Arts and crafts as a hobby",
+    cleanTask: "Arts and crafts",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "standing",
@@ -2132,6 +2370,7 @@ const ACTIVITY = {
   },
   "120310": {
     task: "Collecting as a hobby",
+    cleanTask: "Collecting as a hobby",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "workingdesk",
@@ -2140,6 +2379,7 @@ const ACTIVITY = {
   },
   "120311": {
     task: "Hobbies, except arts & crafts and collecting",
+    cleanTask: "Hobby-related activity",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "workingdesk",
@@ -2148,6 +2388,7 @@ const ACTIVITY = {
   },
   "120312": {
     task: "Reading for personal interest",
+    cleanTask: "Reading for personal interest",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2156,6 +2397,7 @@ const ACTIVITY = {
   },
   "120313": {
     task: "Writing for personal interest",
+    cleanTask: "Writing for personal interest",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "workingdesk",
@@ -2164,6 +2406,7 @@ const ACTIVITY = {
   },
   "120399": {
     task: "Relaxing and leisure, n.e.c.*",
+    cleanTask: "Relaxing and leisure",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2172,6 +2415,7 @@ const ACTIVITY = {
   },
   "120401": {
     task: "Attending performing arts",
+    cleanTask: "Attending performing arts",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2180,6 +2424,7 @@ const ACTIVITY = {
   },
   "120402": {
     task: "Attending museums",
+    cleanTask: "Attending museums",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "standing",
@@ -2188,6 +2433,7 @@ const ACTIVITY = {
   },
   "120403": {
     task: "Attending movies/film",
+    cleanTask: "Attending movies/film",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2196,6 +2442,7 @@ const ACTIVITY = {
   },
   "120404": {
     task: "Attending gambling establishments",
+    cleanTask: "Attending gambling establishments",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2204,6 +2451,7 @@ const ACTIVITY = {
   },
   "120405": {
     task: "Security procedures rel. to arts & entertainment",
+    cleanTask: "Arts and entertainment",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2212,6 +2460,7 @@ const ACTIVITY = {
   },
   "120499": {
     task: "Arts and entertainment, n.e.c.*",
+    cleanTask: "Arts and entertainment",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2220,6 +2469,7 @@ const ACTIVITY = {
   },
   "120501": {
     task: "Waiting assoc. w/socializing & communicating",
+    cleanTask: "Waiting",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "standing",
@@ -2228,6 +2478,7 @@ const ACTIVITY = {
   },
   "120502": {
     task: "Waiting assoc. w/attending/hosting social events",
+    cleanTask: "Waiting",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "standing",
@@ -2236,6 +2487,7 @@ const ACTIVITY = {
   },
   "120503": {
     task: "Waiting associated with relaxing/leisure",
+    cleanTask: "Waiting",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "standing",
@@ -2244,6 +2496,7 @@ const ACTIVITY = {
   },
   "120504": {
     task: "Waiting associated with arts & entertainment",
+    cleanTask: "Waiting",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "standing",
@@ -2252,6 +2505,7 @@ const ACTIVITY = {
   },
   "120599": {
     task: "Waiting associated with socializing, n.e.c.*",
+    cleanTask: "Waiting",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "standing",
@@ -2260,6 +2514,7 @@ const ACTIVITY = {
   },
   "129999": {
     task: "Socializing, relaxing, and leisure, n.e.c.*",
+    cleanTask: "Socializing, relaxing, and leisure",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2268,6 +2523,7 @@ const ACTIVITY = {
   },
   "130101": {
     task: "Doing aerobics",
+    cleanTask: "Doing aerobics",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2276,6 +2532,7 @@ const ACTIVITY = {
   },
   "130102": {
     task: "Playing baseball",
+    cleanTask: "Playing baseball",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2284,6 +2541,7 @@ const ACTIVITY = {
   },
   "130103": {
     task: "Playing basketball",
+    cleanTask: "Playing basketball",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2292,6 +2550,7 @@ const ACTIVITY = {
   },
   "130104": {
     task: "Biking",
+    cleanTask: "Biking",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2300,6 +2559,7 @@ const ACTIVITY = {
   },
   "130105": {
     task: "Playing billiards",
+    cleanTask: "Playing billiards",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2308,6 +2568,7 @@ const ACTIVITY = {
   },
   "130106": {
     task: "Boating",
+    cleanTask: "Boating",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2316,6 +2577,7 @@ const ACTIVITY = {
   },
   "130107": {
     task: "Bowling",
+    cleanTask: "Bowling",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2324,6 +2586,7 @@ const ACTIVITY = {
   },
   "130108": {
     task: "Climbing, spelunking, caving",
+    cleanTask: "Climbing, spelunking, caving",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2332,6 +2595,7 @@ const ACTIVITY = {
   },
   "130109": {
     task: "Dancing",
+    cleanTask: "Dancing",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2340,6 +2604,7 @@ const ACTIVITY = {
   },
   "130110": {
     task: "Participating in equestrian sports",
+    cleanTask: "Participating in equestrian sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2348,6 +2613,7 @@ const ACTIVITY = {
   },
   "130111": {
     task: "Fencing",
+    cleanTask: "Fencing",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2356,6 +2622,7 @@ const ACTIVITY = {
   },
   "130112": {
     task: "Fishing",
+    cleanTask: "Fishing",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2364,6 +2631,7 @@ const ACTIVITY = {
   },
   "130113": {
     task: "Playing football",
+    cleanTask: "Playing football",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2372,6 +2640,7 @@ const ACTIVITY = {
   },
   "130114": {
     task: "Golfing",
+    cleanTask: "Golfing",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2380,6 +2649,7 @@ const ACTIVITY = {
   },
   "130115": {
     task: "Doing gymnastics",
+    cleanTask: "Doing gymnastics",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2388,6 +2658,7 @@ const ACTIVITY = {
   },
   "130116": {
     task: "Hiking",
+    cleanTask: "Hiking",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2396,6 +2667,7 @@ const ACTIVITY = {
   },
   "130117": {
     task: "Playing hockey",
+    cleanTask: "Playing hockey",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2404,6 +2676,7 @@ const ACTIVITY = {
   },
   "130118": {
     task: "Hunting",
+    cleanTask: "Hunting",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2412,6 +2685,7 @@ const ACTIVITY = {
   },
   "130119": {
     task: "Participating in martial arts",
+    cleanTask: "Participating in martial arts",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2420,6 +2694,7 @@ const ACTIVITY = {
   },
   "130120": {
     task: "Playing racquet sports",
+    cleanTask: "Playing racquet sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2428,6 +2703,7 @@ const ACTIVITY = {
   },
   "130121": {
     task: "Participating in rodeo competitions",
+    cleanTask: "Participating in rodeo competitions",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2436,6 +2712,7 @@ const ACTIVITY = {
   },
   "130122": {
     task: "Rollerblading",
+    cleanTask: "Rollerblading",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2444,6 +2721,7 @@ const ACTIVITY = {
   },
   "130123": {
     task: "Playing rugby",
+    cleanTask: "Playing rugby",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2452,6 +2730,7 @@ const ACTIVITY = {
   },
   "130124": {
     task: "Running",
+    cleanTask: "Running",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2460,6 +2739,7 @@ const ACTIVITY = {
   },
   "130125": {
     task: "Skiing, ice skating, snowboarding",
+    cleanTask: "Skiing, ice skating, snowboarding",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2468,6 +2748,7 @@ const ACTIVITY = {
   },
   "130126": {
     task: "Playing soccer",
+    cleanTask: "Playing soccer",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2476,6 +2757,7 @@ const ACTIVITY = {
   },
   "130127": {
     task: "Softball",
+    cleanTask: "Softball",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2484,6 +2766,7 @@ const ACTIVITY = {
   },
   "130128": {
     task: "Using cardiovascular equipment",
+    cleanTask: "Using cardiovascular equipment",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2492,6 +2775,7 @@ const ACTIVITY = {
   },
   "130129": {
     task: "Vehicle touring/racing",
+    cleanTask: "Vehicle touring/racing",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2500,6 +2784,7 @@ const ACTIVITY = {
   },
   "130130": {
     task: "Playing volleyball",
+    cleanTask: "Playing volleyball",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2508,6 +2793,7 @@ const ACTIVITY = {
   },
   "130131": {
     task: "Walking",
+    cleanTask: "Walking",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "walking",
@@ -2516,6 +2802,7 @@ const ACTIVITY = {
   },
   "130132": {
     task: "Participating in water sports",
+    cleanTask: "Participating in water sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2524,6 +2811,7 @@ const ACTIVITY = {
   },
   "130133": {
     task: "Weightlifting/strength training",
+    cleanTask: "Weightlifting/strength training",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2532,6 +2820,7 @@ const ACTIVITY = {
   },
   "130134": {
     task: "Working out, unspecified",
+    cleanTask: "Working out, unspecified",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2540,6 +2829,7 @@ const ACTIVITY = {
   },
   "130135": {
     task: "Wrestling",
+    cleanTask: "Wrestling",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2548,6 +2838,7 @@ const ACTIVITY = {
   },
   "130136": {
     task: "Doing yoga",
+    cleanTask: "Doing yoga",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2556,6 +2847,7 @@ const ACTIVITY = {
   },
   "130199": {
     task: "Playing sports n.e.c.*",
+    cleanTask: "Playing sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2564,6 +2856,7 @@ const ACTIVITY = {
   },
   "130201": {
     task: "Watching aerobics",
+    cleanTask: "Watching aerobics",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2572,6 +2865,7 @@ const ACTIVITY = {
   },
   "130202": {
     task: "Watching baseball",
+    cleanTask: "Watching baseball",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2580,6 +2874,7 @@ const ACTIVITY = {
   },
   "130203": {
     task: "Watching basketball",
+    cleanTask: "Watching basketball",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2588,6 +2883,7 @@ const ACTIVITY = {
   },
   "130204": {
     task: "Watching biking",
+    cleanTask: "Watching biking",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2596,6 +2892,7 @@ const ACTIVITY = {
   },
   "130205": {
     task: "Watching billiards",
+    cleanTask: "Watching billiards",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2604,6 +2901,7 @@ const ACTIVITY = {
   },
   "130206": {
     task: "Watching boating",
+    cleanTask: "Watching boating",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2612,6 +2910,7 @@ const ACTIVITY = {
   },
   "130207": {
     task: "Watching bowling",
+    cleanTask: "Watching bowling",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2620,6 +2919,7 @@ const ACTIVITY = {
   },
   "130208": {
     task: "Watching climbing, spelunking, caving",
+    cleanTask: "Watching climbing, spelunking, caving",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2628,6 +2928,7 @@ const ACTIVITY = {
   },
   "130209": {
     task: "Watching dancing",
+    cleanTask: "Watching dancing",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2636,6 +2937,7 @@ const ACTIVITY = {
   },
   "130210": {
     task: "Watching equestrian sports",
+    cleanTask: "Watching equestrian sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2644,6 +2946,7 @@ const ACTIVITY = {
   },
   "130211": {
     task: "Watching fencing",
+    cleanTask: "Watching fencing",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2652,6 +2955,7 @@ const ACTIVITY = {
   },
   "130212": {
     task: "Watching fishing",
+    cleanTask: "Watching fishing",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2660,6 +2964,7 @@ const ACTIVITY = {
   },
   "130213": {
     task: "Watching football",
+    cleanTask: "Watching football",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2668,6 +2973,7 @@ const ACTIVITY = {
   },
   "130214": {
     task: "Watching golfing",
+    cleanTask: "Watching golfing",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2676,6 +2982,7 @@ const ACTIVITY = {
   },
   "130215": {
     task: "Watching gymnastics",
+    cleanTask: "Watching gymnastics",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2684,6 +2991,7 @@ const ACTIVITY = {
   },
   "130216": {
     task: "Watching hockey",
+    cleanTask: "Watching hockey",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2692,6 +3000,7 @@ const ACTIVITY = {
   },
   "130217": {
     task: "Watching martial arts",
+    cleanTask: "Watching martial arts",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2700,6 +3009,7 @@ const ACTIVITY = {
   },
   "130218": {
     task: "Watching racquet sports",
+    cleanTask: "Watching racquet sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2708,6 +3018,7 @@ const ACTIVITY = {
   },
   "130219": {
     task: "Watching rodeo competitions",
+    cleanTask: "Watching rodeo competitions",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2716,6 +3027,7 @@ const ACTIVITY = {
   },
   "130220": {
     task: "Watching rollerblading",
+    cleanTask: "Watching rollerblading",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2724,6 +3036,7 @@ const ACTIVITY = {
   },
   "130221": {
     task: "Watching rugby",
+    cleanTask: "Watching rugby",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2732,6 +3045,7 @@ const ACTIVITY = {
   },
   "130222": {
     task: "Watching running",
+    cleanTask: "Watching running",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2740,6 +3054,7 @@ const ACTIVITY = {
   },
   "130223": {
     task: "Watching skiing, ice skating, snowboarding",
+    cleanTask: "Watching skiing, ice skating, snowboarding",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2748,6 +3063,7 @@ const ACTIVITY = {
   },
   "130224": {
     task: "Watching soccer",
+    cleanTask: "Watching soccer",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2756,6 +3072,7 @@ const ACTIVITY = {
   },
   "130225": {
     task: "Watching softball",
+    cleanTask: "Watching softball",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2764,6 +3081,7 @@ const ACTIVITY = {
   },
   "130226": {
     task: "Watching vehicle touring/racing",
+    cleanTask: "Watching vehicle touring/racing",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2772,6 +3090,7 @@ const ACTIVITY = {
   },
   "130227": {
     task: "Watching volleyball",
+    cleanTask: "Watching volleyball",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2780,6 +3099,7 @@ const ACTIVITY = {
   },
   "130228": {
     task: "Watching walking",
+    cleanTask: "Watching walking",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2788,6 +3108,7 @@ const ACTIVITY = {
   },
   "130229": {
     task: "Watching water sports",
+    cleanTask: "Watching water sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2796,6 +3117,7 @@ const ACTIVITY = {
   },
   "130230": {
     task: "Watching weightlifting/strength training",
+    cleanTask: "Watching weightlifting/strength training",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2804,6 +3126,7 @@ const ACTIVITY = {
   },
   "130231": {
     task: "Watching people working out, unspecified",
+    cleanTask: "Watching people working out, unspecified",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2812,6 +3135,7 @@ const ACTIVITY = {
   },
   "130232": {
     task: "Watching wrestling",
+    cleanTask: "Watching wrestling",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -2820,6 +3144,7 @@ const ACTIVITY = {
   },
   "130299": {
     task: "Attending sporting events, n.e.c.*",
+    cleanTask: "Attending sporting event",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sitting",
@@ -2828,6 +3153,7 @@ const ACTIVITY = {
   },
   "130301": {
     task: "Waiting related to playing sports or exercising",
+    cleanTask: "Waiting",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -2836,6 +3162,7 @@ const ACTIVITY = {
   },
   "130302": {
     task: "Waiting related to attending sporting events",
+    cleanTask: "Waiting",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -2844,6 +3171,7 @@ const ACTIVITY = {
   },
   "130399": {
     task: "Waiting associated with sports, exercise, & recreation, n.e.c.*",
+    cleanTask: "Waiting",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -2852,6 +3180,7 @@ const ACTIVITY = {
   },
   "130401": {
     task: "Security related to playing sports or exercising",
+    cleanTask: "Sports or exercise-related activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -2860,6 +3189,7 @@ const ACTIVITY = {
   },
   "130402": {
     task: "Security related to attending sporting events",
+    cleanTask: "Sports or exercise-related activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -2868,6 +3198,7 @@ const ACTIVITY = {
   },
   "130499": {
     task: "Security related to sports, exercise, & recreation, n.e.c.*",
+    cleanTask: "Sports or exercise-related activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -2876,6 +3207,7 @@ const ACTIVITY = {
   },
   "139999": {
     task: "Sports, exercise, & recreation, n.e.c.*",
+    cleanTask: "Sports or exercise-related activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2884,6 +3216,7 @@ const ACTIVITY = {
   },
   "140101": {
     task: "Attending religious services",
+    cleanTask: "Attending religious services",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -2892,6 +3225,7 @@ const ACTIVITY = {
   },
   "140102": {
     task: "Participation in religious practices",
+    cleanTask: "Participation in religious practices",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -2900,6 +3234,7 @@ const ACTIVITY = {
   },
   "140103": {
     task: "Waiting associated w/religious & spiritual activities",
+    cleanTask: "Waiting",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -2908,6 +3243,7 @@ const ACTIVITY = {
   },
   "140104": {
     task: "Security procedures rel. to religious & spiritual activities",
+    cleanTask: "Religious or spiritual-related activity",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -2916,6 +3252,7 @@ const ACTIVITY = {
   },
   "140105": {
     task: "Religious education activities",
+    cleanTask: "Religious education activities",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -2924,6 +3261,7 @@ const ACTIVITY = {
   },
   "149999": {
     task: "Religious and spiritual activities, n.e.c.*",
+    cleanTask: "Religious or spiritual-related activity",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -2932,6 +3270,7 @@ const ACTIVITY = {
   },
   "150101": {
     task: "Computer use",
+    cleanTask: "Volunteering - computer use",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -2940,6 +3279,7 @@ const ACTIVITY = {
   },
   "150102": {
     task: "Organizing and preparing",
+    cleanTask: "Volunteering - organizing and preparing",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -2948,6 +3288,7 @@ const ACTIVITY = {
   },
   "150103": {
     task: "Reading",
+    cleanTask: "Volunteering - reading",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -2956,6 +3297,7 @@ const ACTIVITY = {
   },
   "150104": {
     task: "Telephone calls (except hotline counseling)",
+    cleanTask: "Volunteering - telephone calls",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "phone",
@@ -2964,6 +3306,7 @@ const ACTIVITY = {
   },
   "150105": {
     task: "Writing",
+    cleanTask: "Volunteering - writing",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -2972,6 +3315,7 @@ const ACTIVITY = {
   },
   "150106": {
     task: "Fundraising",
+    cleanTask: "Volunteering - fundraising",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -2980,6 +3324,7 @@ const ACTIVITY = {
   },
   "150199": {
     task: "Administrative & support activities, n.e.c.*",
+    cleanTask: "Volunteering - admin support",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -2988,6 +3333,7 @@ const ACTIVITY = {
   },
   "150201": {
     task: "Food preparation, presentation, clean-up",
+    cleanTask: "Volunteering - food prep and clean-up",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "foodprep",
@@ -2996,6 +3342,7 @@ const ACTIVITY = {
   },
   "150202": {
     task: "Collecting & delivering clothing & other goods",
+    cleanTask: "Volunteering - collecting/delivering goods",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "walking",
@@ -3004,6 +3351,7 @@ const ACTIVITY = {
   },
   "150203": {
     task: "Providing care",
+    cleanTask: "Volunteering - providing care",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "careadult",
@@ -3012,6 +3360,7 @@ const ACTIVITY = {
   },
   "150204": {
     task: "Teaching, leading, counseling, mentoring",
+    cleanTask: "Volunteering - teaching, leading, counseling, mentoring",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "talking",
@@ -3020,6 +3369,7 @@ const ACTIVITY = {
   },
   "150299": {
     task: "Social service & care activities, n.e.c.*",
+    cleanTask: "Volunteering - social service and care",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "careadult",
@@ -3028,6 +3378,7 @@ const ACTIVITY = {
   },
   "150301": {
     task: "Building houses, wildlife sites, & other structures",
+    cleanTask: "Volunteering - building houses and other structures",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workinglabor",
@@ -3036,6 +3387,7 @@ const ACTIVITY = {
   },
   "150302": {
     task: "Indoor & outdoor maintenance, repair, & clean-up",
+    cleanTask: "Volunteering - maintenance, repair, clean-up",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workinglabor",
@@ -3044,6 +3396,7 @@ const ACTIVITY = {
   },
   "150399": {
     task: "Indoor & outdoor maintenance, building & clean-up activities, n.e.c.*",
+    cleanTask: "Volunteering - maintenance, repair, clean-up",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workinglabor",
@@ -3052,6 +3405,7 @@ const ACTIVITY = {
   },
   "150401": {
     task: "Performing",
+    cleanTask: "Volunteering - performing",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "talking",
@@ -3060,6 +3414,7 @@ const ACTIVITY = {
   },
   "150402": {
     task: "Serving at volunteer events & cultural activities",
+    cleanTask: "Volunteering - serving at event",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3068,6 +3423,7 @@ const ACTIVITY = {
   },
   "150499": {
     task: "Participating in performance & cultural activities, n.e.c.*",
+    cleanTask: "Volunteering - participating in event",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "talking",
@@ -3076,6 +3432,7 @@ const ACTIVITY = {
   },
   "150501": {
     task: "Attending meetings, conferences, & training",
+    cleanTask: "Volunteering - attending meeting",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "sitting",
@@ -3084,6 +3441,7 @@ const ACTIVITY = {
   },
   "150599": {
     task: "Attending meetings, conferences, & training, n.e.c.*",
+    cleanTask: "Volunteering - attending meeting",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "sitting",
@@ -3092,6 +3450,7 @@ const ACTIVITY = {
   },
   "150601": {
     task: "Public health activities",
+    cleanTask: "Volunteering - public health activity",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3100,6 +3459,7 @@ const ACTIVITY = {
   },
   "150602": {
     task: "Public safety activities",
+    cleanTask: "Volunteering - public safety activity",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3108,6 +3468,7 @@ const ACTIVITY = {
   },
   "150699": {
     task: "Public health & safety activities, n.e.c.*",
+    cleanTask: "Volunteering - public health/safety activity",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3116,6 +3477,7 @@ const ACTIVITY = {
   },
   "159989": {
     task: "Volunteer activities, n.e.c.*",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3124,6 +3486,7 @@ const ACTIVITY = {
   },
   "160101": {
     task: "Telephone calls to/from family members",
+    cleanTask: "Telephone calls to/from family members",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3132,6 +3495,7 @@ const ACTIVITY = {
   },
   "160102": {
     task: "Telephone calls to/from friends, neighbors, or acquaintances",
+    cleanTask: "Telephone calls to/from friends, neighbors, or acquaintances",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3140,6 +3504,7 @@ const ACTIVITY = {
   },
   "160103": {
     task: "Telephone calls to/from education services providers",
+    cleanTask: "Telephone calls to/from education services providers",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3148,6 +3513,7 @@ const ACTIVITY = {
   },
   "160104": {
     task: "Telephone calls to/from salespeople",
+    cleanTask: "Telephone calls to/from salespeople",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3156,6 +3522,7 @@ const ACTIVITY = {
   },
   "160105": {
     task: "Telephone calls to/from professional or personal care svcs providers",
+    cleanTask: "Telephone calls to/from professional or personal care svcs providers",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3164,6 +3531,7 @@ const ACTIVITY = {
   },
   "160106": {
     task: "Telephone calls to/from household services providers",
+    cleanTask: "Telephone calls to/from household services providers",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3172,6 +3540,7 @@ const ACTIVITY = {
   },
   "160107": {
     task: "Telephone calls to/from paid child or adult care providers",
+    cleanTask: "Telephone calls to/from paid child or adult care providers",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3180,6 +3549,7 @@ const ACTIVITY = {
   },
   "160108": {
     task: "Telephone calls to/from government officials",
+    cleanTask: "Telephone calls to/from government officials",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3188,6 +3558,7 @@ const ACTIVITY = {
   },
   "169989": {
     task: "Telephone calls, n.e.c.*",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3196,6 +3567,7 @@ const ACTIVITY = {
   },
   "180101": {
     task: "Travel related to personal care",
+    cleanTask: "Travel related to personal care",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3204,6 +3576,7 @@ const ACTIVITY = {
   },
   "180199": {
     task: "Travel related to personal care, n.e.c.*",
+    cleanTask: "Travel related to personal care",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3212,6 +3585,7 @@ const ACTIVITY = {
   },
   "180280": {
     task: "Travel related to household activities",
+    cleanTask: "Travel related to household activities",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3220,6 +3594,7 @@ const ACTIVITY = {
   },
   "180381": {
     task: "Travel related to caring for and helping hh children",
+    cleanTask: "Travel to care for or help children",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3228,6 +3603,7 @@ const ACTIVITY = {
   },
   "180382": {
     task: "Travel related to caring for and helping hh adults",
+    cleanTask: "Travel to care for or help someone else",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3236,6 +3612,7 @@ const ACTIVITY = {
   },
   "180399": {
     task: "Travel rel. to caring for & helping hh members, n.e.c.*",
+    cleanTask: "Travel to care for or help someone else",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3244,6 +3621,7 @@ const ACTIVITY = {
   },
   "180481": {
     task: "Travel related to caring for and helping nonhh children",
+    cleanTask: "Travel to care for or help children",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3252,6 +3630,7 @@ const ACTIVITY = {
   },
   "180482": {
     task: "Travel related to caring for and helping nonhh adults",
+    cleanTask: "Travel to care for or help someone else",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3260,6 +3639,7 @@ const ACTIVITY = {
   },
   "180499": {
     task: "Travel rel. to caring for & helping nonhh members, n.e.c.*",
+    cleanTask: "Travel to care for or help someone else",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3268,6 +3648,7 @@ const ACTIVITY = {
   },
   "180501": {
     task: "Travel related to working",
+    cleanTask: "Travel for work",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3276,6 +3657,7 @@ const ACTIVITY = {
   },
   "180502": {
     task: "Travel related to work-related activities",
+    cleanTask: "Travel for work",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3284,6 +3666,7 @@ const ACTIVITY = {
   },
   "180589": {
     task: "Travel related to work, n.e.c.*",
+    cleanTask: "Travel for work",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3292,6 +3675,7 @@ const ACTIVITY = {
   },
   "180601": {
     task: "Travel related to taking class",
+    cleanTask: "Travel for education",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3300,6 +3684,7 @@ const ACTIVITY = {
   },
   "180682": {
     task: "Travel related to education (except taking class)",
+    cleanTask: "Travel for education",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3308,6 +3693,7 @@ const ACTIVITY = {
   },
   "180699": {
     task: "Travel related to education, n.e.c.*",
+    cleanTask: "Travel for education",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3316,6 +3702,7 @@ const ACTIVITY = {
   },
   "180701": {
     task: "Travel related to grocery shopping",
+    cleanTask: "Travel related to grocery shopping",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3324,6 +3711,7 @@ const ACTIVITY = {
   },
   "180782": {
     task: "Travel related to shopping (except grocery shopping)",
+    cleanTask: "Travel for shopping",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3332,6 +3720,7 @@ const ACTIVITY = {
   },
   "180801": {
     task: "Travel related to using childcare services",
+    cleanTask: "Traveling for childcare services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3340,6 +3729,7 @@ const ACTIVITY = {
   },
   "180802": {
     task: "Travel related to using financial services and banking",
+    cleanTask: "Travel for financial services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3348,6 +3738,7 @@ const ACTIVITY = {
   },
   "180803": {
     task: "Travel related to using legal services",
+    cleanTask: "Travel for legal services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3356,6 +3747,7 @@ const ACTIVITY = {
   },
   "180804": {
     task: "Travel related to using medical services",
+    cleanTask: "Travel for medical services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3364,6 +3756,7 @@ const ACTIVITY = {
   },
   "180805": {
     task: "Travel related to using personal care services",
+    cleanTask: "Travel for personal care services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3372,6 +3765,7 @@ const ACTIVITY = {
   },
   "180806": {
     task: "Travel related to using real estate services",
+    cleanTask: "Travel for real estate services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3380,6 +3774,7 @@ const ACTIVITY = {
   },
   "180807": {
     task: "Travel related to using veterinary services",
+    cleanTask: "Travel for veterinary services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3388,6 +3783,7 @@ const ACTIVITY = {
   },
   "180899": {
     task: "Travel rel. to using prof. & personal care services, n.e.c.*",
+    cleanTask: "Travel for services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3396,6 +3792,7 @@ const ACTIVITY = {
   },
   "180901": {
     task: "Travel related to using household services",
+    cleanTask: "Travel for household services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3404,6 +3801,7 @@ const ACTIVITY = {
   },
   "180902": {
     task: "Travel related to using home main./repair/décor./construction svcs",
+    cleanTask: "Travel for home maintenance",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3412,6 +3810,7 @@ const ACTIVITY = {
   },
   "180903": {
     task: "Travel related to using pet services (not vet)",
+    cleanTask: "Travel for pet services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3420,6 +3819,7 @@ const ACTIVITY = {
   },
   "180904": {
     task: "Travel related to using lawn and garden services",
+    cleanTask: "Travel for lawn/garden services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3428,6 +3828,7 @@ const ACTIVITY = {
   },
   "180905": {
     task: "Travel related to using vehicle maintenance & repair services",
+    cleanTask: "Travel for vehicle maintenance",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3436,6 +3837,7 @@ const ACTIVITY = {
   },
   "180999": {
     task: "Travel related to using household services, n.e.c.*",
+    cleanTask: "Travel for household services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3444,6 +3846,7 @@ const ACTIVITY = {
   },
   "181002": {
     task: "Travel related to civic obligations & participation",
+    cleanTask: "Travel for civic/government obligation",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3452,6 +3855,7 @@ const ACTIVITY = {
   },
   "181081": {
     task: "Travel related to using government services",
+    cleanTask: "Travel for government services",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3460,6 +3864,7 @@ const ACTIVITY = {
   },
   "181099": {
     task: "Travel rel. to govt svcs & civic obligations, n.e.c.*",
+    cleanTask: "Travel for civic/government obligation",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3468,6 +3873,7 @@ const ACTIVITY = {
   },
   "181101": {
     task: "Travel related to eating and drinking",
+    cleanTask: "Travel to eat/drink",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3476,6 +3882,7 @@ const ACTIVITY = {
   },
   "181199": {
     task: "Travel related to eating and drinking, n.e.c.*",
+    cleanTask: "Travel to eat/drink",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3484,6 +3891,7 @@ const ACTIVITY = {
   },
   "181201": {
     task: "Travel related to socializing and communicating",
+    cleanTask: "Travel to social event",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3492,6 +3900,7 @@ const ACTIVITY = {
   },
   "181202": {
     task: "Travel related to attending or hosting social events",
+    cleanTask: "Travel to social event",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3500,6 +3909,7 @@ const ACTIVITY = {
   },
   "181204": {
     task: "Travel related to arts and entertainment",
+    cleanTask: "Travel to arts and entertainment",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3508,6 +3918,7 @@ const ACTIVITY = {
   },
   "181283": {
     task: "Travel related to relaxing and leisure",
+    cleanTask: "Travel to relaxation/leisure activity",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3516,6 +3927,7 @@ const ACTIVITY = {
   },
   "181299": {
     task: "Travel rel. to socializing, relaxing, & leisure, n.e.c.*",
+    cleanTask: "Travel to relaxation/leisure activity",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3524,6 +3936,7 @@ const ACTIVITY = {
   },
   "181301": {
     task: "Travel related to participating in sports/exercise/recreation",
+    cleanTask: "Travel to sports/exercise",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3532,6 +3945,7 @@ const ACTIVITY = {
   },
   "181302": {
     task: "Travel related to attending sporting/recreational events",
+    cleanTask: "Travel to sports/recreation event",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3540,6 +3954,7 @@ const ACTIVITY = {
   },
   "181399": {
     task: "Travel related to sports, exercise, & recreation, n.e.c.*",
+    cleanTask: "Travel to sports/recreation event",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3548,6 +3963,7 @@ const ACTIVITY = {
   },
   "181401": {
     task: "Travel related to religious/spiritual practices",
+    cleanTask: "Travel to religious or spiritual practice",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3556,6 +3972,7 @@ const ACTIVITY = {
   },
   "181499": {
     task: "Travel rel. to religious/spiritual activities, n.e.c.*",
+    cleanTask: "Travel to religious or spiritual activity",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3564,6 +3981,7 @@ const ACTIVITY = {
   },
   "181501": {
     task: "Travel related to volunteering",
+    cleanTask: "Travel for volunteering",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3572,6 +3990,7 @@ const ACTIVITY = {
   },
   "181599": {
     task: "Travel related to volunteer activities, n.e.c.*",
+    cleanTask: "Travel for volunteering",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3580,6 +3999,7 @@ const ACTIVITY = {
   },
   "181601": {
     task: "Travel related to phone calls",
+    cleanTask: "Travel related to phone calls",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3588,6 +4008,7 @@ const ACTIVITY = {
   },
   "181699": {
     task: "Travel rel. to phone calls, n.e.c.*",
+    cleanTask: "Travel related to phone calls",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3596,6 +4017,7 @@ const ACTIVITY = {
   },
   "181801": {
     task: "Security procedures related to traveling",
+    cleanTask: "Travel",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3604,6 +4026,7 @@ const ACTIVITY = {
   },
   "181899": {
     task: "Security procedures related to traveling, n.e.c.*",
+    cleanTask: "Travel",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3612,6 +4035,7 @@ const ACTIVITY = {
   },
   "189999": {
     task: "Traveling, n.e.c.*",
+    cleanTask: "Travel",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3620,6 +4044,7 @@ const ACTIVITY = {
   },
   "500101": {
     task: "Insufficient detail in verbatim",
+    cleanTask: "Unclear what they're doing",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -3628,6 +4053,7 @@ const ACTIVITY = {
   },
   "500103": {
     task: "Missing travel or destination",
+    cleanTask: "Travel",
     group: "Data Codes",
     "class": "data",
     animClass: "walking",
@@ -3636,6 +4062,7 @@ const ACTIVITY = {
   },
   "500104": {
     task: "Recorded simultaneous activities incorrectly",
+    cleanTask: "Unclear what they're doing",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -3644,6 +4071,7 @@ const ACTIVITY = {
   },
   "500105": {
     task: "Respondent refused to provide information/",
+    cleanTask: "Unclear what they're doing",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -3652,6 +4080,7 @@ const ACTIVITY = {
   },
   "500106": {
     task: "Gap/can't remember",
+    cleanTask: "Can't remember what they did",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -3660,6 +4089,7 @@ const ACTIVITY = {
   },
   "500107": {
     task: "Unable to code activity at 1st tier",
+    cleanTask: "Unclear what they're doing",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -3668,6 +4098,7 @@ const ACTIVITY = {
   },
   "509989": {
     task: "Data codes, n.e.c.*",
+    cleanTask: "Unclear what they're doing",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -4980,112 +5411,158 @@ const WU = {
 const WHO = {
   "18": {
     person: "Alone",
-    "class": "alone"
+    "class": "alone",
+    cleanSingle: "alone"
   },
   "19": {
     person: "Alone",
-    "class": "alone"
+    "class": "alone",
+    cleanSingle: "alone"
   },
   "20": {
     person: "Spouse",
-    "class": "partner"
+    "class": "partner",
+    cleanSingle: "spouse"
   },
   "21": {
     person: "Unmarried partner",
-    "class": "partner"
+    "class": "partner",
+    cleanSingle: "partner"
   },
   "22": {
     person: "Own household child",
-    "class": "child_family"
+    "class": "child_family",
+    cleanSingle: "child"
   },
   "23": {
     person: "Grandchild",
-    "class": "child_family"
+    "class": "child_family",
+    cleanSingle: "grandchild"
   },
   "24": {
     person: "Parent",
-    "class": "adult_family"
+    "class": "adult_family",
+    cleanSingle: "parent"
   },
   "25": {
     person: "Brother/sister",
-    "class": "adult_family"
+    "class": "adult_family",
+    cleanSingle: "sibling"
   },
   "26": {
     person: "Other related person",
-    "class": "adult_family"
+    "class": "adult_family",
+    cleanSingle: "family member"
   },
   "27": {
     person: "Foster child",
-    "class": "child_family"
+    "class": "child_family",
+    cleanSingle: "foster child"
   },
   "28": {
     person: "Housemate/roommate",
-    "class": "adult_nonfamily"
+    "class": "adult_nonfamily",
+    cleanSingle: "roommate"
   },
   "29": {
     person: "Roomer/boarder",
-    "class": "adult_nonfamily"
+    "class": "adult_nonfamily",
+    cleanSingle: "boarder"
   },
   "30": {
     person: "Other nonrelative",
-    "class": "adult_nonfamily"
+    "class": "adult_nonfamily",
+    cleanSingle: "nonfamily adult"
   },
   "40": {
     person: "Own nonhousehold child < 18",
-    "class": "child_nonfamily"
+    "class": "child_nonfamily",
+    cleanSingle: "child"
   },
   "51": {
     person: "Parents (not living in household)",
-    "class": "adult_family"
+    "class": "adult_family",
+    cleanSingle: "parent"
   },
   "52": {
     person: "Other nonhousehold family members < 18",
-    "class": "child_family"
+    "class": "child_family",
+    cleanSingle: "child"
   },
   "53": {
     person: "Other nonhousehold family members 18 and older (including parents- in-law)",
-    "class": "adult_family"
+    "class": "adult_family",
+    cleanSingle: "family member"
   },
   "54": {
     person: "Friends",
-    "class": "friend"
+    "class": "friend",
+    cleanSingle: "friend"
   },
   "55": {
     person: "Co-workers/colleagues/clients",
-    "class": "workrelated"
+    "class": "workrelated",
+    cleanSingle: "colleague"
   },
   "56": {
     person: "Neighbors/acquaintances",
-    "class": "adult_nonfamily"
+    "class": "adult_nonfamily",
+    cleanSingle: "acquaintance"
   },
   "57": {
     person: "Other nonhousehold children < 18",
-    "class": "child_nonfamily"
+    "class": "child_nonfamily",
+    cleanSingle: "child"
   },
   "58": {
     person: "Other nonhousehold adults 18 and older",
-    "class": "adult_nonfamily"
+    "class": "adult_nonfamily",
+    cleanSingle: "nonfamily adult"
   },
   "59": {
     person: "Boss or manager",
-    "class": "workrelated"
+    "class": "workrelated",
+    cleanSingle: "boss"
   },
   "60": {
     person: "People whom I supervise",
-    "class": "workrelated"
+    "class": "workrelated",
+    cleanSingle: "colleague"
   },
   "61": {
     person: "Co-workers",
-    "class": "workrelated"
+    "class": "workrelated",
+    cleanSingle: "colleague"
   },
   "62": {
     person: "Customers",
-    "class": "workrelated"
+    "class": "workrelated",
+    cleanSingle: "customer"
   },
   "-1": {
     person: "Alone",
-    "class": "alone"
+    "class": "alone",
+    cleanSingle: "alone"
   }
+};
+const WHOPLURAL = {
+  acquaintance: "acquaintances",
+  alone: "alone",
+  boarder: "boarders",
+  boss: "bosses",
+  child: "children",
+  colleague: "colleagues",
+  customer: "customers",
+  "family member": "family members",
+  "foster child": "foster children",
+  friend: "friends",
+  grandchild: "grandchildren",
+  "nonfamily adult": "nonfamily adults",
+  parent: "parents",
+  partner: "partner",
+  roommate: "roommates",
+  sibling: "siblings",
+  spouse: "spouse"
 };
 const DAYS = {
   "1": "Sun",
@@ -5153,6 +5630,7 @@ const lookup = {
   TESCHENR,
   WU,
   WHO,
+  WHOPLURAL,
   DAYS,
   FRAMERATE,
   PEOPLESCORE
@@ -5210,7 +5688,7 @@ const HappyDays_sprites = create_ssr_component(($$result, $$props, $$bindings, s
 });
 const HappyDays_person_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: ".person.svelte-1n3b6s9{position:relative;height:20vh;display:inline-block;margin:1%;font-size:15px;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:opacity 600ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:opacity 600ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none}.person.shown.svelte-1n3b6s9{opacity:1;cursor:pointer;pointer-events:all}@media only screen  and (max-width: 1800px){.person.svelte-1n3b6s9{width:18%;height:20vh}}@media only screen  and (max-width: 1500px){.person.svelte-1n3b6s9{width:23%;height:20vh}}@media only screen  and (max-width: 1200px){.person.svelte-1n3b6s9{width:31.33333%;height:20vh}}@media only screen  and (max-width: 800px){.person.svelte-1n3b6s9{width:48%;height:20vh}}@media only screen  and (max-width: 500px){.person.svelte-1n3b6s9{height:20vh}}.personViz.svelte-1n3b6s9{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);border-bottom:10px solid #000}.happyBar.svelte-1n3b6s9{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-1n3b6s9{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-1n3b6s9{width:100%;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-1n3b6s9:last-child{border:none}.personLabel.svelte-1n3b6s9{width:100%;padding:0 30px;color:white;font-weight:bold}.currentActivity.svelte-1n3b6s9{width:100%;padding:0 30px;font-size:13px;color:white}.details.svelte-1n3b6s9{position:absolute;left:0px;top:0px;width:100%;height:100%;background:rgba(0,0,0,0.88);color:white;display:none;padding:20px;text-align:left;font-size:13px}.details.shown.svelte-1n3b6s9{display:block}.detailsClose.svelte-1n3b6s9{margin-top:10px;font-weight:bold;font-size:13px;color:#888}",
+  code: ".headline.svelte-cnmo4c.svelte-cnmo4c{position:absolute;color:white;z-index:9999;width:100%;left:0px;top:20%;text-align:center}.headline.svelte-cnmo4c h1.svelte-cnmo4c{font-size:11px;line-height:18px;margin-bottom:0px;text-transform:lowercase;letter-spacing:3px;color:#FE2F8D}.byline.svelte-cnmo4c.svelte-cnmo4c{opacity:0.5;font-size:8px}.instruction.svelte-cnmo4c.svelte-cnmo4c{margin-top:20px;font-size:8px;opacity:0.5}.person.svelte-cnmo4c.svelte-cnmo4c{position:relative;height:20vh;display:inline-block;margin:1%;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:opacity 600ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:opacity 600ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none}.person.shown.svelte-cnmo4c.svelte-cnmo4c{opacity:1;cursor:pointer;pointer-events:all}@media only screen  and (max-width: 1800px){.person.svelte-cnmo4c.svelte-cnmo4c{width:18%;height:20vh}}@media only screen  and (max-width: 1500px){.person.svelte-cnmo4c.svelte-cnmo4c{width:23%;height:20vh}}@media only screen  and (max-width: 1200px){.person.svelte-cnmo4c.svelte-cnmo4c{width:31.33333%;height:20vh}}@media only screen  and (max-width: 800px){.person.svelte-cnmo4c.svelte-cnmo4c{width:48%;height:20vh}}@media only screen  and (max-width: 500px){.person.svelte-cnmo4c.svelte-cnmo4c{height:20vh}}.personViz.svelte-cnmo4c.svelte-cnmo4c{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);border-bottom:10px solid #000}.happyBar.svelte-cnmo4c.svelte-cnmo4c{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-cnmo4c.svelte-cnmo4c{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-cnmo4c.svelte-cnmo4c{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-cnmo4c.svelte-cnmo4c:last-child{border:none}.personLabel.svelte-cnmo4c.svelte-cnmo4c{width:100%;padding:5px 30px 0px;font-size:13px;color:white;font-weight:bold}.currentActivity.svelte-cnmo4c.svelte-cnmo4c{width:100%;padding:0 30px;font-size:12px}.details.svelte-cnmo4c.svelte-cnmo4c{position:absolute;left:0px;top:0px;width:100%;height:100%;background:rgba(0,0,0,0.88);color:white;display:none;padding:20px;text-align:left;font-size:13px}.details.shown.svelte-cnmo4c.svelte-cnmo4c{display:block}.detailsClose.svelte-cnmo4c.svelte-cnmo4c{margin-top:10px;font-weight:bold;font-size:13px;color:#888}",
   map: null
 };
 function raceConvert(r1, r2) {
@@ -5221,6 +5699,9 @@ function formatMoney(n) {
 }
 function comma(x) {
   return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+function toTitleCase(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
 }
 const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { person, time, beginTime: beginTime2, customClicked, happyBar, happyGroup, personKey, peopleColor, view } = $$props;
@@ -5247,6 +5728,30 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
     } catch {
       return "alone";
     }
+  }
+  function convertCurrentCompany(arr) {
+    arr = arr.map((el) => lookup.WHO[el].cleanSingle);
+    if (arr.length == 1 && arr[0] == "alone") {
+      return "";
+    }
+    const counts = {};
+    arr.forEach(function(x) {
+      counts[x] = (counts[x] || 0) + 1;
+    });
+    let final = [];
+    for (let i in counts) {
+      let name = counts[i] == 1 ? i : lookup.WHOPLURAL[i];
+      let num = counts[i] == 1 ? "" : counts[i] + " ";
+      if (name != "alone" && i in lookup.WHOPLURAL) {
+        final.push(num + "" + name);
+      }
+    }
+    const firsts = final.slice(0, final.length - 1);
+    const last = final[final.length - 1];
+    if (final.length == 1) {
+      return "with " + last;
+    }
+    return "with " + firsts.join(", ") + " and " + last;
   }
   if ($$props.person === void 0 && $$bindings.person && person !== void 0)
     $$bindings.person(person);
@@ -5277,8 +5782,8 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
   return `<div class="${"person " + escape(
     person.start <= time || time < beginTime2 || customClicked ? "shown" : "",
     true
-  ) + " svelte-1n3b6s9"}"><div class="personViz svelte-1n3b6s9" style="${"background: " + escape(peopleColor[person.peopleScore], true) + ";"}"><div class="personLabel svelte-1n3b6s9" style="${"color: " + escape(peopleTextColor[person.peopleScore], true) + ";"}">Age ${escape(person.TEAGE)}, ${escape(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}</div> <div class="currentActivity svelte-1n3b6s9" style="${"color: " + escape(peopleTextColor[person.peopleScore], true) + ";"}">${escape(person.current_activity)}</div> <div class="happyBar svelte-1n3b6s9" style="${"opacity:" + escape(happyBar, true) + ";"}"><div class="happyBarScore svelte-1n3b6s9" style="${"height:" + escape(time < 344 ? 0 : person.WECANTRIL * 10, true) + "%;"}"></div> ${each([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], (ladder) => {
-    return `<div class="ladderItem svelte-1n3b6s9" style="${"bottom:" + escape(ladder * 10, true) + "%;"}"></div>`;
+  ) + " svelte-cnmo4c"}"><div class="personViz svelte-cnmo4c" style="${"background: " + escape(peopleColor[person.peopleScore], true) + ";"}">${time > 242 || customClicked ? `<div class="personLabel svelte-cnmo4c" style="${"color: " + escape(peopleTextColor[person.peopleScore], true) + ";"}">${escape(toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}</div>` : ``} ${time > 247 || customClicked ? `<div class="currentActivity svelte-cnmo4c" style="${"color: " + escape(peopleTextColor[person.peopleScore], true) + ";"}">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``}  <div class="happyBar svelte-cnmo4c" style="${"opacity:" + escape(happyBar, true) + ";"}"><div class="happyBarScore svelte-cnmo4c" style="${"height:" + escape(time < 365 ? 0 : person.WECANTRIL * 10, true) + "%;"}"></div> ${each([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], (ladder) => {
+    return `<div class="ladderItem svelte-cnmo4c" style="${"bottom:" + escape(ladder * 10, true) + "%;"}"></div>`;
   })}</div> ${each(person.activity, (act) => {
     return `${validate_component(HappyDays_sprites, "Sprites").$$render(
       $$result,
@@ -5307,14 +5812,14 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       {},
       {}
     )}` : ``}`;
-  })}</div> <div class="${"details " + escape(details == 1 && view == happyGroup ? "shown" : "", true) + " svelte-1n3b6s9"}">${escape(person.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])} in ${escape(lookup.WEGENHTH[person.WEGENHTH].toLowerCase())} health.
+  })} ${person.start < 240 && time <= 242 ? `<div class="headline svelte-cnmo4c" data-svelte-h="svelte-pdns47"><h1 class="svelte-cnmo4c">Happy Days</h1> <div class="byline svelte-cnmo4c">by Alvin Chang</div> <div class="instruction svelte-cnmo4c">Scroll down</div></div>` : ``}</div> <div class="${"details " + escape(details == 1 && view == happyGroup ? "shown" : "", true) + " svelte-cnmo4c"}">${escape(person.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])} in ${escape(lookup.WEGENHTH[person.WEGENHTH].toLowerCase())} health.
 		Has ${escape(person.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[person.TRSPPRES].toLowerCase())} and ${escape(person.TRCHILDNUM_x == 1 ? person.TRCHILDNUM_x + " child" : person.TRCHILDNUM_x + " children")} in the household. 
 		${escape(person.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[person.PEEDUCA].toLowerCase())} education. 
-		${escape(person.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[person.TRDTIND1].toLowerCase() + " earning " + formatMoney(person.TRERNWA_x) + " a week." : "")} <div class="detailsClose svelte-1n3b6s9" data-svelte-h="svelte-1lc4obo">Click to close</div></div> </div>`;
+		${escape(person.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[person.TRDTIND1].toLowerCase() + " earning " + formatMoney(person.TRERNWA_x) + " a week." : "")} <div class="detailsClose svelte-cnmo4c" data-svelte-h="svelte-1lc4obo">Click to close</div></div> </div>`;
 });
 const HappyDays_grid_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: ".wideViewButton.svelte-wk4puh{margin-left:10px;position:absolute;left:10px;bottom:10%;z-index:100}.interactive.svelte-wk4puh{-webkit-transform-origin:center;transform-origin:center;text-align:center;width:100%;height:100vh}.interactiveBackground.svelte-wk4puh{display:block;width:100%;height:100%;position:absolute;left:0;top:0;cursor:pointer;-webkit-transition:background 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:background 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.displayContainter.svelte-wk4puh{width:100%;overflow:hidden;margin:0 auto;padding-right:50px}.groupContainer.svelte-wk4puh{position:relative;width:300%;height:100vh;-webkit-transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);pointer-events:none}.groupContainer.zoomIn.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-63.05%, 33%, 0.2px);transform:perspective(0) translate3d(-63.05%, 33%, 0.2px)\n	}.groupContainer.zoomOut.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-100%, -50%, -1px);transform:perspective(0) translate3d(-100%, -50%, -1px)}.groupContainer.group1.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(0, 0, 0);transform:perspective(0) translate3d(0, 0, 0)}.groupContainer.group2.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-33%, 0, 0);transform:perspective(0) translate3d(-33%, 0, 0)}.groupContainer.group3.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-66%, 0, 0);transform:perspective(0) translate3d(-66%, 0, 0)}@media only screen  and (max-width: 1800px){.groupContainer.zoomIn.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-64%, 33%, 0.2px);transform:perspective(0) translate3d(-64%, 33%, 0.2px)}}@media only screen  and (max-width: 1500px){.groupContainer.zoomIn.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-41.5%, 16%, 0.2px);transform:perspective(0) translate3d(-41.5%, 16%, 0.2px)}}@media only screen  and (max-width: 1200px){.groupContainer.zoomIn.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-52.5%, 7%, 0.2px);transform:perspective(0) translate3d(-52.5%, 7%, 0.2px)}}@media only screen  and (max-width: 800px){.groupContainer.zoomIn.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-45%, 0, 0.2px);transform:perspective(0) translate3d(-45%, 0, 0.2px)}}@media only screen  and (max-width: 500px){.groupContainer.zoomIn.svelte-wk4puh{-webkit-transform:perspective(0) translate3d(-45%, 0, 0.2px);transform:perspective(0) translate3d(-45%, 0, 0.2px)}}.group.svelte-wk4puh{display:-webkit-box;display:flex;position:absolute;left:0px;top:0px;display:block;width:calc(100% / 3);padding:0 2%;-webkit-box-sizing:border-box;box-sizing:border-box;padding-top:20px;pointer-events:all;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap}.groupButton.svelte-wk4puh{font-size:40px;cursor:pointer;width:200px;background:#eee}.groupButton.svelte-wk4puh:hover{background:#ddd}.group.svelte-wk4puh:nth-child(2){left:33%}.group.svelte-wk4puh:nth-child(3){left:66%}",
+  code: ".wideViewButton.svelte-1rkhr9t.svelte-1rkhr9t{margin-left:10px;position:absolute;left:calc(2% + 210px);top:22px;z-index:100;background:white}.group.svelte-1rkhr9t .wideViewButton.svelte-1rkhr9t{margin-left:0px;padding:18px;border-radius:8px;left:50%;top:-90px;-webkit-transform:translateX(-50%);transform:translateX(-50%);font-size:45px}.wideViewButton.svelte-1rkhr9t.svelte-1rkhr9t:hover{text-decoration:underline}.interactive.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform-origin:center;transform-origin:center;text-align:center;width:100%;height:100vh}.interactiveBackground.svelte-1rkhr9t.svelte-1rkhr9t{display:block;width:100%;height:100%;position:absolute;left:0;top:0;cursor:pointer;-webkit-transition:background 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:background 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.displayContainter.svelte-1rkhr9t.svelte-1rkhr9t{width:100%;padding-top:50px;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin:0 auto;padding-right:50px}.groupContainer.svelte-1rkhr9t.svelte-1rkhr9t{position:relative;width:300%;height:100vh;-webkit-transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);pointer-events:none}.groupContainer.zoomIn.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-63.05%, 33%, 0.2px);transform:perspective(0) translate3d(-63.05%, 33%, 0.2px)\n	}.groupContainer.zoomOut.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-100%, -50%, -1px);transform:perspective(0) translate3d(-100%, -50%, -1px)}.groupContainer.group1.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(0, 0, 0);transform:perspective(0) translate3d(0, 0, 0)}.groupContainer.group2.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-33%, 0, 0);transform:perspective(0) translate3d(-33%, 0, 0)}.groupContainer.group3.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-66%, 0, 0);transform:perspective(0) translate3d(-66%, 0, 0)}@media only screen  and (max-width: 1800px){.groupContainer.zoomIn.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-64%, 33%, 0.2px);transform:perspective(0) translate3d(-64%, 33%, 0.2px)}}@media only screen  and (max-width: 1500px){.groupContainer.zoomIn.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-41.5%, 16%, 0.2px);transform:perspective(0) translate3d(-41.5%, 16%, 0.2px)}}@media only screen  and (max-width: 1200px){.groupContainer.zoomIn.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-52.1%, 7%, 0.2px);transform:perspective(0) translate3d(-52.1%, 7%, 0.2px)}}@media only screen  and (max-width: 800px){.groupContainer.zoomIn.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-45%, 0, 0.2px);transform:perspective(0) translate3d(-45%, 0, 0.2px)}}@media only screen  and (max-width: 500px){.groupContainer.zoomIn.svelte-1rkhr9t.svelte-1rkhr9t{-webkit-transform:perspective(0) translate3d(-45%, 0, 0.2px);transform:perspective(0) translate3d(-45%, 0, 0.2px)}}.group.svelte-1rkhr9t.svelte-1rkhr9t{display:-webkit-box;display:flex;position:absolute;left:0px;top:0px;display:block;width:calc(100% / 3);padding:0 2%;-webkit-box-sizing:border-box;box-sizing:border-box;padding-top:20px;pointer-events:all;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-flow:column wrap}.groupButton.svelte-1rkhr9t.svelte-1rkhr9t{font-size:40px;cursor:pointer;width:200px;background:#eee}.groupButton.svelte-1rkhr9t.svelte-1rkhr9t:hover{background:#ddd}.group.svelte-1rkhr9t.svelte-1rkhr9t:nth-child(2){left:33%}.group.svelte-1rkhr9t.svelte-1rkhr9t:nth-child(3){left:66%}",
   map: null
 };
 const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -5348,34 +5853,43 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
     }
     maxPeople2 = breakpoint * 4;
   }
+  let first = true;
   function checkTiming() {
     time = time > 239 ? time : 241;
-    timeline2.forEach(function(line) {
-      if (time - 2 > line.time) {
-        selectedViewIndex = line.view;
-      }
-    });
+    if (!customClicked && time < 600) {
+      timeline2.forEach(function(line) {
+        if (time - 2 > line.time) {
+          selectedViewIndex = line.view;
+        }
+      });
+    } else if (first) {
+      selectedViewIndex = 0;
+      first = false;
+    }
     if (isNaN(time)) {
       time = 240;
     }
     if (time > 1440) {
       time = time - 1440;
     }
-    customClicked = time >= 780 ? true : false;
-    happyBar = time >= 343 || time < beginTime2 ? 1 : 0;
+    customClicked = time >= 600 ? true : false;
+    happyBar = time >= 365 || time < beginTime2 ? 1 : 0;
   }
   function checkPeople() {
     for (let i = 0; i < options.length; i++) {
       const opt = options[i];
       for (let j = 0; j < currentPeople[opt].length; j++) {
         let peopleScore = 0;
+        currentPeople[opt][j]["current_company"] = [];
         for (let k = 0; k < currentPeople[opt][j]["activity"].length; k++) {
           let start = currentPeople[opt][j]["activity"][k][0];
           let end = currentPeople[opt][j]["activity"][k][1];
+          let theCompany = currentPeople[opt][j]["activity"][k][5];
           if (start <= time && end > time || start <= time - 1440 && end > time - 1440) {
             currentPeople[opt][j]["activity"][k][6] = 1;
-            currentPeople[opt][j]["current_activity"] = lookup.ACTIVITY[currentPeople[opt][j]["activity"][k][2]].task;
-            peopleScore += lookup.PEOPLESCORE[currentPeople[opt][j]["activity"][k][5]];
+            currentPeople[opt][j]["current_activity"] = lookup.ACTIVITY[currentPeople[opt][j]["activity"][k][2]].cleanTask;
+            currentPeople[opt][j]["current_company"].push(theCompany);
+            peopleScore += lookup.PEOPLESCORE[theCompany];
           } else {
             currentPeople[opt][j]["activity"][k][6] = 0;
           }
@@ -5398,8 +5912,8 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
   {
     checkPeople(), checkTiming(), checkWindow(screenWidth);
   }
-  return `  ${selectedViewIndex != 0 && selectedViewIndex != 4 && customClicked ? `<button class="wideViewButton svelte-wk4puh" data-svelte-h="svelte-w000gt">Zoom out</button>` : ``} <div class="interactive svelte-wk4puh"><div class="interactiveBackground svelte-wk4puh"></div> <div class="displayContainter svelte-wk4puh"><div class="${"groupContainer " + escape(viewTranslate[selectedViewIndex], true) + " svelte-wk4puh"}">${each(Object.entries(currentPeople), ([key, happy_group]) => {
-    return `<div class="group svelte-wk4puh">${each(happy_group, (person, personKey) => {
+  return `  ${selectedViewIndex != 0 && selectedViewIndex != 4 && customClicked ? `<button class="wideViewButton svelte-1rkhr9t" data-svelte-h="svelte-w000gt">Zoom out</button>` : ``} <div class="interactive svelte-1rkhr9t"><div class="interactiveBackground svelte-1rkhr9t"></div> <div class="displayContainter svelte-1rkhr9t"><div class="${"groupContainer " + escape(viewTranslate[selectedViewIndex], true) + " svelte-1rkhr9t"}">${each(Object.entries(currentPeople), ([key, happy_group]) => {
+    return `<div class="group svelte-1rkhr9t">${selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && customClicked ? `<button class="wideViewButton svelte-1rkhr9t" data-svelte-h="svelte-1g8clfs">Zoom in</button>` : ``} ${each(happy_group, (person, personKey) => {
       return `${personKey < maxPeople2 ? `${validate_component(HappyDays_person, "Person").$$render(
         $$result,
         {
@@ -124329,7 +124843,7 @@ const people = [
 ];
 const HappyDays_svelte_svelte_type_style_lang = "";
 const css = {
-  code: '.outsideContainer.svelte-cbp76o{background:#28212F}#scrolly.svelte-cbp76o{font-family:"National 2 Web"}.visualContainer.svelte-cbp76o{position:sticky;top:0em;width:100%}.spacer.svelte-cbp76o{height:75vh}.timeline.svelte-cbp76o{pointer-events:none;position:relative;z-index:100;margin-top:-80vh}.step.svelte-cbp76o{height:4vh;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:14px}.step.active.svelte-cbp76o{color:#FE2F8D;font-weight:bold;padding-right:10px;font-size:15px;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-cbp76o{height:auto;min-height:100vh;background:black;padding:20vh 2em;margin:0 auto;position:relative}',
+  code: '.outsideContainer.svelte-1xrgi00{background:#28212F;font-family:"National 2 Web"}#scrolly.svelte-1xrgi00{font-family:"National 2 Web"}.visualContainer.svelte-1xrgi00{position:sticky;top:0em;width:100%}.legend.svelte-1xrgi00{position:absolute;left:2%;top:40px;width:200px;height:20px;background:rgb(54,55,76);background:-webkit-gradient(linear, left top, right top, from(rgba(54,55,76,1)), color-stop(60%, rgba(137,124,149,1)), to(rgba(255,222,245,1)));background:linear-gradient(90deg, rgba(54,55,76,1) 0%, rgba(137,124,149,1) 60%, rgba(255,222,245,1) 100%);z-index:100;border:2px solid #000}.legendLabel.svelte-1xrgi00{color:#b7a2bb;font-size:13px;text-align:left;position:absolute;left:0px;bottom:calc(100% + 4px)}.legendLabel.svelte-1xrgi00:nth-child(2){text-align:right;left:auto;right:0px}.spacer.svelte-1xrgi00{height:75vh}.timeline.svelte-1xrgi00{pointer-events:none;position:relative;z-index:100;margin-top:-80vh;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.svelte-1xrgi00{height:4vh;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:14px}.step.active.svelte-1xrgi00{color:#FE2F8D;font-weight:bold;padding-right:10px;font-size:15px;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-1xrgi00{height:auto;min-height:100vh;background:black;padding:20vh 2em;margin:10vh auto;position:relative}',
   map: null
 };
 let beginTime = 240;
@@ -124380,20 +124894,20 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
       final[options[i]] = peopleUniverse.sort(() => 0.5 - Math.random()).slice(0, max);
       final[options[i]] = final[options[i]].sort((a, b) => a.WECANTRIL > b.WECANTRIL ? 1 : b.WECANTRIL > a.WECANTRIL ? -1 : 0);
       final[options[i]].map(function(element) {
-        element["start"] = 295;
+        element["start"] = 330;
         element["details"] = -1;
         element["current_activity_code"] = "10101";
+        element["current_company"] = [];
       });
       if (options[i] == "3") {
         final[options[i]][4]["start"] = 239;
         for (let p = 0; p < final[options[i]].length; p++) {
           if (p != 4) {
-            final[options[i]][p]["start"] = 275 + Math.round(Math.random() * 15);
+            final[options[i]][p]["start"] = 305 + Math.round(Math.random() * 15);
           }
         }
       }
     }
-    console.log(final);
     return final;
   }
   function checkCopy(time) {
@@ -124412,7 +124926,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = `<div class="outsideContainer svelte-cbp76o"><section id="scrolly" class="svelte-cbp76o"><div class="visualContainer svelte-cbp76o">${validate_component(HappyDays_grid, "Grid").$$render(
+    $$rendered = `<div class="outsideContainer svelte-1xrgi00"><section id="scrolly" class="svelte-1xrgi00"><div class="visualContainer svelte-1xrgi00"><div class="legend svelte-1xrgi00" style="${"opacity: " + escape(value + beginTime > 480 ? 1 : 0, true) + ";"}"><span class="legendLabel svelte-1xrgi00" data-svelte-h="svelte-1h4sf1a">◂ More isolated</span> <span class="legendLabel svelte-1xrgi00" data-svelte-h="svelte-4z757k">More social ▸</span></div> ${validate_component(HappyDays_grid, "Grid").$$render(
       $$result,
       {
         currentPeople,
@@ -124423,7 +124937,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
       },
       {},
       {}
-    )}</div> <div class="timeline svelte-cbp76o">${validate_component(Scrolly, "Scrolly").$$render(
+    )}</div> <div class="timeline svelte-1xrgi00" style="${"opacity: " + escape(value + beginTime > 260 ? 1 : 0, true) + ";"}">${validate_component(Scrolly, "Scrolly").$$render(
       $$result,
       { increments: 1, top: 100, value },
       {
@@ -124436,7 +124950,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         default: () => {
           return `${each(timeRange, (time, i) => {
             let active = value === i;
-            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-cbp76o", active ? "active" : ""].join(" ").trim()}">${escape(convertTime(time))}</div>` : `<div class="${["step longcopy svelte-cbp76o", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-1xrgi00", active ? "active" : ""].join(" ").trim()}">${escape(convertTime(time))}</div>` : `<div class="${["step longcopy svelte-1xrgi00", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -124449,7 +124963,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
           })}`;
         }
       }
-    )}</div> <div class="spacer svelte-cbp76o"></div></section> </div>`;
+    )}</div> <div class="spacer svelte-1xrgi00"></div></section> </div>`;
   } while (!$$settled);
   return $$rendered;
 });
@@ -124458,8 +124972,9 @@ const Index = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   const copy2 = getContext("copy");
   return ` ${validate_component(HappyDays, "HappyDays").$$render($$result, { copy: copy2 }, {}, {})} `;
 });
-const Hed = "TKTKT HED";
+const Hed = "Happy Days";
 const Dek = "TKTKT DEK";
+const Byline = "by Alvin Chang";
 const timeline = [
   {
     time: "240",
@@ -124467,37 +124982,51 @@ const timeline = [
   },
   {
     time: "300",
-    view: "3"
-  },
-  {
-    time: "270",
     view: "3",
     image: "census.png",
     imageLoc: "top",
     text: "Every year, the US census asks thousands of people to keep a diary for one day. It helps us understand how Americans spend their time – and who they spend their time with.\r\n\r\n\r\nThis is a random selection of people from 2021."
   },
   {
-    time: "340",
+    time: "320",
+    view: "3"
+  },
+  {
+    time: "360",
     view: "3",
     image: "census.png",
     imageLoc: "bottom",
     text: "In 2021, for the first time in nearly 10 years, it asked people about their well-being. The question was something like this:\r\n                \r\n–\r\n\r\n\r\nImagine a ladder.\r\n                \r\nThe top of the ladder is your best possible life.\r\n                \r\nThe bottom is your worst possible life.\r\n                \r\nWhich step of the ladder do you feel you personally stand at the present time?"
   },
   {
-    time: "500",
+    time: "480",
     view: "0",
     image: "census.png",
     imageLoc: "bottom",
     text: "So far, we've been watching the people who are at the top of the ladder – people living their best possible life or close to it.\r\n\r\n\r\nHere's everyone else."
   },
   {
-    time: "570",
+    time: "540",
     view: "1",
     imageLoc: "bottom",
-    text: "People who are near the bottom of the ladder – far from their best possible life – have one big thing in common: They tend to spend a lot less time with friends and family. \r\n\r\n\r\nThey have more leisure time than everyone else, but for whatever reason they aren't able to spend it with other people."
+    text: "People who are near the bottom of the ladder – far from their best possible life – have one big thing in common: They tend to spend a lot less time with friends and family."
   },
   {
-    time: "620",
+    time: "600",
+    view: "0",
+    image: "census.png",
+    imageLoc: "top",
+    text: "Keep scrolling through the day. Zoom in and click on a person to explore."
+  },
+  {
+    time: "900",
+    view: "0",
+    image: "census.png",
+    imageLoc: "top",
+    text: '"We should think about loneliness like we think about hunger and thirst — as a natural signal that our body gives us when we’re missing something that we need for survival."\r\n\r\n\r\n–Vivek Murthy, former US Surgeon General\r\n\r\n\r\n(Vox.com)'
+  },
+  {
+    time: "1200",
     view: "0",
     image: "census.png",
     imageLoc: "top",
@@ -124505,31 +125034,18 @@ const timeline = [
 \r
 \r
 It can <a href="https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=3024&context=facpub">increase the likelihood of mortality by 26%</a>. It's basically like smoking <a href="https://extension.unh.edu/blog/2022/05/prolonged-social-isolation-loneliness-are-equivalent-smoking-15-cigarettes-day">15 cigarettes a day</a>.`
-  },
-  {
-    time: "700",
-    view: "0",
-    image: "census.png",
-    imageLoc: "top",
-    text: '"We should think about loneliness like we think about hunger and thirst — as a natural signal that our body gives us when we’re missing something that we need for survival."\r\n\r\n\r\n–Vivek Murthy, former US Surgeon General\r\n\r\n\r\n(Vox.com)'
-  },
-  {
-    time: "780",
-    view: "0",
-    image: "census.png",
-    imageLoc: "top",
-    text: "Click on a Group to zoom in. \r\n\r\n\r\nClick on a person to see more about them.\r\n\r\n\r\nScroll up to go back in time."
   }
 ];
 const copy = {
   Hed,
   Dek,
+  Byline,
   timeline
 };
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-08-15-17:41"}`);
+  console.log(`build: ${"2023-08-16-11:18"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

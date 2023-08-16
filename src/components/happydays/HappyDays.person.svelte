@@ -16,13 +16,53 @@
 			return "alone";
 		}
 	}
+	function convertTime(m) {
+
+		let mins = m % 60;
+		let hours = Math.floor(m / 60);
+		let ampm;
+		if (hours == 0 || hours == 24) { hours = 12; ampm = "a"; }
+		else if (hours == 12) { hours = 12; ampm = "p"; }
+		else if (hours < 12) { ampm = "a"; }
+		else if (hours > 24) { hours = hours - 24; ampm = "a"; }
+		else { hours = hours - 12; ampm = "p"; }
+		
+		return hours + ":" + mins.toLocaleString('en-US', {
+			minimumIntegerDigits: 2,
+			useGrouping: false
+		}) + ampm;
+	}
 	// If Hispanic, overrides race
 	function raceConvert(r1, r2) { return r2 == "Hispanic" ? "Hispanic" : r1; }
 	// If money exists, format. If not, return --
 	function formatMoney(n) { return n > 0 ? "$" + comma(Math.round(n/100)) : "--"; }
 	// Thousandth comma
 	function comma(x) { return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
-
+	function toTitleCase(word) { return (word.charAt(0).toUpperCase() + word.slice(1)); }
+	function convertCurrentCompany(arr) {
+		arr = arr.map((el) => lookup.WHO[el].cleanSingle);
+		// if alone
+		if (arr.length == 1 && arr[0] == "alone") {
+			return "";
+		}
+		// if with others
+		const counts = {};
+		arr.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
+		let final = [];
+		for (let i in counts) {
+			let name = counts[i] == 1 ? i : lookup.WHOPLURAL[i];
+			let num =  counts[i] == 1 ? "" : counts[i] + " ";
+			if (name != "alone" && i in lookup.WHOPLURAL) {
+				final.push(num + "" + name);	
+			}
+		}
+		const firsts = final.slice(0, final.length - 1);
+		const last = final[final.length - 1];
+		if (final.length == 1) {
+			return "with " + last;	
+		}
+		return "with " + firsts.join(', ') + ' and ' + last;
+	}
 	$: {
 		if (view != happyGroup) {
 			details = -1;
@@ -35,10 +75,19 @@
 <div class="person {person.start <= time || time < beginTime || customClicked ? 'shown' : ''}" in:fade on:click={() => details = details * -1}>
 
 	<div class="personViz" style="background: {peopleColor[person.peopleScore]};">
-		<div class="personLabel" style="color: {peopleTextColor[person.peopleScore]};">Age {person.TEAGE}, {raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}</div>
-		<div class="currentActivity" style="color: {peopleTextColor[person.peopleScore]};">{person.current_activity}</div>
+		{#if time > 242 || customClicked}
+		<div transition:fade class="personLabel" style="color: {peopleTextColor[person.peopleScore]};">{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}</div>
+		{/if}
+		{#if time > 247 || customClicked}
+		<div transition:fade class="currentActivity" style="color: {peopleTextColor[person.peopleScore]};">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
+		{/if}
+<!-- 		{#if (time > 253 && time < 278)}
+		<div transition:fade class="dayOfWeek">at <span>{convertTime(time)}</span> on {lookup.TUDIARYDAY_x[person.TUDIARYDAY_x]} </div>
+		{/if} -->
+
+		
 		<div class="happyBar" style="opacity:{happyBar};">
-			<div class="happyBarScore" style="height:{time < 344 ? 0 : person.WECANTRIL*10}%;"></div>
+			<div class="happyBarScore" style="height:{time < 365 ? 0 : person.WECANTRIL*10}%;"></div>
 			{#each [0,1,2,3,4,5,6,7,8,9,10] as ladder}
 			<div class="ladderItem" style="bottom:{ladder*10}%;"></div>
 			{/each}
@@ -50,6 +99,15 @@
 		<Sprites person="{convertWHO(act, true)}" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE[convertWHO(act, true)]}/>
 		{/if}
 		{/each}
+
+
+		{#if person.start < 240 && time <= 242}
+			<div class="headline" transition:fade>
+				<h1>Happy Days</h1>
+				<div class="byline">by Alvin Chang</div>
+				<div class="instruction">Scroll down</div>
+			</div>
+		{/if}
 	</div>
 
 	<div class="details {details == 1 && view == happyGroup ? 'shown' : ''}">
@@ -65,14 +123,37 @@
 
 
 <style>
-
+	.headline {
+		position: absolute;
+		color: white;
+		z-index: 9999;
+		width: 100%;
+		left: 0px;
+		top: 20%;
+		text-align: center;
+	}
+	.headline h1 {
+		font-size: 11px;
+		line-height: 18px;
+		margin-bottom: 0px;
+		text-transform: lowercase;
+		letter-spacing: 3px;
+		color: #FE2F8D;
+	}
+	.byline {
+		opacity: 0.5;
+		font-size: 8px;
+	}
+	.instruction {
+		margin-top: 20px;
+		font-size: 8px;
+		opacity: 0.5;
+	}
 	.person {
 		position: relative;
 		height: 20vh;
-/*		min-height: 180px;*/
 		display: inline-block;
 		margin: 1%;
-		font-size: 15px;
 		width: 16%;
 		box-sizing: border-box;
 		opacity: 0;
@@ -140,46 +221,54 @@
 		border-left: 2px solid #E7BCE0;
 		border-right: 2px solid #E7BCE0;
 		/* box-sizing: border-box; */
-/*		background: #989898;*/
-transition: all 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
-}
-.ladderItem {
-	height: 10%;
-	width: 100%;
-	position: absolute;
-	border-top: 2px solid #E7BCE0;
-}
-.happyBarScore {
-	width: 100%;
-/*		height: 8px;*/
-background: #FF389B;
-position: absolute;
-bottom: 0px;
-/*		width: 100%;*/
-/*		bottom: 0px;*/
-/*		background: yellow;*/
-transition: all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
-transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
-}
+		/*		background: #989898;*/
+		transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+	}
+	.ladderItem {
+		height: 10%;
+		width: 100%;
+		position: absolute;
+		border-top: 2px solid #E7BCE0;
+	}
+	.happyBarScore {
+		width: 100%;
+		height: 0px;
+		background: #FF389B;
+		position: absolute;
+		bottom: 0px;
+		/*		width: 100%;*/
+		/*		bottom: 0px;*/
+		/*		background: yellow;*/
+		transition: all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+	}
 
-.ladderItem:last-child {
-	border: none;
-}
+	.ladderItem:last-child {
+		border: none;
+	}
 
 
-.personLabel {
-	width: 100%;
-	padding: 0 30px;
-	color: white;
-	font-weight: bold;
+	.personLabel {
+		width: 100%;
+		padding: 5px 30px 0px;
+		font-size: 13px;
+		color: white;
+		font-weight: bold;
 /*		text-shadow: 1px 1px 2px rgba(0,0,0,0.5), -1px -1px 2px rgba(0,0,0,0.5), -1px 1px 2px rgba(0,0,0,0.5), 1px -1px 2px rgba(0,0,0,0.5);  */
+}
+.dayOfWeek {
+	font-size: 12px;
+	color: white;
+}
+.dayOfWeek span {
+	color: #FE2F8D !important;
 }
 .currentActivity {
 	width: 100%;
 	padding: 0 30px;
-	font-size: 13px;
-	color: white;
+	font-size: 12px;
+/*	color: white;*/
 /*		text-shadow: 1px 1px 1px rgba(0,0,0,0.2), -1px -1px 1px rgba(0,0,0,0.2), -1px 1px 1px rgba(0,0,0,0.2), 1px -1px 1px rgba(0,0,0,0.2);  */
 }
 /* alone */
