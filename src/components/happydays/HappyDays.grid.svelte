@@ -91,7 +91,7 @@
 			}
 		}
 	}
-
+	const groupLookup = ["","Lowest","Middle","Highest"];
 	$: time, checkPeople(), checkTiming(), checkWindow(screenWidth)
 </script>
 
@@ -107,7 +107,7 @@
 			{#each Object.entries(currentPeople) as [key, happy_group]}
 			<div class="group">
 				{#if selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && customClicked}
-					<button out:fade in:fade={{ delay: 1200 }} class="wideViewButton" on:click={() => changeView(key)}>Zoom in</button>
+					<button out:fade in:fade={{ delay: 1200 }} class="wideViewButton" on:click={() => changeView(key)}>{groupLookup[key]}</button>
 				{/if}
 				{#each happy_group as person, personKey}
 					{#if personKey < maxPeople}

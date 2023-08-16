@@ -5898,6 +5898,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
       }
     }
   }
+  const groupLookup = ["", "Lowest", "Middle", "Highest"];
   if ($$props.time === void 0 && $$bindings.time && time !== void 0)
     $$bindings.time(time);
   if ($$props.beginTime === void 0 && $$bindings.beginTime && beginTime2 !== void 0)
@@ -5913,7 +5914,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
     checkPeople(), checkTiming(), checkWindow(screenWidth);
   }
   return `  ${selectedViewIndex != 0 && selectedViewIndex != 4 && customClicked ? `<button class="wideViewButton svelte-1rkhr9t" data-svelte-h="svelte-w000gt">Zoom out</button>` : ``} <div class="interactive svelte-1rkhr9t"><div class="interactiveBackground svelte-1rkhr9t"></div> <div class="displayContainter svelte-1rkhr9t"><div class="${"groupContainer " + escape(viewTranslate[selectedViewIndex], true) + " svelte-1rkhr9t"}">${each(Object.entries(currentPeople), ([key, happy_group]) => {
-    return `<div class="group svelte-1rkhr9t">${selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && customClicked ? `<button class="wideViewButton svelte-1rkhr9t" data-svelte-h="svelte-1g8clfs">Zoom in</button>` : ``} ${each(happy_group, (person, personKey) => {
+    return `<div class="group svelte-1rkhr9t">${selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && customClicked ? `<button class="wideViewButton svelte-1rkhr9t">${escape(groupLookup[key])}</button>` : ``} ${each(happy_group, (person, personKey) => {
       return `${personKey < maxPeople2 ? `${validate_component(HappyDays_person, "Person").$$render(
         $$result,
         {
@@ -125045,7 +125046,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-08-16-11:18"}`);
+  console.log(`build: ${"2023-08-16-11:24"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
