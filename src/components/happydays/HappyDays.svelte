@@ -136,7 +136,7 @@
 		height: 75vh;
 	}
 	.timeline {
-/*		pointer-events: none;*/
+		pointer-events: none;
 		position: relative;
 		z-index: 100;
 		margin-top: -80vh;

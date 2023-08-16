@@ -124844,7 +124844,7 @@ const people = [
 ];
 const HappyDays_svelte_svelte_type_style_lang = "";
 const css = {
-  code: '.outsideContainer.svelte-eg02ab{background:#28212F;font-family:"National 2 Web"}#scrolly.svelte-eg02ab{font-family:"National 2 Web"}.visualContainer.svelte-eg02ab{position:sticky;top:0em;width:100%}.legend.svelte-eg02ab{position:absolute;left:2%;top:40px;width:200px;height:20px;background:rgb(54,55,76);background:-webkit-gradient(linear, left top, right top, from(rgba(54,55,76,1)), color-stop(60%, rgba(137,124,149,1)), to(rgba(255,222,245,1)));background:linear-gradient(90deg, rgba(54,55,76,1) 0%, rgba(137,124,149,1) 60%, rgba(255,222,245,1) 100%);z-index:100;border:2px solid #000}.legendLabel.svelte-eg02ab{color:#b7a2bb;font-size:13px;text-align:left;position:absolute;left:0px;bottom:calc(100% + 4px)}.legendLabel.svelte-eg02ab:nth-child(2){text-align:right;left:auto;right:0px}.spacer.svelte-eg02ab{height:75vh}.timeline.svelte-eg02ab{position:relative;z-index:100;margin-top:-80vh;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.svelte-eg02ab{height:4vh;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:14px}.step.active.svelte-eg02ab{color:#FE2F8D;font-weight:bold;padding-right:10px;font-size:15px;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-eg02ab{height:auto;min-height:120vh;background:-webkit-gradient(linear,  left top, left bottom,  from(rgba(0,0,0,0)),color-stop(20%, rgba(0,0,0,0.7)),color-stop(38%, rgba(0,0,0,0.9)),color-stop(50%, rgba(0,0,0,0.9)),color-stop(61%, rgba(0,0,0,0.9)),color-stop(77%, rgba(0,0,0,0.7)),to(rgba(0,0,0,0)));background:linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.9) 61%,rgba(0,0,0,0.7) 77%,rgba(0,0,0,0) 100%);padding:10vh 2em;margin:10vh auto;position:relative}',
+  code: '.outsideContainer.svelte-1k8filz{background:#28212F;font-family:"National 2 Web"}#scrolly.svelte-1k8filz{font-family:"National 2 Web"}.visualContainer.svelte-1k8filz{position:sticky;top:0em;width:100%}.legend.svelte-1k8filz{position:absolute;left:2%;top:40px;width:200px;height:20px;background:rgb(54,55,76);background:-webkit-gradient(linear, left top, right top, from(rgba(54,55,76,1)), color-stop(60%, rgba(137,124,149,1)), to(rgba(255,222,245,1)));background:linear-gradient(90deg, rgba(54,55,76,1) 0%, rgba(137,124,149,1) 60%, rgba(255,222,245,1) 100%);z-index:100;border:2px solid #000}.legendLabel.svelte-1k8filz{color:#b7a2bb;font-size:13px;text-align:left;position:absolute;left:0px;bottom:calc(100% + 4px)}.legendLabel.svelte-1k8filz:nth-child(2){text-align:right;left:auto;right:0px}.spacer.svelte-1k8filz{height:75vh}.timeline.svelte-1k8filz{pointer-events:none;position:relative;z-index:100;margin-top:-80vh;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.svelte-1k8filz{height:4vh;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:14px}.step.active.svelte-1k8filz{color:#FE2F8D;font-weight:bold;padding-right:10px;font-size:15px;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-1k8filz{height:auto;min-height:120vh;background:-webkit-gradient(linear,  left top, left bottom,  from(rgba(0,0,0,0)),color-stop(20%, rgba(0,0,0,0.7)),color-stop(38%, rgba(0,0,0,0.9)),color-stop(50%, rgba(0,0,0,0.9)),color-stop(61%, rgba(0,0,0,0.9)),color-stop(77%, rgba(0,0,0,0.7)),to(rgba(0,0,0,0)));background:linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.9) 61%,rgba(0,0,0,0.7) 77%,rgba(0,0,0,0) 100%);padding:10vh 2em;margin:10vh auto;position:relative}',
   map: null
 };
 let beginTime = 240;
@@ -124927,7 +124927,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = `<div class="outsideContainer svelte-eg02ab"><section id="scrolly" class="svelte-eg02ab"><div class="visualContainer svelte-eg02ab"><div class="legend svelte-eg02ab" style="${"opacity: " + escape(value + beginTime > 480 ? 1 : 0, true) + ";"}"><span class="legendLabel svelte-eg02ab" data-svelte-h="svelte-1h4sf1a">◂ More isolated</span> <span class="legendLabel svelte-eg02ab" data-svelte-h="svelte-4z757k">More social ▸</span></div> ${validate_component(HappyDays_grid, "Grid").$$render(
+    $$rendered = `<div class="outsideContainer svelte-1k8filz"><section id="scrolly" class="svelte-1k8filz"><div class="visualContainer svelte-1k8filz"><div class="legend svelte-1k8filz" style="${"opacity: " + escape(value + beginTime > 480 ? 1 : 0, true) + ";"}"><span class="legendLabel svelte-1k8filz" data-svelte-h="svelte-1h4sf1a">◂ More isolated</span> <span class="legendLabel svelte-1k8filz" data-svelte-h="svelte-4z757k">More social ▸</span></div> ${validate_component(HappyDays_grid, "Grid").$$render(
       $$result,
       {
         currentPeople,
@@ -124938,7 +124938,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
       },
       {},
       {}
-    )}</div> <div class="timeline svelte-eg02ab" style="${"opacity: " + escape(value + beginTime > 260 ? 1 : 0, true) + ";"}">${validate_component(Scrolly, "Scrolly").$$render(
+    )}</div> <div class="timeline svelte-1k8filz" style="${"opacity: " + escape(value + beginTime > 260 ? 1 : 0, true) + ";"}">${validate_component(Scrolly, "Scrolly").$$render(
       $$result,
       { increments: 1, top: 100, value },
       {
@@ -124951,7 +124951,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         default: () => {
           return `${each(timeRange, (time, i) => {
             let active = value === i;
-            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-eg02ab", active ? "active" : ""].join(" ").trim()}">${escape(convertTime(time))}</div>` : `<div class="${["step longcopy svelte-eg02ab", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-1k8filz", active ? "active" : ""].join(" ").trim()}">${escape(convertTime(time))}</div>` : `<div class="${["step longcopy svelte-1k8filz", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -124964,7 +124964,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
           })}`;
         }
       }
-    )}</div> <div class="spacer svelte-eg02ab"></div></section> </div>`;
+    )}</div> <div class="spacer svelte-1k8filz"></div></section> </div>`;
   } while (!$$settled);
   return $$rendered;
 });
@@ -125041,7 +125041,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-08-16-14:31"}`);
+  console.log(`build: ${"2023-08-16-14:54"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
