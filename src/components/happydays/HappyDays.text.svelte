@@ -46,29 +46,7 @@
 		image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
 		-ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
 }
-.textContainer {
-	max-width: 500px;
-	margin: 0 auto;
-	color: #ccc !important;
-	text-align: left;
-	font-size: 17px;
-	line-height: 1.6em;
-	font-weight: normal;
-/*	font-family: "Tiempos Text Web", Iowan Old Style, Times New Roman, Times, serif;*/
-	position: absolute;
-	top: 45%;
-	left: 50%;
-	-ms-transform: translateY(-50%) translateX(-50%);
-	transform: translateY(-50%) translateX(-50%);
-/*	background: black;*/
-/*	padding: 20px;*/
-}
-.textContainer strong {
-	color: white !important;
-}
-.textContainer a {
-	color: white !important;
-}
+
 </style>
 
 

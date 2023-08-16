@@ -108,7 +108,7 @@
 		left: 50%;
 		transform: translateX(-50%) !important;
 		background-repeat: no-repeat;
-		zoom: 3;
+		zoom: 2.7;
 		image-rendering: optimizeSpeed;             /* No smoothing  */
 		image-rendering: -moz-crisp-edges;          /* Firefox                        */
 		image-rendering: -o-crisp-edges;            /* Opera                          */

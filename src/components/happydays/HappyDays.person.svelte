@@ -151,7 +151,7 @@
 	}
 	.person {
 		position: relative;
-		height: 20vh;
+		height: 18vh;
 		display: inline-block;
 		margin: 1%;
 		width: 16%;
@@ -173,30 +173,30 @@
 	@media only screen  and (max-width: 1800px) {
 		.person {
 			width: 18%;
-			height: 20vh;
+			height: 18vh;
 		}
 	}
 	@media only screen  and (max-width: 1500px) {
 		.person {
 			width: 23%;
-			height: 20vh;
+			height: 18vh;
 		}
 	}
 	@media only screen  and (max-width: 1200px) {
 		.person {
 			width: 31.33333%;
-			height: 20vh;
+			height: 18vh;
 		}
 	}
 	@media only screen  and (max-width: 800px) {
 		.person {
 			width: 48%;
-			height: 20vh;
+			height: 18vh;
 		}
 	}
 	@media only screen  and (max-width: 500px) {
 		.person {
-			height: 20vh;
+			height: 18vh;
 		}
 	}
 
