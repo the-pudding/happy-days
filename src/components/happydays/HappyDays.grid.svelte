@@ -25,7 +25,6 @@
 	 FUNCTIONS
 	*****************/
 	function changeView(v) {
-		customClicked = true;
 		selectedViewIndex = views.indexOf(v);
 	}
 
