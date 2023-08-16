@@ -161,11 +161,12 @@
 	.step.longcopy {
 		height: auto;
 		min-height: 120vh;
-		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.9) 38%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 61%, rgba(0,0,0,0.7) 77%, rgba(0,0,0,0) 100%);
-		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.9) 61%,rgba(0,0,0,0.7) 77%,rgba(0,0,0,0) 100%);
-		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.9) 61%,rgba(0,0,0,0.7) 77%,rgba(0,0,0,0) 100%);
+		background: rgb(40,33,47);
+		background: -moz-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
+		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
 /*		background: black;*/
-		padding: 10vh 2em;
+		padding: 50vh 2em;
 		margin: 10vh auto;
 		position: relative;
 	}

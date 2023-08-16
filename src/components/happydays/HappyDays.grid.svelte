@@ -194,7 +194,7 @@
 
 
 	.groupContainer.zoomIn {
-		transform: perspective(0) translate3d(-63.05%, 33%, 0.2px)
+		transform: perspective(0) translate3d(-62.4%, 27%, 0.2px)
 	}
 	.groupContainer.zoomOut {
 		transform: perspective(0) translate3d(-100%, -50%, -1px);
@@ -211,12 +211,12 @@
 
 	@media only screen  and (max-width: 1800px) {
 		.groupContainer.zoomIn {
-			transform: perspective(0) translate3d(-64%, 33%, 0.2px);
+			transform: perspective(0) translate3d(-63.5%, 26%, 0.2px);
 		}
 	}
 	@media only screen  and (max-width: 1500px) {
 		.groupContainer.zoomIn {
-			transform: perspective(0) translate3d(-41.5%, 16%, 0.2px);
+			transform: perspective(0) translate3d(-41.5%, 10%, 0.2px);
 		}
 	}
 	@media only screen  and (max-width: 1200px) {
