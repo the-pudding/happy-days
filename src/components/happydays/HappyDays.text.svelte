@@ -19,13 +19,13 @@
 <div class="textContainer">
 	{#if imageLoc == "top"}
 	<div class="imageContainer">
-		<!-- <img src="assets/happydays/{image}"/> -->
+		<img src="/assets/happydays/{image}"/>
 	</div>
 	{/if}
 	{@html convertToHTML(copy)}
 	{#if imageLoc == "bottom"}
 	<div class="imageContainer">
-		<!-- <img src="assets/happydays/{image}"/> -->
+		<img src="/assets/happydays/{image}"/>
 	</div>
 	{/if}
 </div>
@@ -36,31 +36,35 @@
 	min-height: 300px;
 	background: gray;
 }
+.imageContainer img {
+	width: 100%;
+	image-rendering: optimizeSpeed;             /* No smoothing  */
+		image-rendering: -moz-crisp-edges;          /* Firefox                        */
+		image-rendering: -o-crisp-edges;            /* Opera                          */
+		image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+		image-rendering: pixelated;                 /* Universal support since 2021   */
+		image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+		-ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
+}
 .textContainer {
 	max-width: 500px;
 	margin: 0 auto;
-	color: white !important;
+	color: #ccc !important;
 	text-align: left;
-	font-size: 20px;
+	font-size: 17px;
 	line-height: 1.6em;
 	font-weight: normal;
-	font-family: "Tiempos Text Web", Iowan Old Style, Times New Roman, Times, serif;
+/*	font-family: "Tiempos Text Web", Iowan Old Style, Times New Roman, Times, serif;*/
 	position: absolute;
 	top: 45%;
 	left: 50%;
 	-ms-transform: translateY(-50%) translateX(-50%);
 	transform: translateY(-50%) translateX(-50%);
-	background: black;
-	padding: 20px;
+/*	background: black;*/
+/*	padding: 20px;*/
 }
-.textContainer p {
-	color: white;
-	margin-bottom: 20px !important;
-	text-shadow:
-	2px 0 black,
-	0 -2px black,
-	-2px 0 black,
-	0 2px black;
+.textContainer strong {
+	color: white !important;
 }
 .textContainer a {
 	color: white !important;

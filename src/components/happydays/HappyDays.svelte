@@ -136,7 +136,7 @@
 		height: 75vh;
 	}
 	.timeline {
-		pointer-events: none;
+/*		pointer-events: none;*/
 		position: relative;
 		z-index: 100;
 		margin-top: -80vh;
@@ -160,17 +160,14 @@
 	}
 	.step.longcopy {
 		height: auto;
-		min-height: 100vh;
-		/*background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.9) 38%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 61%, rgba(0,0,0,0.7) 77%, rgba(0,0,0,0) 100%);
+		min-height: 120vh;
+		background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 20%, rgba(0,0,0,0.9) 38%, rgba(0,0,0,0.9) 50%, rgba(0,0,0,0.9) 61%, rgba(0,0,0,0.7) 77%, rgba(0,0,0,0) 100%);
 		background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.9) 61%,rgba(0,0,0,0.7) 77%,rgba(0,0,0,0) 100%);
-		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.9) 61%,rgba(0,0,0,0.7) 77%,rgba(0,0,0,0) 100%);*/
-		background: black;
-		padding: 20vh 2em;
+		background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 20%,rgba(0,0,0,0.9) 38%,rgba(0,0,0,0.9) 50%,rgba(0,0,0,0.9) 61%,rgba(0,0,0,0.7) 77%,rgba(0,0,0,0) 100%);
+/*		background: black;*/
+		padding: 10vh 2em;
 		margin: 10vh auto;
 		position: relative;
-	}
-	.step p {
-		padding: 1rem;
 	}
 </style>
 
