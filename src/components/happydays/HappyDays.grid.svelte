@@ -5,7 +5,7 @@
 	import { fade } from 'svelte/transition';
 
 	let screenWidth;
-	let peopleColor = ["#36374c","#4a475e","#5e5870","#736a82","#897c95","#a08fa8","#b7a2bb","#cfb6ce","#e7cae2","#ffdef5"];
+	let peopleColor = ["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
 	let views = ["all","1","2","3"];
 	let customClicked = false;
 	export let time, beginTime, timeline, currentPeople, options;
@@ -18,7 +18,8 @@
 		"group1",
 		"group2",
 		"group3",
-		"zoomIn"
+		"zoomIn",
+		"zoomIn2"
 		];
 
 	/****************
@@ -42,15 +43,15 @@
 	let first = true;
 	function checkTiming() {
 		time = time > 239 ? time : 241; 
-		if (!customClicked && time < 605) {
+		if (first) {
+			selectedViewIndex = 0;
+			first = false;
+		} else {
 			timeline.forEach(function(line) {
 				if (time - 2 > line.time) {
 					selectedViewIndex = line.view;
 				}
 			})
-		} else if (first) {
-			selectedViewIndex = 0;
-			first = false;
 		}
 
 		if (isNaN(time)) { time = 240; }
@@ -61,32 +62,42 @@
 	
 
 	// Checking if activity start and end are within the time for the currentPeople variable	
+	let socialStats = {"1":0,"2":0,"3":0}; 
 	function checkPeople() {
+		socialStats = {"1":0,"2":0,"3":0}; 
 		for (let i = 0; i < options.length; i++) { // each happy_group
 			
 			const opt = options[i];
-
 			// each person
 			for (let j = 0; j < currentPeople[opt].length; j++) { // each person
 				let peopleScore = 0;
 				currentPeople[opt][j]["current_company"] = [];
+				currentPeople[opt][j]["social_score"] = 0;
 				for (let k = 0; k < currentPeople[opt][j]["activity"].length; k++) { // each activity
 					let start = currentPeople[opt][j]["activity"][k][0];
 					let end = currentPeople[opt][j]["activity"][k][1];
 					let theCompany = currentPeople[opt][j]["activity"][k][5];
+
+					if ((start <= time) || (start <= time - 1440 && time > 1440) ) {
+						let timeAmount = time - currentPeople[opt][j]["activity"][k][0] > currentPeople[opt][j]["activity"][k][3] ? currentPeople[opt][j]["activity"][k][3] : time - currentPeople[opt][j]["activity"][k][0]; 
+						currentPeople[opt][j]["social_score"] += lookup.PEOPLESCORE[theCompany].score * Math.min(Math.max(timeAmount/4, 1), 30);
+					}
+					
 					// if time is between start/end
 					if ((start <= time && end > time) || (start <= (time - 1440) && end > (time - 1440) ) ) {
 						currentPeople[opt][j]["activity"][k][6] = 1;
 						currentPeople[opt][j]["current_activity"] = lookup.ACTIVITY[currentPeople[opt][j]["activity"][k][2]].cleanTask;
 						currentPeople[opt][j]["current_company"].push(theCompany);
 						peopleScore += lookup.PEOPLESCORE[theCompany];
+						// keeping track of how many people in the group are being social
 					} else { // if not
 						currentPeople[opt][j]["activity"][k][6] = 0;
 					}
-
-					currentPeople[opt][j]["peopleScore"] = peopleScore > peopleColor.length - 1 ? peopleColor.length - 1 : Math.round(peopleScore);
 				}
-				
+				currentPeople[opt][j]["peopleScore"] = peopleScore > peopleColor.length - 1 ? peopleColor.length - 1 : Math.round(peopleScore);
+				if (currentPeople[opt][j]["social_score"] <= 30 && maxPeople > j) {
+					socialStats[opt] += 1;
+				}
 			}
 		}
 	}
@@ -96,16 +107,16 @@
 
 <svelte:window bind:innerWidth={screenWidth} />
 <!-- svelte-ignore a11y-no-static-element-interactions -->
-{#if selectedViewIndex != 0 && selectedViewIndex != 4 && customClicked}
+{#if selectedViewIndex != 0 && selectedViewIndex != 4 && time > 540}
 <button class="wideViewButton" on:click={() => changeView("all")}>Zoom out</button>
 {/if}
 <div class="interactive">
 	<div class="interactiveBackground" on:click={() => changeView("all")}></div>
 	<div class="displayContainter">
-		<div class="groupContainer {viewTranslate[selectedViewIndex]}">
+			<div class="groupContainer {viewTranslate[selectedViewIndex]}">
 			{#each Object.entries(currentPeople) as [key, happy_group]}
 			<div class="group">
-				{#if selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && customClicked}
+				{#if selectedViewIndex == 0}
 					<button out:fade in:fade={{ delay: 1200 }} class="wideViewButton" on:click={() => changeView(key)}>{groupLookup[key]}</button>
 				{/if}
 				{#each happy_group as person, personKey}
@@ -123,7 +134,11 @@
 						/>
 					{/if}
 				{/each}
-
+				{#if selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && time > 602}
+				<div class="socialStats" transition:fade>
+					{socialStats[key]} of {maxPeople} have been mostly isolated today.
+				</div>
+				{/if}
 			</div>
 			{/each}	
 		</div>
@@ -150,6 +165,11 @@
 	}
 	.wideViewButton:hover {
 		text-decoration: underline;
+	}
+	.socialStats {
+		font-size: 45px;
+		color: white;
+		padding: 20px 0;
 	}
 	.interactive {
 		/* max-width: 1200px; */
@@ -181,7 +201,7 @@
 		/* overflow: hidden;*/
 		overflow: hidden;
 		margin: 0 auto;
-		padding-right: 50px;
+		padding-right: 60px;
 	}
 	.groupContainer {
 		position: relative;
@@ -195,6 +215,9 @@
 
 	.groupContainer.zoomIn {
 		transform: perspective(0) translate3d(-62.4%, 27%, 0.2px)
+	}
+	.groupContainer.zoomIn2 {
+			transform: perspective(0) translate3d(30.5%, 33%, 0.3px)
 	}
 	.groupContainer.zoomOut {
 		transform: perspective(0) translate3d(-100%, -50%, -1px);
@@ -210,44 +233,47 @@
 	}
 
 	@media only screen  and (max-width: 1800px) {
+		.groupContainer.zoomIn2 {
+			transform: perspective(0) translate3d(31.5%, 33%, 0.3px)
+		}
 		.groupContainer.zoomIn {
 			transform: perspective(0) translate3d(-63.5%, 26%, 0.2px);
 		}
 	}
 	@media only screen  and (max-width: 1500px) {
+		.groupContainer.zoomIn2 {
+			transform: perspective(0) translate3d(31.5%, 33%, 0.3px)
+		}
 		.groupContainer.zoomIn {
 			transform: perspective(0) translate3d(-41.5%, 10%, 0.2px);
 		}
 	}
 	@media only screen  and (max-width: 1200px) {
+		.groupContainer.zoomIn2 {
+			transform: perspective(0) translate3d(30%, 33%, 0.3px)
+		}
 		.groupContainer.zoomIn {
 			transform: perspective(0) translate3d(-52.1%, 7%, 0.2px);
 		}
 	}
 	@media only screen  and (max-width: 800px) {
+		.groupContainer.zoomIn2 {
+			transform: perspective(0) translate3d(21.5%, 33%, 0.2px)
+		}
 		.groupContainer.zoomIn {
 			transform: perspective(0) translate3d(-45%, 0, 0.2px);
 		}
 	}
 	
 	@media only screen  and (max-width: 500px) {
+		.groupContainer.zoomIn2 {
+			transform: perspective(0) translate3d(22%, 33%, 0.2px)
+		}
 		.groupContainer.zoomIn {
 			transform: perspective(0) translate3d(-45%, 0, 0.2px);
 		}
 	}
 	
-	
-	
-	
-	
-/*	
-	// 1800: [63.05%, 33%, 0, 0]
-	// 1500: [-64%, 33%, 0, 0]
-	// 1200: [-41.5%, 16%, 0, 0]
-	// 800:  [-52.5%, 13%, 0, 0]
-	// 500:  [-45%, 0, 0, 0]*/
-
-
 	.group {
 		display: flex;
 		position: absolute;

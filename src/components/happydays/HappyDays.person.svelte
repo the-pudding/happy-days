@@ -4,8 +4,29 @@
 	import { fade } from 'svelte/transition';
 	
 	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view;
-	let peopleTextColor = ["#fff","#fff","#fff","#fff","#fff","#fff","#36374c","#36374c","#36374c","#36374c"];
+	let peopleTextColor = ["#fff","#fff","#fff","#fff","#fff","#fff","#36374c","#36374c","#36374c","#36374c","#36374c"];
 	let details = -1;
+
+	function checkOpacity() {
+		if (view == 5) {
+			if (person.TUCASEID != "20210706212196") {
+				return "hidePerson"
+			}
+		}
+		return "";
+		// else { return ""; }
+		// view == 5 && person.TUCASEID != "20210706212196"  ? 'hidePerson' : ''
+	}
+
+	function colorBackground(n, bg) {
+		let colorAdj = Math.floor(n / 6);
+		if (bg) {
+			return colorAdj > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[colorAdj];	
+		} else {
+			return colorAdj > peopleTextColor.length-1 ? peopleTextColor[peopleTextColor.length-1] : peopleTextColor[colorAdj];	
+		}
+	}
+
 	// This finds who the person was with for each activity
 	function convertWHO(a, returnClass) {
 		let val = a[a.length - 2]; // this is minus 2 because the last array item is whether it is shown or not
@@ -72,26 +93,35 @@
 
 
 
-<div class="person {person.start <= time || time < beginTime || customClicked ? 'shown' : ''}" in:fade on:click={() => details = details * -1}>
+<div class="person { person.start <= time || time < beginTime ? 'shown' : ''} { checkOpacity() }" in:fade on:click={() => details = details * -1}>
 
-	<div class="personViz" style="background: {peopleColor[person.peopleScore]};">
-		{#if time > 242 || customClicked}
-		<div transition:fade class="personLabel" style="color: {peopleTextColor[person.peopleScore]};">{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}</div>
-		{/if}
-		{#if time > 247 || customClicked}
-		<div transition:fade class="currentActivity" style="color: {peopleTextColor[person.peopleScore]};">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
-		{/if}
+	<!-- <div class="personViz" style="background: {colorBackground(person.social_score, true)};"> -->
+		<div class="personViz">
+
+			<div class="socialBar">
+				<div class="socialBarScore" style="height:{time < 365 ? 0 : (person.social_score - 30) / 9 * peopleColor.length}%; background: { (person.social_score - 30) / 9 > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( (person.social_score - 30) / 9)] }"></div>
+			</div>
+
+			{#if time > 242}
+			<div transition:fade class="personLabel">{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}</div>
+			{/if}
+			{#if time > 247}
+			<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
+			{/if}
 <!-- 		{#if (time > 253 && time < 278)}
 		<div transition:fade class="dayOfWeek">at <span>{convertTime(time)}</span> on {lookup.TUDIARYDAY_x[person.TUDIARYDAY_x]} </div>
 		{/if} -->
 
 		
-		<div class="happyBar" style="opacity:{happyBar};">
+		<!-- <div class="happyBar" style="opacity:{happyBar};">
 			<div class="happyBarScore" style="height:{time < 365 ? 0 : person.WECANTRIL*10}%;"></div>
 			{#each [0,1,2,3,4,5,6,7,8,9,10] as ladder}
 			<div class="ladderItem" style="bottom:{ladder*10}%;"></div>
 			{/each}
-		</div>
+		</div> -->
+
+
+		
 
 		{#each person.activity as act}
 		<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE["alone"]}/>
@@ -102,19 +132,20 @@
 
 
 		{#if person.start < 240 && time <= 242}
-			<div class="headline" transition:fade>
-				<h1>Happy Days</h1>
-				<div class="byline">by Alvin Chang</div>
-				<div class="instruction">Scroll down</div>
-			</div>
+		<div class="headline" transition:fade>
+			<h1>Happy Days</h1>
+			<div class="byline">by Alvin Chang</div>
+			<div class="instruction">Scroll down</div>
+		</div>
 		{/if}
+
 	</div>
 
-	<div class="details {details == 1 && view == happyGroup ? 'shown' : ''}">
+	<div class="details {details == 1 && (view == happyGroup || view == 5) ? 'shown' : ''}">
 		{person.TEAGE}-year-old {raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]} in {lookup.WEGENHTH[person.WEGENHTH].toLowerCase()} health.
 		Has {person.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[person.TRSPPRES].toLowerCase()} and {person.TRCHILDNUM_x == 1 ? person.TRCHILDNUM_x + " child" : person.TRCHILDNUM_x + " children"} in the household. 
 		{person.TESCHENR == 1 ? "Enrolled in school." : ""} Has a {lookup.PEEDUCA[person.PEEDUCA].toLowerCase()} education. 
-		{person.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[person.TRDTIND1].toLowerCase() +  " earning " + formatMoney(person.TRERNWA_x) + " a week." : ''} 
+		{person.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[person.TRDTIND1].toLowerCase() +  " earning " + formatMoney(person.TRERNWA_x) + " a week." : ''}
 		<div class="detailsClose">Click to close</div>
 	</div>
 
@@ -167,8 +198,8 @@
 		cursor: pointer;
 		pointer-events: all;
 	}
-	.person.shown:hover {
-
+	.hidePerson {
+		opacity: 0 !important;
 	}
 	@media only screen  and (max-width: 1800px) {
 		.person {
@@ -209,9 +240,43 @@
 		transition: all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 		border-bottom: 10px solid #000;
+		background: #492e5a;
+	}
+	.personViz:after {
+		content:"";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 80%;
+		background: rgb(0,0,0);
+		background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%);
+		background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%);
+		background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%);
 	}
 
-
+	.socialBar {
+		overflow: hidden;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		height: 100%;
+		width: 100%;
+		transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+		z-index: 0;
+	}
+	.socialBarScore {
+		width: 100%;
+		height: 0px;
+		max-height: 100%;
+		position: absolute;
+		bottom: 0px;
+		transition: all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+		opacity: 1;
+		background: black;
+	}
 	.happyBar {
 		position: absolute;
 		left: 10px;
@@ -250,49 +315,53 @@
 
 
 	.personLabel {
+		position: relative;
 		width: 100%;
 		padding: 5px 30px 0px;
-		font-size: 13px;
+		font-size: 14px;
 		color: white;
 		font-weight: bold;
-/*		text-shadow: 1px 1px 2px rgba(0,0,0,0.5), -1px -1px 2px rgba(0,0,0,0.5), -1px 1px 2px rgba(0,0,0,0.5), 1px -1px 2px rgba(0,0,0,0.5);  */
-}
-.dayOfWeek {
-	font-size: 12px;
-	color: white;
-}
-.dayOfWeek span {
-	color: #FE2F8D !important;
-}
-.currentActivity {
-	width: 100%;
-	padding: 0 30px;
-	font-size: 12px;
-/*	color: white;*/
-/*		text-shadow: 1px 1px 1px rgba(0,0,0,0.2), -1px -1px 1px rgba(0,0,0,0.2), -1px 1px 1px rgba(0,0,0,0.2), 1px -1px 1px rgba(0,0,0,0.2);  */
-}
-/* alone */
-.details {
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	background: rgba(0,0,0,0.88);
-	color: white;
-	display: none;
-	padding: 20px;
-	text-align: left;
-	font-size: 13px;
-}
-.details.shown {
-	display: block;
-}
-.detailsClose {
-	margin-top: 10px;
-	font-weight: bold;
-	font-size: 13px;
-	color: #888;
-}
+		z-index: 100;
+		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
+	}
+	.dayOfWeek {
+		font-size: 12px;
+		color: white;
+	}
+	.dayOfWeek span {
+		color: #FE2F8D !important;
+	}
+	.currentActivity {
+		position: relative;
+		width: 100%;
+		padding: 0 10px;
+		font-size: 12px;
+		color: white;
+		z-index: 100;
+		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
+	}
+
+	.details {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.88);
+		color: white;
+		display: none;
+		padding: 65px 20px 20px;
+		text-align: left;
+		font-size: 13px;
+	}
+	.details.shown {
+		display: block;
+	}
+	.detailsClose {
+		margin-top: 10px;
+		font-weight: bold;
+		font-size: 13px;
+		color: #888;
+	}
 </style>
 

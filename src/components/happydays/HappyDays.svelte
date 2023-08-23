@@ -30,7 +30,7 @@
 					return p;
 				}
 			});
-			final[options[i]] = peopleUniverse.sort(() => 0.5 - Math.random()).slice(0, max);
+			final[options[i]] = peopleUniverse; //peopleUniverse.sort(() => 0.5 - Math.random()).slice(0, max);
 			final[options[i]] = final[options[i]].sort((a,b) => (a.WECANTRIL > b.WECANTRIL) ? 1 : ((b.WECANTRIL > a.WECANTRIL) ? -1 : 0))
 			// Adding the timing for when each box is shown
 			final[options[i]].map(function(element)  {
@@ -38,6 +38,7 @@
 				element["details"] = -1;
 				element["current_activity_code"] = "10101";
 				element["current_company"] = []; 
+				element["social_score"] = 0;
 			});
 			if (options[i] == "3") {
 				final[options[i]][4]["start"] = 239;
@@ -56,16 +57,16 @@
 		let mins = m % 60;
 		let hours = Math.floor(m / 60);
 		let ampm;
-		if (hours == 0 || hours == 24) { hours = 12; ampm = "a"; }
-		else if (hours == 12) { hours = 12; ampm = "p"; }
-		else if (hours < 12) { ampm = "a"; }
-		else if (hours > 24) { hours = hours - 24; ampm = "a"; }
-		else { hours = hours - 12; ampm = "p"; }
+		if (hours == 0 || hours == 24) { hours = 12; ampm = "am"; }
+		else if (hours == 12) { hours = 12; ampm = "pm"; }
+		else if (hours < 12) { ampm = "am"; }
+		else if (hours > 24) { hours = hours - 24; ampm = "am"; }
+		else { hours = hours - 12; ampm = "pm"; }
 		
 		return hours + ":" + mins.toLocaleString('en-US', {
 			minimumIntegerDigits: 2,
 			useGrouping: false
-		}) + ampm;
+		}) + " " + ampm;
 	}
 
 	// Check if the timeline step has a text element
@@ -82,10 +83,10 @@
 <div class="outsideContainer">
 	<section id="scrolly">
 		<div class="visualContainer">
-			<div class="legend" style="opacity: {value + beginTime > 480 ? 1 : 0};" transition:fade>
+			<!-- <div class="legend" style="opacity: {value + beginTime > 480 ? 1 : 0};" transition:fade>
 				<span class="legendLabel">◂ More isolated</span>
 				<span class="legendLabel">More social ▸</span>
-			</div>
+			</div> -->
 			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline}/>
 		</div>
 		<div class="timeline" style="opacity: {value + beginTime > 260 ? 1 : 0};" transition:fade>
@@ -136,20 +137,21 @@
 		height: 75vh;
 	}
 	.timeline {
-		pointer-events: none;
 		position: relative;
 		z-index: 100;
 		margin-top: -80vh;
 		transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
 		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		pointer-events: none;
 	}
 	.step {
+		pointer-events: none;
 		height: 4vh;
 		min-height: 25px;
 		text-align: right;
 		color: #aaa;
 		padding-right: 5px;
-		font-size: 14px;
+		font-size: 12px;
 	}
 	.step.active {
 		color: #FE2F8D;
@@ -159,14 +161,15 @@
 		text-shadow: 0px 0px 6px #000;
 	}
 	.step.longcopy {
+		pointer-events: auto !important;
 		height: auto;
-		min-height: 120vh;
+		min-height: 200vh;
 		background: rgb(40,33,47);
 		background: -moz-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
 		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
 		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
 /*		background: black;*/
-		padding: 50vh 2em;
+/*		padding: 50vh 2em;*/
 		margin: 10vh auto;
 		position: relative;
 	}
