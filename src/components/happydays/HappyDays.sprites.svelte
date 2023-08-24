@@ -108,7 +108,7 @@
 		left: 50%;
 		transform: translateX(-50%) !important;
 		background-repeat: no-repeat;
-		zoom: 2.7;
+		zoom: 2;
 		image-rendering: optimizeSpeed;             /* No smoothing  */
 		image-rendering: -moz-crisp-edges;          /* Firefox                        */
 		image-rendering: -o-crisp-edges;            /* Opera                          */
@@ -733,7 +733,7 @@
 	[anim="male-workinglabor-11.png"] { width: 40px; height: 40px; background-position:-400px -1840px }
 	
 
-	[anim2] { background-image: url(/assets/happydays/sprite-master-nonalone.png); background-size: 440px 1880px }
+	[anim2] { background-image: url(/assets/happydays/sprite-master-nonalone2.png); background-size: 440px 1880px }
 
 	[anim2="child-eating-1.png"] { width: 40px; height: 40px; background-position:0px 0px }
 	[anim2="child-eating-2.png"] { width: 40px; height: 40px; background-position:-40px 0px }

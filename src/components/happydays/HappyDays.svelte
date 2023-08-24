@@ -16,42 +16,71 @@
 	
 	export let copy;
 	
-	const options = ["1","2","3"]; // happiness groups
-	let maxPeople = 36;
+	const options = ["1","2","3","4","5","6","7","8","9","10"]; // happiness groups
 	const days = [1,7]; // days of the week to display
-	const ageRange = [0,80]; // age range to display
-	let currentPeople = selectPeople(maxPeople); // initialize
+	const ageRange = [0,65]; // age range to display
+	let currentPeople = selectPeople(20); // initialize with X number of people per WECANTRIL
+	let positionLookup = {};
 	// Select ## random people in a given group
 	function selectPeople(max) {
-		let final = {};
+		let final = [];
 		for (let i = 0; i < options.length; i++) {
 			let peopleUniverse = people.filter(function(p) {
-				if (days.indexOf(p.TUDIARYDAY_x) != -1 && p.happy_group == options[i] && p.TEAGE >= ageRange[0] && p.TEAGE <= ageRange[1] && p.activity[p.activity.length-1] != 1) { // && p.TRDPFTPT_x == 1 ||  fulltime job (&& p.TRDPFTPT_x == 1)
+				if (days.indexOf(p.TUDIARYDAY_x) != -1 && p.WECANTRIL == options[i] && p.TEAGE >= ageRange[0] && p.TEAGE <= ageRange[1] && p.activity[p.activity.length-1] != 1) { // && p.TRDPFTPT_x == 1 ||  fulltime job (&& p.TRDPFTPT_x == 1)
 					return p;
 				}
 			});
-			final[options[i]] = peopleUniverse; //peopleUniverse.sort(() => 0.5 - Math.random()).slice(0, max);
-			final[options[i]] = final[options[i]].sort((a,b) => (a.WECANTRIL > b.WECANTRIL) ? 1 : ((b.WECANTRIL > a.WECANTRIL) ? -1 : 0))
+			
 			// Adding the timing for when each box is shown
-			final[options[i]].map(function(element)  {
-				element["start"] = 330;
+			peopleUniverse.map(function(element)  {
+				element["start"] = 305;
 				element["details"] = -1;
 				element["current_activity_code"] = "10101";
 				element["current_company"] = []; 
 				element["social_score"] = 0;
+				element["position"] = [0,0];
 			});
-			if (options[i] == "3") {
-				final[options[i]][4]["start"] = 239;
-				for (let p = 0; p < final[options[i]].length; p++) {
-					if (p != 4) {
-						final[options[i]][p]["start"] = 305 + Math.round(Math.random()*15);
-					}
-				} 
-			}
+
+			// the first box shown
+			// peopleUniverse[4]["start"] = 239;
+			final.push.apply(final, peopleUniverse.slice(0, max));
 		}
+
+		// no sort, but numbering and counting up
+		let counter = 0;
+		final = sortObj(final, "TUCASEID");
+		final.map(function(element)  {
+			element["num"] = counter;
+			counter++; 
+		});
+
+		// sorting by WECANTRIL and counting up
+		final = sortObj(final, "WECANTRIL");
+		counter = 0;
+		final.map(function(element)  {
+			element["WECANTRIL_num"] = counter;
+			counter++; 
+		});
+
+			// sorting by WEGENHTH and counting up
+		final = sortObj(final, "WEGENHTH");
+		counter = 0;
+		final.map(function(element)  {
+			element["WEGENHTH_num"] = counter;
+			counter++; 
+		});
+
+		// sort back to default
+		final = sortObj(final, "num");
+		final[0].start = 239;
 		return final;
 	}
 	
+
+	function sortObj(obj, byVar) {
+		return obj.sort((a,b) => (a[byVar] > b[byVar]) ? 1 : ((b[byVar] > a[byVar]) ? -1 : 0));
+	}
+
 	function convertTime(m) {
 
 		let mins = m % 60;
@@ -87,7 +116,7 @@
 				<span class="legendLabel">◂ More isolated</span>
 				<span class="legendLabel">More social ▸</span>
 			</div> -->
-			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline}/>
+			<Grid currentPeople={currentPeople} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline}/>
 		</div>
 		<div class="timeline" style="opacity: {value + beginTime > 260 ? 1 : 0};" transition:fade>
 			<Scrolly bind:value increments={1} top={100}>
@@ -119,6 +148,7 @@
 		position: sticky;
 		top: 0em;
 		width: 100%;
+		padding-left: 20px;
 	}
 	.legend {
 		position: absolute;
@@ -156,8 +186,8 @@
 	.step.active {
 		color: #FE2F8D;
 		font-weight: bold;
-		padding-right: 10px;
-		font-size: 15px;
+/*		padding-right: 10px;*/
+/*		font-size: 15px;*/
 		text-shadow: 0px 0px 6px #000;
 	}
 	.step.longcopy {
@@ -170,9 +200,9 @@
 		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
 /*		background: black;*/
 /*		padding: 50vh 2em;*/
-		margin: 10vh auto;
-		position: relative;
-	}
+margin: 10vh auto;
+position: relative;
+}
 </style>
 
 

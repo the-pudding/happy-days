@@ -121,6 +121,13 @@ h6 {
 	margin: 50px auto;
 	width: 100px;
 }
+.textContainer blockquote {
+	padding-left: 20px;
+	border-left: 2px solid #F066B5;
+	margin: 40px 0 40px 20px;
+	width: calc(100% - 40px);
+	color: #fff !important;
+}
 .textContainer span.bottomladder {
 	font-weight: bold;
 	color: #FE2F8D;

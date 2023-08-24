@@ -3,16 +3,13 @@
 	import lookup from "$components/happydays/lookup.json";
 	import { fade } from 'svelte/transition';
 	
-	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view;
+	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort;
 	let peopleTextColor = ["#fff","#fff","#fff","#fff","#fff","#fff","#36374c","#36374c","#36374c","#36374c","#36374c"];
 	let details = -1;
+	let shownVariable = "num";
+	let socialMax = 210;
 
 	function checkOpacity() {
-		if (view == 5) {
-			if (person.TUCASEID != "20210706212196") {
-				return "hidePerson"
-			}
-		}
 		return "";
 		// else { return ""; }
 		// view == 5 && person.TUCASEID != "20210706212196"  ? 'hidePerson' : ''
@@ -88,40 +85,30 @@
 		if (view != happyGroup) {
 			details = -1;
 		}
+		shownVariable = selectedSort == "num" ? "num" : selectedSort.replace("_num","");
 	}
 </script>
 
 
 
-<div class="person { person.start <= time || time < beginTime ? 'shown' : ''} { checkOpacity() }" in:fade on:click={() => details = details * -1}>
+<div class="person { person.start <= time || time < beginTime ? 'shown' : ''} { checkOpacity() }" 
+	 style="width:{ position[2] }px; height:{ position[3] }px; left: {position[0]}%; top: {position[1]}%"
+	 in:fade 
+	 on:click={() => details = details * -1}
+	 >
 
-	<!-- <div class="personViz" style="background: {colorBackground(person.social_score, true)};"> -->
-		<div class="personViz">
+	<div class="personViz">
 
-			<div class="socialBar">
-				<div class="socialBarScore" style="height:{time < 365 ? 0 : (person.social_score - 30) / 9 * peopleColor.length}%; background: { (person.social_score - 30) / 9 > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( (person.social_score - 30) / 9)] }"></div>
-			</div>
+		<div class="socialBar">
+			<div class="socialBarScore" style="height:{time < 365 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
+		</div>
 
-			{#if time > 242}
-			<div transition:fade class="personLabel">{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}</div>
-			{/if}
-			{#if time > 247}
-			<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
-			{/if}
-<!-- 		{#if (time > 253 && time < 278)}
-		<div transition:fade class="dayOfWeek">at <span>{convertTime(time)}</span> on {lookup.TUDIARYDAY_x[person.TUDIARYDAY_x]} </div>
-		{/if} -->
-
-		
-		<!-- <div class="happyBar" style="opacity:{happyBar};">
-			<div class="happyBarScore" style="height:{time < 365 ? 0 : person.WECANTRIL*10}%;"></div>
-			{#each [0,1,2,3,4,5,6,7,8,9,10] as ladder}
-			<div class="ladderItem" style="bottom:{ladder*10}%;"></div>
-			{/each}
-		</div> -->
-
-
-		
+		{#if time > 242}
+		<div transition:fade class="personLabel">{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}</div>
+		{/if}
+		{#if time > 247}
+		<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
+		{/if}		
 
 		{#each person.activity as act}
 		<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE["alone"]}/>
@@ -140,20 +127,26 @@
 		{/if}
 
 	</div>
-
-	<div class="details {details == 1 && (view == happyGroup || view == 5) ? 'shown' : ''}">
+	<!-- <div class="bigtext">{person[shownVariable]}</div> -->
+	<div class="details {details == 1 && time > 300 ? 'shown' : ''}">
 		{person.TEAGE}-year-old {raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]} in {lookup.WEGENHTH[person.WEGENHTH].toLowerCase()} health.
 		Has {person.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[person.TRSPPRES].toLowerCase()} and {person.TRCHILDNUM_x == 1 ? person.TRCHILDNUM_x + " child" : person.TRCHILDNUM_x + " children"} in the household. 
 		{person.TESCHENR == 1 ? "Enrolled in school." : ""} Has a {lookup.PEEDUCA[person.PEEDUCA].toLowerCase()} education. 
 		{person.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[person.TRDTIND1].toLowerCase() +  " earning " + formatMoney(person.TRERNWA_x) + " a week." : ''}
 		<div class="detailsClose">Click to close</div>
 	</div>
-
 </div>
 
 
 
 <style>
+	.bigtext {
+		position: absolute;
+		left: 10%;
+		top: 10%;
+		font-size: 100px;
+		color: white;
+	}
 	.headline {
 		position: absolute;
 		color: white;
@@ -181,7 +174,9 @@
 		opacity: 0.5;
 	}
 	.person {
-		position: relative;
+		position: absolute;
+		left: 0px;
+		top: 0px;
 		height: 20vh;
 		display: inline-block;
 		margin: 0.5%;
@@ -189,9 +184,10 @@
 		box-sizing: border-box;
 		opacity: 0;
 		overflow: hidden;
-		transition: opacity 600ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+		transition: all 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		pointer-events: none;
+		border: 4px solid #28212F;
 	}
 	.person.shown {
 		opacity: 1;
@@ -275,7 +271,6 @@
 		transition: all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 		opacity: 1;
-		background: black;
 	}
 	.happyBar {
 		position: absolute;
@@ -317,10 +312,10 @@
 	.personLabel {
 		position: relative;
 		width: 100%;
-		padding: 5px 30px 0px;
-		font-size: 14px;
+		padding-top: 5px;
+		font-size: 12px;
 		color: white;
-		font-weight: bold;
+/*		font-weight: bold;*/
 		z-index: 100;
 		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
 	}
@@ -334,9 +329,11 @@
 	.currentActivity {
 		position: relative;
 		width: 100%;
-		padding: 0 10px;
+		padding: 0 3px;
 		font-size: 12px;
-		color: white;
+		line-height: 13px;
+		color: #fff;
+		opacity: 0.8;
 		z-index: 100;
 		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
 	}
@@ -350,18 +347,22 @@
 		background: rgba(0,0,0,0.88);
 		color: white;
 		display: none;
-		padding: 65px 20px 20px;
+		padding: 8px;
 		text-align: left;
-		font-size: 13px;
+		font-size: 12px;
+		z-index: 999;
 	}
 	.details.shown {
 		display: block;
 	}
 	.detailsClose {
-		margin-top: 10px;
-		font-weight: bold;
+		margin-top: 3px;
+/*		font-weight: bold;*/
 		font-size: 13px;
 		color: #888;
+		position: absolute;
+		bottom: 5px;
+		left: 6px;
 	}
 </style>
 
