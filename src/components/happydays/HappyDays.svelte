@@ -16,10 +16,10 @@
 	
 	export let copy;
 	
-	const options = ["1","2","3","4","5","6","7","8","9","10"]; // happiness groups
+	const options = ["0","1","2","3","4","5","6","7","8","9","10"]; // happiness groups
 	const days = [1,7]; // days of the week to display
 	const ageRange = [0,65]; // age range to display
-	let currentPeople = selectPeople(20); // initialize with X number of people per WECANTRIL
+	let currentPeople = selectPeople(25); // initialize with X number of people per WECANTRIL
 	let positionLookup = {};
 	// Select ## random people in a given group
 	function selectPeople(max) {
@@ -33,7 +33,7 @@
 			
 			// Adding the timing for when each box is shown
 			peopleUniverse.map(function(element)  {
-				element["start"] = 305;
+				element["start"] = 280;
 				element["details"] = -1;
 				element["current_activity_code"] = "10101";
 				element["current_company"] = []; 
@@ -41,14 +41,13 @@
 				element["position"] = [0,0];
 			});
 
-			// the first box shown
-			// peopleUniverse[4]["start"] = 239;
 			final.push.apply(final, peopleUniverse.slice(0, max));
 		}
 
 		// no sort, but numbering and counting up
 		let counter = 0;
 		final = sortObj(final, "TUCASEID");
+		final = final.sort(function(x,y){ return x.TUCASEID == 20210706212196 ? -1 : 0; });
 		final.map(function(element)  {
 			element["num"] = counter;
 			counter++; 
@@ -62,11 +61,27 @@
 			counter++; 
 		});
 
-			// sorting by WEGENHTH and counting up
+		// sorting by WEGENHTH and counting up
 		final = sortObj(final, "WEGENHTH");
 		counter = 0;
 		final.map(function(element)  {
 			element["WEGENHTH_num"] = counter;
+			counter++; 
+		});
+
+		// sorting by WEPAINMD and counting up
+		final = sortObj(final, "WEPAINMD");
+		counter = 0;
+		final.map(function(element)  {
+			element["WEPAINMD_num"] = counter;
+			counter++; 
+		});
+
+		// sorting by WEREST and counting up
+		final = sortObj(final, "WEREST");
+		counter = 0;
+		final.map(function(element)  {
+			element["WEREST_num"] = counter;
 			counter++; 
 		});
 
@@ -118,16 +133,24 @@
 			</div> -->
 			<Grid currentPeople={currentPeople} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline}/>
 		</div>
-		<div class="timeline" style="opacity: {value + beginTime > 260 ? 1 : 0};" transition:fade>
-			<Scrolly bind:value increments={1} top={100}>
+		<div class="timeline" style="opacity: {value + beginTime > 250 ? 1 : 0};" transition:fade>
+			<Scrolly increments={1} top={100} bind:value>
 				{#each timeRange as time, i}
 				{@const active = value === i}
 				{#if checkCopy(time) == false}
 				<div class="step" class:active>{convertTime(time)}</div>
 				{:else}
+				{#if checkCopy(time)["addclass"] != "shorttext"}
+				<div class="preLongcopy"></div>
 				<div class="step longcopy" class:active>
-					<Text copy={checkCopy(time)["text"]} image={checkCopy(time)["image"]} imageLoc={checkCopy(time)["imageLoc"]} />
+					<Text copy={checkCopy(time)["text"]} add={"longcopy"} time={convertTime(time)} />
 				</div>
+				<div class="postLongcopy"></div>
+				{:else}
+				<div class="step shortcopy" class:active>
+					<Text copy={checkCopy(time)["text"]} add={"shortcopy"} time={convertTime(time)} />
+				</div>
+				{/if}
 				{/if}
 				{/each}
 			</Scrolly>
@@ -186,23 +209,42 @@
 	.step.active {
 		color: #FE2F8D;
 		font-weight: bold;
-/*		padding-right: 10px;*/
-/*		font-size: 15px;*/
 		text-shadow: 0px 0px 6px #000;
 	}
 	.step.longcopy {
 		pointer-events: auto !important;
 		height: auto;
-		min-height: 200vh;
 		background: rgb(40,33,47);
-		background: -moz-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
-		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
-		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(16,2,34,1) 16%, rgba(0,0,0,1) 80%, rgba(40,33,47,0) 100%);
-/*		background: black;*/
-/*		padding: 50vh 2em;*/
-margin: 10vh auto;
-position: relative;
-}
+		min-height: 100vh;
+		padding: 0% 2em 0%;
+		box-sizing: content-box !important;
+		margin: 0vh auto;
+		position: relative;
+	}
+	.step.shortcopy {
+		pointer-events: auto !important;
+		height: auto;
+		padding: 0% 2em 0%;
+		box-sizing: content-box !important;
+		margin: 0vh auto;
+		position: relative;
+	}
+	.preLongcopy {
+		display: block;
+		height: 300px;
+		background: -moz-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
+		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
+		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
+		margin-bottom: -30px;
+	}
+	.postLongcopy {
+		display: block;
+		height: 200px;
+		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
+		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
+		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
+		margin-top: -30px;
+	}
 </style>
 
 

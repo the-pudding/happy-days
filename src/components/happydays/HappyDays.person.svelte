@@ -1,7 +1,7 @@
 <script>
 	import Sprites from "$components/happydays/HappyDays.sprites.svelte";
 	import lookup from "$components/happydays/lookup.json";
-	import { fade } from 'svelte/transition';
+	import { fade, slide } from 'svelte/transition';
 	
 	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort;
 	let peopleTextColor = ["#fff","#fff","#fff","#fff","#fff","#fff","#36374c","#36374c","#36374c","#36374c","#36374c"];
@@ -10,9 +10,7 @@
 	let socialMax = 210;
 
 	function checkOpacity() {
-		return "";
-		// else { return ""; }
-		// view == 5 && person.TUCASEID != "20210706212196"  ? 'hidePerson' : ''
+		return view == 0 && person.TUCASEID != "20210706212196" ? 'hidePerson' : '';
 	}
 
 	function colorBackground(n, bg) {
@@ -89,8 +87,6 @@
 	}
 </script>
 
-
-
 <div class="person { person.start <= time || time < beginTime ? 'shown' : ''} { checkOpacity() }" 
 	 style="width:{ position[2] }px; height:{ position[3] }px; left: {position[0]}%; top: {position[1]}%"
 	 in:fade 
@@ -100,14 +96,15 @@
 	<div class="personViz">
 
 		<div class="socialBar">
-			<div class="socialBarScore" style="height:{time < 365 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
+			<div class="socialBarScore" style="height:{time < 545 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
 		</div>
+		
 
 		{#if time > 242}
 		<div transition:fade class="personLabel">{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}</div>
 		{/if}
 		{#if time > 247}
-		<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
+		<div class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
 		{/if}		
 
 		{#each person.activity as act}
@@ -125,9 +122,10 @@
 			<div class="instruction">Scroll down</div>
 		</div>
 		{/if}
-
+		{#if shownVariable != "num"}
+		<div class="bigtext" transition:fade>{person[shownVariable]}</div>
+		{/if}
 	</div>
-	<!-- <div class="bigtext">{person[shownVariable]}</div> -->
 	<div class="details {details == 1 && time > 300 ? 'shown' : ''}">
 		{person.TEAGE}-year-old {raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]} in {lookup.WEGENHTH[person.WEGENHTH].toLowerCase()} health.
 		Has {person.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[person.TRSPPRES].toLowerCase()} and {person.TRCHILDNUM_x == 1 ? person.TRCHILDNUM_x + " child" : person.TRCHILDNUM_x + " children"} in the household. 
@@ -142,10 +140,15 @@
 <style>
 	.bigtext {
 		position: absolute;
-		left: 10%;
-		top: 10%;
-		font-size: 100px;
+		left: 5px;
+		bottom: 0px;
+		font-size: 1.3rem;
 		color: white;
+		width: 100%;
+		text-align: left;
+/*		opacity: 0.1;*/
+		font-weight: bold;
+		text-shadow: 0px 0px 7px rgba(0,0,0,0.7);
 	}
 	.headline {
 		position: absolute;

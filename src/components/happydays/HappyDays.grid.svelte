@@ -1,10 +1,10 @@
 <script>
 	import Person from "$components/happydays/HappyDays.person.svelte";
-	
 	import lookup from "$components/happydays/lookup.json";
 	import { fade } from 'svelte/transition';
 
-	let screenWidth, screenHeight;
+	let screenWidth = 1000;
+	let screenHeight = 1000;
 	let peopleColor = ["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
 	let views = ["all","1","2","3"];
 	let customClicked = false;
@@ -37,6 +37,7 @@
 		rows = Math.floor( (h - 60) / personHeight);
 		columns = Math.floor( (w - 40) / personWidth)
 		maxPeople = columns * rows;
+		getPosition(w, h);
 	}
 
 	let first = true;
@@ -47,13 +48,12 @@
 			first = false;
 		} else {
 			timeline.forEach(function(line) {
-				if (time - 2 > line.time) {
+				if (time  > line.time) {
 					selectedViewIndex = line.view;
 					selectedSort = line.sortby;
 				}
 			})
 		}
-
 		if (isNaN(time)) { time = 240; }
 		if (time > 1440) { time = time - 1440; }
 		customClicked = time > 605 ? true : false;
@@ -125,38 +125,31 @@
 		return obj.sort((a,b) => (a[byVar] > b[byVar]) ? 1 : ((b[byVar] > a[byVar]) ? -1 : 0));
 	}
 
-	$: time, checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight), getPosition(screenWidth, screenHeight)
+	$: time, checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight)
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} bind:innerHeight={screenHeight} />
-<!-- svelte-ignore a11y-no-static-element-interactions -->
-<!-- {#if selectedViewIndex != 0 && selectedViewIndex != 4 && time > 540}
-<button class="wideViewButton" on:click={() => changeView("all")}>Zoom out</button>
-{/if} -->
+
 <div class="interactive">
-	<!-- <div class="interactiveBackground" on:click={() => changeView("all")}></div> -->
 	<div class="displayContainter">
 		<div class="groupContainer {viewTranslate[selectedViewIndex]}">
-			<!-- {#if selectedViewIndex == 0}
-			<button out:fade in:fade={{ delay: 1200 }} class="wideViewButton" on:click={() => changeView(key)}>{["","Lowest","Middle","Highest"][key]}</button>
-			{/if} -->
 			{#each currentPeople as person, personKey}
 			{#if personKey < maxPeople}
-			<Person 
-			person={person} 
-			time={time} 
-			beginTime={beginTime} 
-			customClicked={customClicked} 
-			happyBar={happyBar} 
-			happyGroup={person.happyGroup}
-			personKey={personKey} 
-			peopleColor={peopleColor}
-			view={selectedViewIndex}
-			columns={columns}
-			rows={rows}
-			position={positionLookup[person.TUCASEID]}
-			selectedSort={selectedSort}
-			/>
+				<Person 
+				person={person} 
+				time={time} 
+				beginTime={beginTime} 
+				customClicked={customClicked} 
+				happyBar={happyBar} 
+				happyGroup={person.happyGroup}
+				personKey={personKey} 
+				peopleColor={peopleColor}
+				view={selectedViewIndex}
+				columns={columns}
+				rows={rows}
+				position={positionLookup[person.TUCASEID]}
+				selectedSort={selectedSort}
+				/>
 			{/if}
 			{/each}
 				<!-- {#if selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && time > 602}
@@ -246,7 +239,7 @@
 		.groupContainer.zoomIn {
 			transform: perspective(0) translate3d(0%, 0%, 0.3px);
 			left: 50%;
-			margin-left: -230px;
+			margin-left: -220px;
 			margin-top: 10vh;
 		}
 		.groupContainer.zoomOut {

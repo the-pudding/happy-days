@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	export let copy, image, imageLoc;
+	export let copy, add, time;
 
 	function convertToHTML(text) {
 		let finalText = [];
@@ -10,22 +10,27 @@
 				let compName = line.split("|")[1];
 				line = `<svelte:component this=${compName}></svelte:component>`
 			}
+			
+			if (line.indexOf("IMAGE|") != -1) {
+				line = '<div class="imageContainer"><img src="/assets/happydays/' + line.replace("IMAGE|","").replace(/(\r\n|\n|\r)/gm, "") + '"/></div>';
+			}
 			finalText.push(line);
 		})
-		let imageString = "";
-		if (image != "") {
-			imageString = '<div class="imageContainer"><img src="/assets/happydays/' + image + '"/></div>';
-		}
-		return "<p>" + finalText.join("</p><p>").replace(">>IMAGE",imageString) + "</p>";
+
+		return "<p>" + finalText.join("</p><p>") + "</p>";
 	}
 </script>
 
-<div class="textContainer">
+<div class="textContainer {add}">
+	<div class="time">{time}</div>
 	{@html convertToHTML(copy)}
 </div>
 
 <style>
-
+.time {
+	font-weight: bold;
+	color: #FE2F8D;
+}
 
 </style>
 
