@@ -3,11 +3,12 @@
 	import lookup from "$components/happydays/lookup.json";
 	import { fade, slide } from 'svelte/transition';
 	
-	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort;
+	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort, hideInfo;
 	let peopleTextColor = ["#fff","#fff","#fff","#fff","#fff","#fff","#36374c","#36374c","#36374c","#36374c","#36374c"];
 	let details = -1;
 	let shownVariable = "num";
-	let socialMax = 210;
+	// let socialMax = 180;
+	let socialMax = 360;
 
 	function checkOpacity() {
 		return view == 0 && person.TUCASEID != "20210706212196" ? 'hidePerson' : '';
@@ -32,22 +33,7 @@
 			return "alone";
 		}
 	}
-	function convertTime(m) {
 
-		let mins = m % 60;
-		let hours = Math.floor(m / 60);
-		let ampm;
-		if (hours == 0 || hours == 24) { hours = 12; ampm = "a"; }
-		else if (hours == 12) { hours = 12; ampm = "p"; }
-		else if (hours < 12) { ampm = "a"; }
-		else if (hours > 24) { hours = hours - 24; ampm = "a"; }
-		else { hours = hours - 12; ampm = "p"; }
-		
-		return hours + ":" + mins.toLocaleString('en-US', {
-			minimumIntegerDigits: 2,
-			useGrouping: false
-		}) + ampm;
-	}
 	// If Hispanic, overrides race
 	function raceConvert(r1, r2) { return r2 == "Hispanic" ? "Hispanic" : r1; }
 	// If money exists, format. If not, return --
@@ -96,21 +82,21 @@
 	<div class="personViz">
 
 		<div class="socialBar">
-			<div class="socialBarScore" style="height:{time < 545 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
+			<div class="socialBarScore" style="height:{time < 545 || time > 1460 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
 		</div>
 		
 
-		{#if time > 242}
+		{#if time > 242 && time < 1540 && !hideInfo}
 		<div transition:fade class="personLabel">{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}</div>
 		{/if}
-		{#if time > 247}
-		<div class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
+		{#if time > 247 && time < 1500 && !hideInfo}
+		<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
 		{/if}		
 
 		{#each person.activity as act}
-		<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE["alone"]}/>
-		{#if person.peopleScore != 0 && convertWHO(act, true) != "alone"}
-		<Sprites person="{convertWHO(act, true)}" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE[convertWHO(act, true)]}/>
+		<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE["alone"]} hideInfo={hideInfo} w={position[2]}/>
+		{#if person.social_score != 0 && convertWHO(act, true) != "alone"}
+		<Sprites person="{convertWHO(act, true)}" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE[convertWHO(act, true)]} hideInfo={hideInfo} w={position[2]}/>
 		{/if}
 		{/each}
 
@@ -122,7 +108,7 @@
 			<div class="instruction">Scroll down</div>
 		</div>
 		{/if}
-		{#if shownVariable != "num"}
+		{#if shownVariable != "num" && time < 1460 && !hideInfo}
 		<div class="bigtext" transition:fade>{person[shownVariable]}</div>
 		{/if}
 	</div>
@@ -156,24 +142,25 @@
 		z-index: 9999;
 		width: 100%;
 		left: 0px;
-		top: 20%;
+		top: 30%;
+		transform: translateY(-50%);
 		text-align: center;
 	}
 	.headline h1 {
-		font-size: 11px;
-		line-height: 18px;
-		margin-bottom: 0px;
+		font-size: 0.5rem;
+		line-height: 0.6rem;
+		margin-bottom: 3px;
 		text-transform: lowercase;
-		letter-spacing: 3px;
+		letter-spacing: 0px;
 		color: #FE2F8D;
 	}
 	.byline {
+		font-size: 0.35rem;
 		opacity: 0.5;
-		font-size: 8px;
 	}
 	.instruction {
-		margin-top: 20px;
-		font-size: 8px;
+		margin-top: 3px;
+		font-size: 0.3rem;
 		opacity: 0.5;
 	}
 	.person {
@@ -190,7 +177,7 @@
 		transition: all 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		pointer-events: none;
-		border: 4px solid #28212F;
+		border: 2px solid #28212F;
 	}
 	.person.shown {
 		opacity: 1;
@@ -200,7 +187,7 @@
 	.hidePerson {
 		opacity: 0 !important;
 	}
-	@media only screen  and (max-width: 1800px) {
+/*	@media only screen  and (max-width: 1800px) {
 		.person {
 			width: 18%;
 			height: 20vh;
@@ -228,7 +215,7 @@
 		.person {
 			height: 20vh;
 		}
-	}
+	}*/
 
 	.personViz {
 		position: relative;
@@ -261,8 +248,7 @@
 		top: 0px;
 		height: 100%;
 		width: 100%;
-		transition: all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
-		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
+
 		z-index: 0;
 	}
 	.socialBarScore {

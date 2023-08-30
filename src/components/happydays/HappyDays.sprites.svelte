@@ -7,7 +7,7 @@
 	export let sex;
 	export let act;
 	export let shown;
-	export let begin, end, frameRate;
+	export let begin, end, frameRate, hideInfo, w;
 
 	let animClass;
 	
@@ -54,9 +54,9 @@
 
 <div class="ff ff-{person} shown{shown}" transition:fade>
 	{#if person == "alone"}
-	<div class="sprite" anim="{name}.png" style="transform: translate({pos.x}px,{pos.y}px)"></div>
+	<div class="sprite" anim="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};"></div>
 	{:else}
-	<div class="sprite" anim2="{name}.png" style="transform: translate({pos.x}px,{pos.y}px)"></div>
+	<div class="sprite" anim2="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};"></div>
 	{/if}
 </div>
 
@@ -108,7 +108,7 @@
 		left: 50%;
 		transform: translateX(-50%) !important;
 		background-repeat: no-repeat;
-		zoom: 2;
+		zoom: 1.2;
 		image-rendering: optimizeSpeed;             /* No smoothing  */
 		image-rendering: -moz-crisp-edges;          /* Firefox                        */
 		image-rendering: -o-crisp-edges;            /* Opera                          */

@@ -133,12 +133,12 @@
 			</div> -->
 			<Grid currentPeople={currentPeople} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline}/>
 		</div>
-		<div class="timeline" style="opacity: {value + beginTime > 250 ? 1 : 0};" transition:fade>
+		<div class="timeline">
 			<Scrolly increments={1} top={100} bind:value>
 				{#each timeRange as time, i}
 				{@const active = value === i}
 				{#if checkCopy(time) == false}
-				<div class="step" class:active>{convertTime(time)}</div>
+				<div class="step" style="opacity: {value + beginTime > 240 ? 1 : 0};" transition:fade class:active>{convertTime(time)}</div>
 				{:else}
 				{#if checkCopy(time)["addclass"] != "shorttext"}
 				<div class="preLongcopy"></div>
@@ -193,18 +193,18 @@
 		position: relative;
 		z-index: 100;
 		margin-top: -80vh;
-		transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
-		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 		pointer-events: none;
 	}
 	.step {
 		pointer-events: none;
-		height: 4vh;
+		height: 14px;
 		min-height: 25px;
 		text-align: right;
 		color: #aaa;
 		padding-right: 5px;
 		font-size: 12px;
+		transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 	}
 	.step.active {
 		color: #FE2F8D;
@@ -214,7 +214,8 @@
 	.step.longcopy {
 		pointer-events: auto !important;
 		height: auto;
-		background: rgb(40,33,47);
+		background: rgba(40,33,47,0.85);
+		backdrop-filter: blur(4px);
 		min-height: 100vh;
 		padding: 0% 2em 0%;
 		box-sizing: content-box !important;
@@ -232,18 +233,18 @@
 	.preLongcopy {
 		display: block;
 		height: 300px;
-		background: -moz-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
-		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
-		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
-		margin-bottom: -30px;
+		background: -moz-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+/*		margin-bottom: -30px;*/
 	}
 	.postLongcopy {
 		display: block;
 		height: 200px;
-		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
-		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
-		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 76%);
-		margin-top: -30px;
+		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+/*		margin-top: -30px;*/
 	}
 </style>
 
