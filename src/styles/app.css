@@ -96,7 +96,7 @@ h6 {
 	width: 98%;
 	max-width: 620px;
 	margin: 0 auto;
-	color: #CAB5C8 !important;
+	color: #DFD2DE !important;
 	text-align: left;
 	font-size: 1.1rem;
 	line-height: 1.7rem;
@@ -166,4 +166,8 @@ h6 {
 		image-rendering: pixelated;                 /* Universal support since 2021   */
 		image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
 		-ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
+}
+.resize-animation-stopper * {
+  animation: none !important;
+  transition: none !important;
 }

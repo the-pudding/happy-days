@@ -3,15 +3,16 @@
 	import lookup from "$components/happydays/lookup.json";
 	import { fade, slide } from 'svelte/transition';
 	
-	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort, hideInfo;
+	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort, hideInfo, hed;
 	let peopleTextColor = ["#fff","#fff","#fff","#fff","#fff","#fff","#36374c","#36374c","#36374c","#36374c","#36374c"];
 	let details = -1;
 	let shownVariable = "num";
 	// let socialMax = 180;
 	let socialMax = 360;
+	let selfShown = false;
 
 	function checkOpacity() {
-		return view == 0 && person.TUCASEID != "20210706212196" ? 'hidePerson' : '';
+		return view == 0 && person.TUCASEID != "0" ? 'hidePerson' : '';
 	}
 
 	function colorBackground(n, bg) {
@@ -33,7 +34,13 @@
 			return "alone";
 		}
 	}
-
+	function cleanLabel(n) {
+		if (n == "0,1") {return "<1"}
+		if (n == "4,5,6") {return "4-6"}
+		if (n == "7,8") {return "7-8"}
+		if (n == "9,10") {return "9+"}
+		return n;
+	}
 	// If Hispanic, overrides race
 	function raceConvert(r1, r2) { return r2 == "Hispanic" ? "Hispanic" : r1; }
 	// If money exists, format. If not, return --
@@ -93,23 +100,24 @@
 		<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
 		{/if}		
 
-		{#each person.activity as act}
-		<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE["alone"]} hideInfo={hideInfo} w={position[2]}/>
-		{#if person.social_score != 0 && convertWHO(act, true) != "alone"}
-		<Sprites person="{convertWHO(act, true)}" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE[convertWHO(act, true)]} hideInfo={hideInfo} w={position[2]}/>
-		{/if}
+
+		{#each person.activity as act, index}
+			{#if person.social_score != 0 && convertWHO(act, true) != "alone"}
+			<Sprites person="{convertWHO(act, true)}" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE[convertWHO(act, true)]} hideInfo={hideInfo} w={position[2]}/>
+			{/if}
+			<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE["alone"]} hideInfo={hideInfo} w={position[2]}/>
 		{/each}
 
 
 		{#if person.start < 240 && time <= 242}
 		<div class="headline" transition:fade>
-			<h1>Happy Days</h1>
+			<h1>{hed}</h1>
 			<div class="byline">by Alvin Chang</div>
 			<div class="instruction">Scroll down</div>
 		</div>
 		{/if}
-		{#if shownVariable != "num" && time < 1460 && !hideInfo}
-		<div class="bigtext" transition:fade>{person[shownVariable]}</div>
+		{#if shownVariable != "num" && time < 1460 } 
+		<div class="bigtext" transition:fade>{cleanLabel(person.happy_group)}</div>
 		{/if}
 	</div>
 	<div class="details {details == 1 && time > 300 ? 'shown' : ''}">
@@ -128,7 +136,7 @@
 		position: absolute;
 		left: 5px;
 		bottom: 0px;
-		font-size: 1.3rem;
+		font-size: 1rem;
 		color: white;
 		width: 100%;
 		text-align: left;
@@ -145,13 +153,13 @@
 		top: 30%;
 		transform: translateY(-50%);
 		text-align: center;
+		text-transform: lowercase;
 	}
 	.headline h1 {
 		font-size: 0.5rem;
 		line-height: 0.6rem;
 		margin-bottom: 3px;
-		text-transform: lowercase;
-		letter-spacing: 0px;
+		letter-spacing: 0.4px;
 		color: #FE2F8D;
 	}
 	.byline {
@@ -169,7 +177,7 @@
 		top: 0px;
 		height: 20vh;
 		display: inline-block;
-		margin: 0.5%;
+/*		margin: 0.5%;*/
 		width: 16%;
 		box-sizing: border-box;
 		opacity: 0;
@@ -187,35 +195,6 @@
 	.hidePerson {
 		opacity: 0 !important;
 	}
-/*	@media only screen  and (max-width: 1800px) {
-		.person {
-			width: 18%;
-			height: 20vh;
-		}
-	}
-	@media only screen  and (max-width: 1500px) {
-		.person {
-			width: 23%;
-			height: 20vh;
-		}
-	}
-	@media only screen  and (max-width: 1200px) {
-		.person {
-			width: 31.33333%;
-			height: 20vh;
-		}
-	}
-	@media only screen  and (max-width: 800px) {
-		.person {
-			width: 48%;
-			height: 20vh;
-		}
-	}
-	@media only screen  and (max-width: 500px) {
-		.person {
-			height: 20vh;
-		}
-	}*/
 
 	.personViz {
 		position: relative;
@@ -225,7 +204,7 @@
 		overflow: hidden;
 		transition: all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
-		border-bottom: 10px solid #000;
+/*		border-bottom: 10px solid #2A0045;*/
 		background: #492e5a;
 	}
 	.personViz:after {
@@ -322,7 +301,7 @@
 		font-size: 12px;
 		line-height: 13px;
 		color: #fff;
-		opacity: 0.8;
+		opacity: 0.5;
 		z-index: 100;
 		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
 	}

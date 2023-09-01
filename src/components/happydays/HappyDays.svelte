@@ -4,6 +4,7 @@
 	import Grid from "$components/happydays/HappyDays.grid.svelte";
 	import Text from "$components/happydays/HappyDays.text.svelte";
 	import people from "$components/happydays/people-all-nogroup.json";
+	import martin from "$components/happydays/martin.json"; // martin OG is 20210706212196
 	import { fade } from 'svelte/transition';
 	
 	let value;
@@ -13,25 +14,28 @@
 	for (let i = beginTime; i < 1440 + beginTime; i++) {
 		timeRange.push(i);
 	}
+	let screenHeight = 1000;
 	
 	export let copy;
 	
-	const options = ["0","1","2","3","4","5","6","7","8","9","10"]; // happiness groups
+	// const options = ["0","1","2","3","4","5","6","7","8","9","10"]; // happiness groups
+	let options = [[0,1],[2],[3],[4,5,6],[7,8],[9,10]];
 	const days = [1,7]; // days of the week to display
-	const ageRange = [0,65]; // age range to display
-	let currentPeople = selectPeople(25); // initialize with X number of people per WECANTRIL
+	const ageRange = [0,105]; // age range to display
+	people[0] = martin;
+	let currentPeople = selectPeople(20); // initialize with X number of people per WECANTRIL
 	let positionLookup = {};
 	// Select ## random people in a given group
 	function selectPeople(max) {
 		let final = [];
 		for (let i = 0; i < options.length; i++) {
 			let peopleUniverse = people.filter(function(p) {
-				if (days.indexOf(p.TUDIARYDAY_x) != -1 && p.WECANTRIL == options[i] && p.TEAGE >= ageRange[0] && p.TEAGE <= ageRange[1] && p.activity[p.activity.length-1] != 1) { // && p.TRDPFTPT_x == 1 ||  fulltime job (&& p.TRDPFTPT_x == 1)
+				if (days.indexOf(p.TUDIARYDAY_x) != -1 && options[i].indexOf(p.WECANTRIL) != -1 && p.TEAGE >= ageRange[0] && p.activity[p.activity.length-1] != 1) { // && p.TRDPFTPT_x == 1 ||  fulltime job (&& p.TRDPFTPT_x == 1)
 					return p;
 				}
 			});
-			
 			// Adding the timing for when each box is shown
+			
 			peopleUniverse.map(function(element)  {
 				element["start"] = 280;
 				element["details"] = -1;
@@ -39,19 +43,28 @@
 				element["current_company"] = []; 
 				element["social_score"] = 0;
 				element["position"] = [0,0];
+				element["happy_num"] = i;
+				element["happy_group"] = options[i];
 			});
+			let counter = 0;
+			for (let j = 0; j < peopleUniverse.length; j++) {
+				peopleUniverse[j]["happy_counter"] = counter;
+				counter += 1;
+			}
 
 			final.push.apply(final, peopleUniverse.slice(0, max));
 		}
-
+		// shuffle(final);
 		// no sort, but numbering and counting up
 		let counter = 0;
-		final = sortObj(final, "TUCASEID");
-		final = final.sort(function(x,y){ return x.TUCASEID == 20210706212196 ? -1 : 0; });
+		final = sortObj(final, "happy_counter");
+		// final = final.sort(function(x,y){ return x.TUCASEID == 20210706212196 ? -1 : 0; });
 		final.map(function(element)  {
 			element["num"] = counter;
 			counter++; 
 		});
+
+		
 
 		// sorting by WECANTRIL and counting up
 		final = sortObj(final, "WECANTRIL");
@@ -96,6 +109,17 @@
 		return obj.sort((a,b) => (a[byVar] > b[byVar]) ? 1 : ((b[byVar] > a[byVar]) ? -1 : 0));
 	}
 
+	function shuffle(array) {
+		let currentIndex = array.length,  randomIndex;
+		while (currentIndex > 0) {
+			randomIndex = Math.floor(Math.random() * currentIndex);
+			currentIndex--;
+			[array[currentIndex], array[randomIndex]] = [
+				array[randomIndex], array[currentIndex]];
+		}
+		return array;
+	}
+
 	function convertTime(m) {
 
 		let mins = m % 60;
@@ -124,6 +148,7 @@
 		return final;
 	}
 </script>
+<svelte:window bind:innerHeight={screenHeight} />
 <div class="outsideContainer">
 	<section id="scrolly">
 		<div class="visualContainer">
@@ -131,7 +156,7 @@
 				<span class="legendLabel">◂ More isolated</span>
 				<span class="legendLabel">More social ▸</span>
 			</div> -->
-			<Grid currentPeople={currentPeople} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline}/>
+			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline} hed={copy.Hed}/>
 		</div>
 		<div class="timeline">
 			<Scrolly increments={1} top={100} bind:value>
@@ -237,15 +262,15 @@
 		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
 		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
 /*		margin-bottom: -30px;*/
-	}
-	.postLongcopy {
-		display: block;
-		height: 200px;
-		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
-		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
-		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+}
+.postLongcopy {
+	display: block;
+	height: 200px;
+	background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+	background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
+	background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
 /*		margin-top: -30px;*/
-	}
+}
 </style>
 
 

@@ -37,6 +37,17 @@
 	}
 	buildList(sex,animClass,11);
 
+	function getPos(n) {
+		let oddeven = n % 2;
+		let left = 0;
+		if (oddeven == 0) {
+			left = 50 + (Math.floor(n / 2) * 10); 
+		} else {
+			left = 30 - (Math.floor(n / 2) * 10); 
+		}
+		return left;
+	}
+
 
 	let current = 0;
 	$: name = names[current];
@@ -51,16 +62,15 @@
 </script>
 
 
-
-<div class="ff ff-{person} shown{shown}" transition:fade>
-	{#if person == "alone"}
-	<div class="sprite" anim="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};"></div>
-	{:else}
-	<div class="sprite" anim2="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};"></div>
-	{/if}
-</div>
-
-
+{#if shown > 0}
+	<div class="ff ff-{person}" style="left: {getPos(shown)}%;" transition:fade>
+		{#if person == "alone"}
+			<div class="sprite" anim="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};" transition:fade></div>
+		{:else}
+		<div shown={shown} class="sprite" anim2="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};" transition:fade></div>
+		{/if}
+	</div>
+{/if}
 
 <style>
 	.ff {
@@ -73,15 +83,17 @@
 		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		font-size: 10px;
 		color: white;
-		opacity: 0;
-		pointer-events: none;
-	}
-	.ff.shown1 {
 		opacity: 1;
+/*		display: none;*/
 		pointer-events: all;
 	}
-	
-	.ff-other {display: none !important;}
+/*	.ff.shown1 {
+		opacity: 1;
+		display: block;
+		pointer-events: all;
+	}*/
+	.ff-alone {left: calc(4.5% + 39%) !important; bottom: 0%;}
+/*	.ff-other {display: none !important;}
 	
 	.ff-adult_family {left: 4.5%;}
 	
@@ -91,7 +103,7 @@
 
 	.ff-friend { left: calc(4.5% + 52%)}
 	.ff-adult_nonfamily {left: calc(4.5% + 65%); }
-	.ff-workrelated {left: calc(4.5% + 78%);}
+	.ff-workrelated {left: calc(4.5% + 78%);}*/
 	.ff-friend, .ff-adult_nonfamily, .ff-workrelated {
 	/*	-webkit-transform: scaleX(-1);
 		transform: scaleX(-1);*/

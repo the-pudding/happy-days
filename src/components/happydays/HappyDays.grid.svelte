@@ -2,29 +2,31 @@
 	import Person from "$components/happydays/HappyDays.person.svelte";
 	import lookup from "$components/happydays/lookup.json";
 	import { fade } from 'svelte/transition';
+	import { onMount } from 'svelte';
 
 	let screenWidth = 1000;
 	let screenHeight = 1000;
 	let peopleColor = ["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
 	let views = ["all","1","2","3"];
 	let customClicked = false;
-	export let time, beginTime, timeline, currentPeople;
+	export let time, beginTime, timeline, currentPeople, options, hed;
 	time = time > 239 ? time : 241;
 	let happyBar = 0;
-	let selectedViewIndex = 4; // displayed group
+	let selectedViewIndex = 0; // displayed group
 	let selectedSort = "num";
 	let viewTranslate = [
-		"zoomIn",
-		"zoomOut"
+		[0,0,0,3],
+		[0,0,0,1]
 		];
 
 	// limits
 	let maxPeople = 9;
 	let columns = 5;
-	let rows = 4;
+	let rows = options.length;
 	let personWidth = 150;
 	let personHeight = 130;
 	let hideInfo = false;
+	let resizeDetector = true;
 
 	/****************
 	 FUNCTIONS
@@ -34,15 +36,13 @@
 	}
 
 	function checkWindow(w, h) {
-		let altMinW = (w - 40) / 5 - 20 < 80 ? 80 : (w - 40) / 5 - 20;
-		let altMinH = (h - 60) / 7  < 50 ? 50 : (h - 60) / 7;
-		personWidth = (w - 40) / 5 < 150 ? altMinW : 150;
-		personHeight = (h - 60) / 7 < 130 ? altMinH : 130;
+		const defaultWidth = 130;
+		personWidth = (w - 80) / 5 < defaultWidth ? (w - 100) / 5 : defaultWidth;
+		personHeight = (h - 60) / rows;
 
-		rows = Math.floor( (h - 60) / personHeight);
 		columns = Math.floor( (w - 40) / personWidth)
-
-		if (personWidth < 120 || personHeight < 100) {
+		viewTranslate[0][0] = 50 - (personWidth/2*3/(w + 80)*94);
+		if (personWidth < 100) {
 			hideInfo = true;
 		} else {
 			hideInfo = false;
@@ -58,6 +58,7 @@
 		if (first) {
 			selectedViewIndex = 0;
 			first = false;
+			resize();
 		} else {
 			timeline.forEach(function(line) {
 				if (time  > line.time) {
@@ -80,16 +81,18 @@
 			// resetting stats 
 			currentPeople[j]["current_company"] = [];
 			currentPeople[j]["social_score"] = 0;
+			let companionNumber = 1;
 			let socialScoreTracker = {}; // the key will be start time, and each key will have a time and max person score
 			for (let k = 0; k < currentPeople[j]["activity"].length; k++) { // each activity
 				let start = currentPeople[j]["activity"][k][0];
 				let end = currentPeople[j]["activity"][k][1];
 				let theCompany = currentPeople[j]["activity"][k][5];
+				let peopleScore = lookup.PEOPLESCORE[theCompany].score;
 
 				// if the time has passed
 				if ((start <= time) || (start <= time - 1440 && time > 1440) ) {
 					let timeAmount = time - currentPeople[j]["activity"][k][0] > currentPeople[j]["activity"][k][3] ? currentPeople[j]["activity"][k][3] : time - currentPeople[j]["activity"][k][0]; 
-					let peopleScore = lookup.PEOPLESCORE[theCompany].score;
+					
 
 					if (start in socialScoreTracker) {
 						socialScoreTracker[start]["maxTime"] = timeAmount > socialScoreTracker[start]["maxTime"] ? timeAmount : socialScoreTracker[start]["maxTime"];
@@ -103,10 +106,11 @@
 				}
 
 				// if time is between start/end
-				if ((start <= time && end > time) || (start <= (time - 1440) && end > (time - 1440) ) ) {
-					currentPeople[j]["activity"][k][6] = 1;
+				if ((start <= time && end > time) || (start <= (time - 1440) && end > (time - 1440) )) {
+					currentPeople[j]["activity"][k][6] = companionNumber;
 					currentPeople[j]["current_activity"] = lookup.ACTIVITY[currentPeople[j]["activity"][k][2]].cleanTask;
 					currentPeople[j]["current_company"].push(theCompany);
+					companionNumber++;
 					// keeping track of how many people in the group are being social
 				} else { // if not
 					currentPeople[j]["activity"][k][6] = 0;
@@ -123,54 +127,90 @@
 	let positionLookup = {};
 	function getPosition(w, h) {
 		positionLookup = {};
-		let currentPeopleTemp = currentPeople.slice(0, maxPeople);
-		currentPeopleTemp = sortObj(currentPeopleTemp, selectedSort);
+		let currentPeopleTemp = sortObj(currentPeople.slice(0, maxPeople), selectedSort);
 		for (let n = 0; n < currentPeopleTemp.length; n++) {
-			let colNum = Math.floor(n / rows);
-			let rowNum = n % rows;
+			let colNum = n % columns;
+			let rowNum = Math.floor(n / columns);
 			let left = colNum * (100/ columns);
-			let top = rowNum * (100 / rows);
-
-			// if (screenWidth < 800) {
-				colNum = n % columns;
-				rowNum = Math.floor(n / columns);
-				left = colNum * (100/ columns);
-				top = rowNum * (100 / (rows) );
-			// }
+			let top = rowNum * (100 / (rows) );
 			positionLookup[currentPeopleTemp[n]["TUCASEID"]] = [left, top, personWidth - 5, personHeight - 5]
 		}
 	}
 
 	function sortObj(obj, byVar) {
-		return obj.sort((a,b) => (a[byVar] < b[byVar]) ? 1 : ((b[byVar] < a[byVar]) ? -1 : 0));
-	}
+		if (byVar == "num") { 
+			return obj.sort(fieldSorter(["TUCASEID"], true));
+		}
+		return obj.sort(fieldSorter(["happy_num", "social_score","TUCASEID"], false));
+}
 
-	$: time, checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight)
+function fieldSorter(fields, desc) {
+	return function (a, b) {
+		return fields
+		.map(function (o) {
+			var dir = 1;
+			if (o[0] === '-') {
+				dir = -1;
+				o=o.substring(1);
+			}
+			if (desc) {
+				if (a[o] > b[o]) return dir;
+				if (a[o] < b[o]) return -(dir);
+			} else {
+				if (a[o] < b[o]) return dir;
+				if (a[o] > b[o]) return -(dir);
+			}
+			return 0;
+		})
+		.reduce(function firstNonZeroValue (p,n) {
+			return p ? p : n;
+		}, 0);
+	};
+}
+
+
+function resize() {
+	resizeDetector = true;
+	setTimeout(function() {
+		resizeDetector = false;
+	}, 400)
+}
+
+onMount(() => {		
+	window.addEventListener('resize', resize);
+
+	return () => {
+		window.removeEventListener('resize', resize);
+	}
+});
+
+$: time, checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight)
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} bind:innerHeight={screenHeight} />
 
-<div class="interactive">
+<div class="interactive {resizeDetector ? 'resize-animation-stopper' : ''}">
 	<div class="displayContainter">
-		<div class="groupContainer {viewTranslate[selectedViewIndex]}">
+		<div class="groupContainer" style="transform: perspective(0) translate3d({viewTranslate[selectedViewIndex][0]}%, {viewTranslate[selectedViewIndex][1]}%, {viewTranslate[selectedViewIndex][2]}px) scale({viewTranslate[selectedViewIndex][3]});">
 			{#each currentPeople as person, personKey}
 			{#if personKey < maxPeople}
-				<Person 
-				person={person} 
-				time={time} 
-				beginTime={beginTime} 
-				customClicked={customClicked} 
-				happyBar={happyBar} 
-				happyGroup={person.happyGroup}
-				personKey={personKey} 
-				peopleColor={peopleColor}
-				view={selectedViewIndex}
-				columns={columns}
-				rows={rows}
-				position={positionLookup[person.TUCASEID]}
-				selectedSort={selectedSort}
-				hideInfo={hideInfo}
-				/>
+			<Person 
+			person={person} 
+			time={time} 
+			beginTime={beginTime} 
+			customClicked={customClicked} 
+			happyBar={happyBar} 
+			happyGroup={person.happyGroup}
+			personKey={personKey} 
+			peopleColor={peopleColor}
+			view={selectedViewIndex}
+			columns={columns}
+			rows={rows}
+			position={positionLookup[person.TUCASEID]}
+			selectedSort={selectedSort}
+			hideInfo={hideInfo}
+			hed={hed}
+			/>
 			{/if}
 			{/each}
 				<!-- {#if selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && time > 602}
@@ -242,7 +282,7 @@
 			/* overflow: hidden;*/
 			overflow: hidden;
 			margin: 0 auto;
-			padding-right: 80px;
+			padding-right: 60px;
 		}
 		.groupContainer {
 			position: absolute;
@@ -253,72 +293,15 @@
 			pointer-events: none;
 			top: 5vh;
 			left: 0%;
-			transform-origin: bottom right;
+			transform-origin: top left;
 		}
-
 
 		.groupContainer.zoomIn {
-			transform: perspective(0) translate3d(calc(-20.5% + 95px), -18%, 0.3px);
+			transform: perspective(0) translate3d(50%, 0, 0) scale(3);
 		}
 		.groupContainer.zoomOut {
-			transform: perspective(0) translate3d(0, 0, 0);
+			transform: perspective(0) translate3d(0, 0, 0) scale(1);
 		}
-		
-		@media only screen  and (max-width: 1000px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-21% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 800px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-22% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 750px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-23% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 700px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-24% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 650px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-29% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 600px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-31% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 550px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-33% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 500px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-33% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 450px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-36% + 95px), -18%, 0.3px);
-			}
-		}
-		@media only screen  and (max-width: 400px) {
-			.groupContainer.zoomIn {
-				transform: perspective(0) translate3d(calc(-38% + 95px), -18%, 0.3px);
-			}
-		}
-		
-		
-		
-		
-
 		
 
 	</style>
