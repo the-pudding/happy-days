@@ -152,10 +152,6 @@
 <div class="outsideContainer">
 	<section id="scrolly">
 		<div class="visualContainer">
-			<!-- <div class="legend" style="opacity: {value + beginTime > 480 ? 1 : 0};" transition:fade>
-				<span class="legendLabel">◂ More isolated</span>
-				<span class="legendLabel">More social ▸</span>
-			</div> -->
 			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline} hed={copy.Hed}/>
 		</div>
 		<div class="timeline">

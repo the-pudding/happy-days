@@ -54,7 +54,7 @@
 
 	let first = true;
 	function checkTiming() {
-		// time = time > 239 ? time : 241; 
+		console.log(time);
 		if (first) {
 			selectedViewIndex = 0;
 			first = false;
@@ -142,49 +142,49 @@
 			return obj.sort(fieldSorter(["TUCASEID"], true));
 		}
 		return obj.sort(fieldSorter(["happy_num", "social_score","TUCASEID"], false));
-}
-
-function fieldSorter(fields, desc) {
-	return function (a, b) {
-		return fields
-		.map(function (o) {
-			var dir = 1;
-			if (o[0] === '-') {
-				dir = -1;
-				o=o.substring(1);
-			}
-			if (desc) {
-				if (a[o] > b[o]) return dir;
-				if (a[o] < b[o]) return -(dir);
-			} else {
-				if (a[o] < b[o]) return dir;
-				if (a[o] > b[o]) return -(dir);
-			}
-			return 0;
-		})
-		.reduce(function firstNonZeroValue (p,n) {
-			return p ? p : n;
-		}, 0);
-	};
-}
-
-
-function resize() {
-	resizeDetector = true;
-	setTimeout(function() {
-		resizeDetector = false;
-	}, 400)
-}
-
-onMount(() => {		
-	window.addEventListener('resize', resize);
-
-	return () => {
-		window.removeEventListener('resize', resize);
 	}
-});
 
-$: time, checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight)
+	function fieldSorter(fields, desc) {
+		return function (a, b) {
+			return fields
+			.map(function (o) {
+				var dir = 1;
+				if (o[0] === '-') {
+					dir = -1;
+					o=o.substring(1);
+				}
+				if (desc) {
+					if (a[o] > b[o]) return dir;
+					if (a[o] < b[o]) return -(dir);
+				} else {
+					if (a[o] < b[o]) return dir;
+					if (a[o] > b[o]) return -(dir);
+				}
+				return 0;
+			})
+			.reduce(function firstNonZeroValue (p,n) {
+				return p ? p : n;
+			}, 0);
+		};
+	}
+
+
+	function resize() {
+		resizeDetector = true;
+		setTimeout(function() {
+			resizeDetector = false;
+		}, 1200)
+	}
+
+	onMount(() => {		
+		window.addEventListener('resize', resize);
+
+		return () => {
+			window.removeEventListener('resize', resize);
+		}
+	});
+
+	$: time, checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight)
 </script>
 
 <svelte:window bind:innerWidth={screenWidth} bind:innerHeight={screenHeight} />
@@ -293,6 +293,7 @@ $: time, checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight)
 			pointer-events: none;
 			top: 5vh;
 			left: 0%;
+			transform: perspective(0) translate3d(0, 0, 0) scale(1);
 			transform-origin: top left;
 		}
 
