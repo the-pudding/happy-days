@@ -8,6 +8,6 @@
 	const copy = getContext("copy");
 </script>
 
-<!-- <WIP /> -->
+<WIP />
 <HappyDays copy={copy}/>
 <Footer />
