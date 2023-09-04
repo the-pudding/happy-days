@@ -115,7 +115,7 @@
 	.sprite {
 		position: absolute;
 		width: 100%;
-		height: 100%;
+		height: 99%;
 		bottom: 0px;
 		left: 50%;
 		transform: translateX(-50%) !important;
