@@ -109,7 +109,8 @@
 			<div class="act {act[3]}"><span class="time">{convertTime(act[0])}</span> {lookup.ACTIVITY[act[1]].task} {convertCurrentCompany(act[2])}</div>
 			{/each}
 		</div>
-		<!-- <div class="detailsClose bottom" on:click={closeModal}>Click to close</div> -->
+		<div class="fixed_spacer" />
+		<div class="spacer" />
 	</div>
 	{/if}
 </div>
@@ -132,6 +133,7 @@
 		line-height: 1.2rem;
 		z-index: 999;
 		display: flex;
+		position: relative;
 	}
 	.details.shown {
 		display: block;
@@ -169,8 +171,22 @@
 		color: #777 !important;
 	}
 	.act.hl, .act.hl .time{
-/*		font-weight: bold;*/
 		color: #FE2F8D !important;
+	}
+	.fixed_spacer {
+		position: sticky;
+		bottom: 0px;
+		left: 0px;
+		height: 120px;
+		background: rgb(40,33,47);
+		background: -moz-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);
+		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);
+		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);
+		width: 100%;
+	}
+	.spacer {
+		height: 100px;
+		display: block;
 	}
 </style>
 

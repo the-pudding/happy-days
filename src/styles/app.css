@@ -92,7 +92,7 @@ h6 {
 	font-size: var(--20px, 20px);
 }
 :root {
-  color-scheme: dark;
+	color-scheme: dark;
 }
 .textContainer {
 	width: 98%;
@@ -104,9 +104,6 @@ h6 {
 	line-height: 1.7rem;
 	font-weight: normal;
 	font-family: var(--sans);
-	top: 45%;
-	left: 50%;
-
 }
 .textContainer.shortcopy {
 	background: #000;
@@ -177,7 +174,7 @@ h6 {
 	animation: Pulsate 5s linear infinite;
 }
 @keyframes Pulsate {
-  from { opacity: 1; }
-  50% { opacity: 0; }
-  to { opacity: 1; }
+	from { opacity: 1; }
+	50% { opacity: 0; }
+	to { opacity: 1; }
 }

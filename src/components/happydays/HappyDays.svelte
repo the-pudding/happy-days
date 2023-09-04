@@ -25,7 +25,7 @@
 	const days = [1,7]; // days of the week to display
 	const ageRange = [0,105]; // age range to display
 	people[0] = martin;
-	let currentPeople = selectPeople(20); // initialize with X number of people per WECANTRIL
+	let currentPeople = selectPeople(30); // initialize with X number of people per WECANTRIL
 	let positionLookup = {};
 	// Select ## random people in a given group
 	function selectPeople(max) {
@@ -243,11 +243,11 @@
 /*		pointer-events: auto !important;*/
 		height: auto;
 		background: rgb(40,33,47);
-		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.9) 21%, rgba(40,33,47,0.9) 79%, rgba(40,33,47,0) 100%);
-		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.9) 21%, rgba(40,33,47,0.9) 79%, rgba(40,33,47,0) 100%);
-		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.9) 21%, rgba(40,33,47,0.9) 79%, rgba(40,33,47,0) 100%);
+		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);
+		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);
 		backdrop-filter: blur(3px);
-		padding: 60px 2em;
+		padding: 20vh 2em;
 		box-sizing: content-box !important;
 		margin: 0vh auto;
 		position: relative;
@@ -263,8 +263,8 @@
 	}
 	.preLongcopy {
 		display: block;
-		height: 150px;
-		backdrop-filter: blur(3px);
+		height: 50px;
+		backdrop-filter: blur(1px);
 		mask: linear-gradient(
 			to bottom,
 			rgba(0, 0, 0, 0) 0%,
@@ -273,7 +273,7 @@
 	}
 	.postLongcopy {
 		display: block;
-		height: 150px;
+		height: 50px;
 		backdrop-filter: blur(1px);
 		mask: linear-gradient(
 			to bottom,
@@ -283,9 +283,9 @@
 		margin-top: -3px;
 	}
 	.modal {
-		width: 250px;
+		width: 300px;
 		position: fixed;
-		left: -250px;
+		left: -300px;
 		top: 0px;
 		height: 100%;
 		background: black;
