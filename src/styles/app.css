@@ -91,7 +91,9 @@ h5 {
 h6 {
 	font-size: var(--20px, 20px);
 }
-
+:root {
+  color-scheme: dark;
+}
 .textContainer {
 	width: 98%;
 	max-width: 620px;
@@ -104,11 +106,12 @@ h6 {
 	font-family: var(--sans);
 	top: 45%;
 	left: 50%;
+
 }
 .textContainer.shortcopy {
 	background: #000;
 	padding: 10px;
-	margin: 20px 0;
+	margin: 20px auto;
 }
 .textContainer .citation {
 	opacity: 0.5;
@@ -164,4 +167,17 @@ h6 {
 .resize-animation-stopper * {
 	animation: none !important;
 	transition: none !important;
+}
+
+.headline h1 .hl {
+	color: #FE2F8D;
+	font-weight: bold;
+	font-size: 0.4rem;
+	line-height: 0.5rem;
+	animation: Pulsate 5s linear infinite;
+}
+@keyframes Pulsate {
+  from { opacity: 1; }
+  50% { opacity: 0; }
+  to { opacity: 1; }
 }

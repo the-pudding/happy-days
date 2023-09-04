@@ -9,7 +9,7 @@
 	let peopleColor = ["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
 	let views = ["all","1","2","3"];
 	let customClicked = false;
-	export let time, beginTime, timeline, currentPeople, options, hed;
+	export let time, beginTime, timeline, currentPeople, options, hed, selectedPerson;
 	time = time > 239 ? time : 241;
 	let happyBar = 0;
 	let selectedViewIndex = 0; // displayed group
@@ -75,7 +75,7 @@
 
 
 	function checkPeople() {
-		
+		// selectedPerson = null; // this can close the modal on scroll
 		for (let j = 0; j < currentPeople.length; j++) { // each person
 			// resetting stats 
 			currentPeople[j]["current_company"] = [];
@@ -209,6 +209,7 @@
 			selectedSort={selectedSort}
 			hideInfo={hideInfo}
 			hed={hed}
+			bind:selectedPerson={selectedPerson}
 			/>
 			{/if}
 			{/each}

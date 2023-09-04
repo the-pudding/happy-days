@@ -3,13 +3,27 @@
 	import lookup from "$components/happydays/lookup.json";
 	import { fade, slide } from 'svelte/transition';
 	
-	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort, hideInfo, hed;
+	export let person, time, beginTime, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort, hideInfo, hed, selectedPerson;
 	let peopleTextColor = ["#fff","#fff","#fff","#fff","#fff","#fff","#36374c","#36374c","#36374c","#36374c","#36374c"];
 	let details = -1;
 	let shownVariable = "num";
 	// let socialMax = 180;
 	let socialMax = 360;
 	let selfShown = false;
+	let hl = '';
+
+	function selectPerson(n) {
+		selectedPerson = person;
+	}
+
+	function checkSelected() {
+		hl = '';
+		if (selectedPerson != null) {
+			if (selectedPerson.TUCASEID == person.TUCASEID) {
+				hl = "hl";
+			}
+		}
+	}
 
 	function checkOpacity() {
 		return view == 0 && person.TUCASEID != "0" ? 'hidePerson' : '';
@@ -35,10 +49,18 @@
 		}
 	}
 	function cleanLabel(n) {
-		if (n == "0,1") {return "<1"}
-		if (n == "4,5,6") {return "4-6"}
-		if (n == "7,8") {return "7-8"}
-		if (n == "9,10") {return "9+"}
+		if (n == "0,1") {
+			return "<1"
+		}
+		if (n == "4,5,6") {
+			return "4-6"
+		}
+		if (n == "7,8") {
+			return "7-8"
+		}
+		if (n == "9,10") {
+			return "9+"
+		}
 		return n;
 	}
 	// If Hispanic, overrides race
@@ -50,11 +72,11 @@
 	function toTitleCase(word) { return (word.charAt(0).toUpperCase() + word.slice(1)); }
 	function convertCurrentCompany(arr) {
 		arr = arr.map((el) => lookup.WHO[el].cleanSingle);
-		// if alone
+	// if alone
 		if (arr.length == 1 && arr[0] == "alone") {
 			return "";
 		}
-		// if with others
+	// if with others
 		const counts = {};
 		arr.forEach(function (x) { counts[x] = (counts[x] || 0) + 1; });
 		let final = [];
@@ -77,62 +99,58 @@
 			details = -1;
 		}
 		shownVariable = selectedSort == "num" ? "num" : selectedSort.replace("_num","");
+		selectedPerson = selectedPerson;
+		checkSelected();
+		hl = hl;
 	}
 </script>
 
-<div class="person { person.start <= time || time < beginTime ? 'shown' : ''} { checkOpacity() }" 
-	 style="width:{ position[2] }px; height:{ position[3] }px; left: {position[0]}%; top: {position[1]}%"
-	 in:fade 
-	 on:click={() => details = details * -1}
-	 >
+<div class="person {hl} { person.start <= time || time < beginTime ? 'shown' : ''} { checkOpacity() }" 
+style="width:{ position[2] }px; height:{ position[3] }px; left: {position[0]}%; top: {position[1]}%"
+in:fade 
+on:click={selectPerson}
+>
 
-	<div class="personViz">
+<div class="personViz">
 
-		<div class="socialBar">
-			<div class="socialBarScore" style="height:{time < 545 || time > 1460 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
-		</div>
-		
-
-		{#if time > 242 && time < 1540}
-		<div transition:fade class="personLabel">
-			{#if !hideInfo}
-				{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE} }
-			{:else}
-				{toTitleCase(lookup.TESEX[person.TESEX])}, {person.TEAGE}
-			{/if}
-		</div>
-		{/if}
-		{#if time > 247 && time < 1500}
-		<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
-		{/if}		
+	<div class="socialBar">
+		<div class="socialBarScore" style="height:{time < 560 || time > 1460 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
+	</div>
 
 
-		{#each person.activity as act, index}
-			{#if person.social_score != 0 && convertWHO(act, true) != "alone"}
-			<Sprites person="{convertWHO(act, true)}" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE[convertWHO(act, true)]} hideInfo={hideInfo} w={position[2]}/>
-			{/if}
-			<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE["alone"]} hideInfo={hideInfo} w={position[2]}/>
-		{/each}
-
-
-		{#if person.start < 240 && time <= 242}
-		<div class="headline" transition:fade>
-			<h1>{hed}</h1>
-			<div class="byline">by Alvin Chang</div>
-			<div class="instruction">Scroll down</div>
-		</div>
-		{/if}
-		{#if shownVariable != "num" && time < 1460 } 
-		<div class="bigtext" transition:fade>{cleanLabel(person.happy_group)}</div>
+	{#if time > 242 && time < 1540}
+	<div transition:fade class="personLabel">
+		{#if !hideInfo}
+		{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}
+		{:else}
+		{toTitleCase(lookup.TESEX[person.TESEX])}, {person.TEAGE}
 		{/if}
 	</div>
-	<div class="details {details == 1 && time > 300 ? 'shown' : ''}">
-		{person.TEAGE}-year-old {raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]} in {lookup.WEGENHTH[person.WEGENHTH].toLowerCase()} health.
-		Has {person.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[person.TRSPPRES].toLowerCase()} and {person.TRCHILDNUM_x == 1 ? person.TRCHILDNUM_x + " child" : person.TRCHILDNUM_x + " children"} in the household. 
-		{person.TESCHENR == 1 ? "Enrolled in school." : ""} Has a {lookup.PEEDUCA[person.PEEDUCA].toLowerCase()} education. 
-		{person.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[person.TRDTIND1].toLowerCase() +  " earning " + formatMoney(person.TRERNWA_x) + " a week." : ''}
-		<div class="detailsClose">Click to close</div>
+	{/if}
+	{#if time > 247 && time < 1500}
+	<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
+	{/if}		
+
+
+	{#each person.activity as act, index}
+	{#if person.social_score != 0 && convertWHO(act, true) != "alone"}
+	<Sprites person="{convertWHO(act, true)}" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE[convertWHO(act, true)]} hideInfo={hideInfo} w={position[2]}/>
+	{/if}
+	<Sprites person="alone" sex="{person.TESEX}" act="{act[2]}" shown={act[act.length-1]} begin={act[0]} end={act[1]} frameRate={lookup.FRAMERATE["alone"]} hideInfo={hideInfo} w={position[2]}/>
+	{/each}
+
+
+	{#if person.start < 240 && time <= 242}
+	<div class="headline" transition:fade>
+		<h1>{@html hed}</h1>
+		<div class="byline">by Alvin Chang</div>
+		<div class="instruction">Scroll down</div>
 	</div>
+	{/if}
+	{#if shownVariable != "num" && time < 1460 } 
+	<div class="bigtext" transition:fade>{cleanLabel(person.happy_group)}</div>
+	{/if}
+</div>
 </div>
 
 
@@ -146,7 +164,6 @@
 		color: white;
 		width: 100%;
 		text-align: left;
-/*		opacity: 0.1;*/
 		font-weight: bold;
 		text-shadow: 0px 0px 7px rgba(0,0,0,0.7);
 	}
@@ -162,20 +179,21 @@
 		text-transform: lowercase;
 	}
 	.headline h1 {
-		font-size: 0.5rem;
-		line-height: 0.6rem;
-		margin-bottom: 3px;
-		letter-spacing: 0.4px;
-		color: #FE2F8D;
-	}
-	.byline {
 		font-size: 0.35rem;
-		opacity: 0.5;
+		line-height: 0.4rem;
+		margin-bottom: 3px;
+		letter-spacing: 0.05px;
+		color: #856682;
+	}
+
+	.byline {
+		color: #856682;
+		font-size: 0.35rem;
 	}
 	.instruction {
 		margin-top: 3px;
 		font-size: 0.3rem;
-		opacity: 0.5;
+		color: #856682;
 	}
 	.person {
 		position: absolute;
@@ -183,15 +201,21 @@
 		top: 0px;
 		height: 20vh;
 		display: inline-block;
-/*		margin: 0.5%;*/
 		width: 16%;
 		box-sizing: border-box;
 		opacity: 0;
 		overflow: hidden;
-		transition: all 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+		transition: left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 		pointer-events: none;
 		border: 2px solid #28212F;
+	}
+	.person:hover, .person.hl {
+		border: 1px solid #fff;
+		z-index: 9999;	
+	}
+	.person.hl {
+		border: 4px solid #FE2F8D;
 	}
 	.person.shown {
 		opacity: 1;
@@ -210,7 +234,6 @@
 		overflow: hidden;
 		transition: all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
-/*		border-bottom: 10px solid #2A0045;*/
 		background: #492e5a;
 	}
 	.personViz:after {
@@ -283,10 +306,9 @@
 	.personLabel {
 		position: relative;
 		width: 100%;
-		padding-top: 5px;
+		padding-top: 10px;
 		font-size: 12px;
 		color: white;
-/*		font-weight: bold;*/
 		z-index: 100;
 		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
 	}
@@ -312,37 +334,12 @@
 		.personLabel {
 			font-size: 8px;
 			line-height: 9px;
+			padding-top: 5px;
 		}
 		.currentActivity {
 			font-size: 7px;
 			line-height: 8px;
 		}
-	}
-	.details {
-		position: absolute;
-		left: 0px;
-		top: 0px;
-		width: 100%;
-		height: 100%;
-		background: rgba(0,0,0,0.88);
-		color: white;
-		display: none;
-		padding: 8px;
-		text-align: left;
-		font-size: 12px;
-		z-index: 999;
-	}
-	.details.shown {
-		display: block;
-	}
-	.detailsClose {
-		margin-top: 3px;
-/*		font-weight: bold;*/
-		font-size: 13px;
-		color: #888;
-		position: absolute;
-		bottom: 5px;
-		left: 6px;
 	}
 </style>
 

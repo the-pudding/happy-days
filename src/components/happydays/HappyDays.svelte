@@ -3,6 +3,7 @@
 	import Scrolly from "$components/helpers/Scrolly.svelte";
 	import Grid from "$components/happydays/HappyDays.grid.svelte";
 	import Text from "$components/happydays/HappyDays.text.svelte";
+	import Modal from "$components/happydays/HappyDays.modal.svelte";
 	import people from "$components/happydays/people-all-nogroup.json";
 	import martin from "$components/happydays/martin.json"; // martin OG is 20210706212196
 	import { fade } from 'svelte/transition';
@@ -15,6 +16,7 @@
 		timeRange.push(i);
 	}
 	let screenHeight = 1000;
+	let selectedPerson = null;
 	
 	export let copy;
 	
@@ -147,12 +149,13 @@
 		}
 		return final;
 	}
+
 </script>
 <svelte:window bind:innerHeight={screenHeight} />
 <div class="outsideContainer">
 	<section id="scrolly">
 		<div class="visualContainer">
-			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline} hed={copy.Hed}/>
+			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline} hed={copy.Hed} bind:selectedPerson={selectedPerson}/>
 		</div>
 		<div class="timeline">
 			<Scrolly increments={1} top={100} bind:value>
@@ -178,6 +181,9 @@
 		</div>
 		<div class="spacer" />
 	</section>
+	<div class="modal {selectedPerson == null ? '' : 'shown'}">
+		<Modal bind:selectedPerson={selectedPerson} time="{value + beginTime}"/>
+	</div>
 </div>
 <style>
 	.outsideContainer {
@@ -194,6 +200,7 @@
 		width: 100%;
 		padding-left: 20px;
 	}
+
 	.legend {
 		position: absolute;
 		left: 2%;
@@ -233,7 +240,7 @@
 		text-shadow: 0px 0px 6px #000;
 	}
 	.step.longcopy {
-		pointer-events: auto !important;
+/*		pointer-events: auto !important;*/
 		height: auto;
 		background: rgb(40,33,47);
 		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.9) 21%, rgba(40,33,47,0.9) 79%, rgba(40,33,47,0) 100%);
@@ -244,9 +251,10 @@
 		box-sizing: content-box !important;
 		margin: 0vh auto;
 		position: relative;
+		pointer-events: none;
 	}
 	.step.shortcopy {
-		pointer-events: auto !important;
+/*		pointer-events: auto !important;*/
 		height: auto;
 		padding: 0% 2em 0%;
 		box-sizing: content-box !important;
@@ -273,6 +281,20 @@
 			rgba(0, 0, 0, 0) 60%
 		);
 		margin-top: -3px;
+	}
+	.modal {
+		width: 250px;
+		position: fixed;
+		left: -250px;
+		top: 0px;
+		height: 100%;
+		background: black;
+		transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+		transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+		overflow-y: scroll;
+	}
+	.modal.shown {
+		left: 0px;
 	}
 </style>
 
