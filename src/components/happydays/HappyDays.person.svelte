@@ -68,9 +68,9 @@
 		const firsts = final.slice(0, final.length - 1);
 		const last = final[final.length - 1];
 		if (final.length == 1) {
-			return "with " + last;	
+			return "w/ " + last;	
 		}
-		return "with " + firsts.join(', ') + ' and ' + last;
+		return "w/ " + firsts.join(', ') + ' and ' + last;
 	}
 	$: {
 		if (view != happyGroup) {
@@ -93,10 +93,16 @@
 		</div>
 		
 
-		{#if time > 242 && time < 1540 && !hideInfo}
-		<div transition:fade class="personLabel">{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE}</div>
+		{#if time > 242 && time < 1540}
+		<div transition:fade class="personLabel">
+			{#if !hideInfo}
+				{toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON])} {lookup.TESEX[person.TESEX]}, {person.TEAGE} }
+			{:else}
+				{toTitleCase(lookup.TESEX[person.TESEX])}, {person.TEAGE}
+			{/if}
+		</div>
 		{/if}
-		{#if time > 247 && time < 1500 && !hideInfo}
+		{#if time > 247 && time < 1500}
 		<div transition:fade class="currentActivity">{person.current_activity} {convertCurrentCompany(person.current_company)}</div>
 		{/if}		
 
@@ -265,9 +271,6 @@
 		background: #FF389B;
 		position: absolute;
 		bottom: 0px;
-		/*		width: 100%;*/
-		/*		bottom: 0px;*/
-		/*		background: yellow;*/
 		transition: all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 		transition-timing-function: cubic-bezier(0.250, 0.250, 0.750, 0.750); /* linear */
 	}
@@ -305,7 +308,16 @@
 		z-index: 100;
 		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
 	}
-
+	@media screen and (max-width: 800px) {
+		.personLabel {
+			font-size: 8px;
+			line-height: 9px;
+		}
+		.currentActivity {
+			font-size: 7px;
+			line-height: 8px;
+		}
+	}
 	.details {
 		position: absolute;
 		left: 0px;

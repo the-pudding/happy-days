@@ -37,8 +37,8 @@
 
 	function checkWindow(w, h) {
 		const defaultWidth = 130;
-		personWidth = (w - 80) / 5 < defaultWidth ? (w - 100) / 5 : defaultWidth;
-		personHeight = (h - 60) / rows;
+		personWidth = (w - 80) / 4.5 < defaultWidth ? (w - 100) / 4.5 : defaultWidth;
+		personHeight = (h - 60) / rows; //  > personWidth*1.8 ? personWidth*1.5 : personHeight;
 
 		columns = Math.floor( (w - 40) / personWidth)
 		viewTranslate[0][0] = 50 - (personWidth/2*3/(w + 80)*94);
@@ -54,7 +54,6 @@
 
 	let first = true;
 	function checkTiming() {
-		console.log(time);
 		if (first) {
 			selectedViewIndex = 0;
 			first = false;
@@ -213,11 +212,6 @@
 			/>
 			{/if}
 			{/each}
-				<!-- {#if selectedViewIndex != 1 && selectedViewIndex != 3 && selectedViewIndex != 2 && time > 602}
-				<div class="socialStats" transition:fade>
-					{socialStats[key]} of {maxPeople} have been mostly isolated today.
-				</div>
-				{/if} -->
 			</div>
 		</div>
 	</div>
@@ -249,8 +243,6 @@
 			padding: 20px 0;
 		}
 		.interactive {
-			/* max-width: 1200px; */
-			/* margin: 0 auto; */
 			transform-origin: center;
 			text-align: center;
 			width: 100%;

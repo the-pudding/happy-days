@@ -256,7 +256,7 @@ const ACTIVITY = {
   },
   "10201": {
     task: "Washing, dressing and grooming oneself",
-    cleanTask: "Washing, dressing and grooming",
+    cleanTask: "Washing, dressing or grooming",
     group: "Personal Care Activities",
     "class": "personal",
     animClass: "selfcare",
@@ -355,7 +355,7 @@ const ACTIVITY = {
   },
   "20103": {
     task: "Sewing, repairing, & maintaining textiles",
-    cleanTask: "Sewing, repairing, & maintaining textiles",
+    cleanTask: "Repairing textiles",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -463,7 +463,7 @@ const ACTIVITY = {
   },
   "20402": {
     task: "Exterior repair, improvements, & decoration",
-    cleanTask: "Exterior repair, improvements, & decoration",
+    cleanTask: "Home improvement",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -472,7 +472,7 @@ const ACTIVITY = {
   },
   "20499": {
     task: "Exterior maintenance, repair & decoration, n.e.c.*",
-    cleanTask: "Exterior repair, improvements, & decoration",
+    cleanTask: "Home improvement",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -481,7 +481,7 @@ const ACTIVITY = {
   },
   "20501": {
     task: "Lawn, garden, and houseplant care",
-    cleanTask: "Lawn, garden, and houseplant care",
+    cleanTask: "Home plant care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -490,7 +490,7 @@ const ACTIVITY = {
   },
   "20502": {
     task: "Ponds, pools, and hot tubs",
-    cleanTask: "Ponds, pools, and hot tubs care",
+    cleanTask: "Home care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -508,7 +508,7 @@ const ACTIVITY = {
   },
   "20681": {
     task: "Care for animals and pets (not veterinary care)",
-    cleanTask: "Care for animals and pets",
+    cleanTask: "Pet care",
     group: "Household Activities",
     "class": "household",
     animClass: "pets",
@@ -517,7 +517,7 @@ const ACTIVITY = {
   },
   "20699": {
     task: "Pet and animal care, n.e.c.*",
-    cleanTask: "Care for animals and pets",
+    cleanTask: "Pet care",
     group: "Household Activities",
     "class": "household",
     animClass: "pets",
@@ -526,7 +526,7 @@ const ACTIVITY = {
   },
   "20701": {
     task: "Vehicle repair and maintenance (by self)",
-    cleanTask: "Vehicle repair or maintenance",
+    cleanTask: "Vehicle care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -535,7 +535,7 @@ const ACTIVITY = {
   },
   "20799": {
     task: "Vehicles, n.e.c.*",
-    cleanTask: "Vehicle work",
+    cleanTask: "Vehicle care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -544,7 +544,7 @@ const ACTIVITY = {
   },
   "20801": {
     task: "Appliance, tool, and toy set-up, repair, & maintenance (by self)",
-    cleanTask: "Appliances and tools maintenance",
+    cleanTask: "Appliance care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -553,7 +553,7 @@ const ACTIVITY = {
   },
   "20899": {
     task: "Appliances and tools, n.e.c.*",
-    cleanTask: "Appliances and tools work",
+    cleanTask: "Appliance care",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -571,7 +571,7 @@ const ACTIVITY = {
   },
   "20902": {
     task: "Household & personal organization and planning",
-    cleanTask: "Household & personal organization and planning",
+    cleanTask: "Organization/planning",
     group: "Household Activities",
     "class": "household",
     animClass: "household",
@@ -580,7 +580,7 @@ const ACTIVITY = {
   },
   "20903": {
     task: "HH & personal mail & messages (except e-mail)",
-    cleanTask: "Dealing with mail and messages",
+    cleanTask: "Email/messaging",
     group: "Household Activities",
     "class": "household",
     animClass: "workingdesk",
@@ -589,7 +589,7 @@ const ACTIVITY = {
   },
   "20904": {
     task: "HH & personal e-mail and messages",
-    cleanTask: "Dealing with email and messages",
+    cleanTask: "Email/messaging",
     group: "Household Activities",
     "class": "household",
     animClass: "workingdesk",
@@ -706,7 +706,7 @@ const ACTIVITY = {
   },
   "30112": {
     task: "Picking up/dropping off hh children",
-    cleanTask: "Picking up/dropping off children",
+    cleanTask: "Child transportation",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -733,7 +733,7 @@ const ACTIVITY = {
   },
   "30201": {
     task: "Homework (hh children)",
-    cleanTask: "Helping with homework",
+    cleanTask: "Helping w/ homework",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -769,7 +769,7 @@ const ACTIVITY = {
   },
   "30299": {
     task: "Activities related to hh child's education, n.e.c.*",
-    cleanTask: "Education-realted activity",
+    cleanTask: "Educational activity",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "carekids",
@@ -886,7 +886,7 @@ const ACTIVITY = {
   },
   "30503": {
     task: "Picking up/dropping off hh adult",
-    cleanTask: "Picking up/dropping off person",
+    cleanTask: "Child transportation",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -913,7 +913,7 @@ const ACTIVITY = {
   },
   "39999": {
     task: "Caring for & helping hh members, n.e.c.*",
-    cleanTask: "Providing care or help",
+    cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
     animClass: "careadult",
@@ -1003,7 +1003,7 @@ const ACTIVITY = {
   },
   "40112": {
     task: "Dropping off/picking up nonhh children",
-    cleanTask: "Picking up/dropping off children",
+    cleanTask: "Child transportation",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -1030,7 +1030,7 @@ const ACTIVITY = {
   },
   "40201": {
     task: "Homework (nonhh children)",
-    cleanTask: "Helping with homework",
+    cleanTask: "Helping w/ homework",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -1066,7 +1066,7 @@ const ACTIVITY = {
   },
   "40299": {
     task: "Activities related to nonhh child's educ., n.e.c.*",
-    cleanTask: "Education-realted activity",
+    cleanTask: "Educational activity",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "carekids",
@@ -1174,7 +1174,7 @@ const ACTIVITY = {
   },
   "40502": {
     task: "House & lawn maintenance & repair assistance for nonhh adults",
-    cleanTask: "Helping someone with house/lawn",
+    cleanTask: "Helping w/ house/lawn",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1183,7 +1183,7 @@ const ACTIVITY = {
   },
   "40503": {
     task: "Animal & pet care assistance for nonhh adults",
-    cleanTask: "Helping someone with animals/pets",
+    cleanTask: "Helping w/ pets",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1192,7 +1192,7 @@ const ACTIVITY = {
   },
   "40504": {
     task: "Vehicle & appliance maintenance/repair assistance for nonhh adults",
-    cleanTask: "Helping someone with vehicles/appliances",
+    cleanTask: "Helping someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1201,7 +1201,7 @@ const ACTIVITY = {
   },
   "40505": {
     task: "Financial management assistance for nonhh adults",
-    cleanTask: "Helping someone with financial management",
+    cleanTask: "Helping someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1210,7 +1210,7 @@ const ACTIVITY = {
   },
   "40506": {
     task: "Household management & paperwork assistance for nonhh adults",
-    cleanTask: "Helping someone with household management/paperwork",
+    cleanTask: "Helping someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1219,7 +1219,7 @@ const ACTIVITY = {
   },
   "40507": {
     task: "Picking up/dropping off nonhh adult",
-    cleanTask: "Picking up/dropping off someone",
+    cleanTask: "Providing transportation",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
     animClass: "careadult",
@@ -1291,7 +1291,7 @@ const ACTIVITY = {
   },
   "50201": {
     task: "Socializing, relaxing, and leisure as part of job",
-    cleanTask: "Socializing, relaxing, and leisure as part of job",
+    cleanTask: "Work-related socialization",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "social",
@@ -1300,7 +1300,7 @@ const ACTIVITY = {
   },
   "50202": {
     task: "Eating and drinking as part of job",
-    cleanTask: "Eating and drinking as part of job",
+    cleanTask: "Work-related food/drinks",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "eating",
@@ -1309,7 +1309,7 @@ const ACTIVITY = {
   },
   "50203": {
     task: "Sports and exercise as part of job",
-    cleanTask: "Sports and exercise as part of job",
+    cleanTask: "Work-related sports",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "sports",
@@ -1318,7 +1318,7 @@ const ACTIVITY = {
   },
   "50204": {
     task: "Security procedures as part of job",
-    cleanTask: "Security procedures as part of job",
+    cleanTask: "Work-related activity",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1336,7 +1336,7 @@ const ACTIVITY = {
   },
   "50301": {
     task: "Income-generating hobbies, crafts, and food",
-    cleanTask: "Income-generating hobbies, crafts, and food",
+    cleanTask: "Hobbies, crafts, and food",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workinglabor",
@@ -1345,7 +1345,7 @@ const ACTIVITY = {
   },
   "50302": {
     task: "Income-generating performances",
-    cleanTask: "Income-generating performances",
+    cleanTask: "Performances",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1354,7 +1354,7 @@ const ACTIVITY = {
   },
   "50303": {
     task: "Income-generating services",
-    cleanTask: "Income-generating services",
+    cleanTask: "Providing services",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1363,7 +1363,7 @@ const ACTIVITY = {
   },
   "50304": {
     task: "Income-generating rental property activities",
-    cleanTask: "Income-generating rental property activities",
+    cleanTask: "Rental property activities",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1381,7 +1381,7 @@ const ACTIVITY = {
   },
   "50403": {
     task: "Job interviewing",
-    cleanTask: "Interviewing for job",
+    cleanTask: "Job interview",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "talking",
@@ -1399,7 +1399,7 @@ const ACTIVITY = {
   },
   "50405": {
     task: "Security procedures rel. to job search/interviewing",
-    cleanTask: "Interviewing for job",
+    cleanTask: "Job interview",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1408,7 +1408,7 @@ const ACTIVITY = {
   },
   "50481": {
     task: "Job search activities",
-    cleanTask: "Searching for job",
+    cleanTask: "Job search",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1417,7 +1417,7 @@ const ACTIVITY = {
   },
   "50499": {
     task: "Job search and Interviewing, n.e.c.*",
-    cleanTask: "Searching for job",
+    cleanTask: "Job search",
     group: "Work & Work-Related Activities",
     "class": "work",
     animClass: "workingdesk",
@@ -1480,7 +1480,7 @@ const ACTIVITY = {
   },
   "60201": {
     task: "Extracurricular club activities",
-    cleanTask: "Extracurricular club activities",
+    cleanTask: "Extracurricular activities",
     group: "Education",
     "class": "education",
     animClass: "sports",
@@ -1489,7 +1489,7 @@ const ACTIVITY = {
   },
   "60202": {
     task: "Extracurricular music & performance activities",
-    cleanTask: "Extracurricular music & performance activities",
+    cleanTask: "Extracurricular activities",
     group: "Education",
     "class": "education",
     animClass: "talking",
@@ -1498,7 +1498,7 @@ const ACTIVITY = {
   },
   "60203": {
     task: "Extracurricular student government activities",
-    cleanTask: "Extracurricular student government activities",
+    cleanTask: "Extracurricular activities",
     group: "Education",
     "class": "education",
     animClass: "talking",
@@ -1615,7 +1615,7 @@ const ACTIVITY = {
   },
   "70103": {
     task: "Purchasing food (not groceries)",
-    cleanTask: "Purchasing food (not groceries)",
+    cleanTask: "Purchasing food",
     group: "Consumer Purchases",
     "class": "consumer",
     animClass: "shopping",
@@ -1696,7 +1696,7 @@ const ACTIVITY = {
   },
   "80101": {
     task: "Using paid childcare services",
-    cleanTask: "Using paid childcare services",
+    cleanTask: "Using childcare services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1714,7 +1714,7 @@ const ACTIVITY = {
   },
   "80199": {
     task: "Using paid childcare services, n.e.c.*",
-    cleanTask: "Using paid childcare services",
+    cleanTask: "Using childcare services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "sitting",
@@ -1786,7 +1786,7 @@ const ACTIVITY = {
   },
   "80401": {
     task: "Using health and care services outside the home",
-    cleanTask: "Using health and care services",
+    cleanTask: "Using health services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "talking",
@@ -1795,7 +1795,7 @@ const ACTIVITY = {
   },
   "80402": {
     task: "Using in-home health and care services",
-    cleanTask: "Using health and care services",
+    cleanTask: "Using health services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "workingdesk",
@@ -1903,7 +1903,7 @@ const ACTIVITY = {
   },
   "80801": {
     task: "Security procedures rel. to professional/personal svcs.",
-    cleanTask: "Using professional or personal services",
+    cleanTask: "Using services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "workingdesk",
@@ -1912,7 +1912,7 @@ const ACTIVITY = {
   },
   "80899": {
     task: "Security procedures rel. to professional/personal svcs n.e.c.*",
-    cleanTask: "Using professional or personal services",
+    cleanTask: "Using services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "workingdesk",
@@ -1921,7 +1921,7 @@ const ACTIVITY = {
   },
   "89999": {
     task: "Professional and personal services, n.e.c.*",
-    cleanTask: "Using professional or personal services",
+    cleanTask: "Using services",
     group: "Professional & Personal Care Services",
     "class": "professional",
     animClass: "workingdesk",
@@ -1939,7 +1939,7 @@ const ACTIVITY = {
   },
   "90102": {
     task: "Using meal preparation services",
-    cleanTask: "Using meal preparation services",
+    cleanTask: "Using meal prep services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -1948,7 +1948,7 @@ const ACTIVITY = {
   },
   "90103": {
     task: "Using clothing repair and cleaning services",
-    cleanTask: "Using clothing repair and cleaning services",
+    cleanTask: "Using clothing services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -2029,7 +2029,7 @@ const ACTIVITY = {
   },
   "90401": {
     task: "Using lawn and garden services",
-    cleanTask: "Using lawn and garden services",
+    cleanTask: "Using garden services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -2047,7 +2047,7 @@ const ACTIVITY = {
   },
   "90499": {
     task: "Using lawn and garden services, n.e.c.*",
-    cleanTask: "Using lawn and garden services",
+    cleanTask: "Using garden services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -2056,7 +2056,7 @@ const ACTIVITY = {
   },
   "90501": {
     task: "Using vehicle maintenance or repair services",
-    cleanTask: "Using vehicle maintenance or repair services",
+    cleanTask: "Using car services",
     group: "Household Services",
     "class": "householdservices",
     animClass: "sitting",
@@ -2110,7 +2110,7 @@ const ACTIVITY = {
   },
   "100103": {
     task: "Obtaining licenses & paying fines, fees, taxes",
-    cleanTask: "Obtaining licenses & paying fines, fees, taxes",
+    cleanTask: "Using government services",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "phone",
@@ -2128,7 +2128,7 @@ const ACTIVITY = {
   },
   "100201": {
     task: "Civic obligations & participation",
-    cleanTask: "Civic obligations & participation",
+    cleanTask: "Civic participation",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "talking",
@@ -2137,7 +2137,7 @@ const ACTIVITY = {
   },
   "100299": {
     task: "Civic obligations & participation, n.e.c.*",
-    cleanTask: "Civic obligations & participation",
+    cleanTask: "Civic participation",
     group: "Government Services & Civic Obligations",
     "class": "gov",
     animClass: "talking",
@@ -2245,7 +2245,7 @@ const ACTIVITY = {
   },
   "120101": {
     task: "Socializing and communicating with others",
-    cleanTask: "Socialing and communicating",
+    cleanTask: "Socializing",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2254,7 +2254,7 @@ const ACTIVITY = {
   },
   "120199": {
     task: "Socializing and communicating, n.e.c.*",
-    cleanTask: "Socialing and communicating",
+    cleanTask: "Socializing",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2263,7 +2263,7 @@ const ACTIVITY = {
   },
   "120201": {
     task: "Attending or hosting parties/receptions/ceremonies",
-    cleanTask: "Attending a social gathering",
+    cleanTask: "Attending a gathering",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2272,7 +2272,7 @@ const ACTIVITY = {
   },
   "120202": {
     task: "Attending meetings for personal interest (not volunteering)",
-    cleanTask: "Attending a social gathering",
+    cleanTask: "Attending a gathering",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2281,7 +2281,7 @@ const ACTIVITY = {
   },
   "120299": {
     task: "Attending/hosting social events, n.e.c.*",
-    cleanTask: "Attending a social gathering",
+    cleanTask: "Attending a gathering",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "social",
@@ -2353,7 +2353,7 @@ const ACTIVITY = {
   },
   "120308": {
     task: "Computer use for leisure (exc. Games)",
-    cleanTask: "Using the computer for leisure",
+    cleanTask: "Using the computer",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "workingdesk",
@@ -2389,7 +2389,7 @@ const ACTIVITY = {
   },
   "120312": {
     task: "Reading for personal interest",
-    cleanTask: "Reading for personal interest",
+    cleanTask: "Reading",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2398,7 +2398,7 @@ const ACTIVITY = {
   },
   "120313": {
     task: "Writing for personal interest",
-    cleanTask: "Writing for personal interest",
+    cleanTask: "Writing",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "workingdesk",
@@ -2443,7 +2443,7 @@ const ACTIVITY = {
   },
   "120404": {
     task: "Attending gambling establishments",
-    cleanTask: "Attending gambling establishments",
+    cleanTask: "Attending gambling est.",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
     animClass: "sitting",
@@ -2524,7 +2524,7 @@ const ACTIVITY = {
   },
   "130101": {
     task: "Doing aerobics",
-    cleanTask: "Doing aerobics",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2533,7 +2533,7 @@ const ACTIVITY = {
   },
   "130102": {
     task: "Playing baseball",
-    cleanTask: "Playing baseball",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2542,7 +2542,7 @@ const ACTIVITY = {
   },
   "130103": {
     task: "Playing basketball",
-    cleanTask: "Playing basketball",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2551,7 +2551,7 @@ const ACTIVITY = {
   },
   "130104": {
     task: "Biking",
-    cleanTask: "Biking",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2560,7 +2560,7 @@ const ACTIVITY = {
   },
   "130105": {
     task: "Playing billiards",
-    cleanTask: "Playing billiards",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2569,7 +2569,7 @@ const ACTIVITY = {
   },
   "130106": {
     task: "Boating",
-    cleanTask: "Boating",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2578,7 +2578,7 @@ const ACTIVITY = {
   },
   "130107": {
     task: "Bowling",
-    cleanTask: "Bowling",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2587,7 +2587,7 @@ const ACTIVITY = {
   },
   "130108": {
     task: "Climbing, spelunking, caving",
-    cleanTask: "Climbing, spelunking, caving",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2596,7 +2596,7 @@ const ACTIVITY = {
   },
   "130109": {
     task: "Dancing",
-    cleanTask: "Dancing",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2605,7 +2605,7 @@ const ACTIVITY = {
   },
   "130110": {
     task: "Participating in equestrian sports",
-    cleanTask: "Participating in equestrian sports",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2614,7 +2614,7 @@ const ACTIVITY = {
   },
   "130111": {
     task: "Fencing",
-    cleanTask: "Fencing",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2623,7 +2623,7 @@ const ACTIVITY = {
   },
   "130112": {
     task: "Fishing",
-    cleanTask: "Fishing",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2632,7 +2632,7 @@ const ACTIVITY = {
   },
   "130113": {
     task: "Playing football",
-    cleanTask: "Playing football",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2641,7 +2641,7 @@ const ACTIVITY = {
   },
   "130114": {
     task: "Golfing",
-    cleanTask: "Golfing",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2650,7 +2650,7 @@ const ACTIVITY = {
   },
   "130115": {
     task: "Doing gymnastics",
-    cleanTask: "Doing gymnastics",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2659,7 +2659,7 @@ const ACTIVITY = {
   },
   "130116": {
     task: "Hiking",
-    cleanTask: "Hiking",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2668,7 +2668,7 @@ const ACTIVITY = {
   },
   "130117": {
     task: "Playing hockey",
-    cleanTask: "Playing hockey",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2677,7 +2677,7 @@ const ACTIVITY = {
   },
   "130118": {
     task: "Hunting",
-    cleanTask: "Hunting",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2686,7 +2686,7 @@ const ACTIVITY = {
   },
   "130119": {
     task: "Participating in martial arts",
-    cleanTask: "Participating in martial arts",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2695,7 +2695,7 @@ const ACTIVITY = {
   },
   "130120": {
     task: "Playing racquet sports",
-    cleanTask: "Playing racquet sports",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2704,7 +2704,7 @@ const ACTIVITY = {
   },
   "130121": {
     task: "Participating in rodeo competitions",
-    cleanTask: "Participating in rodeo competitions",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2713,7 +2713,7 @@ const ACTIVITY = {
   },
   "130122": {
     task: "Rollerblading",
-    cleanTask: "Rollerblading",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2722,7 +2722,7 @@ const ACTIVITY = {
   },
   "130123": {
     task: "Playing rugby",
-    cleanTask: "Playing rugby",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2731,7 +2731,7 @@ const ACTIVITY = {
   },
   "130124": {
     task: "Running",
-    cleanTask: "Running",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2740,7 +2740,7 @@ const ACTIVITY = {
   },
   "130125": {
     task: "Skiing, ice skating, snowboarding",
-    cleanTask: "Skiing, ice skating, snowboarding",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2749,7 +2749,7 @@ const ACTIVITY = {
   },
   "130126": {
     task: "Playing soccer",
-    cleanTask: "Playing soccer",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2758,7 +2758,7 @@ const ACTIVITY = {
   },
   "130127": {
     task: "Softball",
-    cleanTask: "Softball",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2767,7 +2767,7 @@ const ACTIVITY = {
   },
   "130128": {
     task: "Using cardiovascular equipment",
-    cleanTask: "Using cardiovascular equipment",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2776,7 +2776,7 @@ const ACTIVITY = {
   },
   "130129": {
     task: "Vehicle touring/racing",
-    cleanTask: "Vehicle touring/racing",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2785,7 +2785,7 @@ const ACTIVITY = {
   },
   "130130": {
     task: "Playing volleyball",
-    cleanTask: "Playing volleyball",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2794,7 +2794,7 @@ const ACTIVITY = {
   },
   "130131": {
     task: "Walking",
-    cleanTask: "Walking",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "walking",
@@ -2803,7 +2803,7 @@ const ACTIVITY = {
   },
   "130132": {
     task: "Participating in water sports",
-    cleanTask: "Participating in water sports",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2812,7 +2812,7 @@ const ACTIVITY = {
   },
   "130133": {
     task: "Weightlifting/strength training",
-    cleanTask: "Weightlifting/strength training",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2821,7 +2821,7 @@ const ACTIVITY = {
   },
   "130134": {
     task: "Working out, unspecified",
-    cleanTask: "Working out, unspecified",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2830,7 +2830,7 @@ const ACTIVITY = {
   },
   "130135": {
     task: "Wrestling",
-    cleanTask: "Wrestling",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2839,7 +2839,7 @@ const ACTIVITY = {
   },
   "130136": {
     task: "Doing yoga",
-    cleanTask: "Doing yoga",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2848,7 +2848,7 @@ const ACTIVITY = {
   },
   "130199": {
     task: "Playing sports n.e.c.*",
-    cleanTask: "Playing sports",
+    cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -2920,7 +2920,7 @@ const ACTIVITY = {
   },
   "130208": {
     task: "Watching climbing, spelunking, caving",
-    cleanTask: "Watching climbing, spelunking, caving",
+    cleanTask: "Watching sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -3055,7 +3055,7 @@ const ACTIVITY = {
   },
   "130223": {
     task: "Watching skiing, ice skating, snowboarding",
-    cleanTask: "Watching skiing, ice skating, snowboarding",
+    cleanTask: "Watching sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -3082,7 +3082,7 @@ const ACTIVITY = {
   },
   "130226": {
     task: "Watching vehicle touring/racing",
-    cleanTask: "Watching vehicle touring/racing",
+    cleanTask: "Watching sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -3118,7 +3118,7 @@ const ACTIVITY = {
   },
   "130230": {
     task: "Watching weightlifting/strength training",
-    cleanTask: "Watching weightlifting/strength training",
+    cleanTask: "Watching sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -3127,7 +3127,7 @@ const ACTIVITY = {
   },
   "130231": {
     task: "Watching people working out, unspecified",
-    cleanTask: "Watching people working out, unspecified",
+    cleanTask: "Watching sports",
     group: "Sports, Exercise, & Recreation",
     "class": "sitting",
     animClass: "sitting",
@@ -3181,7 +3181,7 @@ const ACTIVITY = {
   },
   "130401": {
     task: "Security related to playing sports or exercising",
-    cleanTask: "Sports or exercise-related activity",
+    cleanTask: "Exercise/sports activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -3190,7 +3190,7 @@ const ACTIVITY = {
   },
   "130402": {
     task: "Security related to attending sporting events",
-    cleanTask: "Sports or exercise-related activity",
+    cleanTask: "Exercise/sports activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -3199,7 +3199,7 @@ const ACTIVITY = {
   },
   "130499": {
     task: "Security related to sports, exercise, & recreation, n.e.c.*",
-    cleanTask: "Sports or exercise-related activity",
+    cleanTask: "Exercise/sports activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "standing",
@@ -3208,7 +3208,7 @@ const ACTIVITY = {
   },
   "139999": {
     task: "Sports, exercise, & recreation, n.e.c.*",
-    cleanTask: "Sports or exercise-related activity",
+    cleanTask: "Exercise/sports activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
     animClass: "sports",
@@ -3226,7 +3226,7 @@ const ACTIVITY = {
   },
   "140102": {
     task: "Participation in religious practices",
-    cleanTask: "Participation in religious practices",
+    cleanTask: "Religious practices",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -3244,7 +3244,7 @@ const ACTIVITY = {
   },
   "140104": {
     task: "Security procedures rel. to religious & spiritual activities",
-    cleanTask: "Religious or spiritual-related activity",
+    cleanTask: "Religious activity",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -3253,7 +3253,7 @@ const ACTIVITY = {
   },
   "140105": {
     task: "Religious education activities",
-    cleanTask: "Religious education activities",
+    cleanTask: "Religious activity",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -3262,7 +3262,7 @@ const ACTIVITY = {
   },
   "149999": {
     task: "Religious and spiritual activities, n.e.c.*",
-    cleanTask: "Religious or spiritual-related activity",
+    cleanTask: "Religious activity",
     group: "Religious and Spiritual Activities",
     "class": "religious",
     animClass: "sitting",
@@ -3271,7 +3271,7 @@ const ACTIVITY = {
   },
   "150101": {
     task: "Computer use",
-    cleanTask: "Volunteering - computer use",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -3280,7 +3280,7 @@ const ACTIVITY = {
   },
   "150102": {
     task: "Organizing and preparing",
-    cleanTask: "Volunteering - organizing and preparing",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -3289,7 +3289,7 @@ const ACTIVITY = {
   },
   "150103": {
     task: "Reading",
-    cleanTask: "Volunteering - reading",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -3298,7 +3298,7 @@ const ACTIVITY = {
   },
   "150104": {
     task: "Telephone calls (except hotline counseling)",
-    cleanTask: "Volunteering - telephone calls",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "phone",
@@ -3307,7 +3307,7 @@ const ACTIVITY = {
   },
   "150105": {
     task: "Writing",
-    cleanTask: "Volunteering - writing",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -3316,7 +3316,7 @@ const ACTIVITY = {
   },
   "150106": {
     task: "Fundraising",
-    cleanTask: "Volunteering - fundraising",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -3325,7 +3325,7 @@ const ACTIVITY = {
   },
   "150199": {
     task: "Administrative & support activities, n.e.c.*",
-    cleanTask: "Volunteering - admin support",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workingdesk",
@@ -3334,7 +3334,7 @@ const ACTIVITY = {
   },
   "150201": {
     task: "Food preparation, presentation, clean-up",
-    cleanTask: "Volunteering - food prep and clean-up",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "foodprep",
@@ -3343,7 +3343,7 @@ const ACTIVITY = {
   },
   "150202": {
     task: "Collecting & delivering clothing & other goods",
-    cleanTask: "Volunteering - collecting/delivering goods",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "walking",
@@ -3352,7 +3352,7 @@ const ACTIVITY = {
   },
   "150203": {
     task: "Providing care",
-    cleanTask: "Volunteering - providing care",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "careadult",
@@ -3361,7 +3361,7 @@ const ACTIVITY = {
   },
   "150204": {
     task: "Teaching, leading, counseling, mentoring",
-    cleanTask: "Volunteering - teaching, leading, counseling, mentoring",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "talking",
@@ -3370,7 +3370,7 @@ const ACTIVITY = {
   },
   "150299": {
     task: "Social service & care activities, n.e.c.*",
-    cleanTask: "Volunteering - social service and care",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "careadult",
@@ -3379,7 +3379,7 @@ const ACTIVITY = {
   },
   "150301": {
     task: "Building houses, wildlife sites, & other structures",
-    cleanTask: "Volunteering - building houses and other structures",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workinglabor",
@@ -3388,7 +3388,7 @@ const ACTIVITY = {
   },
   "150302": {
     task: "Indoor & outdoor maintenance, repair, & clean-up",
-    cleanTask: "Volunteering - maintenance, repair, clean-up",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workinglabor",
@@ -3397,7 +3397,7 @@ const ACTIVITY = {
   },
   "150399": {
     task: "Indoor & outdoor maintenance, building & clean-up activities, n.e.c.*",
-    cleanTask: "Volunteering - maintenance, repair, clean-up",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "workinglabor",
@@ -3406,7 +3406,7 @@ const ACTIVITY = {
   },
   "150401": {
     task: "Performing",
-    cleanTask: "Volunteering - performing",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "talking",
@@ -3415,7 +3415,7 @@ const ACTIVITY = {
   },
   "150402": {
     task: "Serving at volunteer events & cultural activities",
-    cleanTask: "Volunteering - serving at event",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3424,7 +3424,7 @@ const ACTIVITY = {
   },
   "150499": {
     task: "Participating in performance & cultural activities, n.e.c.*",
-    cleanTask: "Volunteering - participating in event",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "talking",
@@ -3433,7 +3433,7 @@ const ACTIVITY = {
   },
   "150501": {
     task: "Attending meetings, conferences, & training",
-    cleanTask: "Volunteering - attending meeting",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "sitting",
@@ -3442,7 +3442,7 @@ const ACTIVITY = {
   },
   "150599": {
     task: "Attending meetings, conferences, & training, n.e.c.*",
-    cleanTask: "Volunteering - attending meeting",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "sitting",
@@ -3451,7 +3451,7 @@ const ACTIVITY = {
   },
   "150601": {
     task: "Public health activities",
-    cleanTask: "Volunteering - public health activity",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3460,7 +3460,7 @@ const ACTIVITY = {
   },
   "150602": {
     task: "Public safety activities",
-    cleanTask: "Volunteering - public safety activity",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3469,7 +3469,7 @@ const ACTIVITY = {
   },
   "150699": {
     task: "Public health & safety activities, n.e.c.*",
-    cleanTask: "Volunteering - public health/safety activity",
+    cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
     animClass: "standing",
@@ -3487,7 +3487,7 @@ const ACTIVITY = {
   },
   "160101": {
     task: "Telephone calls to/from family members",
-    cleanTask: "Telephone calls to/from family members",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3496,7 +3496,7 @@ const ACTIVITY = {
   },
   "160102": {
     task: "Telephone calls to/from friends, neighbors, or acquaintances",
-    cleanTask: "Telephone calls to/from friends, neighbors, or acquaintances",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3505,7 +3505,7 @@ const ACTIVITY = {
   },
   "160103": {
     task: "Telephone calls to/from education services providers",
-    cleanTask: "Telephone calls to/from education services providers",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3514,7 +3514,7 @@ const ACTIVITY = {
   },
   "160104": {
     task: "Telephone calls to/from salespeople",
-    cleanTask: "Telephone calls to/from salespeople",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3523,7 +3523,7 @@ const ACTIVITY = {
   },
   "160105": {
     task: "Telephone calls to/from professional or personal care svcs providers",
-    cleanTask: "Telephone calls to/from professional or personal care svcs providers",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3532,7 +3532,7 @@ const ACTIVITY = {
   },
   "160106": {
     task: "Telephone calls to/from household services providers",
-    cleanTask: "Telephone calls to/from household services providers",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3541,7 +3541,7 @@ const ACTIVITY = {
   },
   "160107": {
     task: "Telephone calls to/from paid child or adult care providers",
-    cleanTask: "Telephone calls to/from paid child or adult care providers",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3550,7 +3550,7 @@ const ACTIVITY = {
   },
   "160108": {
     task: "Telephone calls to/from government officials",
-    cleanTask: "Telephone calls to/from government officials",
+    cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
     animClass: "phone",
@@ -3568,7 +3568,7 @@ const ACTIVITY = {
   },
   "180101": {
     task: "Travel related to personal care",
-    cleanTask: "Travel related to personal care",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3577,7 +3577,7 @@ const ACTIVITY = {
   },
   "180199": {
     task: "Travel related to personal care, n.e.c.*",
-    cleanTask: "Travel related to personal care",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3586,7 +3586,7 @@ const ACTIVITY = {
   },
   "180280": {
     task: "Travel related to household activities",
-    cleanTask: "Travel related to household activities",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3595,7 +3595,7 @@ const ACTIVITY = {
   },
   "180381": {
     task: "Travel related to caring for and helping hh children",
-    cleanTask: "Travel to care for or help children",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3604,7 +3604,7 @@ const ACTIVITY = {
   },
   "180382": {
     task: "Travel related to caring for and helping hh adults",
-    cleanTask: "Travel to care for or help someone else",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3613,7 +3613,7 @@ const ACTIVITY = {
   },
   "180399": {
     task: "Travel rel. to caring for & helping hh members, n.e.c.*",
-    cleanTask: "Travel to care for or help someone else",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3622,7 +3622,7 @@ const ACTIVITY = {
   },
   "180481": {
     task: "Travel related to caring for and helping nonhh children",
-    cleanTask: "Travel to care for or help children",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3631,7 +3631,7 @@ const ACTIVITY = {
   },
   "180482": {
     task: "Travel related to caring for and helping nonhh adults",
-    cleanTask: "Travel to care for or help someone else",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3640,7 +3640,7 @@ const ACTIVITY = {
   },
   "180499": {
     task: "Travel rel. to caring for & helping nonhh members, n.e.c.*",
-    cleanTask: "Travel to care for or help someone else",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3703,7 +3703,7 @@ const ACTIVITY = {
   },
   "180701": {
     task: "Travel related to grocery shopping",
-    cleanTask: "Travel related to grocery shopping",
+    cleanTask: "Travel to grocery",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3721,7 +3721,7 @@ const ACTIVITY = {
   },
   "180801": {
     task: "Travel related to using childcare services",
-    cleanTask: "Traveling for childcare services",
+    cleanTask: "Traveling for childcare",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3757,7 +3757,7 @@ const ACTIVITY = {
   },
   "180805": {
     task: "Travel related to using personal care services",
-    cleanTask: "Travel for personal care services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3766,7 +3766,7 @@ const ACTIVITY = {
   },
   "180806": {
     task: "Travel related to using real estate services",
-    cleanTask: "Travel for real estate services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3775,7 +3775,7 @@ const ACTIVITY = {
   },
   "180807": {
     task: "Travel related to using veterinary services",
-    cleanTask: "Travel for veterinary services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3784,7 +3784,7 @@ const ACTIVITY = {
   },
   "180899": {
     task: "Travel rel. to using prof. & personal care services, n.e.c.*",
-    cleanTask: "Travel for services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3793,7 +3793,7 @@ const ACTIVITY = {
   },
   "180901": {
     task: "Travel related to using household services",
-    cleanTask: "Travel for household services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3802,7 +3802,7 @@ const ACTIVITY = {
   },
   "180902": {
     task: "Travel related to using home main./repair/décor./construction svcs",
-    cleanTask: "Travel for home maintenance",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3811,7 +3811,7 @@ const ACTIVITY = {
   },
   "180903": {
     task: "Travel related to using pet services (not vet)",
-    cleanTask: "Travel for pet services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3820,7 +3820,7 @@ const ACTIVITY = {
   },
   "180904": {
     task: "Travel related to using lawn and garden services",
-    cleanTask: "Travel for lawn/garden services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3829,7 +3829,7 @@ const ACTIVITY = {
   },
   "180905": {
     task: "Travel related to using vehicle maintenance & repair services",
-    cleanTask: "Travel for vehicle maintenance",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3838,7 +3838,7 @@ const ACTIVITY = {
   },
   "180999": {
     task: "Travel related to using household services, n.e.c.*",
-    cleanTask: "Travel for household services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3847,7 +3847,7 @@ const ACTIVITY = {
   },
   "181002": {
     task: "Travel related to civic obligations & participation",
-    cleanTask: "Travel for civic/government obligation",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3856,7 +3856,7 @@ const ACTIVITY = {
   },
   "181081": {
     task: "Travel related to using government services",
-    cleanTask: "Travel for government services",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3865,7 +3865,7 @@ const ACTIVITY = {
   },
   "181099": {
     task: "Travel rel. to govt svcs & civic obligations, n.e.c.*",
-    cleanTask: "Travel for civic/government obligation",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3910,7 +3910,7 @@ const ACTIVITY = {
   },
   "181204": {
     task: "Travel related to arts and entertainment",
-    cleanTask: "Travel to arts and entertainment",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3919,7 +3919,7 @@ const ACTIVITY = {
   },
   "181283": {
     task: "Travel related to relaxing and leisure",
-    cleanTask: "Travel to relaxation/leisure activity",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3928,7 +3928,7 @@ const ACTIVITY = {
   },
   "181299": {
     task: "Travel rel. to socializing, relaxing, & leisure, n.e.c.*",
-    cleanTask: "Travel to relaxation/leisure activity",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3937,7 +3937,7 @@ const ACTIVITY = {
   },
   "181301": {
     task: "Travel related to participating in sports/exercise/recreation",
-    cleanTask: "Travel to sports/exercise",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3946,7 +3946,7 @@ const ACTIVITY = {
   },
   "181302": {
     task: "Travel related to attending sporting/recreational events",
-    cleanTask: "Travel to sports/recreation event",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3955,7 +3955,7 @@ const ACTIVITY = {
   },
   "181399": {
     task: "Travel related to sports, exercise, & recreation, n.e.c.*",
-    cleanTask: "Travel to sports/recreation event",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3964,7 +3964,7 @@ const ACTIVITY = {
   },
   "181401": {
     task: "Travel related to religious/spiritual practices",
-    cleanTask: "Travel to religious or spiritual practice",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3973,7 +3973,7 @@ const ACTIVITY = {
   },
   "181499": {
     task: "Travel rel. to religious/spiritual activities, n.e.c.*",
-    cleanTask: "Travel to religious or spiritual activity",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3982,7 +3982,7 @@ const ACTIVITY = {
   },
   "181501": {
     task: "Travel related to volunteering",
-    cleanTask: "Travel for volunteering",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -3991,7 +3991,7 @@ const ACTIVITY = {
   },
   "181599": {
     task: "Travel related to volunteer activities, n.e.c.*",
-    cleanTask: "Travel for volunteering",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -4000,7 +4000,7 @@ const ACTIVITY = {
   },
   "181601": {
     task: "Travel related to phone calls",
-    cleanTask: "Travel related to phone calls",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -4009,7 +4009,7 @@ const ACTIVITY = {
   },
   "181699": {
     task: "Travel rel. to phone calls, n.e.c.*",
-    cleanTask: "Travel related to phone calls",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -4018,7 +4018,7 @@ const ACTIVITY = {
   },
   "181801": {
     task: "Security procedures related to traveling",
-    cleanTask: "Travel",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -4027,7 +4027,7 @@ const ACTIVITY = {
   },
   "181899": {
     task: "Security procedures related to traveling, n.e.c.*",
-    cleanTask: "Travel",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -4036,7 +4036,7 @@ const ACTIVITY = {
   },
   "189999": {
     task: "Traveling, n.e.c.*",
-    cleanTask: "Travel",
+    cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
     animClass: "walking",
@@ -4045,7 +4045,7 @@ const ACTIVITY = {
   },
   "500101": {
     task: "Insufficient detail in verbatim",
-    cleanTask: "Unclear what they're doing",
+    cleanTask: "--",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -4054,7 +4054,7 @@ const ACTIVITY = {
   },
   "500103": {
     task: "Missing travel or destination",
-    cleanTask: "Travel",
+    cleanTask: "Traveling",
     group: "Data Codes",
     "class": "data",
     animClass: "walking",
@@ -4063,7 +4063,7 @@ const ACTIVITY = {
   },
   "500104": {
     task: "Recorded simultaneous activities incorrectly",
-    cleanTask: "Unclear what they're doing",
+    cleanTask: "--",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -4072,7 +4072,7 @@ const ACTIVITY = {
   },
   "500105": {
     task: "Respondent refused to provide information/",
-    cleanTask: "Unclear what they're doing",
+    cleanTask: "--",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -4081,7 +4081,7 @@ const ACTIVITY = {
   },
   "500106": {
     task: "Gap/can't remember",
-    cleanTask: "Can't remember what they did",
+    cleanTask: "--",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -4090,7 +4090,7 @@ const ACTIVITY = {
   },
   "500107": {
     task: "Unable to code activity at 1st tier",
-    cleanTask: "Unclear what they're doing",
+    cleanTask: "--",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -4099,7 +4099,7 @@ const ACTIVITY = {
   },
   "509989": {
     task: "Data codes, n.e.c.*",
-    cleanTask: "Unclear what they're doing",
+    cleanTask: "--",
     group: "Data Codes",
     "class": "data",
     animClass: "standing",
@@ -5788,7 +5788,7 @@ const HappyDays_sprites = create_ssr_component(($$result, $$props, $$bindings, s
 });
 const HappyDays_person_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: '.bigtext.svelte-2i22ay.svelte-2i22ay{position:absolute;left:5px;bottom:0px;font-size:1rem;color:white;width:100%;text-align:left;font-weight:bold;text-shadow:0px 0px 7px rgba(0,0,0,0.7)}.headline.svelte-2i22ay.svelte-2i22ay{position:absolute;color:white;z-index:9999;width:100%;left:0px;top:30%;-webkit-transform:translateY(-50%);transform:translateY(-50%);text-align:center;text-transform:lowercase}.headline.svelte-2i22ay h1.svelte-2i22ay{font-size:0.5rem;line-height:0.6rem;margin-bottom:3px;letter-spacing:0.4px;color:#FE2F8D}.byline.svelte-2i22ay.svelte-2i22ay{font-size:0.35rem;opacity:0.5}.instruction.svelte-2i22ay.svelte-2i22ay{margin-top:3px;font-size:0.3rem;opacity:0.5}.person.svelte-2i22ay.svelte-2i22ay{position:absolute;left:0px;top:0px;height:20vh;display:inline-block;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:all 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:all 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none;border:2px solid #28212F}.person.shown.svelte-2i22ay.svelte-2i22ay{opacity:1;cursor:pointer;pointer-events:all}.hidePerson.svelte-2i22ay.svelte-2i22ay{opacity:0 !important}.personViz.svelte-2i22ay.svelte-2i22ay{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);background:#492e5a}.personViz.svelte-2i22ay.svelte-2i22ay:after{content:"";position:absolute;left:0;top:0;width:100%;height:80%;background:rgb(0,0,0);background:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), color-stop(90%, rgba(0,0,0,0.30802258403361347)));background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%)}.socialBar.svelte-2i22ay.svelte-2i22ay{overflow:hidden;position:absolute;right:0px;top:0px;height:100%;width:100%;z-index:0}.socialBarScore.svelte-2i22ay.svelte-2i22ay{width:100%;height:0px;max-height:100%;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);opacity:1}.happyBar.svelte-2i22ay.svelte-2i22ay{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-2i22ay.svelte-2i22ay{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-2i22ay.svelte-2i22ay{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-2i22ay.svelte-2i22ay:last-child{border:none}.personLabel.svelte-2i22ay.svelte-2i22ay{position:relative;width:100%;padding-top:5px;font-size:12px;color:white;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}.dayOfWeek.svelte-2i22ay.svelte-2i22ay{font-size:12px;color:white}.currentActivity.svelte-2i22ay.svelte-2i22ay{position:relative;width:100%;padding:0 3px;font-size:12px;line-height:13px;color:#fff;opacity:0.5;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}.details.svelte-2i22ay.svelte-2i22ay{position:absolute;left:0px;top:0px;width:100%;height:100%;background:rgba(0,0,0,0.88);color:white;display:none;padding:8px;text-align:left;font-size:12px;z-index:999}.details.shown.svelte-2i22ay.svelte-2i22ay{display:block}.detailsClose.svelte-2i22ay.svelte-2i22ay{margin-top:3px;font-size:13px;color:#888;position:absolute;bottom:5px;left:6px}',
+  code: '.bigtext.svelte-1a7zl1s.svelte-1a7zl1s{position:absolute;left:5px;bottom:0px;font-size:1rem;color:white;width:100%;text-align:left;font-weight:bold;text-shadow:0px 0px 7px rgba(0,0,0,0.7)}.headline.svelte-1a7zl1s.svelte-1a7zl1s{position:absolute;color:white;z-index:9999;width:100%;left:0px;top:30%;-webkit-transform:translateY(-50%);transform:translateY(-50%);text-align:center;text-transform:lowercase}.headline.svelte-1a7zl1s h1.svelte-1a7zl1s{font-size:0.5rem;line-height:0.6rem;margin-bottom:3px;letter-spacing:0.4px;color:#FE2F8D}.byline.svelte-1a7zl1s.svelte-1a7zl1s{font-size:0.35rem;opacity:0.5}.instruction.svelte-1a7zl1s.svelte-1a7zl1s{margin-top:3px;font-size:0.3rem;opacity:0.5}.person.svelte-1a7zl1s.svelte-1a7zl1s{position:absolute;left:0px;top:0px;height:20vh;display:inline-block;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:all 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:all 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none;border:2px solid #28212F}.person.shown.svelte-1a7zl1s.svelte-1a7zl1s{opacity:1;cursor:pointer;pointer-events:all}.hidePerson.svelte-1a7zl1s.svelte-1a7zl1s{opacity:0 !important}.personViz.svelte-1a7zl1s.svelte-1a7zl1s{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);background:#492e5a}.personViz.svelte-1a7zl1s.svelte-1a7zl1s:after{content:"";position:absolute;left:0;top:0;width:100%;height:80%;background:rgb(0,0,0);background:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), color-stop(90%, rgba(0,0,0,0.30802258403361347)));background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%)}.socialBar.svelte-1a7zl1s.svelte-1a7zl1s{overflow:hidden;position:absolute;right:0px;top:0px;height:100%;width:100%;z-index:0}.socialBarScore.svelte-1a7zl1s.svelte-1a7zl1s{width:100%;height:0px;max-height:100%;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);opacity:1}.happyBar.svelte-1a7zl1s.svelte-1a7zl1s{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-1a7zl1s.svelte-1a7zl1s{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-1a7zl1s.svelte-1a7zl1s{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-1a7zl1s.svelte-1a7zl1s:last-child{border:none}.personLabel.svelte-1a7zl1s.svelte-1a7zl1s{position:relative;width:100%;padding-top:5px;font-size:12px;color:white;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}.dayOfWeek.svelte-1a7zl1s.svelte-1a7zl1s{font-size:12px;color:white}.currentActivity.svelte-1a7zl1s.svelte-1a7zl1s{position:relative;width:100%;padding:0 3px;font-size:12px;line-height:13px;color:#fff;opacity:0.5;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}@media screen and (max-width: 800px){.personLabel.svelte-1a7zl1s.svelte-1a7zl1s{font-size:8px;line-height:9px}.currentActivity.svelte-1a7zl1s.svelte-1a7zl1s{font-size:7px;line-height:8px}}.details.svelte-1a7zl1s.svelte-1a7zl1s{position:absolute;left:0px;top:0px;width:100%;height:100%;background:rgba(0,0,0,0.88);color:white;display:none;padding:8px;text-align:left;font-size:12px;z-index:999}.details.shown.svelte-1a7zl1s.svelte-1a7zl1s{display:block}.detailsClose.svelte-1a7zl1s.svelte-1a7zl1s{margin-top:3px;font-size:13px;color:#888;position:absolute;bottom:5px;left:6px}',
   map: null
 };
 let socialMax = 360;
@@ -5857,9 +5857,9 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
     const firsts = final.slice(0, final.length - 1);
     const last = final[final.length - 1];
     if (final.length == 1) {
-      return "with " + last;
+      return "w/ " + last;
     }
-    return "with " + firsts.join(", ") + " and " + last;
+    return "w/ " + firsts.join(", ") + " and " + last;
   }
   if ($$props.person === void 0 && $$bindings.person && person !== void 0)
     $$bindings.person(person);
@@ -5900,13 +5900,13 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       shownVariable = selectedSort == "num" ? "num" : selectedSort.replace("_num", "");
     }
   }
-  return `<div class="${"person " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-2i22ay"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-2i22ay"><div class="socialBar svelte-2i22ay"><div class="socialBarScore svelte-2i22ay" style="${"height:" + escape(
+  return `<div class="${"person " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-1a7zl1s"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-1a7zl1s"><div class="socialBar svelte-1a7zl1s"><div class="socialBarScore svelte-1a7zl1s" style="${"height:" + escape(
     time < 545 || time > 1460 ? 0 : person.social_score / socialMax * 100,
     true
   ) + "%; background: " + escape(
     person.social_score / socialMax * (peopleColor.length - 1) > peopleColor.length - 1 ? peopleColor[peopleColor.length - 1] : peopleColor[Math.floor(person.social_score / socialMax * (peopleColor.length - 1))],
     true
-  )}"></div></div> ${time > 242 && time < 1540 && !hideInfo ? `<div class="personLabel svelte-2i22ay">${escape(toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}</div>` : ``} ${time > 247 && time < 1500 && !hideInfo ? `<div class="currentActivity svelte-2i22ay">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
+  )}"></div></div> ${time > 242 && time < 1540 ? `<div class="personLabel svelte-1a7zl1s">${!hideInfo ? `${escape(toTitleCase(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)} }` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time > 247 && time < 1500 ? `<div class="currentActivity svelte-1a7zl1s">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
     return `${person.social_score != 0 && convertWHO(act, true) != "alone" ? `${validate_component(HappyDays_sprites, "Sprites").$$render(
       $$result,
       {
@@ -5938,14 +5938,14 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       {},
       {}
     )}`;
-  })} ${person.start < 240 && time <= 242 ? `<div class="headline svelte-2i22ay"><h1 class="svelte-2i22ay">${escape(hed)}</h1> <div class="byline svelte-2i22ay" data-svelte-h="svelte-1lua6f6">by Alvin Chang</div> <div class="instruction svelte-2i22ay" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-2i22ay">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> <div class="${"details " + escape(details == 1 && time > 300 ? "shown" : "", true) + " svelte-2i22ay"}">${escape(person.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])} in ${escape(lookup.WEGENHTH[person.WEGENHTH].toLowerCase())} health.
+  })} ${person.start < 240 && time <= 242 ? `<div class="headline svelte-1a7zl1s"><h1 class="svelte-1a7zl1s">${escape(hed)}</h1> <div class="byline svelte-1a7zl1s" data-svelte-h="svelte-1lua6f6">by Alvin Chang</div> <div class="instruction svelte-1a7zl1s" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-1a7zl1s">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> <div class="${"details " + escape(details == 1 && time > 300 ? "shown" : "", true) + " svelte-1a7zl1s"}">${escape(person.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])} in ${escape(lookup.WEGENHTH[person.WEGENHTH].toLowerCase())} health.
 		Has ${escape(person.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[person.TRSPPRES].toLowerCase())} and ${escape(person.TRCHILDNUM_x == 1 ? person.TRCHILDNUM_x + " child" : person.TRCHILDNUM_x + " children")} in the household. 
 		${escape(person.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[person.PEEDUCA].toLowerCase())} education. 
-		${escape(person.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[person.TRDTIND1].toLowerCase() + " earning " + formatMoney(person.TRERNWA_x) + " a week." : "")} <div class="detailsClose svelte-2i22ay" data-svelte-h="svelte-1lc4obo">Click to close</div></div> </div>`;
+		${escape(person.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[person.TRDTIND1].toLowerCase() + " earning " + formatMoney(person.TRERNWA_x) + " a week." : "")} <div class="detailsClose svelte-1a7zl1s" data-svelte-h="svelte-1lc4obo">Click to close</div></div> </div>`;
 });
 const HappyDays_grid_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: ".interactive.svelte-1v5bfh0{-webkit-transform-origin:center;transform-origin:center;text-align:center;width:100%;height:100vh}.displayContainter.svelte-1v5bfh0{position:relative;top:0px;left:0px;height:100%;width:100%;padding-top:50px;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin:0 auto;padding-right:60px}.groupContainer.svelte-1v5bfh0{position:absolute;width:calc(100% - 80px);height:90vh;-webkit-transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);pointer-events:none;top:5vh;left:0%;-webkit-transform:perspective(0) translate3d(0, 0, 0) scale(1);transform:perspective(0) translate3d(0, 0, 0) scale(1);-webkit-transform-origin:top left;transform-origin:top left}",
+  code: ".interactive.svelte-19ovyz9{-webkit-transform-origin:center;transform-origin:center;text-align:center;width:100%;height:100vh}.displayContainter.svelte-19ovyz9{position:relative;top:0px;left:0px;height:100%;width:100%;padding-top:50px;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin:0 auto;padding-right:60px}.groupContainer.svelte-19ovyz9{position:absolute;width:calc(100% - 80px);height:90vh;-webkit-transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);pointer-events:none;top:5vh;left:0%;-webkit-transform:perspective(0) translate3d(0, 0, 0) scale(1);transform:perspective(0) translate3d(0, 0, 0) scale(1);-webkit-transform-origin:top left;transform-origin:top left}",
   map: null
 };
 function sortObj$1(obj, byVar) {
@@ -6014,7 +6014,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
   let resizeDetector = true;
   function checkWindow(w, h) {
     const defaultWidth = 130;
-    personWidth = (w - 80) / 5 < defaultWidth ? (w - 100) / 5 : defaultWidth;
+    personWidth = (w - 80) / 4.5 < defaultWidth ? (w - 100) / 4.5 : defaultWidth;
     personHeight = (h - 60) / rows;
     columns = Math.floor((w - 40) / personWidth);
     viewTranslate[0][0] = 50 - personWidth / 2 * 3 / (w + 80) * 94;
@@ -6028,7 +6028,6 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
   }
   let first = true;
   function checkTiming() {
-    console.log(time);
     if (first) {
       selectedViewIndex = 0;
       first = false;
@@ -6120,7 +6119,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
   {
     checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight);
   }
-  return ` <div class="${"interactive " + escape(resizeDetector ? "resize-animation-stopper" : "", true) + " svelte-1v5bfh0"}"><div class="displayContainter svelte-1v5bfh0"><div class="groupContainer svelte-1v5bfh0" style="${"transform: perspective(0) translate3d(" + escape(viewTranslate[selectedViewIndex][0], true) + "%, " + escape(viewTranslate[selectedViewIndex][1], true) + "%, " + escape(viewTranslate[selectedViewIndex][2], true) + "px) scale(" + escape(viewTranslate[selectedViewIndex][3], true) + ");"}">${each(currentPeople, (person, personKey) => {
+  return ` <div class="${"interactive " + escape(resizeDetector ? "resize-animation-stopper" : "", true) + " svelte-19ovyz9"}"><div class="displayContainter svelte-19ovyz9"><div class="groupContainer svelte-19ovyz9" style="${"transform: perspective(0) translate3d(" + escape(viewTranslate[selectedViewIndex][0], true) + "%, " + escape(viewTranslate[selectedViewIndex][1], true) + "%, " + escape(viewTranslate[selectedViewIndex][2], true) + "px) scale(" + escape(viewTranslate[selectedViewIndex][3], true) + ");"}">${each(currentPeople, (person, personKey) => {
     return `${personKey < maxPeople ? `${validate_component(HappyDays_person, "Person").$$render(
       $$result,
       {
@@ -6143,7 +6142,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
       {},
       {}
     )}` : ``}`;
-  })} </div></div> </div>`;
+  })}</div></div> </div>`;
 });
 const HappyDays_text_svelte_svelte_type_style_lang = "";
 const css$2 = {
@@ -112120,7 +112119,7 @@ const martin = {
 };
 const HappyDays_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: '.outsideContainer.svelte-13ocgfy{background:#28212F;font-family:"National 2 Web"}#scrolly.svelte-13ocgfy{font-family:"National 2 Web"}.visualContainer.svelte-13ocgfy{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-13ocgfy{height:75vh}.timeline.svelte-13ocgfy{position:relative;z-index:100;margin-top:-80vh;pointer-events:none}.step.svelte-13ocgfy{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-13ocgfy{color:#FE2F8D;font-weight:bold;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-13ocgfy{pointer-events:auto !important;height:auto;background:rgba(40,33,47,0.85);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);min-height:100vh;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.step.shortcopy.svelte-13ocgfy{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-13ocgfy{display:block;height:300px;background:-webkit-gradient(linear, left top, left bottom, from(rgba(40,33,47,0)), color-stop(76%, rgba(40,33,47,.85)));background:linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%)}.postLongcopy.svelte-13ocgfy{display:block;height:200px;background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(76%, rgba(40,33,47,.85)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%)}',
+  code: '.outsideContainer.svelte-1p6slsz{background:#28212F;font-family:"National 2 Web"}#scrolly.svelte-1p6slsz{font-family:"National 2 Web"}.visualContainer.svelte-1p6slsz{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-1p6slsz{height:75vh}.timeline.svelte-1p6slsz{position:relative;z-index:100;margin-top:-80vh;pointer-events:none}.step.svelte-1p6slsz{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-1p6slsz{color:#FE2F8D;font-weight:bold;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-1p6slsz{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(21%, rgba(40,33,47,0.9)), color-stop(79%, rgba(40,33,47,0.9)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.9) 21%, rgba(40,33,47,0.9) 79%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:60px 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.step.shortcopy.svelte-1p6slsz{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-1p6slsz{display:block;height:150px;-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-1p6slsz{display:block;height:150px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}',
   map: null
 };
 let beginTime = 240;
@@ -112238,7 +112237,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = ` <div class="outsideContainer svelte-13ocgfy"><section id="scrolly" class="svelte-13ocgfy"><div class="visualContainer svelte-13ocgfy">${validate_component(HappyDays_grid, "Grid").$$render(
+    $$rendered = ` <div class="outsideContainer svelte-1p6slsz"><section id="scrolly" class="svelte-1p6slsz"><div class="visualContainer svelte-1p6slsz">${validate_component(HappyDays_grid, "Grid").$$render(
       $$result,
       {
         currentPeople,
@@ -112250,7 +112249,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
       },
       {},
       {}
-    )}</div> <div class="timeline svelte-13ocgfy">${validate_component(Scrolly, "Scrolly").$$render(
+    )}</div> <div class="timeline svelte-1p6slsz">${validate_component(Scrolly, "Scrolly").$$render(
       $$result,
       { increments: 1, top: 100, value },
       {
@@ -112263,7 +112262,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         default: () => {
           return `${each(timeRange, (time, i) => {
             let active = value === i;
-            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-13ocgfy", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-13ocgfy"></div> <div class="${["step longcopy svelte-13ocgfy", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-1p6slsz", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-1p6slsz"></div> <div class="${["step longcopy svelte-1p6slsz", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112272,7 +112271,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
               },
               {},
               {}
-            )}</div> <div class="postLongcopy svelte-13ocgfy"></div>` : `<div class="${["step shortcopy svelte-13ocgfy", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            )}</div> <div class="postLongcopy svelte-1p6slsz"></div>` : `<div class="${["step shortcopy svelte-1p6slsz", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112285,7 +112284,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
           })}`;
         }
       }
-    )}</div> <div class="spacer svelte-13ocgfy"></div></section> </div>`;
+    )}</div> <div class="spacer svelte-1p6slsz"></div></section> </div>`;
   } while (!$$settled);
   return $$rendered;
 });
@@ -112615,7 +112614,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-01-16:42"}`);
+  console.log(`build: ${"2023-09-04-09:13"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

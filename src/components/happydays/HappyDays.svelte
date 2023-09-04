@@ -235,10 +235,12 @@
 	.step.longcopy {
 		pointer-events: auto !important;
 		height: auto;
-		background: rgba(40,33,47,0.85);
-		backdrop-filter: blur(4px);
-		min-height: 100vh;
-		padding: 0% 2em 0%;
+		background: rgb(40,33,47);
+		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.9) 21%, rgba(40,33,47,0.9) 79%, rgba(40,33,47,0) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.9) 21%, rgba(40,33,47,0.9) 79%, rgba(40,33,47,0) 100%);
+		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.9) 21%, rgba(40,33,47,0.9) 79%, rgba(40,33,47,0) 100%);
+		backdrop-filter: blur(3px);
+		padding: 60px 2em;
 		box-sizing: content-box !important;
 		margin: 0vh auto;
 		position: relative;
@@ -253,20 +255,25 @@
 	}
 	.preLongcopy {
 		display: block;
-		height: 300px;
-		background: -moz-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
-		background: -webkit-linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
-		background: linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
-/*		margin-bottom: -30px;*/
-}
-.postLongcopy {
-	display: block;
-	height: 200px;
-	background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
-	background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
-	background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,.85) 76%);
-/*		margin-top: -30px;*/
-}
+		height: 150px;
+		backdrop-filter: blur(3px);
+		mask: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 1) 90%
+		);
+	}
+	.postLongcopy {
+		display: block;
+		height: 150px;
+		backdrop-filter: blur(1px);
+		mask: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 1) 0%
+			rgba(0, 0, 0, 0) 60%
+		);
+		margin-top: -3px;
+	}
 </style>
 
 
