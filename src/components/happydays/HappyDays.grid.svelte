@@ -4,7 +4,7 @@
 	import { fade } from 'svelte/transition';
 	import { onMount } from 'svelte';
 
-	let screenWidth = 1000;
+	let screenWidth = null;
 	let screenHeight = 1000;
 	let peopleColor = ["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
 	let views = ["all","1","2","3"];
@@ -27,6 +27,7 @@
 	let personHeight = 130;
 	let hideInfo = false;
 	let resizeDetector = true;
+	let loaded = false;
 
 	/****************
 	 FUNCTIONS
@@ -172,8 +173,14 @@
 		resizeDetector = true;
 		setTimeout(function() {
 			resizeDetector = false;
-		}, 1200)
+		}, 300)
 	}
+
+	setInterval(function() {
+		if (screenWidth != null) {
+			loaded = true;
+		}
+	}, 200)
 
 	onMount(() => {		
 		window.addEventListener('resize', resize);
@@ -188,7 +195,7 @@
 
 <svelte:window bind:innerWidth={screenWidth} bind:innerHeight={screenHeight} />
 
-<div class="interactive {resizeDetector ? 'resize-animation-stopper' : ''}">
+<div class="interactive {resizeDetector ? 'resize-animation-stopper' : ''}" style='{loaded ? "opacity: 1" : "opacity: 0"};'>
 	<div class="displayContainter">
 		<div class="groupContainer" style="transform: perspective(0) translate3d({viewTranslate[selectedViewIndex][0]}%, {viewTranslate[selectedViewIndex][1]}%, {viewTranslate[selectedViewIndex][2]}px) scale({viewTranslate[selectedViewIndex][3]});">
 			{#each currentPeople as person, personKey}
@@ -248,6 +255,8 @@
 			text-align: center;
 			width: 100%;
 			height: 100vh;
+			transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+			transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 		}
 		.interactiveBackground {
 			display: block;

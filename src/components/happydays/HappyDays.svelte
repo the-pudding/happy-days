@@ -240,7 +240,7 @@
 		text-shadow: 0px 0px 6px #000;
 	}
 	.step.longcopy {
-/*		pointer-events: auto !important;*/
+		pointer-events: auto !important;
 		height: auto;
 		background: rgb(40,33,47);
 		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);
@@ -254,7 +254,7 @@
 		pointer-events: none;
 	}
 	.step.shortcopy {
-/*		pointer-events: auto !important;*/
+		pointer-events: auto !important;
 		height: auto;
 		padding: 0% 2em 0%;
 		box-sizing: content-box !important;
