@@ -29,7 +29,7 @@
 <style>
 .time {
 	font-weight: bold;
-	color: #FE2F8D;
+	color: var(--color-pinkpurple);
 }
 
 </style>

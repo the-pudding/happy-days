@@ -144,7 +144,7 @@
 		display: inline-block;
 		cursor: pointer;
 		color: white;
-		background: #FE2F8D;
+		background: var(--color-pinkpurple);
 		padding: 5px;
 		margin-top: 5px;
 		text-align: center;
@@ -171,7 +171,7 @@
 		color: #777 !important;
 	}
 	.act.hl, .act.hl .time{
-		color: #FE2F8D !important;
+		color: var(--color-pinkpurple) !important;
 	}
 	.fixed_spacer {
 		position: sticky;

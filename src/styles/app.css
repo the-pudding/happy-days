@@ -133,20 +133,36 @@ h6 {
 .textContainer a {
 	color: #FAF0F9 !important;
 }
+.textContainer .purple {
+	background: #A762C1;
+	color: white;
+	padding: 2px 4px;
+	margin: 0 2px;
+	border-radius: 1px;
+	white-space:nowrap;
+}
+.textContainer .gray {
+	background: #8C6C73;
+	color: white;
+	padding: 2px 4px;
+	margin: 0 2px;
+	border-radius: 1px;
+	white-space:nowrap;
+}
 .textContainer hr {
 	margin: 50px auto;
 	width: 100px;
 }
 .textContainer blockquote {
 	padding-left: 20px;
-	border-left: 2px solid #F066B5;
-	margin: 40px 0 40px 20px;
+	border-left: 2px solid var(--color-pinkpurple);
+	margin: 40px 0 40px 0px;
 	width: calc(100% - 40px);
 	color: #fff !important;
 }
 .textContainer span.bottomladder {
 	font-weight: bold;
-	color: #FE2F8D;
+	color: var(--color-pinkpurple);
 }
 .imageContainer {
 	width: 100%;
@@ -167,7 +183,7 @@ h6 {
 }
 
 .headline h1 .hl {
-	color: #FE2F8D;
+	color: var(--color-pinkpurple);
 	font-weight: bold;
 	font-size: 0.4rem;
 	line-height: 0.5rem;

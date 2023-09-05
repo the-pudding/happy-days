@@ -7,7 +7,7 @@
 	export let sex;
 	export let act;
 	export let shown;
-	export let begin, end, frameRate, hideInfo, w, score;
+	export let begin, end, frameRate, hideInfo, w, score, time;
 
 	let animClass;
 	
@@ -66,7 +66,7 @@
 <div class="ff ff-{person}" style="left: {getPos(shown)}%;" transition:fade>
 	{#if score == 0}
 	<div class="sprite" anim="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};" transition:fade></div>
-	{:else if score < 0.5}
+	{:else if score < 0.5 || time <= 430}
 	<div shown={shown} class="sprite" anim2="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};" transition:fade></div>
 	{:else}
 	<div shown={shown} class="sprite" anim3="{name}.png" style="transform: translate({pos.x}px,{pos.y}px); zoom:{hideInfo ? w/90 : 1.2};" transition:fade></div>

@@ -6,7 +6,7 @@
 
 	let screenWidth = null;
 	let screenHeight = 1000;
-	let peopleColor = ["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
+	let peopleColor = ["#3f1c4f", "#5e2657", "#7b335e", "#974262", "#b05466", "#c66868", "#da7f6c", "#e99770", "#f6b177", "#ffcc82"]; //["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
 	let views = ["all","1","2","3"];
 	let customClicked = false;
 	export let time, beginTime, timeline, currentPeople, options, hed, selectedPerson;
