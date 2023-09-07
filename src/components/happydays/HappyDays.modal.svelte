@@ -103,7 +103,7 @@
 		<div class="detailsClose" on:click={closeModal}>Click to close</div>
 		<h3>{selectedPerson.TEAGE}-year-old {raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON])} {lookup.TESEX[selectedPerson.TESEX]} in {lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase()} health</h3>
 
-		<p>Has {selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase()} and {selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children"} in the household. {selectedPerson.TESCHENR == 1 ? "Enrolled in school." : ""} Has a {lookup.PEEDUCA[selectedPerson.PEEDUCA].toLowerCase()} education. {selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() +  " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : ''} Reported being a {selectedPerson.WECANTRIL}/10 on the Cantril ladder.</p>
+		<p>Has {selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase()} and {selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children"} in the household. {selectedPerson.TESCHENR == 1 ? "Enrolled in school." : ""} Has a {lookup.PEEDUCA[selectedPerson.PEEDUCA]}. {selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() +  " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : ''} Reported being a {selectedPerson.WECANTRIL}/10 on the Cantril ladder.</p>
 		<div class="activities">
 			{#each cleanedActivites as act, key}
 			<div class="act {act[3]}"><span class="time">{convertTime(act[0])}</span> {lookup.ACTIVITY[act[1]].task} {convertCurrentCompany(act[2])}</div>
@@ -127,7 +127,7 @@
 		width: 100%;
 		height: 100%;
 		color: #aaa;
-		padding: 8px;
+		padding: 0 8px 8px 8px;
 		text-align: left;
 		font-size: 0.8rem;
 		line-height: 1.2rem;
@@ -139,14 +139,15 @@
 		display: block;
 	}
 	.detailsClose {
-		margin-top: 3px;
 		font-size: 13px;
 		display: inline-block;
 		cursor: pointer;
-		color: white;
+		color: black;
+		font-weight: bold;
 		background: var(--color-pinkpurple);
 		padding: 5px;
-		margin-top: 5px;
+		border: 5px solid #000;
+		border-top: 10px solid #000;
 		text-align: center;
 		position: sticky;
 		top: 0px;

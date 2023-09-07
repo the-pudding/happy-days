@@ -13,7 +13,9 @@
 	let hl = '';
 
 	function selectPerson(n) {
-		selectedPerson = person;
+		if (time > 380) {
+			selectedPerson = person;
+		}
 	}
 
 	function checkSelected() {
@@ -94,6 +96,15 @@
 		}
 		return "w/ " + firsts.join(', ') + ' and ' + last;
 	}
+
+	function checkHover() {
+		if (time > 380) {
+			return 'hoverOn'
+		} else {
+			selectedPerson = null;
+		}
+		return '';
+	}
 	$: {
 		if (view != happyGroup) {
 			details = -1;
@@ -102,10 +113,11 @@
 		selectedPerson = selectedPerson;
 		checkSelected();
 		hl = hl;
+		time = time;
 	}
 </script>
 
-<div class="person {hl} { person.start <= time || time < beginTime ? 'shown' : ''} { checkOpacity() }" 
+<div class="person {hl} {checkHover()} { person.start <= time || time < beginTime ? 'shown' : ''} { checkOpacity() }" 
 style="width:{ position[2] }px; height:{ position[3] }px; left: {position[0]}%; top: {position[1]}%"
 in:fade 
 on:click={selectPerson}
@@ -114,7 +126,7 @@ on:click={selectPerson}
 <div class="personViz">
 
 	<div class="socialBar">
-		<div class="socialBarScore" style="height:{time < 560 || time > 1460 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
+		<div class="socialBarScore" style="height:{time < 550 || time > 1460 ? 0 : (person.social_score) / socialMax * 100}%; background: { person.social_score / socialMax * (peopleColor.length-1) > peopleColor.length-1 ? peopleColor[peopleColor.length-1] : peopleColor[Math.floor( person.social_score/socialMax * (peopleColor.length-1) )] }"></div>
 	</div>
 
 
@@ -234,17 +246,20 @@ on:click={selectPerson}
 		pointer-events: none;
 		border: 2px solid #28212F;
 	}
-	.person:hover, .person.hl {
-		border: 1px solid #fff;
+	.hoverOn.person:hover, .person.hl {
+		border: 1px solid #aaa;
 		z-index: 9999;	
 	}
-	.person.hl {
-		border: 4px solid var(--color-pinkpurple);
+	.hoverOn.person.hl:hover, .person.hl {
+		border: 4px solid white;
+		z-index: 99999;
 	}
 	.person.shown {
 		opacity: 1;
-		cursor: pointer;
 		pointer-events: all;
+	}
+	.hoverOn.person {
+		cursor: pointer;
 	}
 	.hidePerson {
 		opacity: 0 !important;

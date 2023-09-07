@@ -164,6 +164,10 @@ h6 {
 	font-weight: bold;
 	color: var(--color-pinkpurple);
 }
+.textContainer span.instruction {
+	font-weight: bold;
+	color: #fff;
+}
 .imageContainer {
 	width: 100%;
 }
@@ -176,6 +180,24 @@ h6 {
 	image-rendering: pixelated;                 /* Universal support since 2021   */
 	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
 	-ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
+}
+.time {
+	font-weight: bold;
+	color: var(--color-pinkpurple);
+}
+.imageContainer img.mobileImage {
+	display: none;
+}
+.imageContainer img.desktopImage {
+	display: block;
+}
+@media screen and (max-width: 600px) {
+	.imageContainer img.mobileImage {
+		display: block;
+	}
+	.imageContainer img.desktopImage {
+		display: none;
+	}
 }
 .resize-animation-stopper * {
 	animation: none !important;

@@ -5742,7 +5742,7 @@ const HappyDays_sprites = create_ssr_component(($$result, $$props, $$bindings, s
   let { sex } = $$props;
   let { act } = $$props;
   let { shown } = $$props;
-  let { begin, end, frameRate, hideInfo, w, score } = $$props;
+  let { begin, end, frameRate, hideInfo, w, score, time } = $$props;
   let animClass;
   if (person == "alone") {
     animClass = lookup.ACTIVITY[act].animClass;
@@ -5784,13 +5784,15 @@ const HappyDays_sprites = create_ssr_component(($$result, $$props, $$bindings, s
     $$bindings.w(w);
   if ($$props.score === void 0 && $$bindings.score && score !== void 0)
     $$bindings.score(score);
+  if ($$props.time === void 0 && $$bindings.time && time !== void 0)
+    $$bindings.time(time);
   $$result.css.add(css$6);
   name = names[current];
-  return `${shown > 0 ? `<div class="${"ff ff-" + escape(person, true) + " svelte-r8n8x3"}" style="${"left: " + escape(getPos(shown), true) + "%;"}">${score == 0 ? `<div class="sprite svelte-r8n8x3" anim="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `${score < 0.5 ? `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim2="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim3="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>`}`}</div>` : ``}`;
+  return `${shown > 0 ? `<div class="${"ff ff-" + escape(person, true) + " svelte-r8n8x3"}" style="${"left: " + escape(getPos(shown), true) + "%;"}">${score == 0 ? `<div class="sprite svelte-r8n8x3" anim="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `${score < 0.5 || time <= 430 ? `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim2="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim3="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>`}`}</div>` : ``}`;
 });
 const HappyDays_person_svelte_svelte_type_style_lang = "";
 const css$5 = {
-  code: '.bigtext.svelte-13w1qde.svelte-13w1qde{position:absolute;left:5px;bottom:0px;font-size:1rem;color:white;width:100%;text-align:left;font-weight:bold;text-shadow:0px 0px 7px rgba(0,0,0,0.7)}.headline.svelte-13w1qde.svelte-13w1qde{position:absolute;color:white;z-index:9999;width:100%;left:0px;top:30%;padding:10px;-webkit-transform:translateY(-50%);transform:translateY(-50%);text-align:center;text-transform:lowercase}.headline.svelte-13w1qde h1.svelte-13w1qde{font-size:0.35rem;line-height:0.4rem;margin-bottom:3px;letter-spacing:0.05px;color:#856682}.byline.svelte-13w1qde.svelte-13w1qde{color:#856682;font-size:0.35rem}.instruction.svelte-13w1qde.svelte-13w1qde{margin-top:3px;font-size:0.3rem;color:#856682}.person.svelte-13w1qde.svelte-13w1qde{position:absolute;left:0px;top:0px;height:20vh;display:inline-block;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none;border:2px solid #28212F}.person.svelte-13w1qde.svelte-13w1qde:hover,.person.hl.svelte-13w1qde.svelte-13w1qde{border:1px solid #fff;z-index:9999}.person.hl.svelte-13w1qde.svelte-13w1qde{border:4px solid #FE2F8D}.person.shown.svelte-13w1qde.svelte-13w1qde{opacity:1;cursor:pointer;pointer-events:all}.hidePerson.svelte-13w1qde.svelte-13w1qde{opacity:0 !important}.personViz.svelte-13w1qde.svelte-13w1qde{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);background:#492e5a}.personViz.svelte-13w1qde.svelte-13w1qde:after{content:"";position:absolute;left:0;top:0;width:100%;height:80%;background:rgb(0,0,0);background:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), color-stop(90%, rgba(0,0,0,0.30802258403361347)));background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%)}.socialBar.svelte-13w1qde.svelte-13w1qde{overflow:hidden;position:absolute;right:0px;top:0px;height:100%;width:100%;z-index:0}.socialBarScore.svelte-13w1qde.svelte-13w1qde{width:100%;height:0px;max-height:100%;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);opacity:1}.happyBar.svelte-13w1qde.svelte-13w1qde{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-13w1qde.svelte-13w1qde{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-13w1qde.svelte-13w1qde{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-13w1qde.svelte-13w1qde:last-child{border:none}.personLabel.svelte-13w1qde.svelte-13w1qde{position:relative;width:100%;padding-top:10px;font-size:12px;color:white;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}.dayOfWeek.svelte-13w1qde.svelte-13w1qde{font-size:12px;color:white}.currentActivity.svelte-13w1qde.svelte-13w1qde{position:relative;width:100%;padding:0 3px;font-size:12px;line-height:13px;color:#fff;opacity:0.5;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}@media screen and (max-width: 800px){.personLabel.svelte-13w1qde.svelte-13w1qde{font-size:8px;line-height:9px;padding-top:5px}.currentActivity.svelte-13w1qde.svelte-13w1qde{font-size:7px;line-height:8px}}',
+  code: '.bigtext.svelte-1bxzqns.svelte-1bxzqns{position:absolute;left:5px;bottom:0px;font-size:1rem;color:white;width:100%;text-align:left;font-weight:bold;text-shadow:0px 0px 7px rgba(0,0,0,0.7)}.headline.svelte-1bxzqns.svelte-1bxzqns{position:absolute;color:white;z-index:9999;width:100%;left:0px;top:30%;padding:10px;-webkit-transform:translateY(-50%);transform:translateY(-50%);text-align:center;text-transform:lowercase}.headline.svelte-1bxzqns h1.svelte-1bxzqns{font-size:0.35rem;line-height:0.4rem;margin-bottom:3px;letter-spacing:0.05px;color:#856682}.byline.svelte-1bxzqns.svelte-1bxzqns{color:#856682;font-size:0.35rem}.instruction.svelte-1bxzqns.svelte-1bxzqns{margin-top:3px;font-size:0.3rem;color:#856682}.person.svelte-1bxzqns.svelte-1bxzqns{position:absolute;left:0px;top:0px;height:20vh;display:inline-block;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none;border:2px solid #28212F}.person.svelte-1bxzqns.svelte-1bxzqns:hover,.person.hl.svelte-1bxzqns.svelte-1bxzqns{border:1px solid #fff;z-index:9999}.person.hl.svelte-1bxzqns.svelte-1bxzqns{border:4px solid var(--color-pinkpurple)}.person.shown.svelte-1bxzqns.svelte-1bxzqns{opacity:1;cursor:pointer;pointer-events:all}.hidePerson.svelte-1bxzqns.svelte-1bxzqns{opacity:0 !important}.personViz.svelte-1bxzqns.svelte-1bxzqns{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);background:#503F5A}.personViz.svelte-1bxzqns.svelte-1bxzqns:after{content:"";position:absolute;left:0;top:0;width:100%;height:80%;background:rgb(0,0,0);background:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), color-stop(90%, rgba(0,0,0,0.30802258403361347)));background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%)}.socialBar.svelte-1bxzqns.svelte-1bxzqns{overflow:hidden;position:absolute;right:0px;top:0px;height:100%;width:100%;z-index:0}.socialBarScore.svelte-1bxzqns.svelte-1bxzqns{width:100%;height:0px;max-height:100%;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);opacity:1}.happyBar.svelte-1bxzqns.svelte-1bxzqns{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-1bxzqns.svelte-1bxzqns{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-1bxzqns.svelte-1bxzqns{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-1bxzqns.svelte-1bxzqns:last-child{border:none}.personLabel.svelte-1bxzqns.svelte-1bxzqns{position:relative;width:100%;padding-top:10px;font-size:12px;color:white;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}.dayOfWeek.svelte-1bxzqns.svelte-1bxzqns{font-size:12px;color:white}.currentActivity.svelte-1bxzqns.svelte-1bxzqns{position:relative;width:100%;padding:0 3px;font-size:12px;line-height:13px;color:#fff;opacity:0.5;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}@media screen and (max-width: 800px){.personLabel.svelte-1bxzqns.svelte-1bxzqns{font-size:8px;line-height:9px;padding-top:5px}.currentActivity.svelte-1bxzqns.svelte-1bxzqns{font-size:7px;line-height:8px}}',
   map: null
 };
 let socialMax = 360;
@@ -5906,13 +5908,13 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       hl = hl;
     }
   }
-  return `<div class="${"person " + escape(hl, true) + " " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-13w1qde"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-13w1qde"><div class="socialBar svelte-13w1qde"><div class="socialBarScore svelte-13w1qde" style="${"height:" + escape(
+  return `<div class="${"person " + escape(hl, true) + " " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-1bxzqns"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-1bxzqns"><div class="socialBar svelte-1bxzqns"><div class="socialBarScore svelte-1bxzqns" style="${"height:" + escape(
     time < 560 || time > 1460 ? 0 : person.social_score / socialMax * 100,
     true
   ) + "%; background: " + escape(
     person.social_score / socialMax * (peopleColor.length - 1) > peopleColor.length - 1 ? peopleColor[peopleColor.length - 1] : peopleColor[Math.floor(person.social_score / socialMax * (peopleColor.length - 1))],
     true
-  )}"></div></div> ${time > 242 && time < 1540 ? `<div class="personLabel svelte-13w1qde">${!hideInfo ? `${escape(toTitleCase(raceConvert$1(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time > 247 && time < 1500 ? `<div class="currentActivity svelte-13w1qde">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
+  )}"></div></div> ${time > 242 && time < 1540 ? `<div class="personLabel svelte-1bxzqns">${!hideInfo ? `${escape(toTitleCase(raceConvert$1(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time > 247 && time < 1500 ? `<div class="currentActivity svelte-1bxzqns">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
     return `${person.social_score != 0 && convertWHO(act, true) != "alone" ? `${validate_component(HappyDays_sprites, "Sprites").$$render(
       $$result,
       {
@@ -5925,7 +5927,8 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
         end: act[1],
         frameRate: lookup.FRAMERATE[convertWHO(act, true)],
         hideInfo,
-        w: position[2]
+        w: position[2],
+        time
       },
       {},
       {}
@@ -5941,12 +5944,13 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
         end: act[1],
         frameRate: lookup.FRAMERATE["alone"],
         hideInfo,
-        w: position[2]
+        w: position[2],
+        time
       },
       {},
       {}
     )}`;
-  })} ${person.start < 240 && time <= 242 ? `<div class="headline svelte-13w1qde"><h1 class="svelte-13w1qde"><!-- HTML_TAG_START -->${hed}<!-- HTML_TAG_END --></h1> <div class="byline svelte-13w1qde" data-svelte-h="svelte-1lua6f6">by Alvin Chang</div> <div class="instruction svelte-13w1qde" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-13w1qde">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> </div>`;
+  })} ${person.start < 240 && time <= 242 ? `<div class="headline svelte-1bxzqns"><h1 class="svelte-1bxzqns"><!-- HTML_TAG_START -->${hed}<!-- HTML_TAG_END --></h1> <div class="byline svelte-1bxzqns" data-svelte-h="svelte-1lua6f6">by Alvin Chang</div> <div class="instruction svelte-1bxzqns" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-1bxzqns">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> </div>`;
 });
 const HappyDays_grid_svelte_svelte_type_style_lang = "";
 const css$4 = {
@@ -5991,17 +5995,16 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
   let screenWidth = null;
   let screenHeight = 1e3;
   let peopleColor = [
-    "#492e5a",
-    "#653962",
-    "#7f4569",
-    "#97546e",
-    "#ad6473",
-    "#c17677",
-    "#d3897c",
-    "#e19e83",
-    "#eeb48c",
-    "#f8cb97",
-    "#ffe3a6"
+    "#3f1c4f",
+    "#5e2657",
+    "#7b335e",
+    "#974262",
+    "#b05466",
+    "#c66868",
+    "#da7f6c",
+    "#e99770",
+    "#f6b177",
+    "#ffcc82"
   ];
   let customClicked = false;
   let { time, beginTime: beginTime2, timeline: timeline2, currentPeople, options, hed, selectedPerson } = $$props;
@@ -6170,7 +6173,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
 });
 const HappyDays_text_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: ".time.svelte-1u8rxkm{font-weight:bold;color:#FE2F8D}",
+  code: ".time.svelte-1iuue5e{font-weight:bold;color:var(--color-pinkpurple)}",
   map: null
 };
 function convertToHTML(text) {
@@ -6197,11 +6200,11 @@ const HappyDays_text = create_ssr_component(($$result, $$props, $$bindings, slot
   if ($$props.time === void 0 && $$bindings.time && time !== void 0)
     $$bindings.time(time);
   $$result.css.add(css$3);
-  return `<div class="${"textContainer " + escape(add, true) + " svelte-1u8rxkm"}"><div class="time svelte-1u8rxkm">${escape(time)}</div> <!-- HTML_TAG_START -->${convertToHTML(copy2)}<!-- HTML_TAG_END --> </div>`;
+  return `<div class="${"textContainer " + escape(add, true) + " svelte-1iuue5e"}"><div class="time svelte-1iuue5e">${escape(time)}</div> <!-- HTML_TAG_START -->${convertToHTML(copy2)}<!-- HTML_TAG_END --> </div>`;
 });
 const HappyDays_modal_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: "h3.svelte-sho8dg.svelte-sho8dg{font-weight:bold;color:#fff;font-size:1.1rem;line-height:1.5rem}.details.svelte-sho8dg.svelte-sho8dg{width:100%;height:100%;color:#aaa;padding:8px;text-align:left;font-size:0.8rem;line-height:1.2rem;z-index:999;display:-webkit-box;display:flex;position:relative}.details.shown.svelte-sho8dg.svelte-sho8dg{display:block}.detailsClose.svelte-sho8dg.svelte-sho8dg{margin-top:3px;font-size:13px;display:inline-block;cursor:pointer;color:white;background:#FE2F8D;padding:5px;margin-top:5px;text-align:center;position:sticky;top:0px;width:100%}.detailClose.bottom.svelte-sho8dg.svelte-sho8dg{align-self:flex-end}.detailsClose.svelte-sho8dg.svelte-sho8dg:hover{text-decoration:underline}.activities.svelte-sho8dg.svelte-sho8dg{font-size:0.8rem;line-height:0.9rem}.activities.svelte-sho8dg .act.svelte-sho8dg{margin-bottom:0.3rem}.act.svelte-sho8dg .time.svelte-sho8dg{color:#fff;display:block}.act.cross.svelte-sho8dg.svelte-sho8dg,.act.cross.svelte-sho8dg .time.svelte-sho8dg{text-decoration:line-through;color:#777 !important}.act.hl.svelte-sho8dg.svelte-sho8dg,.act.hl.svelte-sho8dg .time.svelte-sho8dg{color:#FE2F8D !important}.fixed_spacer.svelte-sho8dg.svelte-sho8dg{position:sticky;bottom:0px;left:0px;height:120px;background:rgb(40,33,47);background:-webkit-gradient(linear, left top, left bottom, from(rgba(40,33,47,0)), color-stop(79%, rgba(0,0,0,1)));background:linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);width:100%}.spacer.svelte-sho8dg.svelte-sho8dg{height:100px;display:block}",
+  code: "h3.svelte-xliorg.svelte-xliorg{font-weight:bold;color:#fff;font-size:1.1rem;line-height:1.5rem}.details.svelte-xliorg.svelte-xliorg{width:100%;height:100%;color:#aaa;padding:8px;text-align:left;font-size:0.8rem;line-height:1.2rem;z-index:999;display:-webkit-box;display:flex;position:relative}.details.shown.svelte-xliorg.svelte-xliorg{display:block}.detailsClose.svelte-xliorg.svelte-xliorg{margin-top:3px;font-size:13px;display:inline-block;cursor:pointer;color:white;background:var(--color-pinkpurple);padding:5px;margin-top:5px;text-align:center;position:sticky;top:0px;width:100%}.detailClose.bottom.svelte-xliorg.svelte-xliorg{align-self:flex-end}.detailsClose.svelte-xliorg.svelte-xliorg:hover{text-decoration:underline}.activities.svelte-xliorg.svelte-xliorg{font-size:0.8rem;line-height:0.9rem}.activities.svelte-xliorg .act.svelte-xliorg{margin-bottom:0.3rem}.act.svelte-xliorg .time.svelte-xliorg{color:#fff;display:block}.act.cross.svelte-xliorg.svelte-xliorg,.act.cross.svelte-xliorg .time.svelte-xliorg{text-decoration:line-through;color:#777 !important}.act.hl.svelte-xliorg.svelte-xliorg,.act.hl.svelte-xliorg .time.svelte-xliorg{color:var(--color-pinkpurple) !important}.fixed_spacer.svelte-xliorg.svelte-xliorg{position:sticky;bottom:0px;left:0px;height:120px;background:rgb(40,33,47);background:-webkit-gradient(linear, left top, left bottom, from(rgba(40,33,47,0)), color-stop(79%, rgba(0,0,0,1)));background:linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);width:100%}.spacer.svelte-xliorg.svelte-xliorg{height:100px;display:block}",
   map: null
 };
 function checkTime(start, end, time) {
@@ -6314,9 +6317,9 @@ const HappyDays_modal = create_ssr_component(($$result, $$props, $$bindings, slo
       selectedPerson = selectedPerson;
     }
   }
-  return `<div class="textContainer">${selectedPerson != null ? `<div class="${"details " + escape("shown", true) + " svelte-sho8dg"}"><div class="detailsClose svelte-sho8dg" data-svelte-h="svelte-c2ta5r">Click to close</div> <h3 class="svelte-sho8dg">${escape(selectedPerson.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON]))} ${escape(lookup.TESEX[selectedPerson.TESEX])} in ${escape(lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase())} health</h3> <p>Has ${escape(selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase())} and ${escape(selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children")} in the household. ${escape(selectedPerson.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[selectedPerson.PEEDUCA].toLowerCase())} education. ${escape(selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() + " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : "")} Reported being a ${escape(selectedPerson.WECANTRIL)}/10 on the Cantril ladder.</p> <div class="activities svelte-sho8dg">${each(cleanedActivites, (act, key) => {
-    return `<div class="${"act " + escape(act[3], true) + " svelte-sho8dg"}"><span class="time svelte-sho8dg">${escape(convertTime$1(act[0]))}</span> ${escape(lookup.ACTIVITY[act[1]].task)} ${escape(convertCurrentCompany(act[2]))}</div>`;
-  })}</div> <div class="fixed_spacer svelte-sho8dg"></div> <div class="spacer svelte-sho8dg"></div></div>` : ``} </div>`;
+  return `<div class="textContainer">${selectedPerson != null ? `<div class="${"details " + escape("shown", true) + " svelte-xliorg"}"><div class="detailsClose svelte-xliorg" data-svelte-h="svelte-c2ta5r">Click to close</div> <h3 class="svelte-xliorg">${escape(selectedPerson.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON]))} ${escape(lookup.TESEX[selectedPerson.TESEX])} in ${escape(lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase())} health</h3> <p>Has ${escape(selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase())} and ${escape(selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children")} in the household. ${escape(selectedPerson.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[selectedPerson.PEEDUCA].toLowerCase())} education. ${escape(selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() + " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : "")} Reported being a ${escape(selectedPerson.WECANTRIL)}/10 on the Cantril ladder.</p> <div class="activities svelte-xliorg">${each(cleanedActivites, (act, key) => {
+    return `<div class="${"act " + escape(act[3], true) + " svelte-xliorg"}"><span class="time svelte-xliorg">${escape(convertTime$1(act[0]))}</span> ${escape(lookup.ACTIVITY[act[1]].task)} ${escape(convertCurrentCompany(act[2]))}</div>`;
+  })}</div> <div class="fixed_spacer svelte-xliorg"></div> <div class="spacer svelte-xliorg"></div></div>` : ``} </div>`;
 });
 const people = [
   {
@@ -112262,7 +112265,7 @@ const martin = {
 };
 const HappyDays_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: '.outsideContainer.svelte-178erdm{background:#28212F;font-family:"National 2 Web"}#scrolly.svelte-178erdm{font-family:"National 2 Web"}.visualContainer.svelte-178erdm{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-178erdm{height:75vh}.timeline.svelte-178erdm{position:relative;z-index:100;margin-top:-80vh;pointer-events:none}.step.svelte-178erdm{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-178erdm{color:#FE2F8D;font-weight:bold;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-178erdm{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(11%, rgba(40,33,47,0.97)), color-stop(89%, rgba(40,33,47,0.97)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:20vh 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative;pointer-events:none}.step.shortcopy.svelte-178erdm{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-178erdm{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-178erdm{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}.modal.svelte-178erdm{width:300px;position:fixed;left:-300px;top:0px;height:100%;background:black;-webkit-transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);-webkit-transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);overflow-y:scroll}.modal.shown.svelte-178erdm{left:0px}',
+  code: '.outsideContainer.svelte-72qty{background:#28212F;font-family:"National 2 Web"}#scrolly.svelte-72qty{font-family:"National 2 Web"}.visualContainer.svelte-72qty{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-72qty{height:75vh}.timeline.svelte-72qty{position:relative;z-index:100;margin-top:-80vh;pointer-events:none}.step.svelte-72qty{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-72qty{color:var(--color-pinkpurple);font-weight:bold;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-72qty{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(11%, rgba(40,33,47,0.97)), color-stop(89%, rgba(40,33,47,0.97)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:20vh 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative;pointer-events:none}.step.shortcopy.svelte-72qty{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-72qty{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-72qty{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}.modal.svelte-72qty{width:300px;position:fixed;left:-300px;top:0px;height:100%;background:black;-webkit-transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);-webkit-transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);overflow-y:scroll}.modal.shown.svelte-72qty{left:0px}',
   map: null
 };
 let beginTime = 240;
@@ -112381,7 +112384,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = ` <div class="outsideContainer svelte-178erdm"><section id="scrolly" class="svelte-178erdm"><div class="visualContainer svelte-178erdm">${validate_component(HappyDays_grid, "Grid").$$render(
+    $$rendered = ` <div class="outsideContainer svelte-72qty"><section id="scrolly" class="svelte-72qty"><div class="visualContainer svelte-72qty">${validate_component(HappyDays_grid, "Grid").$$render(
       $$result,
       {
         currentPeople,
@@ -112399,7 +112402,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         }
       },
       {}
-    )}</div> <div class="timeline svelte-178erdm">${validate_component(Scrolly, "Scrolly").$$render(
+    )}</div> <div class="timeline svelte-72qty">${validate_component(Scrolly, "Scrolly").$$render(
       $$result,
       { increments: 1, top: 100, value },
       {
@@ -112412,7 +112415,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         default: () => {
           return `${each(timeRange, (time, i) => {
             let active = value === i;
-            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-178erdm", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-178erdm"></div> <div class="${["step longcopy svelte-178erdm", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-72qty", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-72qty"></div> <div class="${["step longcopy svelte-72qty", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112421,7 +112424,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
               },
               {},
               {}
-            )}</div> <div class="postLongcopy svelte-178erdm"></div>` : `<div class="${["step shortcopy svelte-178erdm", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            )}</div> <div class="postLongcopy svelte-72qty"></div>` : `<div class="${["step shortcopy svelte-72qty", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112434,7 +112437,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
           })}`;
         }
       }
-    )}</div> <div class="spacer svelte-178erdm"></div></section> <div class="${"modal " + escape(selectedPerson == null ? "" : "shown", true) + " svelte-178erdm"}">${validate_component(HappyDays_modal, "Modal").$$render(
+    )}</div> <div class="spacer svelte-72qty"></div></section> <div class="${"modal " + escape(selectedPerson == null ? "" : "shown", true) + " svelte-72qty"}">${validate_component(HappyDays_modal, "Modal").$$render(
       $$result,
       { time: value + beginTime, selectedPerson },
       {
@@ -112531,16 +112534,16 @@ const timeline = [
     text: `We don't tell stories about people like Martin. He doesn't have a job. He doesn't have a wife or partner, nor does he have children in his home. He's just a regular guy in his 60s who doesn't interact with that many people.\r
 \r
 \r
-But we know a little about Martin because he recorded everything he did for one day in 2021.¹ And from that data, we know he may not have many friends, family, or even acquaintances. It's a much bigger red flag than you might think.\r
+But he recorded everything he did for one day in 2021.¹ From that data, we know he may not have friends, family, or even acquaintances – and we know he's pretty unhappy. These are red flags.\r
 \r
 \r
-Humans evolved to <a href="https://link.springer.com/chapter/10.1007/978-1-4684-6694-2_3">survive in groups</a>, whether that's gathering food or fighting off predators. Without those <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">protective bonds</a>, our bodies sound the alarm with a pain called loneliness.\r
+Humans evolved to <a href="https://link.springer.com/chapter/10.1007/978-1-4684-6694-2_3">survive in groups</a>, whether that's gathering food or fighting off predators. Without those <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">protective bonds</a>, our bodies sound the alarm.\r
 \r
 \r
 "When we feel lonely, we’re unhappy and long to escape this emotional pain," writes former US surgeon general Vivek Murthy in his 2020 book, <a href="https://www.amazon.com/Together-Connection-Performance-Greater-Happiness/dp/0062913298">Together</a>. \r
 \r
 \r
-Without those bonds, we feel more anxious, more fearful, and more stressed. Because thousands of years of evolution made us <a href="https://psycnet.apa.org/record/1995-29052-001">believe</a> that when we're isolated, we're in danger.\r
+When we're lonely, we feel more anxious, more fearful, and more stressed. Because thousands of years of evolution made us <a href="https://psycnet.apa.org/record/1995-29052-001">believe</a> that when we're isolated, we're in danger.\r
 \r
 \r
 <div class="citation">¹ He did it for the American Time Use Survey, which has tracked how Americans spend their time since 2003.</div>`
@@ -112557,7 +112560,13 @@ Without those bonds, we feel more anxious, more fearful, and more stressed. Beca
     view: "0",
     sortby: "num",
     addclass: "shorttext",
-    text: "It looks like Martin is fine for now. Let's take a look at some more people.\r\n\r\n\r\nIn this story, we'll go through 24 hours of these people's days. We'll limit it to Saturdays and Sundays, when people usually socialize.\r\n\r\n\r\nBy the end, we'll see a worrisome trend that we often hide from plain sight."
+    text: `In this story, we'll go through 24 hours of people's lives, including Martin.¹ By the end, we'll see a worrisome trend – hiding in plain sight.\r
+\r
+\r
+It looks like Martin is fine for now. Let's take a look at some more people.\r
+\r
+\r
+<div class="citation">¹ We'll limit it to Saturdays and Sundays, when people have more time to socialize.</div>`
   },
   {
     time: "370",
@@ -112589,7 +112598,7 @@ The people who <em>will</em> help are our friends – and psychologist Robin Dun
     view: "1",
     sortby: "num",
     addclass: "shorttext",
-    text: "So let's color code our friends and family with TKCOLOR and everyone else with TKCOLOR."
+    text: "So let's color code our <span class='purple'>friends and family</span> with purple and <span class='gray'>everyone else</span> with gray."
   },
   {
     time: "540",
@@ -112629,7 +112638,7 @@ So let's track how many of these people interact with their friends or family fo
     time: "780",
     sortby: "num",
     view: "0",
-    text: 'Lonely people exhibit different behavior than everyone else. They <a href="https://pubmed.ncbi.nlm.nih.gov/10677643/">report</a> feeling more shy, more anxious, more negative, and more angry. They are less optimistic and have lower self esteem. \r\n\r\n\r\nBut neuroscientist John Cacioppo has found that everyone is susceptible to loneliness.\r\n\r\n\r\nIn a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0092656606000055"> 2006 study</a>, he and his colleagues hypnotized a bunch of college students to feel lonely.  After confirming the hypnotism worked, they asked the students how they felt. Cacioppo found that the hypnotized lonely students reported feeling just as bad as people who were actually lonely.\r\n\r\n\r\n"We had demonstrated yet again that lonely individuals are not a breed apart," Cacioppo wrote in his book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a>. "Any of us can succumb to loneliness, and along with it, all the other characteristics that travel as its entourage."'
+    text: 'Lonely people exhibit different behavior than everyone else. They <a href="https://pubmed.ncbi.nlm.nih.gov/10677643/">report</a> feeling more shy, more anxious, more negative, and more angry. They are less optimistic and have lower self esteem. \r\n\r\n\r\nBut neuroscientist John Cacioppo has found that everyone is susceptible to the negative effects of loneliness.\r\n\r\n\r\nIn a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0092656606000055"> 2006 study</a>, he and his colleagues hypnotized a bunch of college students to feel lonely.  After confirming the hypnotism worked, they asked the students how they felt. Cacioppo found that the hypnotized lonely students reported feeling just as bad as people who were actually lonely.\r\n\r\n\r\n"We had demonstrated yet again that lonely individuals are not a breed apart," Cacioppo wrote in his book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a>. "Any of us can succumb to loneliness, and along with it, all the other characteristics that travel as its entourage."'
   },
   {
     time: "800",
@@ -112640,7 +112649,7 @@ So let's track how many of these people interact with their friends or family fo
     time: "900",
     view: "1",
     sortby: "num",
-    text: `When I analyzed how much time Americans spend with other people, I found that we're spending less time with friends and family.\r
+    text: `When I analyzed how much time Americans spend with other people, I found some alarming trends.\r
 \r
 \r
 The amount of time we spend with family has drastically decreased across every age group:\r
@@ -112670,14 +112679,14 @@ Then the pandemic came along. It supercharged our loneliness.`
     time: "920",
     view: "1",
     sortby: "num",
-    text: "As you can see, most people have barely had an hour of social interaction on this day – and this is a weekend day!",
+    text: "As you can see, most people have barely had an hour of social interaction on this day – and this is the weekend!",
     addclass: "shorttext"
   },
   {
     time: "1020",
     view: "1",
     sortby: "num",
-    text: "Every so often, the American Time Use Survey asks people a question that gets at how well someone is doing. The last time it was asked was 2021. The question goes something like this:\r\n\r\n\r\n<blockquote>\r\nImagine a ladder.  \r\n\r\n\r\nThe top of the ladder is your best possible life. The bottom is your worst possible life. \r\n\r\n\r\nWhich step of the ladder do you feel you personally stand at the present time?\r\n</blockquote>\r\n\r\n\r\nThis is called the Cantril ladder, and in the US most people answer fairly positively – on average, people say they are a 7 out of 10.\r\n\r\n\r\nPause for a second and ask yourself where you are on this ladder:\r\n\r\n\r\n>> CHART: CANTRIL LADDER"
+    text: "Every so often, the American Time Use Survey asks people a question that gets at how well someone is doing. The last time it was asked was 2021, which is the year we're looking at. The question goes something like this:\r\n\r\n\r\n<blockquote>\r\nImagine a ladder.  \r\n\r\n\r\nThe top of the ladder is your best possible life. The bottom is your worst possible life. \r\n\r\n\r\nWhich step of the ladder do you feel you personally stand at the present time?\r\n</blockquote>\r\n\r\n\r\nThis is called the Cantril ladder, and in the US most people answer fairly positively – on average, people say they are a 7 out of 10.\r\n\r\n\r\nPause for a second and ask yourself where you are on this ladder:\r\n\r\n\r\n>> CHART: CANTRIL LADDER"
   },
   {
     time: "1040",
@@ -112755,7 +112764,7 @@ Sure, you could blame more and more people for being isolated. But what if we've
     time: "1500",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "Usually with datasets like this, it's easy to look at the aggregate. We want to know whether there is a trend, and not if one person in the dataset is suffering.\r\n\r\n\r\nBut when I started studying individual people, I felt like I knew so many of them. They are my grandparents, my friends – me.\r\n\r\n\r\nAnd for so many of them, all you want to do is somehow tell them: <em>Hey I see you.</em>"
+    text: "It's easy to keep our eyes on the people who aren't lonely. Their lives are more active. Their squares are more lively. They are the kind of people journalists, like myself, tend to write about.\r\n\r\n\r\nBut when I follow individual people in this data, they remind me of people in my life – grandparents, friends, coworkers – and sometimes, me.\r\n\r\n\r\nAnd I found myself wanting to tell them: <em>Hey, I see you.</em>"
   }
 ];
 const copy = {
@@ -112766,7 +112775,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-04-14:09"}`);
+  console.log(`build: ${"2023-09-05-15:08"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

@@ -68,6 +68,7 @@
 			})
 		}
 		if (isNaN(time)) { time = 1697; }
+
 		// if (time > 1440) { time = time - 1440; }
 		customClicked = time > 605 ? true : false;
 		happyBar = time >= 365 || time < beginTime ? 1 : 0;

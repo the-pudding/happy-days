@@ -235,7 +235,7 @@
 		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 	}
 	.step.active {
-		color: var(--color-pinkpurple);
+		color: #CE5FFE;
 		font-weight: bold;
 		text-shadow: 0px 0px 6px #000;
 	}

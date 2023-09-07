@@ -12,7 +12,7 @@
 			}
 			
 			if (line.indexOf("IMAGE|") != -1) {
-				line = '<div class="imageContainer"><img src="/assets/happydays/' + line.replace("IMAGE|","").replace(/(\r\n|\n|\r)/gm, "") + '"/></div>';
+				line = '<div class="imageContainer"><img class="desktopImage" src="/assets/happydays/' + line.replace("IMAGE|","").replace(/(\r\n|\n|\r)/gm, "") + '.svg"/><img class="mobileImage" src="/assets/happydays/' + line.replace("IMAGE|","").replace(/(\r\n|\n|\r)/gm, "") + '_mobile.svg"/></div>';
 			}
 			finalText.push(line);
 		})
@@ -27,10 +27,7 @@
 </div>
 
 <style>
-.time {
-	font-weight: bold;
-	color: var(--color-pinkpurple);
-}
+
 
 </style>
 
