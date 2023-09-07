@@ -6189,7 +6189,7 @@ function convertToHTML(text) {
       line = `<svelte:component this=${compName}></svelte:component>`;
     }
     if (line.indexOf("IMAGE|") != -1) {
-      line = '<div class="imageContainer"><img class="desktopImage" src="/assets/happydays/' + line.replace("IMAGE|", "").replace(/(\r\n|\n|\r)/gm, "") + '.svg"/><img class="mobileImage" src="/assets/happydays/' + line.replace("IMAGE|", "").replace(/(\r\n|\n|\r)/gm, "") + '_mobile.svg"/></div>';
+      line = '<div class="imageContainer"><img class="desktopImage" src="assets/happydays/' + line.replace("IMAGE|", "").replace(/(\r\n|\n|\r)/gm, "") + '.svg"/><img class="mobileImage" src="assets/happydays/' + line.replace("IMAGE|", "").replace(/(\r\n|\n|\r)/gm, "") + '_mobile.svg"/></div>';
     }
     finalText.push(line);
   });
@@ -112771,7 +112771,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-07-15:58"}`);
+  console.log(`build: ${"2023-09-07-16:45"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
