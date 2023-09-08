@@ -67,6 +67,9 @@
 		--1s: 1s;
 	}
 }
+body {
+	background: #28212F !important;
+}
 
 h1 {
 	font-size: var(--48px, 48px);
