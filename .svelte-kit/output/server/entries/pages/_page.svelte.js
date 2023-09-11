@@ -246,7 +246,7 @@ const ACTIVITY = {
     otherClass: "sleeping"
   },
   "10199": {
-    task: "Sleeping, n.e.c.*",
+    task: "Sleeping",
     cleanTask: "Sleeping",
     group: "Personal Care Activities",
     "class": "sleep",
@@ -264,7 +264,7 @@ const ACTIVITY = {
     otherClass: "selfcare"
   },
   "10299": {
-    task: "Grooming, n.e.c.*",
+    task: "Grooming",
     cleanTask: "Grooming",
     group: "Personal Care Activities",
     "class": "personal",
@@ -282,7 +282,7 @@ const ACTIVITY = {
     otherClass: "selfcare"
   },
   "10399": {
-    task: "Self care, n.e.c.*",
+    task: "Self care",
     cleanTask: "Self-care",
     group: "Personal Care Activities",
     "class": "personal",
@@ -291,7 +291,7 @@ const ACTIVITY = {
     otherClass: "selfcare"
   },
   "10401": {
-    task: "Personal/Private activities",
+    task: "Personal/private activities",
     cleanTask: "Personal or private activities",
     group: "Personal Care Activities",
     "class": "personal",
@@ -300,7 +300,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "10499": {
-    task: "Personal activities, n.e.c.*",
+    task: "Personal activities",
     cleanTask: "Personal activities",
     group: "Personal Care Activities",
     "class": "personal",
@@ -318,7 +318,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "10599": {
-    task: "Personal care emergencies, n.e.c.*",
+    task: "Personal care emergencies",
     cleanTask: "Personal emergencies",
     group: "Personal Care Activities",
     "class": "personal",
@@ -327,7 +327,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "19999": {
-    task: "Personal care, n.e.c.*",
+    task: "Personal care",
     cleanTask: "Personal care",
     group: "Personal Care Activities",
     "class": "personal",
@@ -363,7 +363,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "20104": {
-    task: "Storing interior hh items, inc. food",
+    task: "Storing interior household items, inc. food",
     cleanTask: "Storing household items",
     group: "Household Activities",
     "class": "household",
@@ -372,7 +372,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "20199": {
-    task: "Housework, n.e.c.*",
+    task: "Housework",
     cleanTask: "Housework",
     group: "Household Activities",
     "class": "household",
@@ -408,7 +408,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "20299": {
-    task: "Food & drink prep, presentation, & clean-up, n.e.c.*",
+    task: "Food & drink prep, presentation, & clean-up",
     cleanTask: "Food prep and cleanup",
     group: "Household Activities",
     "class": "household",
@@ -444,7 +444,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "20399": {
-    task: "Interior maintenance, repair, & decoration, n.e.c.*",
+    task: "Interior maintenance, repair, & decoration",
     cleanTask: "Interior maintenance",
     group: "Household Activities",
     "class": "household",
@@ -471,7 +471,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "20499": {
-    task: "Exterior maintenance, repair & decoration, n.e.c.*",
+    task: "Exterior maintenance, repair & decoration",
     cleanTask: "Home improvement",
     group: "Household Activities",
     "class": "household",
@@ -498,7 +498,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "20599": {
-    task: "Lawn and garden, n.e.c.*",
+    task: "Lawn and garden",
     cleanTask: "Lawn and garden care",
     group: "Household Activities",
     "class": "household",
@@ -516,7 +516,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "20699": {
-    task: "Pet and animal care, n.e.c.*",
+    task: "Pet and animal care",
     cleanTask: "Pet care",
     group: "Household Activities",
     "class": "household",
@@ -534,7 +534,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "20799": {
-    task: "Vehicles, n.e.c.*",
+    task: "Vehicles",
     cleanTask: "Vehicle care",
     group: "Household Activities",
     "class": "household",
@@ -552,7 +552,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "20899": {
-    task: "Appliances and tools, n.e.c.*",
+    task: "Appliances and tools",
     cleanTask: "Appliance care",
     group: "Household Activities",
     "class": "household",
@@ -579,7 +579,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "20903": {
-    task: "HH & personal mail & messages (except e-mail)",
+    task: "Household/personal mail & messages (except e-mail)",
     cleanTask: "Email/messaging",
     group: "Household Activities",
     "class": "household",
@@ -588,7 +588,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "20904": {
-    task: "HH & personal e-mail and messages",
+    task: "Household/personal e-mail and messages",
     cleanTask: "Email/messaging",
     group: "Household Activities",
     "class": "household",
@@ -606,7 +606,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "20999": {
-    task: "Household management, n.e.c.*",
+    task: "Household management",
     cleanTask: "Household management",
     group: "Household Activities",
     "class": "household",
@@ -615,7 +615,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "29999": {
-    task: "Household activities, n.e.c.*",
+    task: "Household activities",
     cleanTask: "Household activities",
     group: "Household Activities",
     "class": "household",
@@ -624,7 +624,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "30101": {
-    task: "Physical care for hh children",
+    task: "Physical care for household children",
     cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -633,7 +633,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "30102": {
-    task: "Reading to/with hh children",
+    task: "Reading to/with household children",
     cleanTask: "Reading",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -642,7 +642,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "30103": {
-    task: "Playing with hh children, not sports",
+    task: "Playing with household children, not sports",
     cleanTask: "Playing",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -651,7 +651,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30104": {
-    task: "Arts and crafts with hh children",
+    task: "Arts and crafts with household children",
     cleanTask: "Arts and crafts",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -660,7 +660,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30105": {
-    task: "Playing sports with hh children",
+    task: "Playing sports with household children",
     cleanTask: "Playing sports",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -669,7 +669,7 @@ const ACTIVITY = {
     otherClass: "sports"
   },
   "30108": {
-    task: "Organization & planning for hh children",
+    task: "Organization & planning for household children",
     cleanTask: "Planning for children",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -678,7 +678,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30109": {
-    task: "Looking after hh children (as a primary activity)",
+    task: "Looking after household children (as a primary activity)",
     cleanTask: "Looking after children",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -687,7 +687,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "30110": {
-    task: "Attending hh children's events",
+    task: "Attending household children's events",
     cleanTask: "Attending event",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -696,7 +696,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "30111": {
-    task: "Waiting for/with hh children",
+    task: "Waiting for/with household children",
     cleanTask: "Waiting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -705,7 +705,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "30112": {
-    task: "Picking up/dropping off hh children",
+    task: "Picking up/dropping off household children",
     cleanTask: "Child transportation",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -714,7 +714,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30186": {
-    task: "Talking with/listening to hh children",
+    task: "Talking with/listening to household children",
     cleanTask: "Talking",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -723,7 +723,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30199": {
-    task: "Caring for & helping hh children, n.e.c.*",
+    task: "Caring for & helping household children",
     cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -732,7 +732,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "30201": {
-    task: "Homework (hh children)",
+    task: "Homework (household children)",
     cleanTask: "Helping w/ homework",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -741,7 +741,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30202": {
-    task: "Meetings and school conferences (hh children)",
+    task: "Meetings and school conferences (household children)",
     cleanTask: "School meeting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -750,7 +750,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30203": {
-    task: "Home schooling of hh children",
+    task: "Home schooling of household children",
     cleanTask: "Home schooling",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -759,7 +759,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30204": {
-    task: "Waiting associated with hh children's education",
+    task: "Waiting associated with household children's education",
     cleanTask: "Waiting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -768,7 +768,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "30299": {
-    task: "Activities related to hh child's education, n.e.c.*",
+    task: "Activities related to household child's education",
     cleanTask: "Educational activity",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -777,7 +777,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "30301": {
-    task: "Providing medical care to hh children",
+    task: "Providing medical care to household children",
     cleanTask: "Providing medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -786,7 +786,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "30302": {
-    task: "Obtaining medical care for hh children",
+    task: "Obtaining medical care for household children",
     cleanTask: "Obtaining medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -795,7 +795,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "30303": {
-    task: "Waiting associated with hh children's health",
+    task: "Waiting associated with household children's health",
     cleanTask: "Waiting for child medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -804,7 +804,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30399": {
-    task: "Activities related to hh child's health, n.e.c.*",
+    task: "Activities related to household child's health",
     cleanTask: "Child health-related activity",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -813,7 +813,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "30401": {
-    task: "Physical care for hh adults",
+    task: "Physical care for household adults",
     cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -822,7 +822,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30402": {
-    task: "Looking after hh adult (as a primary activity)",
+    task: "Looking after household adult (as a primary activity)",
     cleanTask: "Looking after adult",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -831,7 +831,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30403": {
-    task: "Providing medical care to hh adult",
+    task: "Providing medical care to household adult",
     cleanTask: "Providing medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -840,7 +840,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "30404": {
-    task: "Obtaining medical and care services for hh adult",
+    task: "Obtaining medical and care services for household adult",
     cleanTask: "Obtaining medical care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -858,7 +858,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30499": {
-    task: "Caring for household adults, n.e.c.*",
+    task: "Caring for household adults",
     cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -867,7 +867,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30501": {
-    task: "Helping hh adults",
+    task: "Helping household adults",
     cleanTask: "Providing help",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -876,7 +876,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30502": {
-    task: "Organization & planning for hh adults",
+    task: "Organization & planning for household adults",
     cleanTask: "Planning for other adults",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -885,7 +885,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "30503": {
-    task: "Picking up/dropping off hh adult",
+    task: "Picking up/dropping off household adult",
     cleanTask: "Child transportation",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -894,7 +894,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30504": {
-    task: "Waiting associated with helping hh adults",
+    task: "Waiting associated with helping household adults",
     cleanTask: "Waiting",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -903,7 +903,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "30599": {
-    task: "Helping household adults, n.e.c.*",
+    task: "Helping household adults",
     cleanTask: "Providing help",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -912,7 +912,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "39999": {
-    task: "Caring for & helping hh members, n.e.c.*",
+    task: "Caring for & helping household members",
     cleanTask: "Providing care",
     group: "Caring For & Helping Household (HH) Members",
     "class": "caringhh",
@@ -921,7 +921,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40101": {
-    task: "Physical care for nonhh children",
+    task: "Physical care for non-household children",
     cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -930,7 +930,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40102": {
-    task: "Reading to/with nonhh children",
+    task: "Reading to/with non-household children",
     cleanTask: "Reading",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -939,7 +939,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40103": {
-    task: "Playing with nonhh children, not sports",
+    task: "Playing with non-household children, not sports",
     cleanTask: "Playing",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -948,7 +948,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40104": {
-    task: "Arts and crafts with nonhh children",
+    task: "Arts and crafts with non-household children",
     cleanTask: "Arts and crafts",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -957,7 +957,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40105": {
-    task: "Playing sports with nonhh children",
+    task: "Playing sports with non-household children",
     cleanTask: "Playing sports",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -966,7 +966,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40108": {
-    task: "Organization & planning for nonhh children",
+    task: "Organization & planning for non-household children",
     cleanTask: "Planning for children",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -975,7 +975,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40109": {
-    task: "Looking after nonhh children (as primary activity)",
+    task: "Looking after non-household children (as primary activity)",
     cleanTask: "Looking after children",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -984,7 +984,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40110": {
-    task: "Attending nonhh children's events",
+    task: "Attending non-household children's events",
     cleanTask: "Attending event",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -993,7 +993,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40111": {
-    task: "Waiting for/with nonhh children",
+    task: "Waiting for/with non-household children",
     cleanTask: "Waiting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1002,7 +1002,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40112": {
-    task: "Dropping off/picking up nonhh children",
+    task: "Dropping off/picking up non-household children",
     cleanTask: "Child transportation",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1011,7 +1011,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40186": {
-    task: "Talking with/listening to nonhh children",
+    task: "Talking with/listening to non-household children",
     cleanTask: "Talking",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1020,7 +1020,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40199": {
-    task: "Caring for and helping nonhh children, n.e.c.*",
+    task: "Caring for and helping non-household children",
     cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1029,7 +1029,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40201": {
-    task: "Homework (nonhh children)",
+    task: "Homework (non-household children)",
     cleanTask: "Helping w/ homework",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1038,7 +1038,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40202": {
-    task: "Meetings and school conferences (nonhh children)",
+    task: "Meetings and school conferences (non-household children)",
     cleanTask: "School meeting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1047,7 +1047,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40203": {
-    task: "Home schooling of nonhh children",
+    task: "Home schooling of non-household children",
     cleanTask: "Home schooling",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1056,7 +1056,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40204": {
-    task: "Waiting associated with nonhh children's education",
+    task: "Waiting associated with non-household children's education",
     cleanTask: "Waiting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1065,7 +1065,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40299": {
-    task: "Activities related to nonhh child's educ., n.e.c.*",
+    task: "Activities related to non-household child's educ.",
     cleanTask: "Educational activity",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1074,7 +1074,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40301": {
-    task: "Providing medical care to nonhh children",
+    task: "Providing medical care to non-household children",
     cleanTask: "Providing medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1083,7 +1083,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40302": {
-    task: "Obtaining medical care for nonhh children",
+    task: "Obtaining medical care for non-household children",
     cleanTask: "Obtaining medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1092,7 +1092,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40303": {
-    task: "Waiting associated with nonhh children's health",
+    task: "Waiting associated with non-household children's health",
     cleanTask: "Waiting for child medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1101,7 +1101,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40399": {
-    task: "Activities related to nonhh child's health, n.e.c.*",
+    task: "Activities related to non-household child's health",
     cleanTask: "Child health-related activity",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1110,7 +1110,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40401": {
-    task: "Physical care for nonhh adults",
+    task: "Physical care for non-household adults",
     cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1119,7 +1119,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40402": {
-    task: "Looking after nonhh adult (as a primary activity)",
+    task: "Looking after non-household adult (as a primary activity)",
     cleanTask: "Looking after adult",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1128,7 +1128,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40403": {
-    task: "Providing medical care to nonhh adult",
+    task: "Providing medical care to non-household adult",
     cleanTask: "Providing medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1137,7 +1137,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40404": {
-    task: "Obtaining medical and care services for nonhh adult",
+    task: "Obtaining medical and care services for non-household adult",
     cleanTask: "Obtaining medical care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1146,7 +1146,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40405": {
-    task: "Waiting associated with caring for nonhh adults",
+    task: "Waiting associated with caring for non-household adults",
     cleanTask: "Waiting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1155,7 +1155,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40499": {
-    task: "Caring for nonhh adults, n.e.c.*",
+    task: "Caring for non-household adults",
     cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1164,7 +1164,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40501": {
-    task: "Housework, cooking, & shopping assistance for nonhh adults",
+    task: "Housework, cooking, & shopping assistance for non-household adults",
     cleanTask: "Providing help",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1173,7 +1173,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40502": {
-    task: "House & lawn maintenance & repair assistance for nonhh adults",
+    task: "House & lawn maintenance & repair assistance for non-household adults",
     cleanTask: "Helping w/ house/lawn",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1182,7 +1182,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40503": {
-    task: "Animal & pet care assistance for nonhh adults",
+    task: "Animal & pet care assistance for non-household adults",
     cleanTask: "Helping w/ pets",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1191,7 +1191,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40504": {
-    task: "Vehicle & appliance maintenance/repair assistance for nonhh adults",
+    task: "Vehicle & appliance maintenance/repair assistance for non-household adults",
     cleanTask: "Helping someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1200,7 +1200,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40505": {
-    task: "Financial management assistance for nonhh adults",
+    task: "Financial management assistance for non-household adults",
     cleanTask: "Helping someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1209,7 +1209,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40506": {
-    task: "Household management & paperwork assistance for nonhh adults",
+    task: "Household management & paperwork assistance for non-household adults",
     cleanTask: "Helping someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1218,7 +1218,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40507": {
-    task: "Picking up/dropping off nonhh adult",
+    task: "Picking up/dropping off non-household adult",
     cleanTask: "Providing transportation",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1227,7 +1227,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "40508": {
-    task: "Waiting associated with helping nonhh adults",
+    task: "Waiting associated with helping non-household adults",
     cleanTask: "Waiting",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1236,7 +1236,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "40599": {
-    task: "Helping nonhh adults, n.e.c.*",
+    task: "Helping non-household adults",
     cleanTask: "Helping someone",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1245,7 +1245,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "49999": {
-    task: "Caring for & helping nonhh members, n.e.c.*",
+    task: "Caring for & helping non-household members",
     cleanTask: "Providing care",
     group: "Caring For & Helping Nonhousehold (NonHH) Members",
     "class": "caringnhh",
@@ -1263,7 +1263,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "50102": {
-    task: "Work, other job(s)",
+    task: "Work, secondary job",
     cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
@@ -1281,7 +1281,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "50189": {
-    task: "Working, n.e.c.*",
+    task: "Working",
     cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
@@ -1326,7 +1326,7 @@ const ACTIVITY = {
     otherClass: "careadult"
   },
   "50289": {
-    task: "Work-related activities, n.e.c.*",
+    task: "Work-related activities",
     cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
@@ -1371,7 +1371,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "50389": {
-    task: "Other income-generating activities, n.e.c.*",
+    task: "Other income-generating activities",
     cleanTask: "Income-generating activity",
     group: "Work & Work-Related Activities",
     "class": "work",
@@ -1398,7 +1398,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "50405": {
-    task: "Security procedures rel. to job search/interviewing",
+    task: "Security procedures related to job search/interviewing",
     cleanTask: "Job interview",
     group: "Work & Work-Related Activities",
     "class": "work",
@@ -1416,7 +1416,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "50499": {
-    task: "Job search and Interviewing, n.e.c.*",
+    task: "Job search and Interviewing",
     cleanTask: "Job search",
     group: "Work & Work-Related Activities",
     "class": "work",
@@ -1425,7 +1425,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "59999": {
-    task: "Work and work-related activities, n.e.c.*",
+    task: "Work and work-related activities",
     cleanTask: "Working",
     group: "Work & Work-Related Activities",
     "class": "work",
@@ -1461,7 +1461,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "60104": {
-    task: "Security procedures rel. to taking classes",
+    task: "Security procedures related to taking classes",
     cleanTask: "Taking a class",
     group: "Education",
     "class": "education",
@@ -1470,7 +1470,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "60199": {
-    task: "Taking class, n.e.c.*",
+    task: "Taking class",
     cleanTask: "Taking a class",
     group: "Education",
     "class": "education",
@@ -1506,7 +1506,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "60289": {
-    task: "Education-related extracurricular activities, n.e.c.*",
+    task: "Education-related extracurricular activities",
     cleanTask: "Extracurricular activities",
     group: "Education",
     "class": "education",
@@ -1542,7 +1542,7 @@ const ACTIVITY = {
     otherClass: "sports"
   },
   "60399": {
-    task: "Research/homework n.e.c.*",
+    task: "Research/homework",
     cleanTask: "Doing research/homework",
     group: "Education",
     "class": "education",
@@ -1578,7 +1578,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "60499": {
-    task: "Administrative for education, n.e.c.*",
+    task: "Administrative for education",
     cleanTask: "Education-related activities",
     group: "Education",
     "class": "education",
@@ -1587,7 +1587,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "69999": {
-    task: "Education, n.e.c.*",
+    task: "Education",
     cleanTask: "Education-related activities",
     group: "Education",
     "class": "education",
@@ -1641,7 +1641,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "70199": {
-    task: "Shopping, n.e.c.*",
+    task: "Shopping",
     cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
@@ -1659,7 +1659,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "70299": {
-    task: "Researching purchases, n.e.c.*",
+    task: "Researching purchases",
     cleanTask: "Researching purchases",
     group: "Consumer Purchases",
     "class": "consumer",
@@ -1668,7 +1668,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "70301": {
-    task: "Security procedures rel. to consumer purchases",
+    task: "Security procedures related to consumer purchases",
     cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
@@ -1677,7 +1677,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "70399": {
-    task: "Security procedures rel. to consumer purchases, n.e.c.*",
+    task: "Security procedures related to consumer purchases",
     cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
@@ -1686,7 +1686,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "79999": {
-    task: "Consumer purchases, n.e.c.*",
+    task: "Consumer purchases",
     cleanTask: "Shopping",
     group: "Consumer Purchases",
     "class": "consumer",
@@ -1704,7 +1704,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "80102": {
-    task: "Waiting associated w/purchasing childcare svcs",
+    task: "Waiting associated w/purchasing childcare services",
     cleanTask: "Waiting",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1713,7 +1713,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "80199": {
-    task: "Using paid childcare services, n.e.c.*",
+    task: "Using paid childcare services",
     cleanTask: "Using childcare services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1749,7 +1749,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "80299": {
-    task: "Using financial services and banking, n.e.c.*",
+    task: "Using financial services and banking",
     cleanTask: "Using financial services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1776,7 +1776,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "80399": {
-    task: "Using legal services, n.e.c.*",
+    task: "Using legal services",
     cleanTask: "Using legal services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1812,7 +1812,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "80499": {
-    task: "Using medical services, n.e.c.*",
+    task: "Using medical services",
     cleanTask: "Using medical services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1839,7 +1839,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "80599": {
-    task: "Using personal care services, n.e.c.*",
+    task: "Using personal care services",
     cleanTask: "Using personal care services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1848,7 +1848,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "80601": {
-    task: "Activities rel. to purchasing/selling real estate",
+    task: "Activities related to purchasing/selling real estate",
     cleanTask: "Purchasing/selling real estate",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1866,7 +1866,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "80699": {
-    task: "Using real estate services, n.e.c.*",
+    task: "Using real estate services",
     cleanTask: "Using real estate services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1893,7 +1893,7 @@ const ACTIVITY = {
     otherClass: "pets"
   },
   "80799": {
-    task: "Using veterinary services, n.e.c.*",
+    task: "Using veterinary services",
     cleanTask: "Using veterinary services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1902,7 +1902,7 @@ const ACTIVITY = {
     otherClass: "pets"
   },
   "80801": {
-    task: "Security procedures rel. to professional/personal svcs.",
+    task: "Security procedures related to professional/personal services",
     cleanTask: "Using services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1911,7 +1911,7 @@ const ACTIVITY = {
     otherClass: "workingdesk"
   },
   "80899": {
-    task: "Security procedures rel. to professional/personal svcs n.e.c.*",
+    task: "Security procedures related to professional/personal services",
     cleanTask: "Using services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1920,7 +1920,7 @@ const ACTIVITY = {
     otherClass: "workingdesk"
   },
   "89999": {
-    task: "Professional and personal services, n.e.c.*",
+    task: "Professional and personal services",
     cleanTask: "Using services",
     group: "Professional & Personal Care Services",
     "class": "professional",
@@ -1965,7 +1965,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "90199": {
-    task: "Using household services, n.e.c.*",
+    task: "Using household services",
     cleanTask: "Using household services",
     group: "Household Services",
     "class": "householdservices",
@@ -1974,7 +1974,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "90201": {
-    task: "Using home maint/repair/décor/construction svcs",
+    task: "Using home maint/repair/décor/construction services",
     cleanTask: "Using home-related services",
     group: "Household Services",
     "class": "householdservices",
@@ -1992,7 +1992,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "90299": {
-    task: "Using home maint/repair/décor/constr services, n.e.c.*",
+    task: "Using home maint/repair/décor/constr services",
     cleanTask: "Using home-related services",
     group: "Household Services",
     "class": "householdservices",
@@ -2019,7 +2019,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "90399": {
-    task: "Using pet services, n.e.c.*",
+    task: "Using pet services",
     cleanTask: "Using pet services",
     group: "Household Services",
     "class": "householdservices",
@@ -2046,7 +2046,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "90499": {
-    task: "Using lawn and garden services, n.e.c.*",
+    task: "Using lawn and garden services",
     cleanTask: "Using garden services",
     group: "Household Services",
     "class": "householdservices",
@@ -2064,7 +2064,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "90502": {
-    task: "Waiting associated with vehicle main. or repair svcs",
+    task: "Waiting associated with vehicle main. or repair services",
     cleanTask: "Waiting",
     group: "Household Services",
     "class": "householdservices",
@@ -2073,7 +2073,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "90599": {
-    task: "Using vehicle maint. & repair svcs, n.e.c.*",
+    task: "Using vehicle maint. & repair services",
     cleanTask: "Using vehicle maintenance or repair services",
     group: "Household Services",
     "class": "householdservices",
@@ -2082,7 +2082,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "99999": {
-    task: "Using household services, n.e.c.*",
+    task: "Using household services",
     cleanTask: "Using household services",
     group: "Household Services",
     "class": "householdservices",
@@ -2118,7 +2118,7 @@ const ACTIVITY = {
     otherClass: "phone"
   },
   "100199": {
-    task: "Using government services, n.e.c.*",
+    task: "Using government services",
     cleanTask: "Using government services",
     group: "Government Services & Civic Obligations",
     "class": "gov",
@@ -2136,7 +2136,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "100299": {
-    task: "Civic obligations & participation, n.e.c.*",
+    task: "Civic obligations & participation",
     cleanTask: "Civic participation",
     group: "Government Services & Civic Obligations",
     "class": "gov",
@@ -2163,7 +2163,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "100399": {
-    task: "Waiting assoc. w/govt svcs or civic obligations, n.e.c.*",
+    task: "Waiting assoc. w/govt services or civic obligations",
     cleanTask: "Waiting",
     group: "Government Services & Civic Obligations",
     "class": "gov",
@@ -2172,7 +2172,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "100401": {
-    task: "Security procedures rel. to govt svcs/civic obligations",
+    task: "Security procedures related to govt services/civic obligations",
     cleanTask: "Government or civic activity",
     group: "Government Services & Civic Obligations",
     "class": "gov",
@@ -2181,7 +2181,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "100499": {
-    task: "Security procedures rel. to govt svcs/civic obligations, n.e.c.*",
+    task: "Security procedures related to govt services/civic obligations",
     cleanTask: "Government or civic activity",
     group: "Government Services & Civic Obligations",
     "class": "gov",
@@ -2190,7 +2190,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "109999": {
-    task: "Government services, n.e.c.*",
+    task: "Government services",
     cleanTask: "Government or civic activity",
     group: "Government Services & Civic Obligations",
     "class": "gov",
@@ -2208,7 +2208,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "110199": {
-    task: "Eating and drinking, n.e.c.*",
+    task: "Eating and drinking",
     cleanTask: "Eating and drinking",
     group: "Eating and Drinking",
     "class": "eating",
@@ -2226,7 +2226,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "110289": {
-    task: "Waiting associated with eating & drinking, n.e.c.*",
+    task: "Waiting associated with eating & drinking",
     cleanTask: "Waiting",
     group: "Eating and Drinking",
     "class": "eating",
@@ -2235,7 +2235,7 @@ const ACTIVITY = {
     otherClass: "eating"
   },
   "119999": {
-    task: "Eating and drinking, n.e.c.*",
+    task: "Eating and drinking",
     cleanTask: "Eating and drinking",
     group: "Eating and Drinking",
     "class": "eating",
@@ -2253,7 +2253,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "120199": {
-    task: "Socializing and communicating, n.e.c.*",
+    task: "Socializing and communicating",
     cleanTask: "Socializing",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
@@ -2280,7 +2280,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "120299": {
-    task: "Attending/hosting social events, n.e.c.*",
+    task: "Attending/hosting social events",
     cleanTask: "Attending a gathering",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
@@ -2352,7 +2352,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "120308": {
-    task: "Computer use for leisure (exc. Games)",
+    task: "Computer use for leisure (exc. games)",
     cleanTask: "Using the computer",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
@@ -2406,7 +2406,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "120399": {
-    task: "Relaxing and leisure, n.e.c.*",
+    task: "Relaxing and leisure",
     cleanTask: "Relaxing and leisure",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
@@ -2451,7 +2451,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "120405": {
-    task: "Security procedures rel. to arts & entertainment",
+    task: "Security procedures related to arts & entertainment",
     cleanTask: "Arts and entertainment",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
@@ -2460,7 +2460,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "120499": {
-    task: "Arts and entertainment, n.e.c.*",
+    task: "Arts and entertainment",
     cleanTask: "Arts and entertainment",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
@@ -2505,7 +2505,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "120599": {
-    task: "Waiting associated with socializing, n.e.c.*",
+    task: "Waiting associated with socializing",
     cleanTask: "Waiting",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
@@ -2514,7 +2514,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "129999": {
-    task: "Socializing, relaxing, and leisure, n.e.c.*",
+    task: "Socializing, relaxing, and leisure",
     cleanTask: "Socializing, relaxing, and leisure",
     group: "Socializing, Relaxing, and Leisure",
     "class": "leisure",
@@ -2847,7 +2847,7 @@ const ACTIVITY = {
     otherClass: "sports"
   },
   "130199": {
-    task: "Playing sports n.e.c.*",
+    task: "Playing sports",
     cleanTask: "Sports/exercise",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
@@ -3144,7 +3144,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "130299": {
-    task: "Attending sporting events, n.e.c.*",
+    task: "Attending sporting events",
     cleanTask: "Attending sporting event",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
@@ -3171,7 +3171,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "130399": {
-    task: "Waiting associated with sports, exercise, & recreation, n.e.c.*",
+    task: "Waiting associated with sports, exercise, & recreation",
     cleanTask: "Waiting",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
@@ -3198,7 +3198,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "130499": {
-    task: "Security related to sports, exercise, & recreation, n.e.c.*",
+    task: "Security related to sports, exercise, & recreation",
     cleanTask: "Exercise/sports activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
@@ -3207,7 +3207,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "139999": {
-    task: "Sports, exercise, & recreation, n.e.c.*",
+    task: "Sports, exercise, & recreation",
     cleanTask: "Exercise/sports activity",
     group: "Sports, Exercise, & Recreation",
     "class": "sports",
@@ -3243,7 +3243,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "140104": {
-    task: "Security procedures rel. to religious & spiritual activities",
+    task: "Security procedures related to religious & spiritual activities",
     cleanTask: "Religious activity",
     group: "Religious and Spiritual Activities",
     "class": "religious",
@@ -3261,7 +3261,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "149999": {
-    task: "Religious and spiritual activities, n.e.c.*",
+    task: "Religious and spiritual activities",
     cleanTask: "Religious activity",
     group: "Religious and Spiritual Activities",
     "class": "religious",
@@ -3324,7 +3324,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "150199": {
-    task: "Administrative & support activities, n.e.c.*",
+    task: "Administrative & support activities",
     cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
@@ -3369,7 +3369,7 @@ const ACTIVITY = {
     otherClass: "talking"
   },
   "150299": {
-    task: "Social service & care activities, n.e.c.*",
+    task: "Social service & care activities",
     cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
@@ -3396,7 +3396,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "150399": {
-    task: "Indoor & outdoor maintenance, building & clean-up activities, n.e.c.*",
+    task: "Indoor & outdoor maintenance, building & clean-up activities",
     cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
@@ -3423,7 +3423,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "150499": {
-    task: "Participating in performance & cultural activities, n.e.c.*",
+    task: "Participating in performance & cultural activities",
     cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
@@ -3441,7 +3441,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "150599": {
-    task: "Attending meetings, conferences, & training, n.e.c.*",
+    task: "Attending meetings, conferences, & training",
     cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
@@ -3468,7 +3468,7 @@ const ACTIVITY = {
     otherClass: "sitting"
   },
   "150699": {
-    task: "Public health & safety activities, n.e.c.*",
+    task: "Public health & safety activities",
     cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
@@ -3477,7 +3477,7 @@ const ACTIVITY = {
     otherClass: "social"
   },
   "159989": {
-    task: "Volunteer activities, n.e.c.*",
+    task: "Volunteer activities",
     cleanTask: "Volunteering",
     group: "Volunteer Activities",
     "class": "volunteer",
@@ -3522,7 +3522,7 @@ const ACTIVITY = {
     otherClass: "phone"
   },
   "160105": {
-    task: "Telephone calls to/from professional or personal care svcs providers",
+    task: "Telephone calls to/from professional or personal care services providers",
     cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
@@ -3558,7 +3558,7 @@ const ACTIVITY = {
     otherClass: "phone"
   },
   "169989": {
-    task: "Telephone calls, n.e.c.*",
+    task: "Telephone calls",
     cleanTask: "Telephone call",
     group: "Telephone Calls",
     "class": "telephone",
@@ -3576,7 +3576,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180199": {
-    task: "Travel related to personal care, n.e.c.*",
+    task: "Travel related to personal care",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3594,7 +3594,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180381": {
-    task: "Travel related to caring for and helping hh children",
+    task: "Travel related to caring for and helping household children",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3603,7 +3603,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180382": {
-    task: "Travel related to caring for and helping hh adults",
+    task: "Travel related to caring for and helping household adults",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3612,7 +3612,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180399": {
-    task: "Travel rel. to caring for & helping hh members, n.e.c.*",
+    task: "Travel related to caring for & helping household members",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3621,7 +3621,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180481": {
-    task: "Travel related to caring for and helping nonhh children",
+    task: "Travel related to caring for and helping non-household children",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3630,7 +3630,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180482": {
-    task: "Travel related to caring for and helping nonhh adults",
+    task: "Travel related to caring for and helping non-household adults",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3639,7 +3639,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180499": {
-    task: "Travel rel. to caring for & helping nonhh members, n.e.c.*",
+    task: "Travel related to caring for & helping non-household members",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3666,7 +3666,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180589": {
-    task: "Travel related to work, n.e.c.*",
+    task: "Travel related to work",
     cleanTask: "Travel for work",
     group: "Traveling",
     "class": "traveling",
@@ -3693,7 +3693,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180699": {
-    task: "Travel related to education, n.e.c.*",
+    task: "Travel related to education",
     cleanTask: "Travel for education",
     group: "Traveling",
     "class": "traveling",
@@ -3783,7 +3783,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180899": {
-    task: "Travel rel. to using prof. & personal care services, n.e.c.*",
+    task: "Travel related to using prof. & personal care services",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3801,7 +3801,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180902": {
-    task: "Travel related to using home main./repair/décor./construction svcs",
+    task: "Travel related to using home main./repair/décor./construction services",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3837,7 +3837,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "180999": {
-    task: "Travel related to using household services, n.e.c.*",
+    task: "Travel related to using household services",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3864,7 +3864,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "181099": {
-    task: "Travel rel. to govt svcs & civic obligations, n.e.c.*",
+    task: "Travel related to govt services & civic obligations",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3882,7 +3882,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "181199": {
-    task: "Travel related to eating and drinking, n.e.c.*",
+    task: "Travel related to eating and drinking",
     cleanTask: "Travel to eat/drink",
     group: "Traveling",
     "class": "traveling",
@@ -3927,7 +3927,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "181299": {
-    task: "Travel rel. to socializing, relaxing, & leisure, n.e.c.*",
+    task: "Travel related to socializing, relaxing, & leisure",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3954,7 +3954,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "181399": {
-    task: "Travel related to sports, exercise, & recreation, n.e.c.*",
+    task: "Travel related to sports, exercise, & recreation",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3972,7 +3972,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "181499": {
-    task: "Travel rel. to religious/spiritual activities, n.e.c.*",
+    task: "Travel related to religious/spiritual activities",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -3990,7 +3990,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "181599": {
-    task: "Travel related to volunteer activities, n.e.c.*",
+    task: "Travel related to volunteer activities",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -4008,7 +4008,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "181699": {
-    task: "Travel rel. to phone calls, n.e.c.*",
+    task: "Travel related to phone calls",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -4026,7 +4026,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "181899": {
-    task: "Security procedures related to traveling, n.e.c.*",
+    task: "Security procedures related to traveling",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -4035,7 +4035,7 @@ const ACTIVITY = {
     otherClass: "walking"
   },
   "189999": {
-    task: "Traveling, n.e.c.*",
+    task: "Traveling",
     cleanTask: "Traveling",
     group: "Traveling",
     "class": "traveling",
@@ -4098,7 +4098,7 @@ const ACTIVITY = {
     otherClass: "standing"
   },
   "509989": {
-    task: "Data codes, n.e.c.*",
+    task: "Data codes",
     cleanTask: "Unspecified activity",
     group: "Data Codes",
     "class": "data",
@@ -5788,11 +5788,11 @@ const HappyDays_sprites = create_ssr_component(($$result, $$props, $$bindings, s
     $$bindings.time(time);
   $$result.css.add(css$5);
   name = names[current];
-  return `${shown > 0 ? `<div class="${"ff ff-" + escape(person, true) + " svelte-r8n8x3"}" style="${"left: " + escape(getPos(shown), true) + "%;"}">${score == 0 ? `<div class="sprite svelte-r8n8x3" anim="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `${score < 0.5 || time <= 430 ? `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim2="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim3="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>`}`}</div>` : ``}`;
+  return `${shown > 0 ? `<div class="${"ff ff-" + escape(person, true) + " svelte-r8n8x3"}" style="${"left: " + escape(getPos(shown), true) + "%;"}">${score == 0 ? `<div class="sprite svelte-r8n8x3" anim="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `${score < 0.5 || time <= 400 ? `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim2="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim3="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>`}`}</div>` : ``}`;
 });
 const HappyDays_person_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: '.bigtext.svelte-o8cb2a.svelte-o8cb2a{position:absolute;left:5px;bottom:0px;font-size:1rem;color:white;width:100%;text-align:left;font-weight:bold;text-shadow:0px 0px 7px rgba(0,0,0,0.7)}.headline.svelte-o8cb2a.svelte-o8cb2a{position:absolute;color:white;z-index:9999;width:100%;left:0px;top:30%;padding:10px;-webkit-transform:translateY(-50%);transform:translateY(-50%);text-align:center;text-transform:lowercase}.headline.svelte-o8cb2a h1.svelte-o8cb2a{font-size:0.35rem;line-height:0.4rem;margin-bottom:3px;letter-spacing:0.05px;color:#856682}.byline.svelte-o8cb2a.svelte-o8cb2a{color:#856682;font-size:0.35rem}.instruction.svelte-o8cb2a.svelte-o8cb2a{margin-top:3px;font-size:0.3rem;color:#856682}.person.svelte-o8cb2a.svelte-o8cb2a{position:absolute;left:0px;top:0px;height:20vh;display:inline-block;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none;border:2px solid #28212F}.hoverOn.person.svelte-o8cb2a.svelte-o8cb2a:hover,.person.hl.svelte-o8cb2a.svelte-o8cb2a{border:1px solid #aaa;z-index:9999}.hoverOn.person.hl.svelte-o8cb2a.svelte-o8cb2a:hover,.person.hl.svelte-o8cb2a.svelte-o8cb2a{border:4px solid white;z-index:99999}.person.shown.svelte-o8cb2a.svelte-o8cb2a{opacity:1;pointer-events:all}.hoverOn.person.svelte-o8cb2a.svelte-o8cb2a{cursor:pointer}.hidePerson.svelte-o8cb2a.svelte-o8cb2a{opacity:0 !important}.personViz.svelte-o8cb2a.svelte-o8cb2a{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);background:#503F5A}.personViz.svelte-o8cb2a.svelte-o8cb2a:after{content:"";position:absolute;left:0;top:0;width:100%;height:80%;background:rgb(0,0,0);background:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), color-stop(90%, rgba(0,0,0,0.30802258403361347)));background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%)}.socialBar.svelte-o8cb2a.svelte-o8cb2a{overflow:hidden;position:absolute;right:0px;top:0px;height:100%;width:100%;z-index:0}.socialBarScore.svelte-o8cb2a.svelte-o8cb2a{width:100%;height:0px;max-height:100%;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);opacity:1}.happyBar.svelte-o8cb2a.svelte-o8cb2a{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-o8cb2a.svelte-o8cb2a{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-o8cb2a.svelte-o8cb2a{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-o8cb2a.svelte-o8cb2a:last-child{border:none}.personLabel.svelte-o8cb2a.svelte-o8cb2a{position:relative;width:100%;padding-top:10px;font-size:12px;color:white;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}.dayOfWeek.svelte-o8cb2a.svelte-o8cb2a{font-size:12px;color:white}.currentActivity.svelte-o8cb2a.svelte-o8cb2a{position:relative;width:100%;padding:0 3px;font-size:12px;line-height:13px;color:#fff;opacity:0.5;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}@media screen and (max-width: 800px){.personLabel.svelte-o8cb2a.svelte-o8cb2a{font-size:8px;line-height:9px;padding-top:5px}.currentActivity.svelte-o8cb2a.svelte-o8cb2a{font-size:7px;line-height:8px}}',
+  code: '.bigtext.svelte-12s8yfg{position:absolute;left:5px;bottom:0px;font-size:1rem;color:white;width:100%;text-align:left;font-weight:bold;text-shadow:0px 0px 7px rgba(0,0,0,0.7)}.person.svelte-12s8yfg{position:absolute;left:0px;top:0px;height:20vh;display:inline-block;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none;border:2px solid #28212F}.hoverOn.person.svelte-12s8yfg:hover,.person.hl.svelte-12s8yfg{border:1px solid #aaa;z-index:9999}.hoverOn.person.hl.svelte-12s8yfg:hover,.person.hl.svelte-12s8yfg{border:4px solid white;z-index:99999}.person.shown.svelte-12s8yfg{opacity:1;pointer-events:all}.hoverOn.person.svelte-12s8yfg{cursor:pointer}.hidePerson.svelte-12s8yfg{opacity:0 !important}.personViz.svelte-12s8yfg{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);background:#503F5A}.personViz.svelte-12s8yfg:after{content:"";position:absolute;left:0;top:0;width:100%;height:80%;background:rgb(0,0,0);background:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), color-stop(90%, rgba(0,0,0,0.30802258403361347)));background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%)}.socialBar.svelte-12s8yfg{overflow:hidden;position:absolute;right:0px;top:0px;height:100%;width:100%;z-index:0}.socialBarScore.svelte-12s8yfg{width:100%;height:0px;max-height:100%;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);opacity:1}.happyBar.svelte-12s8yfg{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-12s8yfg{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-12s8yfg{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-12s8yfg:last-child{border:none}.personLabel.svelte-12s8yfg{position:relative;width:100%;padding-top:10px;font-size:12px;color:white;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}.dayOfWeek.svelte-12s8yfg{font-size:12px;color:white}.currentActivity.svelte-12s8yfg{position:relative;width:100%;padding:0 3px;font-size:12px;line-height:13px;color:#fff;opacity:0.5;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}@media screen and (max-width: 800px){.personLabel.svelte-12s8yfg{font-size:8px;line-height:9px;padding-top:5px}.currentActivity.svelte-12s8yfg{font-size:7px;line-height:8px}}',
   map: null
 };
 let socialMax = 360;
@@ -5868,7 +5868,7 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
     return "w/ " + firsts.join(", ") + " and " + last;
   }
   function checkHover() {
-    if (time > 380) {
+    if (time > 360) {
       return "hoverOn";
     } else {
       selectedPerson = null;
@@ -5917,13 +5917,13 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       time = time;
     }
   }
-  return `<div class="${"person " + escape(hl, true) + " " + escape(checkHover(), true) + " " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-o8cb2a"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-o8cb2a"><div class="socialBar svelte-o8cb2a"><div class="socialBarScore svelte-o8cb2a" style="${"height:" + escape(
+  return `<div class="${"person " + escape(hl, true) + " " + escape(checkHover(), true) + " " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-12s8yfg"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-12s8yfg"><div class="socialBar svelte-12s8yfg"><div class="socialBarScore svelte-12s8yfg" style="${"height:" + escape(
     time < 550 || time > 1460 ? 0 : person.social_score / socialMax * 100,
     true
   ) + "%; background: " + escape(
     person.social_score / socialMax * (peopleColor.length - 1) > peopleColor.length - 1 ? peopleColor[peopleColor.length - 1] : peopleColor[Math.floor(person.social_score / socialMax * (peopleColor.length - 1))],
     true
-  )}"></div></div> ${time > 242 && time < 1540 ? `<div class="personLabel svelte-o8cb2a">${!hideInfo ? `${escape(toTitleCase(raceConvert$1(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time > 247 && time < 1500 ? `<div class="currentActivity svelte-o8cb2a">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
+  )}"></div></div> ${time > 242 && time < 1540 ? `<div class="personLabel svelte-12s8yfg">${!hideInfo ? `${escape(toTitleCase(raceConvert$1(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time > 247 && time < 1500 ? `<div class="currentActivity svelte-12s8yfg">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
     return `${person.social_score != 0 && convertWHO(act, true) != "alone" ? `${validate_component(HappyDays_sprites, "Sprites").$$render(
       $$result,
       {
@@ -5959,11 +5959,11 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       {},
       {}
     )}`;
-  })} ${person.start < 240 && time <= 242 ? `<div class="headline svelte-o8cb2a"><h1 class="svelte-o8cb2a"><!-- HTML_TAG_START -->${hed}<!-- HTML_TAG_END --></h1> <div class="byline svelte-o8cb2a" data-svelte-h="svelte-1lua6f6">by Alvin Chang</div> <div class="instruction svelte-o8cb2a" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-o8cb2a">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> </div>`;
+  })} ${person.start < 240 && time <= 242 ? `<div class="headline"><h1><!-- HTML_TAG_START -->${hed}<!-- HTML_TAG_END --></h1> <div class="byline" data-svelte-h="svelte-1lua6f6">by Alvin Chang</div> <div class="instruction" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-12s8yfg">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> </div>`;
 });
 const HappyDays_grid_svelte_svelte_type_style_lang = "";
 const css$3 = {
-  code: ".interactive.svelte-o9vuwf{-webkit-transform-origin:center;transform-origin:center;text-align:center;width:100%;height:100vh;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.displayContainter.svelte-o9vuwf{position:relative;top:0px;left:0px;height:100%;width:100%;padding-top:50px;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin:0 auto;padding-right:60px}.groupContainer.svelte-o9vuwf{position:absolute;width:calc(100% - 80px);height:90vh;-webkit-transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);pointer-events:none;top:5vh;left:0%;-webkit-transform:perspective(0) translate3d(0, 0, 0) scale(1);transform:perspective(0) translate3d(0, 0, 0) scale(1);-webkit-transform-origin:top left;transform-origin:top left}",
+  code: ".interactive.svelte-1ig87v8{-webkit-transform-origin:center;transform-origin:center;text-align:center;width:100%;height:100vh;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);font-family:var(--sans)}.displayContainter.svelte-1ig87v8{position:relative;top:0px;left:0px;height:100%;width:100%;padding-top:50px;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin:0 auto;padding-right:60px}.groupContainer.svelte-1ig87v8{position:absolute;width:calc(100% - 80px);height:90vh;-webkit-transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);pointer-events:none;top:5vh;left:0%;-webkit-transform:perspective(0) translate3d(0, 0, 0) scale(1);transform:perspective(0) translate3d(0, 0, 0) scale(1);-webkit-transform-origin:top left;transform-origin:top left}",
   map: null
 };
 function sortObj$1(obj, byVar) {
@@ -6003,18 +6003,7 @@ function fieldSorter(fields, desc) {
 const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let screenWidth = null;
   let screenHeight = 1e3;
-  let peopleColor = [
-    "#3f1c4f",
-    "#5e2657",
-    "#7b335e",
-    "#974262",
-    "#b05466",
-    "#c66868",
-    "#da7f6c",
-    "#e99770",
-    "#f6b177",
-    "#ffcc82"
-  ];
+  let peopleColor = ["#f6b177"];
   let customClicked = false;
   let { time, beginTime: beginTime2, timeline: timeline2, currentPeople, options, hed, selectedPerson } = $$props;
   time = time > 239 ? time : 241;
@@ -6147,7 +6136,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
     {
       checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight);
     }
-    $$rendered = ` <div class="${"interactive " + escape(resizeDetector ? "resize-animation-stopper" : "", true) + " svelte-o9vuwf"}" style="${escape("opacity: 0", true) + ";"}"><div class="displayContainter svelte-o9vuwf"><div class="groupContainer svelte-o9vuwf" style="${"transform: perspective(0) translate3d(" + escape(viewTranslate[selectedViewIndex][0], true) + "%, " + escape(viewTranslate[selectedViewIndex][1], true) + "%, " + escape(viewTranslate[selectedViewIndex][2], true) + "px) scale(" + escape(viewTranslate[selectedViewIndex][3], true) + ");"}">${each(currentPeople, (person, personKey) => {
+    $$rendered = ` <div class="${"interactive " + escape(resizeDetector ? "resize-animation-stopper" : "", true) + " svelte-1ig87v8"}" style="${escape("opacity: 0", true) + ";"}"><div class="displayContainter svelte-1ig87v8"><div class="groupContainer svelte-1ig87v8" style="${"transform: perspective(0) translate3d(" + escape(viewTranslate[selectedViewIndex][0], true) + "%, " + escape(viewTranslate[selectedViewIndex][1], true) + "%, " + escape(viewTranslate[selectedViewIndex][2], true) + "px) scale(" + escape(viewTranslate[selectedViewIndex][3], true) + ");"}">${each(currentPeople, (person, personKey) => {
       return `${personKey < maxPeople ? `${validate_component(HappyDays_person, "Person").$$render(
         $$result,
         {
@@ -112268,7 +112257,7 @@ const martin = {
 };
 const HappyDays_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: '.outsideContainer.svelte-1jf7ul9{background:#28212F;font-family:"National 2 Web"}#scrolly.svelte-1jf7ul9{font-family:"National 2 Web"}.visualContainer.svelte-1jf7ul9{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-1jf7ul9{height:75vh}.timeline.svelte-1jf7ul9{position:relative;z-index:100;margin-top:-80vh;pointer-events:none}.step.svelte-1jf7ul9{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-1jf7ul9{color:#CE5FFE;font-weight:bold;text-shadow:0px 0px 6px #000}.step.longcopy.svelte-1jf7ul9{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(11%, rgba(40,33,47,0.97)), color-stop(89%, rgba(40,33,47,0.97)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:20vh 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative;pointer-events:none}.step.shortcopy.svelte-1jf7ul9{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-1jf7ul9{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-1jf7ul9{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}.modal.svelte-1jf7ul9{width:300px;position:fixed;left:-300px;top:0px;height:100%;background:black;-webkit-transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);-webkit-transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);overflow-y:scroll}.modal.shown.svelte-1jf7ul9{left:0px}',
+  code: ".outsideContainer.svelte-18lcwrl{background:#28212F;font-family:var(--sans)}#scrolly.svelte-18lcwrl{font-family:var(--sans)}.visualContainer.svelte-18lcwrl{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-18lcwrl{height:75vh}.timeline.svelte-18lcwrl{position:relative;z-index:100;margin-top:-50vh;pointer-events:none}.step.svelte-18lcwrl{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-18lcwrl{color:#CE5FFE;font-weight:bold;text-shadow:0px 0px 6px #000;font-size:14px}.step.longcopy.svelte-18lcwrl{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(11%, rgba(40,33,47,0.97)), color-stop(89%, rgba(40,33,47,0.97)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:20vh 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative;pointer-events:none}.step.shortcopy.svelte-18lcwrl{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-18lcwrl{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-18lcwrl{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}.modal.svelte-18lcwrl{width:300px;position:fixed;left:-300px;top:0px;height:100%;background:black;-webkit-transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);-webkit-transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);overflow-y:scroll}.modal.shown.svelte-18lcwrl{left:0px}",
   map: null
 };
 let beginTime = 240;
@@ -112387,7 +112376,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = ` <div class="outsideContainer svelte-1jf7ul9"><section id="scrolly" class="svelte-1jf7ul9"><div class="visualContainer svelte-1jf7ul9">${validate_component(HappyDays_grid, "Grid").$$render(
+    $$rendered = ` <div class="outsideContainer svelte-18lcwrl"><section id="scrolly" class="svelte-18lcwrl"><div class="visualContainer svelte-18lcwrl">${validate_component(HappyDays_grid, "Grid").$$render(
       $$result,
       {
         currentPeople,
@@ -112405,9 +112394,9 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         }
       },
       {}
-    )}</div> <div class="timeline svelte-1jf7ul9">${validate_component(Scrolly, "Scrolly").$$render(
+    )}</div> <div class="timeline svelte-18lcwrl">${validate_component(Scrolly, "Scrolly").$$render(
       $$result,
-      { increments: 1, top: 100, value },
+      { increments: 1, top: 300, value },
       {
         value: ($$value) => {
           value = $$value;
@@ -112418,7 +112407,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         default: () => {
           return `${each(timeRange, (time, i) => {
             let active = value === i;
-            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-1jf7ul9", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-1jf7ul9"></div> <div class="${["step longcopy svelte-1jf7ul9", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-18lcwrl", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-18lcwrl"></div> <div class="${["step longcopy svelte-18lcwrl", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112427,7 +112416,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
               },
               {},
               {}
-            )}</div> <div class="postLongcopy svelte-1jf7ul9"></div>` : `<div class="${["step shortcopy svelte-1jf7ul9", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            )}</div> <div class="postLongcopy svelte-18lcwrl"></div>` : `<div class="${["step shortcopy svelte-18lcwrl", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112440,7 +112429,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
           })}`;
         }
       }
-    )}</div> <div class="spacer svelte-1jf7ul9"></div></section> <div class="${"modal " + escape(selectedPerson == null ? "" : "shown", true) + " svelte-1jf7ul9"}">${validate_component(HappyDays_modal, "Modal").$$render(
+    )}</div> <div class="spacer svelte-18lcwrl"></div></section> <div class="${"modal " + escape(selectedPerson == null ? "" : "shown", true) + " svelte-18lcwrl"}">${validate_component(HappyDays_modal, "Modal").$$render(
       $$result,
       { time: value + beginTime, selectedPerson },
       {
@@ -112532,7 +112521,7 @@ Martin is trying to sleep. But he's rolling around in bed, sleepless.\r
 <span class="instruction">Keep scrolling.</span>`
   },
   {
-    time: "310",
+    time: "320",
     sortby: "num",
     view: "0",
     addclass: "shorttext",
@@ -112585,13 +112574,13 @@ Let's meet everyone else!\r
     time: "420",
     view: "1",
     sortby: "num",
-    text: `The average human can put a name to about 1,500 people, and we personally know about 500.¹ \r
+    text: `The average human can name about 1,500 people, and we personally know about 500.¹ \r
 \r
 \r
 But most of those people won't help us in times of need.\r
 \r
 \r
-The people who <em>will</em> help are our friends – and psychologist Robin Dunbar <a href="https://www.amazon.com/exec/obidos/ASIN/B08W4XPK7G/ref=nosim/0sil8">argues</a> that we have an average of 150 people who we try to contact at least once a year.² These are people we try to stay in touch with. Within that group, he found we have about 15 friends we contact each month and one to two people with whom we share an intimate relationship – often a partner, and sometimes a "best friend forever."\r
+The people who <em>will</em> help are our friends – and psychologist Robin Dunbar <a href="https://www.amazon.com/exec/obidos/ASIN/B08W4XPK7G/ref=nosim/0sil8">argues</a> that we have an average of 150 people who we try to contact at least once a year.² These are people we try to stay in touch with. Within that group, he found we have about 15 friends and family we contact each month and one to two people with whom we share an intimate relationship – often a partner, and sometimes a "best friend forever."\r
 \r
 \r
 IMAGE|dunbar\r
@@ -112606,7 +112595,7 @@ IMAGE|dunbar\r
     view: "1",
     sortby: "num",
     addclass: "shorttext",
-    text: "Let's color code our <span class='purple'>friends and family</span> with purple and <span class='gray'>everyone else</span> with gray."
+    text: "I've highlighted our <span class='purple'>friends and family</span> with this bright purple, while keeping <span class='gray'>everyone else</span> the same color."
   },
   {
     time: "540",
@@ -112615,13 +112604,13 @@ IMAGE|dunbar\r
     text: `Everyone needs a different amount of social interaction. But according to the American Time Use Survey, the average American spends about 6 hours with friends or family each day.\r
 \r
 \r
-So let's track how many of these people interact with their friends or family for at least 6 hours a day. For the time spent with everyone else – acquaintances, coworkers, etc. – I'll give partial credit.¹\r
+So let's track how many of these people interact with their friends or family for at least 6 hours a day. Time with acquaintances and coworkers will also count, but to a lesser degree. ¹\r
 \r
 \r
 IMAGE|interaction\r
 \r
 \r
-<div class="citation">¹ A <a href="https://psycnet.apa.org/record/2022-47468-001">2022 study</a> of people's behavior during the Covid-19 pandemic found that people feel about 40% as psychologically close to acquaintances as they to do friends. This is admittedly not the most robust way to give partial credit for non-friends and family, but I couldn't find anything better.</div>`
+<div class="citation">¹ A <a href="https://psycnet.apa.org/record/2022-47468-001">2022 study</a> of people's behavior during the Covid-19 pandemic found that people feel about 40% as psychologically close to acquaintances as they to do friends. So every minute spent with an acquaintance or coworker will only count as 0.4 minutes of social time. This is admittedly not the most robust methodology, but I couldn't find anything better.</div>`
   },
   {
     time: "680",
@@ -112646,7 +112635,7 @@ IMAGE|interaction\r
     time: "780",
     sortby: "num",
     view: "0",
-    text: 'Lonely people exhibit different behavior than everyone else. They <a href="https://pubmed.ncbi.nlm.nih.gov/10677643/">report</a> feeling more shy, more anxious, more negative, and more angry. They are less optimistic and have lower self esteem. \r\n\r\n\r\nBut neuroscientist John Cacioppo has found that everyone is susceptible to the negative effects of loneliness.\r\n\r\n\r\nIn a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0092656606000055"> 2006 study</a>, he and his colleagues hypnotized college students to feel lonely.  After confirming the hypnotism worked, they asked the students how they felt. Cacioppo found that the hypnotized lonely students reported feeling just as bad as people who were actually lonely.\r\n\r\n\r\n"We had demonstrated yet again that lonely individuals are not a breed apart," Cacioppo wrote in his book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a>. "Any of us can succumb to loneliness, and along with it, all the other characteristics that travel as its entourage."'
+    text: 'Lonely people exhibit different behavior than everyone else. They <a href="https://pubmed.ncbi.nlm.nih.gov/10677643/">report</a> feeling more shy, more anxious, more negative, and more angry. They are less optimistic and have lower self esteem. \r\n\r\n\r\nBut neuroscientist John Cacioppo has found that everyone is susceptible to the negative effects of loneliness.\r\n\r\n\r\nIn a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0092656606000055"> 2006 study</a>, he and his colleagues hypnotized college students to re-experience a moment in their life when they were lonely. “Think of a time in which you felt isolated," they told the subjects. "You felt lonely. Perhaps you felt like you just didn’t belong – that you had no friends.” \r\n\r\n\r\nAfter confirming the hypnotism worked, they asked the students how they felt. It turns out the hypnotized lonely students reported feeling just as bad as people who were actually lonely.\r\n\r\n\r\n"We had demonstrated yet again that lonely individuals are not a breed apart," Cacioppo wrote in his book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a>. "Any of us can succumb to loneliness, and along with it, all the other characteristics that travel as its entourage."'
   },
   {
     time: "800",
@@ -112690,7 +112679,7 @@ In short, there really is a loneliness epidemic.`
     time: "920",
     view: "1",
     sortby: "num",
-    text: "As you can see, most people have barely had an hour of social interaction on this day – and this is the weekend!",
+    text: "As you can see, most of the boxes aren't halfway full, which means they've yet to have three hours of social interaction with friends and family today.",
     addclass: "shorttext"
   },
   {
@@ -112771,7 +112760,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-08-12:52"}`);
+  console.log(`build: ${"2023-09-11-14:05"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
