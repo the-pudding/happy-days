@@ -112257,7 +112257,7 @@ const martin = {
 };
 const HappyDays_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".outsideContainer.svelte-18lcwrl{background:#28212F;font-family:var(--sans)}#scrolly.svelte-18lcwrl{font-family:var(--sans)}.visualContainer.svelte-18lcwrl{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-18lcwrl{height:75vh}.timeline.svelte-18lcwrl{position:relative;z-index:100;margin-top:-50vh;pointer-events:none}.step.svelte-18lcwrl{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-18lcwrl{color:#CE5FFE;font-weight:bold;text-shadow:0px 0px 6px #000;font-size:14px}.step.longcopy.svelte-18lcwrl{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(11%, rgba(40,33,47,0.97)), color-stop(89%, rgba(40,33,47,0.97)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:20vh 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative;pointer-events:none}.step.shortcopy.svelte-18lcwrl{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-18lcwrl{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-18lcwrl{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}.modal.svelte-18lcwrl{width:300px;position:fixed;left:-300px;top:0px;height:100%;background:black;-webkit-transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);-webkit-transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);overflow-y:scroll}.modal.shown.svelte-18lcwrl{left:0px}",
+  code: ".outsideContainer.svelte-1l0age8{background:#28212F;font-family:var(--sans)}#scrolly.svelte-1l0age8{font-family:var(--sans)}.visualContainer.svelte-1l0age8{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-1l0age8{height:75vh}.timeline.svelte-1l0age8{position:relative;z-index:100;margin-top:-50vh;pointer-events:none}.step.svelte-1l0age8{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-1l0age8:not(.shortcopy){color:#CE5FFE;font-weight:bold;text-shadow:0px 0px 6px #000;font-size:14px}.step.longcopy.svelte-1l0age8{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(11%, rgba(40,33,47,0.97)), color-stop(89%, rgba(40,33,47,0.97)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:20vh 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative;pointer-events:none}.step.shortcopy.svelte-1l0age8{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-1l0age8{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-1l0age8{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}.modal.svelte-1l0age8{width:300px;position:fixed;left:-300px;top:0px;height:100%;background:black;-webkit-transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);-webkit-transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);overflow-y:scroll}.modal.shown.svelte-1l0age8{left:0px}",
   map: null
 };
 let beginTime = 240;
@@ -112376,7 +112376,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = ` <div class="outsideContainer svelte-18lcwrl"><section id="scrolly" class="svelte-18lcwrl"><div class="visualContainer svelte-18lcwrl">${validate_component(HappyDays_grid, "Grid").$$render(
+    $$rendered = ` <div class="outsideContainer svelte-1l0age8"><section id="scrolly" class="svelte-1l0age8"><div class="visualContainer svelte-1l0age8">${validate_component(HappyDays_grid, "Grid").$$render(
       $$result,
       {
         currentPeople,
@@ -112394,7 +112394,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         }
       },
       {}
-    )}</div> <div class="timeline svelte-18lcwrl">${validate_component(Scrolly, "Scrolly").$$render(
+    )}</div> <div class="timeline svelte-1l0age8">${validate_component(Scrolly, "Scrolly").$$render(
       $$result,
       { increments: 1, top: 300, value },
       {
@@ -112407,7 +112407,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         default: () => {
           return `${each(timeRange, (time, i) => {
             let active = value === i;
-            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-18lcwrl", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-18lcwrl"></div> <div class="${["step longcopy svelte-18lcwrl", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-1l0age8", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-1l0age8"></div> <div class="${["step longcopy svelte-1l0age8", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112416,7 +112416,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
               },
               {},
               {}
-            )}</div> <div class="postLongcopy svelte-18lcwrl"></div>` : `<div class="${["step shortcopy svelte-18lcwrl", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            )}</div> <div class="postLongcopy svelte-1l0age8"></div>` : `<div class="${["step shortcopy svelte-1l0age8", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112429,7 +112429,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
           })}`;
         }
       }
-    )}</div> <div class="spacer svelte-18lcwrl"></div></section> <div class="${"modal " + escape(selectedPerson == null ? "" : "shown", true) + " svelte-18lcwrl"}">${validate_component(HappyDays_modal, "Modal").$$render(
+    )}</div> <div class="spacer svelte-1l0age8"></div></section> <div class="${"modal " + escape(selectedPerson == null ? "" : "shown", true) + " svelte-1l0age8"}">${validate_component(HappyDays_modal, "Modal").$$render(
       $$result,
       { time: value + beginTime, selectedPerson },
       {
@@ -112760,7 +112760,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-11-14:05"}`);
+  console.log(`build: ${"2023-09-11-14:13"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
