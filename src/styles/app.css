@@ -68,6 +68,7 @@
 	}
 }
 body {
+	font-family: var(--sans);
 	background: #28212F !important;
 }
 
@@ -112,6 +113,7 @@ h6 {
 	background: #000;
 	padding: 10px;
 	margin: 20px auto;
+	font-family: var(--sans);
 }
 .textContainer .citation {
 	opacity: 0.5;
@@ -206,14 +208,61 @@ h6 {
 	animation: none !important;
 	transition: none !important;
 }
-
-.headline h1 .hl {
+.headline {
+	font-family: var(--sans);
+	position: absolute;
+	color: white;
+	z-index: 9999;
+	width: 100%;
+	left: 0px;
+	top: 30%;
+	padding: 5px;
+	transform: translateY(-50%);
+	text-align: center;
+	text-transform: lowercase;
+}
+.headline h1 {
+	font-size: 0.35rem;
+	line-height: 0.4rem;
+	margin: 6px 0 3px;
+	letter-spacing: 0.05px;
 	color: var(--color-pinkpurple);
+}
+.headline h1 .hl {
+/*	color: var(--color-pinkpurple);*/
+	color: white;
 	font-weight: bold;
-	font-size: 0.4rem;
+	font-size: 0.5rem;
 	line-height: 0.5rem;
 	animation: Pulsate 5s linear infinite;
+	margin-top: 0px;
 }
+.byline {
+	color: #856682;
+	font-size: 0.35rem;
+}
+.person .instruction {
+	margin-top: 3px;
+	font-size: 0.3rem;
+	color: #856682;
+}
+@media screen and (max-width: 400px) {
+	.headline h1 {
+		font-size: 0.30rem;
+		line-height: 0.2rem;
+		margin: 10px 0 5px;
+		display: block;
+	}
+	.headline h1 .hl {
+		margin-top: 3px;
+		font-size: 0.5rem;
+		line-height: 0.45rem;
+	}
+	.byline {
+		font-size: 0.28rem;
+	}
+}
+
 @keyframes Pulsate {
 	from { opacity: 1; }
 	50% { opacity: 0; }

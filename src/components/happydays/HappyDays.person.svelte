@@ -98,7 +98,7 @@
 	}
 
 	function checkHover() {
-		if (time > 380) {
+		if (time > 360) {
 			return 'hoverOn'
 		} else {
 			selectedPerson = null;
@@ -146,32 +146,32 @@ on:click={selectPerson}
 
 	{#each person.activity as act, index}
 	{#if person.social_score != 0 && convertWHO(act, true) != "alone"}
-		<Sprites 
-			score={lookup.PEOPLESCORE[act[5]].score}
-			person="{convertWHO(act, true)}"
-			sex="{person.TESEX}"
-			act="{act[2]}"
-			shown={act[act.length-1]}
-			begin={act[0]}
-			end={act[1]}
-			frameRate={lookup.FRAMERATE[convertWHO(act, true)]}
-			hideInfo={hideInfo}
-			w={position[2]}
-			time={time}
-		/>
+	<Sprites 
+	score={lookup.PEOPLESCORE[act[5]].score}
+	person="{convertWHO(act, true)}"
+	sex="{person.TESEX}"
+	act="{act[2]}"
+	shown={act[act.length-1]}
+	begin={act[0]}
+	end={act[1]}
+	frameRate={lookup.FRAMERATE[convertWHO(act, true)]}
+	hideInfo={hideInfo}
+	w={position[2]}
+	time={time}
+	/>
 	{/if}
-		<Sprites
-			score={0}
-			person="alone"
-			sex="{person.TESEX}"
-			act="{act[2]}"
-			shown={act[act.length-1]}
-			begin={act[0]} end={act[1]}
-			frameRate={lookup.FRAMERATE["alone"]} 
-			hideInfo={hideInfo}
-			w={position[2]}
-			time={time}
-		/>
+	<Sprites
+	score={0}
+	person="alone"
+	sex="{person.TESEX}"
+	act="{act[2]}"
+	shown={act[act.length-1]}
+	begin={act[0]} end={act[1]}
+	frameRate={lookup.FRAMERATE["alone"]} 
+	hideInfo={hideInfo}
+	w={position[2]}
+	time={time}
+	/>
 	{/each}
 
 
@@ -202,35 +202,7 @@ on:click={selectPerson}
 		font-weight: bold;
 		text-shadow: 0px 0px 7px rgba(0,0,0,0.7);
 	}
-	.headline {
-		position: absolute;
-		color: white;
-		z-index: 9999;
-		width: 100%;
-		left: 0px;
-		top: 30%;
-		padding: 10px;
-		transform: translateY(-50%);
-		text-align: center;
-		text-transform: lowercase;
-	}
-	.headline h1 {
-		font-size: 0.35rem;
-		line-height: 0.4rem;
-		margin-bottom: 3px;
-		letter-spacing: 0.05px;
-		color: #856682;
-	}
-
-	.byline {
-		color: #856682;
-		font-size: 0.35rem;
-	}
-	.instruction {
-		margin-top: 3px;
-		font-size: 0.3rem;
-		color: #856682;
-	}
+	
 	.person {
 		position: absolute;
 		left: 0px;

@@ -6,7 +6,7 @@
 
 	let screenWidth = null;
 	let screenHeight = 1000;
-	let peopleColor = ["#3f1c4f", "#5e2657", "#7b335e", "#974262", "#b05466", "#c66868", "#da7f6c", "#e99770", "#f6b177", "#ffcc82"]; //["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
+	let peopleColor = ["#f6b177"]; //["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
 	let views = ["all","1","2","3"];
 	let customClicked = false;
 	export let time, beginTime, timeline, currentPeople, options, hed, selectedPerson;
@@ -258,6 +258,7 @@
 			height: 100vh;
 			transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
 			transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+			font-family: var(--sans);
 		}
 		.interactiveBackground {
 			display: block;

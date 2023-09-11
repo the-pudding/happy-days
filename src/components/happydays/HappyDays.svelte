@@ -158,7 +158,7 @@
 			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline} hed={copy.Hed} bind:selectedPerson={selectedPerson}/>
 		</div>
 		<div class="timeline">
-			<Scrolly increments={1} top={100} bind:value>
+			<Scrolly increments={1} top={300} bind:value>
 				{#each timeRange as time, i}
 				{@const active = value === i}
 				{#if checkCopy(time) == false}
@@ -188,11 +188,11 @@
 <style>
 	.outsideContainer {
 		background: #28212F;
-		font-family: "National 2 Web";
+		font-family: var(--sans);
 	}
 	
 	#scrolly {
-		font-family: "National 2 Web";
+		font-family: var(--sans);
 	}
 	.visualContainer {
 		position: sticky;
@@ -220,7 +220,7 @@
 	.timeline {
 		position: relative;
 		z-index: 100;
-		margin-top: -80vh;
+		margin-top: -50vh;
 		pointer-events: none;
 	}
 	.step {
@@ -231,13 +231,14 @@
 		color: #aaa;
 		padding-right: 5px;
 		font-size: 12px;
-		transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		transition: opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
 		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 	}
 	.step.active {
 		color: #CE5FFE;
 		font-weight: bold;
 		text-shadow: 0px 0px 6px #000;
+		font-size: 14px;
 	}
 	.step.longcopy {
 		pointer-events: auto !important;

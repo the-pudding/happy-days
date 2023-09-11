@@ -27,7 +27,9 @@
 </div>
 
 <style>
-
+	.textContainer p {
+		font-family: var(--sans);
+	}
 
 </style>
 
