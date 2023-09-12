@@ -158,7 +158,7 @@
 			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline} hed={copy.Hed} bind:selectedPerson={selectedPerson}/>
 		</div>
 		<div class="timeline">
-			<Scrolly increments={1} top={300} bind:value>
+			<Scrolly increments={1} top={400} bind:value>
 				{#each timeRange as time, i}
 				{@const active = value === i}
 				{#if checkCopy(time) == false}
@@ -293,6 +293,7 @@
 		transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
 		transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
 		overflow-y: scroll;
+		z-index: 999999;
 	}
 	.modal.shown {
 		left: 0px;

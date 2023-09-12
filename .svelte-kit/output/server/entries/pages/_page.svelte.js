@@ -6196,7 +6196,7 @@ const HappyDays_text = create_ssr_component(($$result, $$props, $$bindings, slot
 });
 const HappyDays_modal_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: "h3.svelte-1rmkn9g.svelte-1rmkn9g{font-weight:bold;color:#fff;font-size:1.1rem;line-height:1.5rem}.details.svelte-1rmkn9g.svelte-1rmkn9g{width:100%;height:100%;color:#aaa;padding:0 8px 8px 8px;text-align:left;font-size:0.8rem;line-height:1.2rem;z-index:999;display:-webkit-box;display:flex;position:relative}.details.shown.svelte-1rmkn9g.svelte-1rmkn9g{display:block}.detailsClose.svelte-1rmkn9g.svelte-1rmkn9g{font-size:13px;display:inline-block;cursor:pointer;color:black;font-weight:bold;background:var(--color-pinkpurple);padding:5px;border:5px solid #000;border-top:10px solid #000;text-align:center;position:sticky;top:0px;width:100%}.detailClose.bottom.svelte-1rmkn9g.svelte-1rmkn9g{align-self:flex-end}.detailsClose.svelte-1rmkn9g.svelte-1rmkn9g:hover{text-decoration:underline}.activities.svelte-1rmkn9g.svelte-1rmkn9g{font-size:0.8rem;line-height:0.9rem}.activities.svelte-1rmkn9g .act.svelte-1rmkn9g{margin-bottom:0.3rem}.act.svelte-1rmkn9g .time.svelte-1rmkn9g{color:#fff;display:block}.act.cross.svelte-1rmkn9g.svelte-1rmkn9g,.act.cross.svelte-1rmkn9g .time.svelte-1rmkn9g{text-decoration:line-through;color:#777 !important}.act.hl.svelte-1rmkn9g.svelte-1rmkn9g,.act.hl.svelte-1rmkn9g .time.svelte-1rmkn9g{color:var(--color-pinkpurple) !important}.fixed_spacer.svelte-1rmkn9g.svelte-1rmkn9g{position:sticky;bottom:0px;left:0px;height:120px;background:rgb(40,33,47);background:-webkit-gradient(linear, left top, left bottom, from(rgba(40,33,47,0)), color-stop(79%, rgba(0,0,0,1)));background:linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);width:100%}.spacer.svelte-1rmkn9g.svelte-1rmkn9g{height:100px;display:block}",
+  code: "h3.svelte-6odsbz.svelte-6odsbz{font-weight:bold;color:#fff;font-size:1.1rem;line-height:1.5rem}.details.svelte-6odsbz.svelte-6odsbz{width:100%;height:100%;color:#aaa;padding:0 8px 8px 8px;text-align:left;font-size:0.8rem;line-height:1.2rem;z-index:999;display:-webkit-box;display:flex;position:relative}.details.shown.svelte-6odsbz.svelte-6odsbz{display:block}.detailsClose.svelte-6odsbz.svelte-6odsbz{font-size:15px;display:inline-block;cursor:pointer;color:black;font-weight:bold;background:var(--color-pinkpurple);padding:10px 5px;border:5px solid #000;border-top:10px solid #000;text-align:center;position:sticky;top:0px;width:100%;opacity:0.9}.detailClose.bottom.svelte-6odsbz.svelte-6odsbz{align-self:flex-end}.detailsClose.svelte-6odsbz.svelte-6odsbz:hover{text-decoration:underline;opacity:1}.activities.svelte-6odsbz.svelte-6odsbz{font-size:0.8rem;line-height:0.9rem}.activities.svelte-6odsbz .act.svelte-6odsbz{margin-bottom:0.3rem}.act.svelte-6odsbz .time.svelte-6odsbz{color:#fff;display:block}.act.cross.svelte-6odsbz.svelte-6odsbz,.act.cross.svelte-6odsbz .time.svelte-6odsbz{text-decoration:line-through;color:#777 !important}.act.hl.svelte-6odsbz.svelte-6odsbz,.act.hl.svelte-6odsbz .time.svelte-6odsbz{color:var(--color-pinkpurple) !important}.fixed_spacer.svelte-6odsbz.svelte-6odsbz{position:sticky;bottom:0px;left:0px;height:120px;background:rgb(40,33,47);background:-webkit-gradient(linear, left top, left bottom, from(rgba(40,33,47,0)), color-stop(79%, rgba(0,0,0,1)));background:linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);width:100%}.spacer.svelte-6odsbz.svelte-6odsbz{height:100px;display:block}",
   map: null
 };
 function checkTime(start, end, time) {
@@ -6309,9 +6309,9 @@ const HappyDays_modal = create_ssr_component(($$result, $$props, $$bindings, slo
       selectedPerson = selectedPerson;
     }
   }
-  return `<div class="textContainer">${selectedPerson != null ? `<div class="${"details " + escape("shown", true) + " svelte-1rmkn9g"}"><div class="detailsClose svelte-1rmkn9g" data-svelte-h="svelte-c2ta5r">Click to close</div> <h3 class="svelte-1rmkn9g">${escape(selectedPerson.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON]))} ${escape(lookup.TESEX[selectedPerson.TESEX])} in ${escape(lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase())} health</h3> <p>Has ${escape(selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase())} and ${escape(selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children")} in the household. ${escape(selectedPerson.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[selectedPerson.PEEDUCA])}. ${escape(selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() + " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : "")} Reported being a ${escape(selectedPerson.WECANTRIL)}/10 on the Cantril ladder.</p> <div class="activities svelte-1rmkn9g">${each(cleanedActivites, (act, key) => {
-    return `<div class="${"act " + escape(act[3], true) + " svelte-1rmkn9g"}"><span class="time svelte-1rmkn9g">${escape(convertTime$1(act[0]))}</span> ${escape(lookup.ACTIVITY[act[1]].task)} ${escape(convertCurrentCompany(act[2]))}</div>`;
-  })}</div> <div class="fixed_spacer svelte-1rmkn9g"></div> <div class="spacer svelte-1rmkn9g"></div></div>` : ``} </div>`;
+  return `<div class="textContainer">${selectedPerson != null ? `<div class="${"details " + escape("shown", true) + " svelte-6odsbz"}"><div class="detailsClose svelte-6odsbz" data-svelte-h="svelte-c2ta5r">Click to close</div> <h3 class="svelte-6odsbz">${escape(selectedPerson.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON]))} ${escape(lookup.TESEX[selectedPerson.TESEX])} in ${escape(lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase())} health</h3> <p>Has ${escape(selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase())} and ${escape(selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children")} in the household. ${escape(selectedPerson.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[selectedPerson.PEEDUCA])}. ${escape(selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() + " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : "")} Reported being a ${escape(selectedPerson.WECANTRIL)}/10 on the Cantril ladder.</p> <div class="activities svelte-6odsbz">${each(cleanedActivites, (act, key) => {
+    return `<div class="${"act " + escape(act[3], true) + " svelte-6odsbz"}"><span class="time svelte-6odsbz">${escape(convertTime$1(act[0]))}</span> ${escape(lookup.ACTIVITY[act[1]].task)} ${escape(convertCurrentCompany(act[2]))}</div>`;
+  })}</div> <div class="fixed_spacer svelte-6odsbz"></div> <div class="spacer svelte-6odsbz"></div></div>` : ``} </div>`;
 });
 const people = [
   {
@@ -112257,7 +112257,7 @@ const martin = {
 };
 const HappyDays_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".outsideContainer.svelte-1l0age8{background:#28212F;font-family:var(--sans)}#scrolly.svelte-1l0age8{font-family:var(--sans)}.visualContainer.svelte-1l0age8{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-1l0age8{height:75vh}.timeline.svelte-1l0age8{position:relative;z-index:100;margin-top:-50vh;pointer-events:none}.step.svelte-1l0age8{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-1l0age8:not(.shortcopy){color:#CE5FFE;font-weight:bold;text-shadow:0px 0px 6px #000;font-size:14px}.step.longcopy.svelte-1l0age8{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(11%, rgba(40,33,47,0.97)), color-stop(89%, rgba(40,33,47,0.97)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:20vh 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative;pointer-events:none}.step.shortcopy.svelte-1l0age8{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-1l0age8{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-1l0age8{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}.modal.svelte-1l0age8{width:300px;position:fixed;left:-300px;top:0px;height:100%;background:black;-webkit-transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);-webkit-transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);overflow-y:scroll}.modal.shown.svelte-1l0age8{left:0px}",
+  code: ".outsideContainer.svelte-1l6n6mu{background:#28212F;font-family:var(--sans)}#scrolly.svelte-1l6n6mu{font-family:var(--sans)}.visualContainer.svelte-1l6n6mu{position:sticky;top:0em;width:100%;padding-left:20px}.spacer.svelte-1l6n6mu{height:75vh}.timeline.svelte-1l6n6mu{position:relative;z-index:100;margin-top:-50vh;pointer-events:none}.step.svelte-1l6n6mu{pointer-events:none;height:14px;min-height:25px;text-align:right;color:#aaa;padding-right:5px;font-size:12px;-webkit-transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);transition:opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);-webkit-transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955);transition-timing-function:cubic-bezier(0.455, 0.030, 0.515, 0.955)}.step.active.svelte-1l6n6mu:not(.shortcopy){color:#CE5FFE;font-weight:bold;text-shadow:0px 0px 6px #000;font-size:14px}.step.longcopy.svelte-1l6n6mu{pointer-events:auto !important;height:auto;background:rgb(40,33,47);background:-webkit-gradient(linear, left bottom, left top, from(rgba(40,33,47,0)), color-stop(11%, rgba(40,33,47,0.97)), color-stop(89%, rgba(40,33,47,0.97)), to(rgba(40,33,47,0)));background:linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);padding:20vh 2em;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative;pointer-events:none}.step.shortcopy.svelte-1l6n6mu{pointer-events:auto !important;height:auto;padding:0% 2em 0%;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;margin:0vh auto;position:relative}.preLongcopy.svelte-1l6n6mu{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 0)),\n			color-stop(90%, rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 0) 0%,\n			rgba(0, 0, 0, 1) 90%\n		)}.postLongcopy.svelte-1l6n6mu{display:block;height:50px;-webkit-backdrop-filter:blur(1px);backdrop-filter:blur(1px);-webkit-mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);-webkit-mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);mask:-webkit-gradient(\n			linear,\n			left top, left bottom,\n			from(rgba(0, 0, 0, 1))\n		);mask:linear-gradient(\n			to bottom,\n			rgba(0, 0, 0, 1) 0%\n			rgba(0, 0, 0, 0) 60%\n		);margin-top:-3px}.modal.svelte-1l6n6mu{width:300px;position:fixed;left:-300px;top:0px;height:100%;background:black;-webkit-transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);transition:all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000);-webkit-transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);transition-timing-function:cubic-bezier(0.250, 0.100, 0.250, 1.000);overflow-y:scroll;z-index:999999}.modal.shown.svelte-1l6n6mu{left:0px}",
   map: null
 };
 let beginTime = 240;
@@ -112376,7 +112376,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let $$rendered;
   do {
     $$settled = true;
-    $$rendered = ` <div class="outsideContainer svelte-1l0age8"><section id="scrolly" class="svelte-1l0age8"><div class="visualContainer svelte-1l0age8">${validate_component(HappyDays_grid, "Grid").$$render(
+    $$rendered = ` <div class="outsideContainer svelte-1l6n6mu"><section id="scrolly" class="svelte-1l6n6mu"><div class="visualContainer svelte-1l6n6mu">${validate_component(HappyDays_grid, "Grid").$$render(
       $$result,
       {
         currentPeople,
@@ -112394,9 +112394,9 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         }
       },
       {}
-    )}</div> <div class="timeline svelte-1l0age8">${validate_component(Scrolly, "Scrolly").$$render(
+    )}</div> <div class="timeline svelte-1l6n6mu">${validate_component(Scrolly, "Scrolly").$$render(
       $$result,
-      { increments: 1, top: 300, value },
+      { increments: 1, top: 400, value },
       {
         value: ($$value) => {
           value = $$value;
@@ -112407,7 +112407,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
         default: () => {
           return `${each(timeRange, (time, i) => {
             let active = value === i;
-            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-1l0age8", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-1l0age8"></div> <div class="${["step longcopy svelte-1l0age8", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-1l6n6mu", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-1l6n6mu"></div> <div class="${["step longcopy svelte-1l6n6mu", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112416,7 +112416,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
               },
               {},
               {}
-            )}</div> <div class="postLongcopy svelte-1l0age8"></div>` : `<div class="${["step shortcopy svelte-1l0age8", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            )}</div> <div class="postLongcopy svelte-1l6n6mu"></div>` : `<div class="${["step shortcopy svelte-1l6n6mu", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
                 copy: checkCopy(time)["text"],
@@ -112429,7 +112429,7 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
           })}`;
         }
       }
-    )}</div> <div class="spacer svelte-1l0age8"></div></section> <div class="${"modal " + escape(selectedPerson == null ? "" : "shown", true) + " svelte-1l0age8"}">${validate_component(HappyDays_modal, "Modal").$$render(
+    )}</div> <div class="spacer svelte-1l6n6mu"></div></section> <div class="${"modal " + escape(selectedPerson == null ? "" : "shown", true) + " svelte-1l6n6mu"}">${validate_component(HappyDays_modal, "Modal").$$render(
       $$result,
       { time: value + beginTime, selectedPerson },
       {
@@ -112534,7 +112534,7 @@ Martin is trying to sleep. But he's rolling around in bed, sleepless.\r
     text: `We don't tell stories about people like Martin. He doesn't have a job. He doesn't have a wife or partner, nor does he have children in his home. He's just a regular guy in his 60s who doesn't interact with that many people.\r
 \r
 \r
-These are red flags.\r
+But his experience of isolation has become more common.\r
 \r
 \r
 Humans evolved to <a href="https://link.springer.com/chapter/10.1007/978-1-4684-6694-2_3">survive in groups</a>, whether that's gathering food or fighting off predators. Without those <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">protective bonds</a>, our bodies sound the alarm.\r
@@ -112550,7 +112550,10 @@ When we're lonely, we feel more anxious, more fearful, and more stressed. Becaus
     view: "0",
     sortby: "num",
     addclass: "shorttext",
-    text: `In this story, we'll go through 24 hours of a weekend day in 2021, and we'll follow a handful of people, including Martin.¹\r
+    text: `In this story, we'll go through 24 hours of a weekend day in 2021.\r
+\r
+\r
+We will follow a handful of people, including Martin.¹\r
 \r
 \r
 Let's meet everyone else!\r
@@ -112580,7 +112583,7 @@ Let's meet everyone else!\r
 But most of those people won't help us in times of need.\r
 \r
 \r
-The people who <em>will</em> help are our friends – and psychologist Robin Dunbar <a href="https://www.amazon.com/exec/obidos/ASIN/B08W4XPK7G/ref=nosim/0sil8">argues</a> that we have an average of 150 people who we try to contact at least once a year.² These are people we try to stay in touch with. Within that group, he found we have about 15 friends and family we contact each month and one to two people with whom we share an intimate relationship – often a partner, and sometimes a "best friend forever."\r
+The people who <em>will</em> help are our friends – and psychologist Robin Dunbar <a href="https://www.amazon.com/exec/obidos/ASIN/B08W4XPK7G/ref=nosim/0sil8">argues</a> that we have an average of 150 people who we try to stay in touch with.² Within that group, we have about 15 friends and family we contact each month and one to two people with whom we share an intimate relationship – often a partner, and sometimes a "best friend forever."\r
 \r
 \r
 IMAGE|dunbar\r
@@ -112595,7 +112598,7 @@ IMAGE|dunbar\r
     view: "1",
     sortby: "num",
     addclass: "shorttext",
-    text: "I've highlighted our <span class='purple'>friends and family</span> with this bright purple, while keeping <span class='gray'>everyone else</span> the same color."
+    text: "I've highlighted our <span class='purple'>friends and family</span> with this bright purple. We'll keep <span class='gray'>everyone else</span> the same color."
   },
   {
     time: "540",
@@ -112604,7 +112607,7 @@ IMAGE|dunbar\r
     text: `Everyone needs a different amount of social interaction. But according to the American Time Use Survey, the average American spends about 6 hours with friends or family each day.\r
 \r
 \r
-So let's track how many of these people interact with their friends or family for at least 6 hours a day. Time with acquaintances and coworkers will also count, but to a lesser degree. ¹\r
+So let's track how many of these people interact with their friends or family for at least 6 hours a day. Time with acquaintances and coworkers will also count, but to a lesser degree.¹\r
 \r
 \r
 IMAGE|interaction\r
@@ -112635,7 +112638,7 @@ IMAGE|interaction\r
     time: "780",
     sortby: "num",
     view: "0",
-    text: 'Lonely people exhibit different behavior than everyone else. They <a href="https://pubmed.ncbi.nlm.nih.gov/10677643/">report</a> feeling more shy, more anxious, more negative, and more angry. They are less optimistic and have lower self esteem. \r\n\r\n\r\nBut neuroscientist John Cacioppo has found that everyone is susceptible to the negative effects of loneliness.\r\n\r\n\r\nIn a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0092656606000055"> 2006 study</a>, he and his colleagues hypnotized college students to re-experience a moment in their life when they were lonely. “Think of a time in which you felt isolated," they told the subjects. "You felt lonely. Perhaps you felt like you just didn’t belong – that you had no friends.” \r\n\r\n\r\nAfter confirming the hypnotism worked, they asked the students how they felt. It turns out the hypnotized lonely students reported feeling just as bad as people who were actually lonely.\r\n\r\n\r\n"We had demonstrated yet again that lonely individuals are not a breed apart," Cacioppo wrote in his book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a>. "Any of us can succumb to loneliness, and along with it, all the other characteristics that travel as its entourage."'
+    text: 'Lonely people <a href="https://pubmed.ncbi.nlm.nih.gov/10677643/">report</a> feeling more shy, more anxious, more negative, and more angry. They are less optimistic and have lower self esteem. \r\n\r\n\r\nBut neuroscientist John Cacioppo has found that everyone is susceptible to the negative effects of loneliness.\r\n\r\n\r\nIn a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0092656606000055"> 2006 study</a>, he and his colleagues hypnotized college students to re-experience a moment in their life when they were lonely. “Think of a time in which you felt isolated," they told the subjects. "You felt lonely. Perhaps you felt like you just didn’t belong – that you had no friends.” \r\n\r\n\r\nAfter confirming the hypnotism worked, they asked the students how they felt. It turns out the hypnotized lonely students reported feeling just as bad as people who were actually lonely.\r\n\r\n\r\n"We had demonstrated yet again that lonely individuals are not a breed apart," Cacioppo wrote in his book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a>. "Any of us can succumb to loneliness, and along with it, all the other characteristics that travel as its entourage."'
   },
   {
     time: "800",
@@ -112649,19 +112652,28 @@ IMAGE|interaction\r
     text: `When I analyzed how much time Americans spend with other people, I found some alarming trends.\r
 \r
 \r
-The amount of <span class="instruction">time we spend with family</span> has drastically decreased across every age group – especially younger people: \r
+The amount of time we spend with family has drastically decreased across every age group – especially younger people: \r
+\r
+\r
+<h2>Time spent with family, since 2003</h2>\r
 \r
 \r
 IMAGE|family\r
 \r
 \r
-The amount of <span class="instruction">time we spend with friends</span> has plummeted – and again it hit younger people especially hard: \r
+The amount of time we spend with friends has plummeted – and again it hit younger people especially hard. (It's partially because we have <a href="https://www.americansurveycenter.org/research/the-state-of-american-friendship-change-challenges-and-loss/">fewer close friends</a> than before.)\r
+\r
+\r
+<h2>Time spent with friends, since 2003</h2>\r
 \r
 \r
 IMAGE|friends\r
 \r
 \r
-Meanwhile, the amount of <span class="instruction">time we spend alone</span> has gone up across every age group. Elderly people were always more isolated, but that's gotten worse:\r
+Meanwhile, the amount of time we spend alone has gone up across every age group. Elderly people were always more isolated, but that's gotten worse:\r
+\r
+\r
+<h2>Time spent alone, since 2003</h2>\r
 \r
 \r
 IMAGE|alone\r
@@ -112679,7 +112691,7 @@ In short, there really is a loneliness epidemic.`
     time: "920",
     view: "1",
     sortby: "num",
-    text: "As you can see, most of the boxes aren't halfway full, which means they've yet to have three hours of social interaction with friends and family today.",
+    text: "As you can see, a lot of the boxes are still dark, which means they've yet to have any social interaction with friends and family today.",
     addclass: "shorttext"
   },
   {
@@ -112716,7 +112728,7 @@ In short, there really is a loneliness epidemic.`
     time: "1130",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "The day is almost over, and we can clearly see a trend: People lower on the ladder are more likely to go a full day being isolated.\r\n\r\n\r\nWhen we look at all 6,900 people who told us where they are on the ladder, we can see people lower on the ladder spend far less time with friends and family, and far more time alone.\r\n\r\n\r\nIMAGE|cantril_chart"
+    text: "The day is almost over, and we can clearly see a trend: People lower on the ladder are more likely to go a full day being isolated.\r\n\r\n\r\nWhen we look at all 6,900 people who told us where they are on the ladder, we can see people lower on the ladder spend less time with friends and family, and far more time alone.\r\n\r\n\r\n<h2>Time with friends and family vs. alone, by Cantril ladder</h2>\r\n\r\n\r\nIMAGE|cantril_chart\r\n\r\n\r\nOn weekends, this is especially apparent. During the day, people lower on the ladder are much less likely to be spending time with other people:\r\n\r\n\r\n<h2>Time spent with others people on weekends</h2>\r\n\r\n\r\nIMAGE|cantril_24hr"
   },
   {
     time: "1260",
@@ -112731,7 +112743,7 @@ Lonely people are less generous with donations, less likely to persevere in the 
 Lonely people are <a href="https://theconversation.com/is-loneliness-really-as-damaging-to-your-health-as-smoking-15-cigarettes-a-day-204959">50% more likely</a> to die prematurely than people with strong social connections – the equivalent of having six alcoholic drinks a day or smoking 15 cigarettes a day.\r
 \r
 \r
-And loneliness is a cycle. It makes us feel <a href="https://www.tandfonline.com/doi/full/10.1080/17588928.2015.1070136">more threatened</a> by social interactions, so we crawl deeper into isolation. And we hide our loneliness because we don't want people to think there's something wrong with us.\r
+And loneliness is a cycle. It makes us feel <a href="https://www.tandfonline.com/doi/full/10.1080/17588928.2015.1070136">more threatened</a> by social interactions, so we crawl deeper into isolation. We hide our loneliness because we don't want people to think there's something wrong with us.\r
 \r
 \r
 "Over time," Murthy writes, "this vicious cycle may convince us we don’t matter to anyone and that we’re unworthy of love."\r
@@ -112743,13 +112755,13 @@ And loneliness is a cycle. It makes us feel <a href="https://www.tandfonline.com
     time: "1380",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "We live in a world that is more connected than ever. We live in denser neighborhoods, we carry phones with us everywhere, and on those phones there are apps that promise to help us find love.\r\n\r\n\r\nYet we're spending less time with people we love – and we're told it's our fault.\r\n\r\n\r\nBut what if it isn't our fault? After all, companies have taken advantage of our need for social bonds. Social media has created a mirage of meaningful social interaction. Businesses have monetized our desire to be around other people. Meanwhile, landlords have priced us out of our communities."
+    text: "We live in a world that is more connected than ever. We live in denser neighborhoods, we carry phones with us everywhere, and on those phones there are apps that promise to help us find love.\r\n\r\n\r\nYet we're spending less time with people we love – and we're told it's our fault.\r\n\r\n\r\nBut what if it isn't our fault? Religious groups have betrayed our trust. Labor unions have been torn apart. And landlords have priced us out of our communities. To fill those gaps, companies have rushed to monetize our need for social bonds. Online platforms have created a mirage of meaningful social interaction. Prime real estate is used for exclusive coworking spaces. And even after the pandemic, companies have insisted we return to a world where we spend most of our time with coworkers, rather than with people who care about us."
   },
   {
     time: "1440",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "Talking about loneliness feels so deeply personal, because it means telling someone that you're hurting on a primal level. I searched my email account – which goes back about 20 years – and I've admitted to being lonely less than five times.\r\n\r\n\r\nI visualized this data in this particular way because I wanted to see individual people in the data. And every time I scroll through this, I find myself identifying with so many people in this story. I see college students struggling to find <em>their people</em>. I see 20-somethings filling their social void by constantly working. I see middle-aged people desperately trying to be wealthy and successful, because we're told that's what makes us socially desirable. I see elderly people who trigger my deep fear of isolation in old age.\r\n\r\n\r\nIf they are anything like me, they're not telling anyone they're lonely – or even admitting to themselves that they are lonely.\r\n\r\n\r\nSo here's a stab at honesty: I just want to be around people who care about me – and be able to take care of them. And more honestly, I never want to go to sleep lonely."
+    text: "Talking about loneliness feels so deeply personal. It makes us so vulnerable, because it means telling someone that you're hurting on a primal level. I searched my email account – which goes back about 20 years – and I've admitted to being lonely less than five times.\r\n\r\n\r\nHaving a national conversation about loneliness is going to be hard. But we're all feeling it.\r\n\r\n\r\nI see myself in so many people in this story. I see college students struggling to find <em>their</em> people. I see 20-somethings filling their social void by constantly working. I see middle-aged people desperately trying to be wealthy and successful, because we're told that's what makes us socially desirable. I see elderly people who trigger my deep fear of isolation in old age.\r\n\r\n\r\nIf they are anything like me, they're not telling anyone they're lonely. They're not even admitting to themselves that they're lonely.\r\n\r\n\r\nSo here's my first attempt: I want to be around people who care about me – and I want to be able to take care of them. I want my world to be filled with the warmth of loved ones, from now until death.\r\n\r\n\r\nBut, really, I just don't want to go to sleep feeling like I'm all alone."
   }
 ];
 const copy = {
@@ -112760,7 +112772,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-11-14:13"}`);
+  console.log(`build: ${"2023-09-12-09:22"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

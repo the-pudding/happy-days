@@ -1,0 +1,5 @@
+National2-Regular, 'National 2';
+"National 2 Web", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+
+font-family:National2-Bold, 'National 2';
+font-weight:bold;font-family:"National 2 Web", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;

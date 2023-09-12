@@ -139,25 +139,27 @@
 		display: block;
 	}
 	.detailsClose {
-		font-size: 13px;
+		font-size: 15px;
 		display: inline-block;
 		cursor: pointer;
 		color: black;
 		font-weight: bold;
 		background: var(--color-pinkpurple);
-		padding: 5px;
+		padding: 10px 5px;
 		border: 5px solid #000;
 		border-top: 10px solid #000;
 		text-align: center;
 		position: sticky;
 		top: 0px;
 		width: 100%;
+		opacity: 0.9;
 	}
 	.detailClose.bottom {
 		align-self: flex-end;
 	}
 	.detailsClose:hover {
 		text-decoration: underline;
+		opacity: 1;
 	}
 	.activities {font-size: 0.8rem; line-height: 0.9rem;}
 	.activities .act {

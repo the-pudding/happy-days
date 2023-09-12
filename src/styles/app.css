@@ -125,9 +125,12 @@ h6 {
 	color: #ECC6EA !important;
 }
 .textContainer h2 {
+	color: white;
 	font-weight: bold;
-	font-size: 1.7rem;
-	line-height: 1.9rem;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	margin-top: 40px;
+	margin-bottom: 0px;
 }
 .textContainer p {
 	margin-bottom: 1.4rem;
