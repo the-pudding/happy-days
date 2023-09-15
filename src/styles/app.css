@@ -229,7 +229,8 @@ h6 {
 	line-height: 0.4rem;
 	margin: 6px 0 3px;
 	letter-spacing: 0.05px;
-	color: var(--color-pinkpurple);
+	color: #B58AB1; 
+/*	var(--color-pinkpurple);*/
 }
 .headline h1 .hl {
 /*	color: var(--color-pinkpurple);*/
@@ -241,8 +242,16 @@ h6 {
 	margin-top: 0px;
 }
 .byline {
-	color: #856682;
+	color: #B58AB1;
 	font-size: 0.35rem;
+}
+.byline a {
+	color: #B58AB1;
+	border-bottom: 0.1px solid #B58AB1;
+}
+.byline a:hover {
+	color: #CE9DC9;
+	border-bottom: 0.1px solid #CE9DC9;	
 }
 .person .instruction {
 	margin-top: 3px;

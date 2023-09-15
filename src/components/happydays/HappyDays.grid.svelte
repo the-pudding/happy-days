@@ -42,6 +42,7 @@
 		personHeight = (h - 60) / rows; //  > personWidth*1.8 ? personWidth*1.5 : personHeight;
 
 		columns = Math.floor( (w - 40) / personWidth)
+		columns = columns > 20 ? 20 : columns;
 		viewTranslate[0][0] = 50 - (personWidth/2*3/(w + 80)*94);
 		if (personWidth < 100) {
 			hideInfo = true;

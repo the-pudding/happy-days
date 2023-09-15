@@ -14,7 +14,11 @@
 
 	function selectPerson(n) {
 		if (time > 380) {
-			selectedPerson = person;
+			if (selectedPerson == null || selectedPerson.TUCASEID != person.TUCASEID) {
+				selectedPerson = person;
+			} else {
+				selectedPerson = null;
+			}
 		}
 	}
 
@@ -173,12 +177,14 @@ on:click={selectPerson}
 	time={time}
 	/>
 	{/each}
-
+	{#each [1,2,3,4,5] as num}
+		<div class="tick" style="bottom:{num / 6 * 100}%; opacity:{time < 550 || time > 1460 ? 0 : 1}"></div>
+	{/each}
 
 	{#if person.start < 240 && time <= 242}
 	<div class="headline" transition:fade>
 		<h1>{@html hed}</h1>
-		<div class="byline">by Alvin Chang</div>
+		<div class="byline">by <a href="https://pudding.cool/author/alvin-chang/">Alvin Chang</a></div>
 		<div class="instruction">Scroll down</div>
 	</div>
 	{/if}
@@ -255,9 +261,9 @@ on:click={selectPerson}
 		width: 100%;
 		height: 80%;
 		background: rgb(0,0,0);
-		background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%);
-		background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%);
-		background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%);
+		background: -moz-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 60%);
+		background: -webkit-linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 60%);
+		background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 60%);
 	}
 
 	.socialBar {
@@ -321,7 +327,11 @@ on:click={selectPerson}
 		font-size: 12px;
 		color: white;
 		z-index: 100;
-		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
+		text-shadow:
+		0.5px 0.5px 0 rgba(0,0,0,0.9),
+		-0.5px 0.5px 0 rgba(0,0,0,0.9),
+		-0.5px -0.5px 0 rgba(0,0,0,0.9),
+		0.5px -0.5px 0 rgba(0,0,0,0.9);
 	}
 	.dayOfWeek {
 		font-size: 12px;
@@ -337,9 +347,13 @@ on:click={selectPerson}
 		font-size: 12px;
 		line-height: 13px;
 		color: #fff;
-		opacity: 0.5;
+		opacity: 0.7;
 		z-index: 100;
-		text-shadow: 4px -1px 16px rgba(0,0,0,0.4);
+		text-shadow:
+		0.5px 0.5px 0 rgba(0,0,0,0.9),
+		-0.5px 0.5px 0 rgba(0,0,0,0.9),
+		-0.5px -0.5px 0 rgba(0,0,0,0.9),
+		0.5px -0.5px 0 rgba(0,0,0,0.9);
 	}
 	@media screen and (max-width: 800px) {
 		.personLabel {
@@ -351,6 +365,15 @@ on:click={selectPerson}
 			font-size: 7px;
 			line-height: 8px;
 		}
+	}
+	.tick {
+		position: absolute;
+		left: 0px;
+		height: 0.1px;
+		width: 4px;
+		background: rgba(255,255,255,0.8);
+		transition: opacity 1500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
 	}
 </style>
 

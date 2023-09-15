@@ -5792,7 +5792,7 @@ const HappyDays_sprites = create_ssr_component(($$result, $$props, $$bindings, s
 });
 const HappyDays_person_svelte_svelte_type_style_lang = "";
 const css$4 = {
-  code: '.bigtext.svelte-12s8yfg{position:absolute;left:5px;bottom:0px;font-size:1rem;color:white;width:100%;text-align:left;font-weight:bold;text-shadow:0px 0px 7px rgba(0,0,0,0.7)}.person.svelte-12s8yfg{position:absolute;left:0px;top:0px;height:20vh;display:inline-block;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none;border:2px solid #28212F}.hoverOn.person.svelte-12s8yfg:hover,.person.hl.svelte-12s8yfg{border:1px solid #aaa;z-index:9999}.hoverOn.person.hl.svelte-12s8yfg:hover,.person.hl.svelte-12s8yfg{border:4px solid white;z-index:99999}.person.shown.svelte-12s8yfg{opacity:1;pointer-events:all}.hoverOn.person.svelte-12s8yfg{cursor:pointer}.hidePerson.svelte-12s8yfg{opacity:0 !important}.personViz.svelte-12s8yfg{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);background:#503F5A}.personViz.svelte-12s8yfg:after{content:"";position:absolute;left:0;top:0;width:100%;height:80%;background:rgb(0,0,0);background:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), color-stop(90%, rgba(0,0,0,0.30802258403361347)));background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.30802258403361347) 90%)}.socialBar.svelte-12s8yfg{overflow:hidden;position:absolute;right:0px;top:0px;height:100%;width:100%;z-index:0}.socialBarScore.svelte-12s8yfg{width:100%;height:0px;max-height:100%;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);opacity:1}.happyBar.svelte-12s8yfg{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-12s8yfg{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-12s8yfg{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-12s8yfg:last-child{border:none}.personLabel.svelte-12s8yfg{position:relative;width:100%;padding-top:10px;font-size:12px;color:white;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}.dayOfWeek.svelte-12s8yfg{font-size:12px;color:white}.currentActivity.svelte-12s8yfg{position:relative;width:100%;padding:0 3px;font-size:12px;line-height:13px;color:#fff;opacity:0.5;z-index:100;text-shadow:4px -1px 16px rgba(0,0,0,0.4)}@media screen and (max-width: 800px){.personLabel.svelte-12s8yfg{font-size:8px;line-height:9px;padding-top:5px}.currentActivity.svelte-12s8yfg{font-size:7px;line-height:8px}}',
+  code: '.bigtext.svelte-1pm5l6s{position:absolute;left:5px;bottom:0px;font-size:1rem;color:white;width:100%;text-align:left;font-weight:bold;text-shadow:0px 0px 7px rgba(0,0,0,0.7)}.person.svelte-1pm5l6s{position:absolute;left:0px;top:0px;height:20vh;display:inline-block;width:16%;-webkit-box-sizing:border-box;box-sizing:border-box;opacity:0;overflow:hidden;-webkit-transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:left 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), top 2500ms cubic-bezier(0.420, 0.000, 0.580, 1.000), opacity 500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);pointer-events:none;border:2px solid #28212F}.hoverOn.person.svelte-1pm5l6s:hover,.person.hl.svelte-1pm5l6s{border:1px solid #aaa;z-index:9999}.hoverOn.person.hl.svelte-1pm5l6s:hover,.person.hl.svelte-1pm5l6s{border:4px solid white;z-index:99999}.person.shown.svelte-1pm5l6s{opacity:1;pointer-events:all}.hoverOn.person.svelte-1pm5l6s{cursor:pointer}.hidePerson.svelte-1pm5l6s{opacity:0 !important}.personViz.svelte-1pm5l6s{position:relative;width:100%;left:0%;height:100%;overflow:hidden;-webkit-transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 600ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);background:#503F5A}.personViz.svelte-1pm5l6s:after{content:"";position:absolute;left:0;top:0;width:100%;height:80%;background:rgb(0,0,0);background:-webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0)), color-stop(60%, rgba(0,0,0,0.4)));background:linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 60%)}.socialBar.svelte-1pm5l6s{overflow:hidden;position:absolute;right:0px;top:0px;height:100%;width:100%;z-index:0}.socialBarScore.svelte-1pm5l6s{width:100%;height:0px;max-height:100%;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);opacity:1}.happyBar.svelte-1pm5l6s{position:absolute;left:10px;top:10px;height:50%;width:15px;border-left:2px solid #E7BCE0;border-right:2px solid #E7BCE0;-webkit-transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-1pm5l6s{height:10%;width:100%;position:absolute;border-top:2px solid #E7BCE0}.happyBarScore.svelte-1pm5l6s{width:100%;height:0px;background:#FF389B;position:absolute;bottom:0px;-webkit-transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);transition:all 2000ms cubic-bezier(0.250, 0.250, 0.750, 0.750);-webkit-transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750);transition-timing-function:cubic-bezier(0.250, 0.250, 0.750, 0.750)}.ladderItem.svelte-1pm5l6s:last-child{border:none}.personLabel.svelte-1pm5l6s{position:relative;width:100%;padding-top:10px;font-size:12px;color:white;z-index:100;text-shadow:0.5px 0.5px 0 rgba(0,0,0,0.9),\n		-0.5px 0.5px 0 rgba(0,0,0,0.9),\n		-0.5px -0.5px 0 rgba(0,0,0,0.9),\n		0.5px -0.5px 0 rgba(0,0,0,0.9)}.dayOfWeek.svelte-1pm5l6s{font-size:12px;color:white}.currentActivity.svelte-1pm5l6s{position:relative;width:100%;padding:0 3px;font-size:12px;line-height:13px;color:#fff;opacity:0.7;z-index:100;text-shadow:0.5px 0.5px 0 rgba(0,0,0,0.9),\n		-0.5px 0.5px 0 rgba(0,0,0,0.9),\n		-0.5px -0.5px 0 rgba(0,0,0,0.9),\n		0.5px -0.5px 0 rgba(0,0,0,0.9)}@media screen and (max-width: 800px){.personLabel.svelte-1pm5l6s{font-size:8px;line-height:9px;padding-top:5px}.currentActivity.svelte-1pm5l6s{font-size:7px;line-height:8px}}.tick.svelte-1pm5l6s{position:absolute;left:0px;height:0.1px;width:4px;background:rgba(255,255,255,0.8);-webkit-transition:opacity 1500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);transition:opacity 1500ms cubic-bezier(0.420, 0.000, 0.580, 1.000);-webkit-transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000);transition-timing-function:cubic-bezier(0.420, 0.000, 0.580, 1.000)}',
   map: null
 };
 let socialMax = 360;
@@ -5917,13 +5917,13 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       time = time;
     }
   }
-  return `<div class="${"person " + escape(hl, true) + " " + escape(checkHover(), true) + " " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-12s8yfg"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-12s8yfg"><div class="socialBar svelte-12s8yfg"><div class="socialBarScore svelte-12s8yfg" style="${"height:" + escape(
+  return `<div class="${"person " + escape(hl, true) + " " + escape(checkHover(), true) + " " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-1pm5l6s"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-1pm5l6s"><div class="socialBar svelte-1pm5l6s"><div class="socialBarScore svelte-1pm5l6s" style="${"height:" + escape(
     time < 550 || time > 1460 ? 0 : person.social_score / socialMax * 100,
     true
   ) + "%; background: " + escape(
     person.social_score / socialMax * (peopleColor.length - 1) > peopleColor.length - 1 ? peopleColor[peopleColor.length - 1] : peopleColor[Math.floor(person.social_score / socialMax * (peopleColor.length - 1))],
     true
-  )}"></div></div> ${time > 242 && time < 1540 ? `<div class="personLabel svelte-12s8yfg">${!hideInfo ? `${escape(toTitleCase(raceConvert$1(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time > 247 && time < 1500 ? `<div class="currentActivity svelte-12s8yfg">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
+  )}"></div></div> ${time > 242 && time < 1540 ? `<div class="personLabel svelte-1pm5l6s">${!hideInfo ? `${escape(toTitleCase(raceConvert$1(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time > 247 && time < 1500 ? `<div class="currentActivity svelte-1pm5l6s">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
     return `${person.social_score != 0 && convertWHO(act, true) != "alone" ? `${validate_component(HappyDays_sprites, "Sprites").$$render(
       $$result,
       {
@@ -5959,7 +5959,9 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       {},
       {}
     )}`;
-  })} ${person.start < 240 && time <= 242 ? `<div class="headline"><h1><!-- HTML_TAG_START -->${hed}<!-- HTML_TAG_END --></h1> <div class="byline" data-svelte-h="svelte-1lua6f6">by Alvin Chang</div> <div class="instruction" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-12s8yfg">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> </div>`;
+  })} ${each([1, 2, 3, 4, 5], (num) => {
+    return `<div class="tick svelte-1pm5l6s" style="${"bottom:" + escape(num / 6 * 100, true) + "%; opacity:" + escape(time < 550 || time > 1460 ? 0 : 1, true)}"></div>`;
+  })} ${person.start < 240 && time <= 242 ? `<div class="headline"><h1><!-- HTML_TAG_START -->${hed}<!-- HTML_TAG_END --></h1> <div class="byline" data-svelte-h="svelte-pafj2o">by <a href="https://pudding.cool/author/alvin-chang/">Alvin Chang</a></div> <div class="instruction" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-1pm5l6s">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> </div>`;
 });
 const HappyDays_grid_svelte_svelte_type_style_lang = "";
 const css$3 = {
@@ -6023,6 +6025,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
     personWidth = (w - 80) / 4.5 < defaultWidth ? (w - 100) / 4.5 : defaultWidth;
     personHeight = (h - 60) / rows;
     columns = Math.floor((w - 40) / personWidth);
+    columns = columns > 20 ? 20 : columns;
     viewTranslate[0][0] = 50 - personWidth / 2 * 3 / (w + 80) * 94;
     if (personWidth < 100) {
       hideInfo = true;
@@ -6309,7 +6312,7 @@ const HappyDays_modal = create_ssr_component(($$result, $$props, $$bindings, slo
       selectedPerson = selectedPerson;
     }
   }
-  return `<div class="textContainer">${selectedPerson != null ? `<div class="${"details " + escape("shown", true) + " svelte-6odsbz"}"><div class="detailsClose svelte-6odsbz" data-svelte-h="svelte-c2ta5r">Click to close</div> <h3 class="svelte-6odsbz">${escape(selectedPerson.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON]))} ${escape(lookup.TESEX[selectedPerson.TESEX])} in ${escape(lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase())} health</h3> <p>Has ${escape(selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase())} and ${escape(selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children")} in the household. ${escape(selectedPerson.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[selectedPerson.PEEDUCA])}. ${escape(selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() + " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : "")} Reported being a ${escape(selectedPerson.WECANTRIL)}/10 on the Cantril ladder.</p> <div class="activities svelte-6odsbz">${each(cleanedActivites, (act, key) => {
+  return `<div class="textContainer">${selectedPerson != null ? `<div class="${"details " + escape("shown", true) + " svelte-6odsbz"}"><div class="detailsClose svelte-6odsbz" data-svelte-h="svelte-c2ta5r">Click to close</div> <h3 class="svelte-6odsbz">${escape(selectedPerson.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON]))} ${escape(lookup.TESEX[selectedPerson.TESEX])} in ${escape(lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase())} health</h3> <p>Has ${escape(selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase())} and ${escape(selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children")} in the household. ${escape(selectedPerson.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[selectedPerson.PEEDUCA])}. ${escape(selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() + " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : "")} They reported being a ${escape(selectedPerson.WECANTRIL)} out of 10 when asked how close were to living their best possible life, with 10 being the best.</p> <div class="activities svelte-6odsbz">${each(cleanedActivites, (act, key) => {
     return `<div class="${"act " + escape(act[3], true) + " svelte-6odsbz"}"><span class="time svelte-6odsbz">${escape(convertTime$1(act[0]))}</span> ${escape(lookup.ACTIVITY[act[1]].task)} ${escape(convertCurrentCompany(act[2]))}</div>`;
   })}</div> <div class="fixed_spacer svelte-6odsbz"></div> <div class="spacer svelte-6odsbz"></div></div>` : ``} </div>`;
 });
@@ -112531,35 +112534,14 @@ Martin is trying to sleep. But he's rolling around in bed, sleepless.\r
     time: "330",
     view: "0",
     sortby: "num",
-    text: `We don't tell stories about people like Martin. He doesn't have a job. He doesn't have a wife or partner, nor does he have children in his home. He's just a regular guy in his 60s who doesn't interact with that many people.\r
-\r
-\r
-But his experience of isolation has become more common.\r
-\r
-\r
-Humans evolved to <a href="https://link.springer.com/chapter/10.1007/978-1-4684-6694-2_3">survive in groups</a>, whether that's gathering food or fighting off predators. Without those <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">protective bonds</a>, our bodies sound the alarm.\r
-\r
-\r
-"When we feel lonely, we’re unhappy and long to escape this emotional pain," writes former US surgeon general Vivek Murthy in his 2020 book, <a href="https://www.amazon.com/Together-Connection-Performance-Greater-Happiness/dp/0062913298">Together</a>. \r
-\r
-\r
-When we're lonely, we feel more anxious, more fearful, and more stressed. Because thousands of years of evolution made us <a href="https://psycnet.apa.org/record/1995-29052-001">believe</a> that when we're isolated, we're in danger.`
+    text: "We don't tell stories about people like Martin.\r\n\r\n\r\nHe doesn't have a job. He doesn't have a wife or partner, nor does he have children in his home. He's just a regular guy in his 60s who doesn't interact with that many people.\r\n\r\n\r\nBut the isolation he's experiencing isn't unique. In fact, it's become far more common in the last few decades."
   },
   {
     time: "360",
     view: "0",
     sortby: "num",
     addclass: "shorttext",
-    text: `In this story, we'll go through 24 hours of a weekend day in 2021.\r
-\r
-\r
-We will follow a handful of people, including Martin.¹\r
-\r
-\r
-Let's meet everyone else!\r
-\r
-\r
-<div class="citation">¹ The data is from the American Time Use Survey, which has tracked how people use their time since 2003.</div>`
+    text: "In this story, we'll go through 24 hours of a typical weekday in 2021.\r\n\r\n\r\nWe know what people did – and who they did it with – because, since 2003, the American Time Use Survey has asked people to track how they use their time.\r\n\r\n\r\nWe'll follow a handful of people, including Martin. Let's meet everyone else!"
   },
   {
     time: "365",
@@ -112610,10 +112592,13 @@ IMAGE|dunbar\r
 So let's track how many of these people interact with their friends or family for at least 6 hours a day. Time with acquaintances and coworkers will also count, but to a lesser degree.¹\r
 \r
 \r
+<h2>Cumulative hours of social interaction</h2>\r
+\r
+\r
 IMAGE|interaction\r
 \r
 \r
-<div class="citation">¹ A <a href="https://psycnet.apa.org/record/2022-47468-001">2022 study</a> of people's behavior during the Covid-19 pandemic found that people feel about 40% as psychologically close to acquaintances as they to do friends. So every minute spent with an acquaintance or coworker will only count as 0.4 minutes of social time. This is admittedly not the most robust methodology, but I couldn't find anything better.</div>`
+<div class="citation">¹ A <a href="https://psycnet.apa.org/record/2022-47468-001">2022 study</a> of people's behavior during the Covid-19 pandemic found that people feel about 40% as psychologically close to acquaintances as they to friends. So every minute spent with an acquaintance or coworker will only count as 0.4 minutes of social time. This is admittedly not the most robust methodology, but I couldn't find anything better.</div>`
   },
   {
     time: "680",
@@ -112638,7 +112623,7 @@ IMAGE|interaction\r
     time: "780",
     sortby: "num",
     view: "0",
-    text: 'Lonely people <a href="https://pubmed.ncbi.nlm.nih.gov/10677643/">report</a> feeling more shy, more anxious, more negative, and more angry. They are less optimistic and have lower self esteem. \r\n\r\n\r\nBut neuroscientist John Cacioppo has found that everyone is susceptible to the negative effects of loneliness.\r\n\r\n\r\nIn a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0092656606000055"> 2006 study</a>, he and his colleagues hypnotized college students to re-experience a moment in their life when they were lonely. “Think of a time in which you felt isolated," they told the subjects. "You felt lonely. Perhaps you felt like you just didn’t belong – that you had no friends.” \r\n\r\n\r\nAfter confirming the hypnotism worked, they asked the students how they felt. It turns out the hypnotized lonely students reported feeling just as bad as people who were actually lonely.\r\n\r\n\r\n"We had demonstrated yet again that lonely individuals are not a breed apart," Cacioppo wrote in his book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a>. "Any of us can succumb to loneliness, and along with it, all the other characteristics that travel as its entourage."'
+    text: 'All of us are susceptible to the negative effects of loneliness.\r\n\r\n\r\nIn a <a href="https://www.sciencedirect.com/science/article/abs/pii/S0092656606000055">2006 study</a>,  neuroscientist John Cacioppo and his colleagues hypnotized college students to re-experience a moment in their life when they were lonely. “Think of a time in which you felt isolated," they told the subjects. "You felt lonely. Perhaps you felt like you just didn’t belong – that you had no friends.” After confirming the hypnotism worked, they asked the students how they felt.\r\n\r\n\r\nIt turns out the hypnotized lonely students reported the same negative effects as people who were actually lonely. This included feeling more angry, more anxious, and having lower self-esteem.\r\n\r\n\r\n"We had demonstrated yet again that lonely individuals are not a breed apart," Cacioppo wrote in his book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a>. "Any of us can succumb to loneliness, and along with it, all the other characteristics that travel as its entourage."'
   },
   {
     time: "800",
@@ -112691,14 +112676,14 @@ In short, there really is a loneliness epidemic.`
     time: "920",
     view: "1",
     sortby: "num",
-    text: "As you can see, a lot of the boxes are still dark, which means they've yet to have any social interaction with friends and family today.",
-    addclass: "shorttext"
+    addclass: "shorttext",
+    text: "As you can see, a lot of the boxes are still dark, which means they've yet to have any social interaction with friends and family today.\r\n\r\n\r\nIMAGE|interaction2"
   },
   {
     time: "980",
     view: "1",
     sortby: "num",
-    text: "Every so often, the American Time Use Survey asks people a question that gets at how well someone is doing. The last time it was asked was 2021, which is the year we're looking at. The question goes something like this:\r\n\r\n\r\n<blockquote>\r\nImagine a ladder.  \r\n\r\n\r\nThe top of the ladder is your best possible life. The bottom is your worst possible life. \r\n\r\n\r\nWhich step of the ladder do you feel you personally stand at the present time?\r\n</blockquote>\r\n\r\n\r\nThis is called the Cantril ladder, and in the US most people answer fairly positively – on average, people say they are a 7 out of 10.\r\n\r\n\r\nPause for a second and ask yourself where you are on this ladder:\r\n\r\n\r\nIMAGE|cantril"
+    text: "Every so often, the American Time Use Survey asks people a question that gets at how well someone is doing. The last time it was asked was 2021, which is the year we're looking at. The question goes something like this:\r\n\r\n\r\n<blockquote>\r\nImagine a ladder.  \r\n\r\n\r\nThe top of the ladder is your best possible life. The bottom is your worst possible life. \r\n\r\n\r\nWhich step of the ladder do you feel you personally stand at the present time?\r\n</blockquote>\r\n\r\n\r\nThis is called the Cantril ladder, and in the US most people answer fairly positively – on average, people say they are a 7 out of 10.\r\n\r\n\r\nWhere are you on this ladder?\r\n\r\n\r\nIMAGE|cantril"
   },
   {
     time: "1000",
@@ -112710,7 +112695,7 @@ In short, there really is a loneliness epidemic.`
     view: "0",
     sortby: "num",
     addclass: "shorttext",
-    text: "Martin said he was a zero on the Cantril ladder – living his worst possible life.\r\n\r\n\r\nHe'll keep watching TV until around 8:30pm and then go to sleep without having interacted with anyone today."
+    text: "Martin will keep watching TV until around 8:30pm. He'll go to sleep without having interacted with anyone today. \r\n\r\n\r\nWhen asked where he was on the Cantril ladder, he said he was a zero – living his worst possible life."
   },
   {
     time: "1020",
@@ -112728,40 +112713,31 @@ In short, there really is a loneliness epidemic.`
     time: "1130",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "The day is almost over, and we can clearly see a trend: People lower on the ladder are more likely to go a full day being isolated.\r\n\r\n\r\nWhen we look at all 6,900 people who told us where they are on the ladder, we can see people lower on the ladder spend less time with friends and family, and far more time alone.\r\n\r\n\r\n<h2>Time with friends and family vs. alone, by Cantril ladder</h2>\r\n\r\n\r\nIMAGE|cantril_chart\r\n\r\n\r\nOn weekends, this is especially apparent. During the day, people lower on the ladder are much less likely to be spending time with other people:\r\n\r\n\r\n<h2>Time spent with others people on weekends</h2>\r\n\r\n\r\nIMAGE|cantril_24hr"
+    text: "The day is almost over, and we can clearly see a trend: People higher on the ladder are less likely to be isolated. \r\n\r\n\r\nWhen we look at all 6,900 people who told us where they are on the ladder in 2021, we can see people higher on the ladder spent more time with friends and family, and far less time alone.\r\n\r\n\r\n<h2>Time with friends and family vs. alone, by Cantril ladder</h2>\r\n\r\n\r\nIMAGE|cantril_chart\r\n\r\n\r\nOn weekends, this is especially apparent. During the day, people higher on the ladder are much less likely to be alone:\r\n\r\n\r\n<h2>Time spent with others people on weekends</h2>\r\n\r\n\r\nIMAGE|cantril_24hr"
   },
   {
     time: "1260",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: `Loneliness is cruel.\r
+    text: `Humans evolved to <a href="https://link.springer.com/chapter/10.1007/978-1-4684-6694-2_3">survive in groups</a>, whether that's gathering food or fighting off predators. So when we're isolated, we're convinced that we're in danger. We <a href="https://psycnet.apa.org/record/1995-29052-001">become</a> more anxious, fearful, stressed, and angry. \r
 \r
 \r
-Lonely people are less generous with donations, less likely to persevere in the face of adversity, more likely to procrastinate, and more likely to administer harsher punishments.¹ They also get <a href="https://pubmed.ncbi.nlm.nih.gov/12137144/">lower quality sleep</a>.\r
+And, in a cruel twist, loneliness makes us feel <a href="https://www.tandfonline.com/doi/full/10.1080/17588928.2015.1070136">more threatened</a> by social interactions – the very thing we need. So we crawl deeper into isolation, creating a cycle of loneliness. Former US surgeon general Vivek Murthy <a href="https://www.amazon.com/Together-Connection-Performance-Greater-Happiness/dp/0062913298">writes</a>: "Over time, this vicious cycle may convince us we don’t matter to anyone and that we’re unworthy of love."\r
 \r
 \r
-Lonely people are <a href="https://theconversation.com/is-loneliness-really-as-damaging-to-your-health-as-smoking-15-cigarettes-a-day-204959">50% more likely</a> to die prematurely than people with strong social connections – the equivalent of having six alcoholic drinks a day or smoking 15 cigarettes a day.\r
-\r
-\r
-And loneliness is a cycle. It makes us feel <a href="https://www.tandfonline.com/doi/full/10.1080/17588928.2015.1070136">more threatened</a> by social interactions, so we crawl deeper into isolation. We hide our loneliness because we don't want people to think there's something wrong with us.\r
-\r
-\r
-"Over time," Murthy writes, "this vicious cycle may convince us we don’t matter to anyone and that we’re unworthy of love."\r
-\r
-\r
-<div class="citation">¹ From Cacioppo's book, <a href="https://www.amazon.com/Loneliness-Human-Nature-Social-Connection/dp/0393335283">Loneliness</a></div>`
+Ultimately, socially isolated people are <a href="https://theconversation.com/is-loneliness-really-as-damaging-to-your-health-as-smoking-15-cigarettes-a-day-204959">50% more likely</a> to die prematurely – the equivalent of having six alcoholic drinks a day or smoking 15 cigarettes a day.`
   },
   {
     time: "1380",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "We live in a world that is more connected than ever. We live in denser neighborhoods, we carry phones with us everywhere, and on those phones there are apps that promise to help us find love.\r\n\r\n\r\nYet we're spending less time with people we love – and we're told it's our fault.\r\n\r\n\r\nBut what if it isn't our fault? Religious groups have betrayed our trust. Labor unions have been torn apart. And landlords have priced us out of our communities. To fill those gaps, companies have rushed to monetize our need for social bonds. Online platforms have created a mirage of meaningful social interaction. Prime real estate is used for exclusive coworking spaces. And even after the pandemic, companies have insisted we return to a world where we spend most of our time with coworkers, rather than with people who care about us."
+    text: "We live in a world that is more connected than ever. We live in denser neighborhoods, we carry phones with us everywhere, and on those phones there are apps that promise to help us find love.\r\n\r\n\r\nYet we're spending less time with people we love – and we're told it's our fault.\r\n\r\n\r\nBut what if it isn't our fault? Religious groups have betrayed our trust. Labor unions have been torn apart. And landlords have priced us out of our communities. To fill those gaps, companies have rushed to monetize our need for social bonds. Online platforms have created a mirage of social connections. Our neighborhoods are being sold for exclusive coworking spaces. And even after the pandemic, companies have insisted we return to a world where we spend most of our time with other workers, rather than with people who care about us."
   },
   {
     time: "1440",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "Talking about loneliness feels so deeply personal. It makes us so vulnerable, because it means telling someone that you're hurting on a primal level. I searched my email account – which goes back about 20 years – and I've admitted to being lonely less than five times.\r\n\r\n\r\nHaving a national conversation about loneliness is going to be hard. But we're all feeling it.\r\n\r\n\r\nI see myself in so many people in this story. I see college students struggling to find <em>their</em> people. I see 20-somethings filling their social void by constantly working. I see middle-aged people desperately trying to be wealthy and successful, because we're told that's what makes us socially desirable. I see elderly people who trigger my deep fear of isolation in old age.\r\n\r\n\r\nIf they are anything like me, they're not telling anyone they're lonely. They're not even admitting to themselves that they're lonely.\r\n\r\n\r\nSo here's my first attempt: I want to be around people who care about me – and I want to be able to take care of them. I want my world to be filled with the warmth of loved ones, from now until death.\r\n\r\n\r\nBut, really, I just don't want to go to sleep feeling like I'm all alone."
+    text: "Talking about loneliness feels so deeply personal. It makes us so vulnerable because it means telling someone that you're hurting on a primal level. So we don't talk about it. The epidemic becomes invisible.\r\n\r\n\r\nI see myself in so many people in this story. I see college students struggling to find <em>their</em> people. I see 20-somethings filling their social void by constantly working. I see middle-aged people desperately trying to be wealthy and successful, because we're told that's what makes us socially desirable. I see elderly people who trigger my deep fear of isolation in old age.\r\n\r\n\r\nIf they are anything like me, they're not telling anyone they're lonely – or even admitting it to themselves.\r\n\r\n\r\nSo here's my first attempt: I want to be around people who care about me – and I want to be able to take care of them. I want my world to be filled with the warmth of loved ones, from now until death. But, really, I just don't want to go to sleep feeling like I'm all alone."
   }
 ];
 const copy = {
@@ -112772,7 +112748,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-12-09:22"}`);
+  console.log(`build: ${"2023-09-15-17:26"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
