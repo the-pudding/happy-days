@@ -1,6 +1,6 @@
 <script>
-	export let title = "Title TK";
-	export let description = "Description TK";
+	export let title = "24 hours in an invisible epidemic";
+	export let description = "Watch 24 hours of an American day, and the invisible crisis hiding in plain sight";
 	export let url = "https://pudding.cool";
 	export let keywords = "";
 	export let preloadFont = [];

@@ -1,8 +1,8 @@
 import { c as create_ssr_component, e as escape, d as add_attribute, f as each, v as validate_component, g as getContext, a as setContext } from "../../chunks/ssr.js";
 import { w as wordmark } from "../../chunks/wordmark.js";
 const Meta = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { title = "Title TK" } = $$props;
-  let { description = "Description TK" } = $$props;
+  let { title = "24 hours in an invisible epidemic" } = $$props;
+  let { description = "Watch 24 hours of an American day, and the invisible crisis hiding in plain sight" } = $$props;
   let { url = "https://pudding.cool" } = $$props;
   let { keywords = "" } = $$props;
   let { preloadFont = [] } = $$props;
@@ -5742,7 +5742,7 @@ const HappyDays_sprites = create_ssr_component(($$result, $$props, $$bindings, s
   let { sex } = $$props;
   let { act } = $$props;
   let { shown } = $$props;
-  let { begin, end, frameRate, hideInfo, w, score, time } = $$props;
+  let { begin, end, frameRate, hideInfo, w, score, time: time2 } = $$props;
   let animClass;
   if (person == "alone") {
     animClass = lookup.ACTIVITY[act].animClass;
@@ -5784,11 +5784,11 @@ const HappyDays_sprites = create_ssr_component(($$result, $$props, $$bindings, s
     $$bindings.w(w);
   if ($$props.score === void 0 && $$bindings.score && score !== void 0)
     $$bindings.score(score);
-  if ($$props.time === void 0 && $$bindings.time && time !== void 0)
-    $$bindings.time(time);
+  if ($$props.time === void 0 && $$bindings.time && time2 !== void 0)
+    $$bindings.time(time2);
   $$result.css.add(css$5);
   name = names[current];
-  return `${shown > 0 ? `<div class="${"ff ff-" + escape(person, true) + " svelte-r8n8x3"}" style="${"left: " + escape(getPos(shown), true) + "%;"}">${score == 0 ? `<div class="sprite svelte-r8n8x3" anim="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `${score < 0.5 || time <= 400 ? `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim2="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim3="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>`}`}</div>` : ``}`;
+  return `${shown > 0 ? `<div class="${"ff ff-" + escape(person, true) + " svelte-r8n8x3"}" style="${"left: " + escape(getPos(shown), true) + "%;"}">${score == 0 ? `<div class="sprite svelte-r8n8x3" anim="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `${score < 0.5 || time2 <= 400 ? `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim2="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>` : `<div${add_attribute("shown", shown, 0)} class="sprite svelte-r8n8x3" anim3="${escape(name, true) + ".png"}" style="${"transform: translate(" + escape(pos.x, true) + "px," + escape(pos.y, true) + "px); zoom:" + escape(hideInfo ? w / 90 : 1.2, true) + ";"}"></div>`}`}</div>` : ``}`;
 });
 const HappyDays_person_svelte_svelte_type_style_lang = "";
 const css$4 = {
@@ -5818,7 +5818,7 @@ function toTitleCase(word) {
   return word.charAt(0).toUpperCase() + word.slice(1);
 }
 const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { person, time, beginTime: beginTime2, customClicked, happyBar, happyGroup, personKey, peopleColor, view, columns, rows, position, selectedSort, hideInfo, hed, selectedPerson } = $$props;
+  let { person, time: time2, beginTime: beginTime2, customClicked, happyBar, happyGroup, personKey, peopleColor, view: view2, columns, rows, position, selectedSort, hideInfo, hed, selectedPerson } = $$props;
   let shownVariable = "num";
   let hl = "";
   function checkSelected() {
@@ -5830,7 +5830,7 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
     }
   }
   function checkOpacity() {
-    return view == 0 && person.TUCASEID != "0" ? "hidePerson" : "";
+    return view2 == 0 && person.TUCASEID != "0" ? "hidePerson" : "";
   }
   function convertWHO(a, returnClass) {
     let val = a[a.length - 2];
@@ -5868,7 +5868,7 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
     return "w/ " + firsts.join(", ") + " and " + last;
   }
   function checkHover() {
-    if (time > 360) {
+    if (time2 > 360) {
       return "hoverOn";
     } else {
       selectedPerson = null;
@@ -5877,8 +5877,8 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
   }
   if ($$props.person === void 0 && $$bindings.person && person !== void 0)
     $$bindings.person(person);
-  if ($$props.time === void 0 && $$bindings.time && time !== void 0)
-    $$bindings.time(time);
+  if ($$props.time === void 0 && $$bindings.time && time2 !== void 0)
+    $$bindings.time(time2);
   if ($$props.beginTime === void 0 && $$bindings.beginTime && beginTime2 !== void 0)
     $$bindings.beginTime(beginTime2);
   if ($$props.customClicked === void 0 && $$bindings.customClicked && customClicked !== void 0)
@@ -5891,8 +5891,8 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
     $$bindings.personKey(personKey);
   if ($$props.peopleColor === void 0 && $$bindings.peopleColor && peopleColor !== void 0)
     $$bindings.peopleColor(peopleColor);
-  if ($$props.view === void 0 && $$bindings.view && view !== void 0)
-    $$bindings.view(view);
+  if ($$props.view === void 0 && $$bindings.view && view2 !== void 0)
+    $$bindings.view(view2);
   if ($$props.columns === void 0 && $$bindings.columns && columns !== void 0)
     $$bindings.columns(columns);
   if ($$props.rows === void 0 && $$bindings.rows && rows !== void 0)
@@ -5914,16 +5914,16 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
       selectedPerson = selectedPerson;
       checkSelected();
       hl = hl;
-      time = time;
+      time2 = time2;
     }
   }
-  return `<div class="${"person " + escape(hl, true) + " " + escape(checkHover(), true) + " " + escape(person.start <= time || time < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-1pm5l6s"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-1pm5l6s"><div class="socialBar svelte-1pm5l6s"><div class="socialBarScore svelte-1pm5l6s" style="${"height:" + escape(
-    time < 550 || time > 1460 ? 0 : person.social_score / socialMax * 100,
+  return `<div class="${"person " + escape(hl, true) + " " + escape(checkHover(), true) + " " + escape(person.start <= time2 || time2 < beginTime2 ? "shown" : "", true) + " " + escape(checkOpacity(), true) + " svelte-1pm5l6s"}" style="${"width:" + escape(position[2], true) + "px; height:" + escape(position[3], true) + "px; left: " + escape(position[0], true) + "%; top: " + escape(position[1], true) + "%"}"><div class="personViz svelte-1pm5l6s"><div class="socialBar svelte-1pm5l6s"><div class="socialBarScore svelte-1pm5l6s" style="${"height:" + escape(
+    time2 < 550 || time2 > 1460 ? 0 : person.social_score / socialMax * 100,
     true
   ) + "%; background: " + escape(
     person.social_score / socialMax * (peopleColor.length - 1) > peopleColor.length - 1 ? peopleColor[peopleColor.length - 1] : peopleColor[Math.floor(person.social_score / socialMax * (peopleColor.length - 1))],
     true
-  )}"></div></div> ${time > 242 && time < 1540 ? `<div class="personLabel svelte-1pm5l6s">${!hideInfo ? `${escape(toTitleCase(raceConvert$1(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time > 247 && time < 1500 ? `<div class="currentActivity svelte-1pm5l6s">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
+  )}"></div></div> ${time2 > 242 && time2 < 1540 ? `<div class="personLabel svelte-1pm5l6s">${!hideInfo ? `${escape(toTitleCase(raceConvert$1(lookup.PTDTRACE[person.PTDTRACE], lookup.PEHSPNON[person.PEHSPNON]), lookup.PEHSPNON[person.PEHSPNON]))} ${escape(lookup.TESEX[person.TESEX])}, ${escape(person.TEAGE)}` : `${escape(toTitleCase(lookup.TESEX[person.TESEX]))}, ${escape(person.TEAGE)}`}</div>` : ``} ${time2 > 247 && time2 < 1500 ? `<div class="currentActivity svelte-1pm5l6s">${escape(person.current_activity)} ${escape(convertCurrentCompany(person.current_company))}</div>` : ``} ${each(person.activity, (act, index) => {
     return `${person.social_score != 0 && convertWHO(act, true) != "alone" ? `${validate_component(HappyDays_sprites, "Sprites").$$render(
       $$result,
       {
@@ -5937,7 +5937,7 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
         frameRate: lookup.FRAMERATE[convertWHO(act, true)],
         hideInfo,
         w: position[2],
-        time
+        time: time2
       },
       {},
       {}
@@ -5954,14 +5954,14 @@ const HappyDays_person = create_ssr_component(($$result, $$props, $$bindings, sl
         frameRate: lookup.FRAMERATE["alone"],
         hideInfo,
         w: position[2],
-        time
+        time: time2
       },
       {},
       {}
     )}`;
   })} ${each([1, 2, 3, 4, 5], (num) => {
-    return `<div class="tick svelte-1pm5l6s" style="${"bottom:" + escape(num / 6 * 100, true) + "%; opacity:" + escape(time < 550 || time > 1460 ? 0 : 1, true)}"></div>`;
-  })} ${person.start < 240 && time <= 242 ? `<div class="headline"><h1><!-- HTML_TAG_START -->${hed}<!-- HTML_TAG_END --></h1> <div class="byline" data-svelte-h="svelte-pafj2o">by <a href="https://pudding.cool/author/alvin-chang/">Alvin Chang</a></div> <div class="instruction" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time < 1460 ? `<div class="bigtext svelte-1pm5l6s">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> </div>`;
+    return `<div class="tick svelte-1pm5l6s" style="${"bottom:" + escape(num / 6 * 100, true) + "%; opacity:" + escape(time2 < 550 || time2 > 1460 ? 0 : 1, true)}"></div>`;
+  })} ${person.start < 240 && time2 <= 242 ? `<div class="headline"><h1><!-- HTML_TAG_START -->${hed}<!-- HTML_TAG_END --></h1> <div class="byline" data-svelte-h="svelte-pafj2o">by <a href="https://pudding.cool/author/alvin-chang/">Alvin Chang</a></div> <div class="instruction" data-svelte-h="svelte-1cb8di4">Scroll down</div></div>` : ``} ${shownVariable != "num" && time2 < 1460 ? `<div class="bigtext svelte-1pm5l6s">${escape(cleanLabel(person.happy_group))}</div>` : ``}</div> </div>`;
 });
 const HappyDays_grid_svelte_svelte_type_style_lang = "";
 const css$3 = {
@@ -6007,8 +6007,8 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
   let screenHeight = 1e3;
   let peopleColor = ["#f6b177"];
   let customClicked = false;
-  let { time, beginTime: beginTime2, timeline: timeline2, currentPeople, options, hed, selectedPerson } = $$props;
-  time = time > 239 ? time : 241;
+  let { time: time2, beginTime: beginTime2, timeline: timeline2, currentPeople, options, hed, selectedPerson } = $$props;
+  time2 = time2 > 239 ? time2 : 241;
   let happyBar = 0;
   let selectedViewIndex = 0;
   let selectedSort = "num";
@@ -6043,17 +6043,17 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
       resize();
     } else {
       timeline2.forEach(function(line) {
-        if (time > line.time) {
+        if (time2 > line.time) {
           selectedViewIndex = line.view;
           selectedSort = line.sortby;
         }
       });
     }
-    if (isNaN(time)) {
-      time = 1697;
+    if (isNaN(time2)) {
+      time2 = 1697;
     }
-    customClicked = time > 605 ? true : false;
-    happyBar = time >= 365 || time < beginTime2 ? 1 : 0;
+    customClicked = time2 > 605 ? true : false;
+    happyBar = time2 >= 365 || time2 < beginTime2 ? 1 : 0;
   }
   function checkPeople() {
     for (let j = 0; j < currentPeople.length; j++) {
@@ -6066,8 +6066,8 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
         let end = currentPeople[j]["activity"][k][1];
         let theCompany = currentPeople[j]["activity"][k][5];
         let peopleScore = lookup.PEOPLESCORE[theCompany].score;
-        if (start <= time || start <= time - 1440 && time > 1440) {
-          let timeAmount = time - currentPeople[j]["activity"][k][0] > currentPeople[j]["activity"][k][3] ? currentPeople[j]["activity"][k][3] : time - currentPeople[j]["activity"][k][0];
+        if (start <= time2 || start <= time2 - 1440 && time2 > 1440) {
+          let timeAmount = time2 - currentPeople[j]["activity"][k][0] > currentPeople[j]["activity"][k][3] ? currentPeople[j]["activity"][k][3] : time2 - currentPeople[j]["activity"][k][0];
           if (start in socialScoreTracker) {
             socialScoreTracker[start]["maxTime"] = timeAmount > socialScoreTracker[start]["maxTime"] ? timeAmount : socialScoreTracker[start]["maxTime"];
             socialScoreTracker[start]["maxScore"] = peopleScore > socialScoreTracker[start]["maxScore"] ? peopleScore : socialScoreTracker[start]["maxScore"];
@@ -6077,7 +6077,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
             socialScoreTracker[start]["maxScore"] = peopleScore;
           }
         }
-        if (start <= time && end > time || start <= time - 1440 && end > time - 1440) {
+        if (start <= time2 && end > time2 || start <= time2 - 1440 && end > time2 - 1440) {
           currentPeople[j]["activity"][k][6] = companionNumber;
           currentPeople[j]["current_activity"] = lookup.ACTIVITY[currentPeople[j]["activity"][k][2]].cleanTask;
           currentPeople[j]["current_company"].push(theCompany);
@@ -6117,8 +6117,8 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
     },
     200
   );
-  if ($$props.time === void 0 && $$bindings.time && time !== void 0)
-    $$bindings.time(time);
+  if ($$props.time === void 0 && $$bindings.time && time2 !== void 0)
+    $$bindings.time(time2);
   if ($$props.beginTime === void 0 && $$bindings.beginTime && beginTime2 !== void 0)
     $$bindings.beginTime(beginTime2);
   if ($$props.timeline === void 0 && $$bindings.timeline && timeline2 !== void 0)
@@ -6144,7 +6144,7 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
         $$result,
         {
           person,
-          time,
+          time: time2,
           beginTime: beginTime2,
           customClicked,
           happyBar,
@@ -6172,9 +6172,9 @@ const HappyDays_grid = create_ssr_component(($$result, $$props, $$bindings, slot
   } while (!$$settled);
   return $$rendered;
 });
-function convertToHTML(text) {
+function convertToHTML(text2) {
   let finalText = [];
-  let textArray = text.split("\n");
+  let textArray = text2.split("\n");
   textArray.forEach(function(line) {
     if (line.indexOf("Component|") != -1) {
       let compName = line.split("|")[1];
@@ -6188,27 +6188,27 @@ function convertToHTML(text) {
   return "<p>" + finalText.join("</p><p>") + "</p>";
 }
 const HappyDays_text = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { copy: copy2, add, time } = $$props;
+  let { copy: copy2, add, time: time2 } = $$props;
   if ($$props.copy === void 0 && $$bindings.copy && copy2 !== void 0)
     $$bindings.copy(copy2);
   if ($$props.add === void 0 && $$bindings.add && add !== void 0)
     $$bindings.add(add);
-  if ($$props.time === void 0 && $$bindings.time && time !== void 0)
-    $$bindings.time(time);
-  return `<div class="${"textContainer " + escape(add, true)}"><div class="time">${escape(time)}</div> <!-- HTML_TAG_START -->${convertToHTML(copy2)}<!-- HTML_TAG_END --> </div>`;
+  if ($$props.time === void 0 && $$bindings.time && time2 !== void 0)
+    $$bindings.time(time2);
+  return `<div class="${"textContainer " + escape(add, true)}"><div class="time">${escape(time2)}</div> <!-- HTML_TAG_START -->${convertToHTML(copy2)}<!-- HTML_TAG_END --> </div>`;
 });
 const HappyDays_modal_svelte_svelte_type_style_lang = "";
 const css$2 = {
-  code: "h3.svelte-6odsbz.svelte-6odsbz{font-weight:bold;color:#fff;font-size:1.1rem;line-height:1.5rem}.details.svelte-6odsbz.svelte-6odsbz{width:100%;height:100%;color:#aaa;padding:0 8px 8px 8px;text-align:left;font-size:0.8rem;line-height:1.2rem;z-index:999;display:-webkit-box;display:flex;position:relative}.details.shown.svelte-6odsbz.svelte-6odsbz{display:block}.detailsClose.svelte-6odsbz.svelte-6odsbz{font-size:15px;display:inline-block;cursor:pointer;color:black;font-weight:bold;background:var(--color-pinkpurple);padding:10px 5px;border:5px solid #000;border-top:10px solid #000;text-align:center;position:sticky;top:0px;width:100%;opacity:0.9}.detailClose.bottom.svelte-6odsbz.svelte-6odsbz{align-self:flex-end}.detailsClose.svelte-6odsbz.svelte-6odsbz:hover{text-decoration:underline;opacity:1}.activities.svelte-6odsbz.svelte-6odsbz{font-size:0.8rem;line-height:0.9rem}.activities.svelte-6odsbz .act.svelte-6odsbz{margin-bottom:0.3rem}.act.svelte-6odsbz .time.svelte-6odsbz{color:#fff;display:block}.act.cross.svelte-6odsbz.svelte-6odsbz,.act.cross.svelte-6odsbz .time.svelte-6odsbz{text-decoration:line-through;color:#777 !important}.act.hl.svelte-6odsbz.svelte-6odsbz,.act.hl.svelte-6odsbz .time.svelte-6odsbz{color:var(--color-pinkpurple) !important}.fixed_spacer.svelte-6odsbz.svelte-6odsbz{position:sticky;bottom:0px;left:0px;height:120px;background:rgb(40,33,47);background:-webkit-gradient(linear, left top, left bottom, from(rgba(40,33,47,0)), color-stop(79%, rgba(0,0,0,1)));background:linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);width:100%}.spacer.svelte-6odsbz.svelte-6odsbz{height:100px;display:block}",
+  code: "h3.svelte-1un36hn.svelte-1un36hn{font-weight:bold;color:#fff;font-size:1.1rem;line-height:1.5rem}.details.svelte-1un36hn.svelte-1un36hn{width:100%;height:100%;color:#aaa;padding:0 8px 8px 8px;text-align:left;font-size:0.8rem;line-height:1.2rem;z-index:999;display:-webkit-box;display:flex;position:relative}.details.shown.svelte-1un36hn.svelte-1un36hn{display:block}.detailsClose.svelte-1un36hn.svelte-1un36hn{font-size:15px;display:inline-block;cursor:pointer;color:black;font-weight:bold;background:var(--color-pinkpurple);padding:10px 5px;border:5px solid #000;border-top:10px solid #000;text-align:center;position:sticky;top:0px;width:100%;opacity:0.9}.detailClose.bottom.svelte-1un36hn.svelte-1un36hn{align-self:flex-end}.detailsClose.svelte-1un36hn.svelte-1un36hn:hover{text-decoration:underline;opacity:1}.activities.svelte-1un36hn.svelte-1un36hn{font-size:0.8rem;line-height:0.9rem}.activities.svelte-1un36hn .act.svelte-1un36hn{margin-bottom:0.3rem}.act.svelte-1un36hn .time.svelte-1un36hn{color:#fff;display:block}.act.cross.svelte-1un36hn .time.svelte-1un36hn{text-decoration:line-through;color:#777 !important}.act.cross.svelte-1un36hn.svelte-1un36hn{color:#666}.act.hl.svelte-1un36hn.svelte-1un36hn,.act.hl.svelte-1un36hn .time.svelte-1un36hn{color:var(--color-pinkpurple) !important}.fixed_spacer.svelte-1un36hn.svelte-1un36hn{position:sticky;bottom:0px;left:0px;height:120px;background:rgb(40,33,47);background:-webkit-gradient(linear, left top, left bottom, from(rgba(40,33,47,0)), color-stop(79%, rgba(0,0,0,1)));background:linear-gradient(180deg, rgba(40,33,47,0) 0%, rgba(0,0,0,1) 79%);width:100%}.spacer.svelte-1un36hn.svelte-1un36hn{height:100px;display:block}",
   map: null
 };
-function checkTime(start, end, time) {
+function checkTime(start, end, time2) {
   start = start < 240 ? start + 1440 : start;
   end = end <= 240 ? end + 1440 : end;
-  if (start <= time && end > time) {
+  if (start <= time2 && end > time2) {
     return "hl";
   }
-  if (end < time) {
+  if (end < time2) {
     return "cross " + start + "," + end;
   }
   return "";
@@ -6247,7 +6247,7 @@ function convertTime$1(m) {
   }) + " " + ampm;
 }
 const HappyDays_modal = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let { selectedPerson, time } = $$props;
+  let { selectedPerson, time: time2 } = $$props;
   let cleanedActivites = [];
   function getFullCompany() {
     if (selectedPerson != null) {
@@ -6266,7 +6266,7 @@ const HappyDays_modal = create_ssr_component(($$result, $$props, $$bindings, slo
             p.activity[i][0],
             p.activity[i][2],
             [],
-            checkTime(p.activity[i][0], p.activity[i][1], time)
+            checkTime(p.activity[i][0], p.activity[i][1], time2)
           ];
         }
         currentActivity[2].push(p.activity[i][5]);
@@ -6301,20 +6301,20 @@ const HappyDays_modal = create_ssr_component(($$result, $$props, $$bindings, slo
   }
   if ($$props.selectedPerson === void 0 && $$bindings.selectedPerson && selectedPerson !== void 0)
     $$bindings.selectedPerson(selectedPerson);
-  if ($$props.time === void 0 && $$bindings.time && time !== void 0)
-    $$bindings.time(time);
+  if ($$props.time === void 0 && $$bindings.time && time2 !== void 0)
+    $$bindings.time(time2);
   $$result.css.add(css$2);
   {
     {
-      time = time;
+      time2 = time2;
       getFullCompany();
       cleanedActivites = cleanedActivites;
       selectedPerson = selectedPerson;
     }
   }
-  return `<div class="textContainer">${selectedPerson != null ? `<div class="${"details " + escape("shown", true) + " svelte-6odsbz"}"><div class="detailsClose svelte-6odsbz" data-svelte-h="svelte-c2ta5r">Click to close</div> <h3 class="svelte-6odsbz">${escape(selectedPerson.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON]))} ${escape(lookup.TESEX[selectedPerson.TESEX])} in ${escape(lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase())} health</h3> <p>Has ${escape(selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase())} and ${escape(selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children")} in the household. ${escape(selectedPerson.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[selectedPerson.PEEDUCA])}. ${escape(selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() + " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : "")} They reported being a ${escape(selectedPerson.WECANTRIL)} out of 10 when asked how close were to living their best possible life, with 10 being the best.</p> <div class="activities svelte-6odsbz">${each(cleanedActivites, (act, key) => {
-    return `<div class="${"act " + escape(act[3], true) + " svelte-6odsbz"}"><span class="time svelte-6odsbz">${escape(convertTime$1(act[0]))}</span> ${escape(lookup.ACTIVITY[act[1]].task)} ${escape(convertCurrentCompany(act[2]))}</div>`;
-  })}</div> <div class="fixed_spacer svelte-6odsbz"></div> <div class="spacer svelte-6odsbz"></div></div>` : ``} </div>`;
+  return `<div class="textContainer">${selectedPerson != null ? `<div class="${"details " + escape("shown", true) + " svelte-1un36hn"}"><div class="detailsClose svelte-1un36hn" data-svelte-h="svelte-c2ta5r">Click to close</div> <h3 class="svelte-1un36hn">${escape(selectedPerson.TEAGE)}-year-old ${escape(raceConvert(lookup.PTDTRACE[selectedPerson.PTDTRACE], lookup.PEHSPNON[selectedPerson.PEHSPNON]))} ${escape(lookup.TESEX[selectedPerson.TESEX])} in ${escape(lookup.WEGENHTH[selectedPerson.WEGENHTH].toLowerCase())} health</h3> <p>Has ${escape(selectedPerson.TRSPPRES == 3 ? "no partner" : "a " + lookup.TRSPPRES[selectedPerson.TRSPPRES].toLowerCase())} and ${escape(selectedPerson.TRCHILDNUM_x == 1 ? selectedPerson.TRCHILDNUM_x + " child" : selectedPerson.TRCHILDNUM_x + " children")} in the household. ${escape(selectedPerson.TESCHENR == 1 ? "Enrolled in school." : "")} Has a ${escape(lookup.PEEDUCA[selectedPerson.PEEDUCA])}. ${escape(selectedPerson.TRDTIND1 != -1 ? "Works in " + lookup.TRDTIND1[selectedPerson.TRDTIND1].toLowerCase() + " earning " + formatMoney(selectedPerson.TRERNWA_x) + " a week." : "")} They reported being a ${escape(selectedPerson.WECANTRIL)} out of 10 when asked how close were to living their best possible life, with 10 being the best.</p> <div class="activities svelte-1un36hn">${each(cleanedActivites, (act, key) => {
+    return `<div class="${"act " + escape(act[3], true) + " svelte-1un36hn"}"><span class="time svelte-1un36hn">${escape(convertTime$1(act[0]))}</span> ${escape(lookup.ACTIVITY[act[1]].task)} ${escape(convertCurrentCompany(act[2]))}</div>`;
+  })}</div> <div class="fixed_spacer svelte-1un36hn"></div> <div class="spacer svelte-1un36hn"></div></div>` : ``} </div>`;
 });
 const people = [
   {
@@ -112363,10 +112363,10 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
     final[0].start = 239;
     return final;
   }
-  function checkCopy(time) {
+  function checkCopy(time2) {
     let final = false;
     for (let k = 0; k < copy2.timeline.length; k++) {
-      if (copy2.timeline[k].time == time && "text" in copy2.timeline[k]) {
+      if (copy2.timeline[k].time == time2 && "text" in copy2.timeline[k]) {
         final = copy2.timeline[k];
       }
     }
@@ -112408,23 +112408,23 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
       },
       {
         default: () => {
-          return `${each(timeRange, (time, i) => {
+          return `${each(timeRange, (time2, i) => {
             let active = value === i;
-            return ` ${checkCopy(time) == false ? `<div class="${["step svelte-1l6n6mu", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time))}</div>` : `${checkCopy(time)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-1l6n6mu"></div> <div class="${["step longcopy svelte-1l6n6mu", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
+            return ` ${checkCopy(time2) == false ? `<div class="${["step svelte-1l6n6mu", active ? "active" : ""].join(" ").trim()}" style="${"opacity: " + escape(value + beginTime > 240 ? 1 : 0, true) + ";"}">${escape(convertTime(time2))}</div>` : `${checkCopy(time2)["addclass"] != "shorttext" ? `<div class="preLongcopy svelte-1l6n6mu"></div> <div class="${["step longcopy svelte-1l6n6mu", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
-                copy: checkCopy(time)["text"],
+                copy: checkCopy(time2)["text"],
                 add: "longcopy",
-                time: convertTime(time)
+                time: convertTime(time2)
               },
               {},
               {}
             )}</div> <div class="postLongcopy svelte-1l6n6mu"></div>` : `<div class="${["step shortcopy svelte-1l6n6mu", active ? "active" : ""].join(" ").trim()}">${validate_component(HappyDays_text, "Text").$$render(
               $$result,
               {
-                copy: checkCopy(time)["text"],
+                copy: checkCopy(time2)["text"],
                 add: "shortcopy",
-                time: convertTime(time)
+                time: convertTime(time2)
               },
               {},
               {}
@@ -112446,7 +112446,6 @@ const HappyDays = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   } while (!$$settled);
   return $$rendered;
 });
-const WIP_svelte_svelte_type_style_lang = "";
 const Footer_svelte_svelte_type_style_lang = "";
 const css = {
   code: "footer.svelte-1ugp58b.svelte-1ugp58b{background-color:var(--color-fg);color:var(--color-bg);font-family:var(--sans);padding:3em 1em;border-top:2px solid var(--color-primary)}a.svelte-1ugp58b.svelte-1ugp58b,a.svelte-1ugp58b.svelte-1ugp58b:visited,a.svelte-1ugp58b.svelte-1ugp58b:hover{color:var(--color-bg)}.stories.svelte-1ugp58b.svelte-1ugp58b{margin:0 auto;display:-webkit-box;display:flex;flex-wrap:wrap;-webkit-box-pack:justify;justify-content:space-between;max-width:70em}.story.svelte-1ugp58b.svelte-1ugp58b{display:block;width:100%;border:none;margin-bottom:3rem}.story.svelte-1ugp58b a.svelte-1ugp58b{display:block;font-weight:900;text-decoration:none;border:none}.story.svelte-1ugp58b span.svelte-1ugp58b{display:block;margin-top:1em;line-height:1.2}.wordmark.svelte-1ugp58b.svelte-1ugp58b{max-width:10em;margin:1em auto}.about.svelte-1ugp58b.svelte-1ugp58b{margin:3rem auto;margin-top:0;text-align:center}.links.svelte-1ugp58b ul.svelte-1ugp58b{display:-webkit-box;display:flex;flex-wrap:wrap;-webkit-box-pack:center;justify-content:center}.links.svelte-1ugp58b li.svelte-1ugp58b{display:-webkit-box;display:flex;padding:0.5em 1em}.links.svelte-1ugp58b a.svelte-1ugp58b{display:-webkit-box;display:flex;border:none;-webkit-box-align:center;align-items:center;text-decoration:none}.links.svelte-1ugp58b span.svelte-1ugp58b{margin-left:0.5em}@media only screen and (min-width: 30em){.story.svelte-1ugp58b.svelte-1ugp58b{width:50%;padding:0 1em}}@media only screen and (min-width: 50em){.story.svelte-1ugp58b.svelte-1ugp58b{width:25%;padding:0 1em}}",
@@ -112528,20 +112527,13 @@ Martin is trying to sleep. But he's rolling around in bed, sleepless.\r
     sortby: "num",
     view: "0",
     addclass: "shorttext",
-    text: "He couldn't sleep. So he got out of bed and watched TV."
-  },
-  {
-    time: "330",
-    view: "0",
-    sortby: "num",
-    text: "We don't tell stories about people like Martin.\r\n\r\n\r\nHe doesn't have a job. He doesn't have a wife or partner, nor does he have children in his home. He's just a regular guy in his 60s who doesn't interact with that many people.\r\n\r\n\r\nBut the isolation he's experiencing isn't unique. In fact, it's become far more common in the last few decades."
+    text: "He couldn't sleep. So he got out of bed and watched TV.\r\n\r\n\r\nMartin's a regular guy in his 60s, but there are some red flags. He doesn't have a job. He doesn't have a wife or partner, nor does he have children in his home. He just doesn't interact with many people."
   },
   {
     time: "360",
     view: "0",
     sortby: "num",
-    addclass: "shorttext",
-    text: "In this story, we'll go through 24 hours of a typical weekday in 2021.\r\n\r\n\r\nWe know what people did – and who they did it with – because, since 2003, the American Time Use Survey has asked people to track how they use their time.\r\n\r\n\r\nWe'll follow a handful of people, including Martin. Let's meet everyone else!"
+    text: "In this story, we'll go through 24 hours of a typical weekday in 2021. We know what people did – and who they did it with – because, since 2003, the American Time Use Survey has asked people to track how they use their time.\r\n\r\n\r\nBy the end of the day, we'll learn that Martin's isolation isn't unique. In fact, loneliness has become a far more common experience in the last few decades – and it was supercharged by the pandemic.\r\n\r\n\r\nWe'll follow a handful of people, including Martin. Let's meet everyone else!"
   },
   {
     time: "365",
@@ -112598,7 +112590,7 @@ So let's track how many of these people interact with their friends or family fo
 IMAGE|interaction\r
 \r
 \r
-<div class="citation">¹ A <a href="https://psycnet.apa.org/record/2022-47468-001">2022 study</a> of people's behavior during the Covid-19 pandemic found that people feel about 40% as psychologically close to acquaintances as they to friends. So every minute spent with an acquaintance or coworker will only count as 0.4 minutes of social time. This is admittedly not the most robust methodology, but I couldn't find anything better.</div>`
+<div class="citation">¹ A <a href="https://psycnet.apa.org/record/2022-47468-001">2022 study</a> of people's behavior during the Covid-19 pandemic found that people feel about 40% as psychologically close to acquaintances as they to friends. So every minute spent with an acquaintance or coworker will only count as 0.4 minutes of social time.</div>`
   },
   {
     time: "680",
@@ -112664,7 +112656,7 @@ Meanwhile, the amount of time we spend alone has gone up across every age group.
 IMAGE|alone\r
 \r
 \r
-Then the pandemic supercharged our isolation, and we're still not back to normal.\r
+The pandemic exacerbated social isolation, and we're still not back to pre-pandemic levels.\r
 \r
 \r
 Being alone isn't necessarily the same as being lonely. But according to a meta-analysis of studies, <a href="https://pubmed.ncbi.nlm.nih.gov/34898234/">more people</a> have reported feeling lonely every year since 1976. \r
@@ -112728,27 +112720,31 @@ And, in a cruel twist, loneliness makes us feel <a href="https://www.tandfonline
 Ultimately, socially isolated people are <a href="https://theconversation.com/is-loneliness-really-as-damaging-to-your-health-as-smoking-15-cigarettes-a-day-204959">50% more likely</a> to die prematurely – the equivalent of having six alcoholic drinks a day or smoking 15 cigarettes a day.`
   },
   {
-    time: "1380",
-    view: "1",
-    sortby: "WECANTRIL_num",
-    text: "We live in a world that is more connected than ever. We live in denser neighborhoods, we carry phones with us everywhere, and on those phones there are apps that promise to help us find love.\r\n\r\n\r\nYet we're spending less time with people we love – and we're told it's our fault.\r\n\r\n\r\nBut what if it isn't our fault? Religious groups have betrayed our trust. Labor unions have been torn apart. And landlords have priced us out of our communities. To fill those gaps, companies have rushed to monetize our need for social bonds. Online platforms have created a mirage of social connections. Our neighborhoods are being sold for exclusive coworking spaces. And even after the pandemic, companies have insisted we return to a world where we spend most of our time with other workers, rather than with people who care about us."
-  },
-  {
     time: "1440",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "Talking about loneliness feels so deeply personal. It makes us so vulnerable because it means telling someone that you're hurting on a primal level. So we don't talk about it. The epidemic becomes invisible.\r\n\r\n\r\nI see myself in so many people in this story. I see college students struggling to find <em>their</em> people. I see 20-somethings filling their social void by constantly working. I see middle-aged people desperately trying to be wealthy and successful, because we're told that's what makes us socially desirable. I see elderly people who trigger my deep fear of isolation in old age.\r\n\r\n\r\nIf they are anything like me, they're not telling anyone they're lonely – or even admitting it to themselves.\r\n\r\n\r\nSo here's my first attempt: I want to be around people who care about me – and I want to be able to take care of them. I want my world to be filled with the warmth of loved ones, from now until death. But, really, I just don't want to go to sleep feeling like I'm all alone."
+    text: "Talking about loneliness feels so deeply personal. It makes us so vulnerable because it means telling someone that you're hurting on a primal level. So we don't talk about it. The epidemic becomes invisible.\r\n\r\n\r\nI see myself in so many people in this story. I see college students struggling to find <em>their</em> people. I see 20-somethings filling their social void by constantly working. I see middle-aged people desperately trying to be wealthy and successful, because we're told that's what makes us socially desirable. I see elderly people who trigger my deep fear of isolation in old age.\r\n\r\n\r\nIf they are anything like me, they're not telling anyone they're lonely – or even admitting it to themselves.\r\n\r\n\r\nSo here's my first attempt: I want to be around people who care about me – and I want to be able to take care of them. I want my world to be filled with the warmth of loved ones, from now until death. \r\n\r\n\r\nBut, really, I just don't want to go to sleep feeling like I'm all alone."
   }
 ];
+const time = "340";
+const view = "0";
+const sortby = "num";
+const text = "We don't tell stories about people like Martin.\r\n\r\n\r\nHe doesn't have a job. He doesn't have a wife or partner, nor does he have children in his home. He's just a regular guy in his 60s who doesn't interact with that many people.";
+const addclass = "shorttext";
 const copy = {
   Hed,
   Byline,
-  timeline
+  timeline,
+  time,
+  view,
+  sortby,
+  text,
+  addclass
 };
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-15-17:26"}`);
+  console.log(`build: ${"2023-09-16-09:23"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

@@ -169,9 +169,13 @@
 		color: #fff;
 		display: block;
 	}
-	.act.cross, .act.cross .time{
+/*	.act.cross, */
+	.act.cross .time{
 		text-decoration: line-through;
 		color: #777 !important;
+	}
+	.act.cross {
+		color: #666;
 	}
 	.act.hl, .act.hl .time{
 		color: var(--color-pinkpurple) !important;
