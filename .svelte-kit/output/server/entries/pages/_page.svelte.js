@@ -112723,7 +112723,7 @@ Ultimately, socially isolated people are <a href="https://theconversation.com/is
     time: "1440",
     view: "1",
     sortby: "WECANTRIL_num",
-    text: "Talking about loneliness feels so deeply personal. It makes us so vulnerable because it means telling someone that you're hurting on a primal level. So we don't talk about it. The epidemic becomes invisible.\r\n\r\n\r\nI see myself in so many people in this story. I see college students struggling to find <em>their</em> people. I see 20-somethings filling their social void by constantly working. I see middle-aged people desperately trying to be wealthy and successful, because we're told that's what makes us socially desirable. I see elderly people who trigger my deep fear of isolation in old age.\r\n\r\n\r\nIf they are anything like me, they're not telling anyone they're lonely – or even admitting it to themselves.\r\n\r\n\r\nSo here's my first attempt: I want to be around people who care about me – and I want to be able to take care of them. I want my world to be filled with the warmth of loved ones, from now until death. \r\n\r\n\r\nBut, really, I just don't want to go to sleep feeling like I'm all alone."
+    text: "Talking about loneliness feels so deeply personal. It makes us so vulnerable because it means telling someone that you're hurting on a primal level. So we don't talk about it. The epidemic becomes invisible.\r\n\r\n\r\nI see myself in so many people in this story. I see college students who spend all day around other people, only to feel completely alone. I see 20-somethings spend all day at work in hopes of filling a social void. I see middle-aged people desperately trying to be wealthy and successful, because they think it will make them worthy of love. I see elderly people who trigger my deep fear of isolation in old age, even though that's become the norm.\r\n\r\n\r\nIf they are anything like me, they're not telling anyone they're lonely – or even admitting it to themselves.\r\n\r\n\r\nSo here's my first attempt: I want to be around people who care about me – and I want to be able to take care of them. I want my world to be filled with the warmth of loved ones, from now until death. \r\n\r\n\r\nBut, really, I just don't want to go to sleep feeling like I'm all alone."
   }
 ];
 const time = "340";
@@ -112744,7 +112744,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-16-09:23"}`);
+  console.log(`build: ${"2023-09-16-13:08"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
