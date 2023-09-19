@@ -112533,7 +112533,7 @@ Martin is trying to sleep. But he's rolling around in bed, sleepless.\r
     time: "360",
     view: "0",
     sortby: "num",
-    text: "In this story, we'll go through 24 hours of a typical weekday in 2021. We know what people did – and who they did it with – because, since 2003, the American Time Use Survey has asked people to track how they use their time.\r\n\r\n\r\nBy the end of the day, we'll learn that Martin's isolation isn't unique. In fact, loneliness has become a far more common experience in the last few decades – and it was supercharged by the pandemic.\r\n\r\n\r\nWe'll follow a handful of people, including Martin. Let's meet everyone else!"
+    text: "In this story, we'll go through 24 hours of a typical weekend day in 2021. We know what people did – and who they did it with – because, since 2003, the American Time Use Survey has asked people to track how they use their time.\r\n\r\n\r\nBy the end of the day, we'll learn that Martin's isolation isn't unique. In fact, loneliness has become a far more common experience in the last few decades – and it was supercharged by the pandemic.\r\n\r\n\r\nWe'll follow a handful of people, including Martin. Let's meet everyone else!"
   },
   {
     time: "365",
@@ -112744,7 +112744,7 @@ const copy = {
 function version() {
   console.log("--- --- --- --- --- ---");
   console.log(`svelte-starter: ${"5.11.2"}`);
-  console.log(`build: ${"2023-09-16-13:08"}`);
+  console.log(`build: ${"2023-09-19-07:41"}`);
   console.log("--- --- --- --- --- ---");
 }
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
