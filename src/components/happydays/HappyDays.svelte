@@ -12,7 +12,7 @@
 	let beginTime = 240;
 	let changeView;
 	let timeRange = [];
-	for (let i = beginTime; i < 1440 + beginTime; i++) {
+	for (let i = beginTime; i < 1441 + beginTime; i++) {
 		timeRange.push(i);
 	}
 	let screenHeight = 1000;
@@ -158,18 +158,18 @@
 			<Grid currentPeople={currentPeople} options={options} time="{value + beginTime}" beginTime="{beginTime}" timeline={copy.timeline} hed={copy.Hed} bind:selectedPerson={selectedPerson}/>
 		</div>
 		<div class="timeline">
-			<Scrolly increments={1} top={400} bind:value>
+			<Scrolly increments={1} bottom={0} top={300} bind:value>
 				{#each timeRange as time, i}
 				{@const active = value === i}
 				{#if checkCopy(time) == false}
 				<div class="step" style="opacity: {value + beginTime > 240 ? 1 : 0};" transition:fade class:active>{convertTime(time)}</div>
 				{:else}
 				{#if checkCopy(time)["addclass"] != "shorttext"}
-				<div class="preLongcopy"></div>
+				<!-- <div class="preLongcopy"></div> -->
 				<div class="step longcopy" class:active>
 					<Text copy={checkCopy(time)["text"]} add={"longcopy"} time={convertTime(time)} />
 				</div>
-				<div class="postLongcopy"></div>
+				<!-- <div class="postLongcopy"></div> -->
 				{:else}
 				<div class="step shortcopy" class:active>
 					<Text copy={checkCopy(time)["text"]} add={"shortcopy"} time={convertTime(time)} />
@@ -179,7 +179,6 @@
 				{/each}
 			</Scrolly>
 		</div>
-		<div class="spacer" />
 	</section>
 	<div class="modal {selectedPerson == null ? '' : 'shown'}">
 		<Modal bind:selectedPerson={selectedPerson} time="{value + beginTime}"/>
@@ -200,7 +199,11 @@
 		width: 100%;
 		padding-left: 20px;
 	}
-
+	@media screen and (max-width: 600px) {
+		.visualContainer {
+			padding-left: 5px;
+		}
+	}
 	.legend {
 		position: absolute;
 		left: 2%;
@@ -228,36 +231,57 @@
 		height: 14px;
 		min-height: 25px;
 		text-align: right;
-		color: #aaa;
-		padding-right: 5px;
-		font-size: 12px;
+		color: #777;
+		padding: 3px 3px 3px 0px;
+		font-size: 11px;
 		transition: opacity 300ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
 		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 	}
-	.step.active:not(.shortcopy) {
+	.step:last-child {
+		height: 100vh;
+	}
+	
+	.step.active:not(.shortcopy, .longcopy) {
 		color: #CE5FFE;
 		font-weight: bold;
-		text-shadow: 0px 0px 6px #000;
-		font-size: 14px;
 	}
+
+	@media screen and (min-width: 600px) {
+		.step.active:not(.shortcopy, .longcopy) {
+			font-size: 14px;
+		}
+	}
+
 	.step.longcopy {
 		pointer-events: auto !important;
 		height: auto;
 		background: rgb(40,33,47);
-		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);
-		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);
-		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,0.97) 11%, rgba(40,33,47,0.97) 89%, rgba(40,33,47,0) 100%);
-		backdrop-filter: blur(3px);
-		padding: 20vh 2em;
+		background: -moz-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 4%, rgba(40,33,47,1) 95%, rgba(40,33,47,0) 100%);
+		background: -webkit-linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 4%, rgba(40,33,47,1) 95%, rgba(40,33,47,0) 100%);
+		background: linear-gradient(0deg, rgba(40,33,47,0) 0%, rgba(40,33,47,1) 4%, rgba(40,33,47,1) 95%, rgba(40,33,47,0) 100%);
+		backdrop-filter: blur(0.5px);
+		padding: 100px 2em;
 		box-sizing: content-box !important;
 		margin: 0vh auto;
 		position: relative;
 		pointer-events: none;
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+	}
+	.step.longcopy:before {
+		content: "";
+		position: absolute;
+		height: 70%;
+		width: 100%;
+		display: block;
+		top: 15%;
+		backdrop-filter: blur(2px);
+		z-index: 2;
 	}
 	.step.shortcopy {
 		pointer-events: auto !important;
 		height: auto;
-		padding: 0% 2em 0%;
 		box-sizing: content-box !important;
 		margin: 0vh auto;
 		position: relative;
@@ -281,23 +305,23 @@
 			rgba(0, 0, 0, 1) 0%
 			rgba(0, 0, 0, 0) 60%
 		);
-		margin-top: -3px;
-	}
-	.modal {
-		width: 300px;
-		position: fixed;
-		left: -300px;
-		top: 0px;
-		height: 100%;
-		background: black;
-		transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
-		transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
-		overflow-y: scroll;
-		z-index: 999999;
-	}
-	.modal.shown {
-		left: 0px;
-	}
+/*		margin-top: -3px;*/
+}
+.modal {
+	width: 300px;
+	position: fixed;
+	left: -300px;
+	top: 0px;
+	height: 100%;
+	background: black;
+	transition: all 200ms cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+	transition-timing-function: cubic-bezier(0.250, 0.100, 0.250, 1.000); /* ease (default) */
+	overflow-y: scroll;
+	z-index: 999999;
+}
+.modal.shown {
+	left: 0px;
+}
 </style>
 
 

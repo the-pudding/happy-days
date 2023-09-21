@@ -178,7 +178,7 @@ on:click={selectPerson}
 	/>
 	{/each}
 	{#each [1,2,3,4,5] as num}
-		<div class="tick" style="bottom:{num / 6 * 100}%; opacity:{time < 550 || time > 1460 ? 0 : 1}"></div>
+	<div class="tick" style="bottom:{num / 6 * 100}%; opacity:{time < 550 || time > 1460 ? 0 : 1}"></div>
 	{/each}
 
 	{#if person.start < 240 && time <= 242}
@@ -224,14 +224,21 @@ on:click={selectPerson}
 		pointer-events: none;
 		border: 2px solid #28212F;
 	}
-	.hoverOn.person:hover, .person.hl {
-		border: 1px solid #aaa;
-		z-index: 9999;	
+	.person.hl {
+			border: 4px solid white;
+			z-index: 99999;
 	}
-	.hoverOn.person.hl:hover, .person.hl {
-		border: 4px solid white;
-		z-index: 99999;
+	@media screen and (min-width: 600px) {
+		.hoverOn.person:hover, .person.hl {
+			border: 1px solid #aaa;
+			z-index: 9999;	
+		}
+		.hoverOn.person.hl:hover, .person.hl {
+			border: 4px solid white;
+			z-index: 99999;
+		}
 	}
+	
 	.person.shown {
 		opacity: 1;
 		pointer-events: all;
@@ -355,25 +362,30 @@ on:click={selectPerson}
 		-0.5px -0.5px 0 rgba(0,0,0,0.9),
 		0.5px -0.5px 0 rgba(0,0,0,0.9);
 	}
+	.tick {
+		position: absolute;
+		left: 0px;
+		height: 1px;
+		width: 4px;
+		background: rgba(255,255,255,0.5);
+		transition: opacity 1500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
+	}
 	@media screen and (max-width: 800px) {
 		.personLabel {
-			font-size: 8px;
+			font-size: 12px;
 			line-height: 9px;
 			padding-top: 5px;
 		}
 		.currentActivity {
-			font-size: 7px;
-			line-height: 8px;
+			font-size: 10px;
+			padding-top: 3px;
+			line-height: 11px;
+		}
+		.tick {
+			width: 2px;
 		}
 	}
-	.tick {
-		position: absolute;
-		left: 0px;
-		height: 0.1px;
-		width: 4px;
-		background: rgba(255,255,255,0.8);
-		transition: opacity 1500ms cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-		transition-timing-function: cubic-bezier(0.420, 0.000, 0.580, 1.000); /* ease-in-out */
-	}
+	
 </style>
 

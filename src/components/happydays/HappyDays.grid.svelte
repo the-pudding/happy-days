@@ -5,7 +5,7 @@
 	import { onMount } from 'svelte';
 
 	let screenWidth = null;
-	let screenHeight = 1000;
+	let screenHeight = null;
 	let peopleColor = ["#f6b177"]; //["#492e5a","#653962","#7f4569","#97546e","#ad6473","#c17677","#d3897c","#e19e83","#eeb48c","#f8cb97","#ffe3a6"];
 	let views = ["all","1","2","3"];
 	let customClicked = false;
@@ -24,10 +24,11 @@
 	let columns = 5;
 	let rows = options.length;
 	let personWidth = 150;
-	let personHeight = 130;
+	let personHeight = 0;
 	let hideInfo = false;
 	let resizeDetector = true;
 	let loaded = false;
+	let firstHeight = 0;
 
 	/****************
 	 FUNCTIONS
@@ -35,13 +36,18 @@
 	function changeView(v) {
 		selectedViewIndex = views.indexOf(v);
 	}
+	let firstResize = true;
 
 	function checkWindow(w, h) {
 		const defaultWidth = 130;
-		personWidth = (w - 80) / 4.5 < defaultWidth ? (w - 100) / 4.5 : defaultWidth;
-		personHeight = (h - 60) / rows; //  > personWidth*1.8 ? personWidth*1.5 : personHeight;
+		if ( (h > 0 && firstResize) || Math.abs(firstHeight - h) > 120 ) {
+			firstHeight = h;
+			firstResize = false;
+		}
+		personWidth = (w-10) / 4 < defaultWidth ? (w-10) / 4 : defaultWidth;
+		personHeight = (firstHeight - 60) / rows; //  > personWidth*1.8 ? personWidth*1.5 : personHeight;
 
-		columns = Math.floor( (w - 40) / personWidth)
+		columns = Math.floor( w  / personWidth)
 		columns = columns > 20 ? 20 : columns;
 		viewTranslate[0][0] = 50 - (personWidth/2*3/(w + 80)*94);
 		if (personWidth < 100) {
@@ -135,7 +141,7 @@
 			let rowNum = Math.floor(n / columns);
 			let left = colNum * (100/ columns);
 			let top = rowNum * (100 / (rows) );
-			positionLookup[currentPeopleTemp[n]["TUCASEID"]] = [left, top, personWidth - 5, personHeight - 5]
+			positionLookup[currentPeopleTemp[n]["TUCASEID"]] = [left, top, personWidth-1, personHeight - 1]
 		}
 	}
 
@@ -195,11 +201,9 @@
 	$: time, checkPeople(), checkTiming(), checkWindow(screenWidth, screenHeight)
 </script>
 
-<svelte:window bind:innerWidth={screenWidth} bind:innerHeight={screenHeight} />
-
 <div class="interactive {resizeDetector ? 'resize-animation-stopper' : ''}" style='{loaded ? "opacity: 1" : "opacity: 0"};'>
 	<div class="displayContainter">
-		<div class="groupContainer" style="transform: perspective(0) translate3d({viewTranslate[selectedViewIndex][0]}%, {viewTranslate[selectedViewIndex][1]}%, {viewTranslate[selectedViewIndex][2]}px) scale({viewTranslate[selectedViewIndex][3]});">
+		<div class="groupContainer" style="transform: perspective(0) translate3d({viewTranslate[selectedViewIndex][0]}%, {viewTranslate[selectedViewIndex][1]}%, {viewTranslate[selectedViewIndex][2]}px) scale({viewTranslate[selectedViewIndex][3]});" bind:clientWidth={screenWidth} bind:clientHeight={screenHeight}>
 			{#each currentPeople as person, personKey}
 			{#if personKey < maxPeople}
 			<Person 
@@ -222,93 +226,98 @@
 			/>
 			{/if}
 			{/each}
-			</div>
 		</div>
 	</div>
+</div>
 
-	<style>
-		.wideViewButton {
-			margin-left: 10px;
-			position: absolute;
-			left: calc(2% + 210px);
-			top: 22px;
-			z-index: 100;
-			background: white;
-		}
-		.group .wideViewButton {
-			margin-left: 0px;
-			padding: 18px;
-			border-radius: 8px;
-			left: 50%;
-			top: -90px;
-			transform: translateX(-50%);
-			font-size: 45px;
-		}
-		.wideViewButton:hover {
-			text-decoration: underline;
-		}
-		.socialStats {
-			font-size: 45px;
-			color: white;
-			padding: 20px 0;
-		}
-		.interactive {
-			transform-origin: center;
-			text-align: center;
-			width: 100%;
-			height: 100vh;
-			transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			font-family: var(--sans);
-		}
-		.interactiveBackground {
-			display: block;
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 0;
-			top: 0;
-			cursor: pointer;
-			transition: background 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
-		}
-		button.selected {
-			background: #aaa;
-		}
-		.displayContainter {
-			position: relative;
-			top: 0px;
-			left: 0px;
-			height: 100%;
-			width: 100%;
-			padding-top: 50px;
-			box-sizing: border-box;
-			/* max-width: 1500px; */
-			/* overflow: hidden;*/
-			overflow: hidden;
-			margin: 0 auto;
-			padding-right: 60px;
-		}
+<style>
+	.wideViewButton {
+		margin-left: 10px;
+		position: absolute;
+		left: calc(2% + 210px);
+		top: 22px;
+		z-index: 100;
+		background: white;
+	}
+	.group .wideViewButton {
+		margin-left: 0px;
+		padding: 18px;
+		border-radius: 8px;
+		left: 50%;
+		top: -90px;
+		transform: translateX(-50%);
+		font-size: 45px;
+	}
+	.wideViewButton:hover {
+		text-decoration: underline;
+	}
+	.socialStats {
+		font-size: 45px;
+		color: white;
+		padding: 20px 0;
+	}
+	.interactive {
+		transform-origin: center;
+		text-align: center;
+		width: 100%;
+		height: 100vh;
+		transition: opacity 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		font-family: var(--sans);
+	}
+	.interactiveBackground {
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		cursor: pointer;
+		transition: background 1200ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+	}
+	button.selected {
+		background: #aaa;
+	}
+	.displayContainter {
+		position: relative;
+		top: 0px;
+		left: 0px;
+		height: 100%;
+		width: 100%;
+		padding-top: 50px;
+		box-sizing: border-box;
+		/* max-width: 1500px; */
+		/* overflow: hidden;*/
+		overflow: hidden;
+		margin: 0 auto;
+		padding-right: 60px;
+	}
+	.groupContainer {
+		position: absolute;
+		width: calc(100% - 80px);
+		height: 90vh;
+		transition: all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+		pointer-events: none;
+		top: 5vh;
+		left: 0%;
+		transform: perspective(0) translate3d(0, 0, 0) scale(1);
+		transform-origin: top left;
+	}
+	@media screen and (max-width: 600px) {
 		.groupContainer {
-			position: absolute;
-			width: calc(100% - 80px);
-			height: 90vh;
-			transition: all 2000ms cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			transition-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
-			pointer-events: none;
-			top: 5vh;
-			left: 0%;
-			transform: perspective(0) translate3d(0, 0, 0) scale(1);
-			transform-origin: top left;
+			width: calc(100% - 50px);
 		}
+	}
+	.groupContainer.zoomIn {
+		transform: perspective(0) translate3d(50%, 0, 0) scale(3);
+	}
+	.groupContainer.zoomOut {
+		transform: perspective(0) translate3d(0, 0, 0) scale(1);
+	}
 
-		.groupContainer.zoomIn {
-			transform: perspective(0) translate3d(50%, 0, 0) scale(3);
-		}
-		.groupContainer.zoomOut {
-			transform: perspective(0) translate3d(0, 0, 0) scale(1);
-		}
-		
 
-	</style>
+
+</style>
 
