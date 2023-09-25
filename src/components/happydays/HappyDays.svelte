@@ -7,6 +7,7 @@
 	import people from "$components/happydays/people-all-nogroup.json";
 	import martin from "$components/happydays/martin.json"; // martin OG is 20210706212196
 	import { fade } from 'svelte/transition';
+	import Tip from "$components/helpers/Tip.svelte";
 	
 	let value;
 	let beginTime = 240;
@@ -179,10 +180,12 @@
 				{/each}
 			</Scrolly>
 		</div>
+
 	</section>
 	<div class="modal {selectedPerson == null ? '' : 'shown'}">
 		<Modal bind:selectedPerson={selectedPerson} time="{value + beginTime}"/>
 	</div>
+	<Tip href="https://checkout.stripe.com/c/pay/cs_live_a14Ae7Am3XkaEXqU6G0TKncUce70tfTQsWsJhHVNZKPrUuCtm3jQUmzxW3#fidkdWxOYHwnPyd1blppbHNgWjA0SF9CXVZETVdkV01pVG5SSlVUPENGNGt3RERgQnFOSFY2dnFzRFZiNDc9UGYxQjxvT1d9S1M0aTxrRzBNcmZxcEZmQTddc2NUXTZscXFVM3RscV9UMTNXNTVndTBqUnBcRCcpJ3VpbGtuQH11anZgYUxhJz8nMnZMMGtMPUdPPFZiM0lGY18xJ3gl" />
 </div>
 <style>
 	.outsideContainer {

@@ -1,24 +1,42 @@
 <script>
 	import { DollarSign } from "lucide-svelte";
-	export let text = "Tip";
+	export let text = "Send a tip to Alvin Chang";
 	export let href;
 </script>
 
+<div class="tip_text">Thank you for reading to the end! Consider directly supporting the author.</div>
 <a class="tip-button" {href} target="_blank" rel="noreferrer" role="button"
 	>{text} <span><DollarSign color="currentColor" /></span>
 </a>
 
 <style>
+	.tip_text {
+		color: #DFD2DE !important;
+		text-align: center;
+		font-size: 1.3rem;
+		line-height: 1.8rem;
+		width: 100%;
+		padding: 0 10px;
+	}
 	a.tip-button {
-		background: var(--color-fg);
-		color: var(--color-bg);
+		background: var(--color-pinkpurple);
+		color: var(--color-black);
+/*		font-weight: bold;*/
 		display: inline-flex;
+		position: relative;
 		align-items: center;
 		justify-content: center;
-		border-radius: 4px;
-		box-shadow: 0px 3px 3px 0px var(--color-gray-500);
+		border-radius: 2px;
+		box-shadow: 5px 5px 0px 0px #000;
 		letter-spacing: 0.05em;
 		padding: 12px 16px;
+		margin: 30px 10px;
+		margin-left: -140px;
+		width: 280px;
+		left: 50%;
+	}
+	a.tip-button:hover {
+		text-decoration: underline;
 	}
 
 	span {
